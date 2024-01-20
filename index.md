@@ -1,6 +1,11 @@
 @def title = "Problema 1"
 @def tags = ["syntax", "code"]
 
+
+
+# Problema 
+
+A veces, al resolver problemas de física, algunas de las cosas que más me han molestado es: una, sufrir por la _talacha_ y dos; no saber qué estoy haciendo. 
 <!-- # How to use Franklin
 
 \tableofcontents 
