@@ -1,5 +1,12 @@
 # This file was generated, do not modify it.
 
+using Pkg # hideall
+Pkg.activate("/Project.toml")
+Pkg.update()
+macro OUTPUT()
+    return isdefined(Main, :Franklin) ? Franklin.OUT_PATH[] : "/tmp/"
+end;
+
 using SymPy, DifferentialEquations, Plots
 
 @syms m g y_cm x_cm l t

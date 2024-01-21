@@ -1,4 +1,11 @@
 # This file was generated, do not modify it. # hide
-x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
-println(y_cmd)
+xdot = diff(x, t)
+xddot = diff(xdot, t)
+thetadot = diff(θ, t)
+thetaddot = diff(thetadot, t)
+
+
+
+x_cm = x + l//2 * sin(θ)
+y_cm = l//2*cos(θ)
+println(y_cm)
