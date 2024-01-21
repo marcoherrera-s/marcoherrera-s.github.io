@@ -1,5 +1,5 @@
-using Pkg # hideall
-Pkg.activate();
+using Pkg 
+Pkg.activate("_literate/Project.toml")
 
 # # Problema
 
