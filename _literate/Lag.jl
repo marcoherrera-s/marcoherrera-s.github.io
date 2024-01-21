@@ -1,3 +1,10 @@
+using Pkg # hideall
+Pkg.activate("/Project.toml")
+Pkg.update()
+macro OUTPUT()
+    return isdefined(Main, :Franklin) ? Franklin.OUT_PATH[] : "/tmp/"
+end;
+
 # # Problema
 
 # A veces, al resolver problemas de física, algunas de las cosas que más me han molestado es: una, sufrir por la _talacha_ y dos; no saber qué estoy haciendo.
