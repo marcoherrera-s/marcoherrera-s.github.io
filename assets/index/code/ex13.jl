@@ -1,3 +1,2 @@
 # This file was generated, do not modify it. # hide
-x_cm = x + l//2 * sin(θ)
-y_cm = l//2*cos(θ)
+ELθ = diff(diff(L, thetadot), t) - diff(L, θ);
