@@ -223,5 +223,4 @@ sol = solve(prob, ESDIRK547L2SA2())
 ```julia:./ex85
 plot(sol, linewidth=2)
 ```
-\show{./ex85}
-
+![grafico](/assets/grafico.png)
