@@ -1,9 +1,5 @@
 using Pkg # hideall
-Pkg.activate("/Project.toml")
-Pkg.update()
-macro OUTPUT()
-    return isdefined(Main, :Franklin) ? Franklin.OUT_PATH[] : "/tmp/"
-end;
+Pkg.activate();
 
 # # Problema
 
