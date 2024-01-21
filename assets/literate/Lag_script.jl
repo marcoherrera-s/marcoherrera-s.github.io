@@ -1,7 +1,7 @@
 # This file was generated, do not modify it.
 
-using Pkg # hideall
-Pkg.activate();
+using Pkg
+Pkg.activate("_literate/Project.toml")
 
 using SymPy, DifferentialEquations, Plots
 

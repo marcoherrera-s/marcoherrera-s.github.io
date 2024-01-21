@@ -1,7 +1,7 @@
 <!--This file was generated, do not modify it.-->
 ````julia:ex1
-using Pkg # hideall
-Pkg.activate();
+using Pkg
+Pkg.activate("_literate/Project.toml")
 ````
 
 # Problema
