@@ -1,3 +1,5 @@
 # This file was generated, do not modify it. # hide
-x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
+xdot = diff(x, t)
+xddot = diff(xdot, t)
+thetadot = diff(θ, t)
+thetaddot = diff(thetadot, t)

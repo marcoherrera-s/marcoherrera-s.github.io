@@ -1,2 +1,2 @@
 # This file was generated, do not modify it. # hide
-y_cm = l//2*cos(θ)
+ELθ = diff(diff(L, thetadot), t) - diff(L, θ)

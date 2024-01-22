@@ -1,4 +1,7 @@
 # This file was generated, do not modify it. # hide
-sol_1 = solve(ELX, xddot)
+@syms Ω
 
-sol_1[1]
+
+
+U = (m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
+U = simplify(U)

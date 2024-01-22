@@ -1,2 +1,4 @@
 # This file was generated, do not modify it. # hide
-y_cm = l//2*cos(θ)
+sol_1 = solve(ELX, xddot)
+
+sol_1[1]
