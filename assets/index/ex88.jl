@@ -1,2 +1,3 @@
 # This file was generated, do not modify it. # hide
-L = T - U
+u0 = [0.0, 0.0]
+du0 = [0.0, 0.0]
