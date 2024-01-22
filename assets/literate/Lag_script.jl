@@ -2,6 +2,7 @@
 
 using Pkg
 Pkg.activate("_literate/Project.toml")
+Pkg.instantiate()
 
 using SymPy, DifferentialEquations, Plots
 

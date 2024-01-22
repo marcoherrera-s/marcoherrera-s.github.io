@@ -2,6 +2,7 @@
 ````julia:ex1
 using Pkg
 Pkg.activate("_literate/Project.toml")
+Pkg.instantiate()
 ````
 
 # Problema
