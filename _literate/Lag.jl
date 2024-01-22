@@ -20,16 +20,22 @@ Pkg.instantiate()
 
 # Entonces, lo primero que haremos será importar las paqueterías que vamos a usar.
 
+# Para la talacha usaremos SymPy, esta es una paquetería de Python que estamos llamando desde Julia, la usaremos para los cálculos simbólicos.
+
 using SymPy
 
 
 
 # Ahora, lo primero que haremos será definir nuestras variables y nuestras funciones, para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las coordenadas canónicas, entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
 
-@syms m g y_cm x_cm l t 
-θ = SymFunction("θ")(t)
+# Como en nuestro problema estamos lidiando con un sólido rígido, entonces nos interesan las coordenadas de su centro de masa: $x_{cm}$ y $y_{cm}$.
+
+# $m$ es la masa, $g$ la gravedad, $l$ la longitud de la barra, $t$ el tiempo.
+@syms m g y_cm x_cm l t  # Así definimos variables 
+θ = SymFunction("θ")(t)  # Así definimos funciones
 x = SymFunction("x")(t)
 
+# Ahora necesitamos definir nuestras derivadas para cada una de nuestras funciones, esto para que nos sean más fáciles algunas operaciones futuras.
 
 xdot = diff(x, t)
 xddot = diff(xdot, t)
@@ -37,23 +43,27 @@ thetadot = diff(θ, t)
 thetaddot = diff(thetadot, t)
 
 
-
+# Obtenemos las coordenadas del centro de masa de la barra:
 x_cm = x + l//2 * sin(θ)
+
+# $\frac{l \sin{\left(θ{\left(t \right)} \right)}}{2} + x{\left(t \right)}$
+
 y_cm = l//2*cos(θ)
+
+# $\frac{l \cos{\left(θ{\left(t \right)} \right)}}{2}$
 
 # Derivamos nuestras variables haciendo:
 
 
 x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
-
-
-# Y obtendremos:
-
 
 # $\frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{d}{d t} x{\left(t \right)}$
 
-# El siguiente paso es obtener la energía cinética, este sería un proceso un poco talachudo porque implica elevar al cuadrado los términos y luego sumarlos, hagamos simplemente:
+y_cmd = diff(y_cm, t)
+
+# $- \frac{l \sin{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2}$
+
+# El siguiente paso es obtener la energía cinética, al tratar con un sólido rígido, sabemos que la energía cinética es de la siguiente forma: $T = T_{cm} + T_{rotacional}$. Y es aquí en donde empezaría la talacha si tuviéramos que arrastrar el lápiz. Pero hoy no. Comencemos con $T_{cm}$, esta está fácil, sabemos muy bien que $T_{cm} = \frac{1}{2} m ( \dot{x}^2 + \dot{y}^2 ) $, entonces:
 
 
 T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
@@ -71,7 +81,7 @@ T_cm = simplify(expand(T_cm))
 
 # $\frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)} + 4 \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{8}$
 
-
+# Y damos gracias no haber hecho ese talachita.
 
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
 ω = Matrix([0 0 diff(θ, t)]) 
