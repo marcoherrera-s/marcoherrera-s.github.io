@@ -28,8 +28,11 @@ T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
 T_cm = simplify(expand(T_cm))
 
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
+
 ω = Matrix([0 0 diff(θ, t)])
-T_rot = (1//2)*ω*I*ω.T
+
+T_rot = (1//2)*ω*I*ω.T # .T para trasponer la matriz y poder hacer la operación
+
 T_rot = T_rot[1]
 
 T = T_cm + T_rot
@@ -37,8 +40,6 @@ T = T_cm + T_rot
 T = expand(T)
 
 @syms Ω
-
-
 
 U = (m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
 U = simplify(U)

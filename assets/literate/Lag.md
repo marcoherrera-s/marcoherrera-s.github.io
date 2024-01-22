@@ -15,7 +15,7 @@ Entonces, lo que haremos hoy, será resolver uno de esos problemas que requerir�
 
 El problema es el siguiente:
 
-1. El punto A de una barra \( AB \) se puede mover sin fricción a lo largo de una línea horizontal (eje \( x \)). La barra es homogénea de masa \( m \) y longitud \( l \). Se mueve en un plano vertical donde puede rotar libremente alrededor de A. Sobre A se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\omega t) $, donde  $\omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\varphi$ y la velocidad angular $\dot{\varphi}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \varphi(0) = \dot{\varphi}(0) $.
+1. El punto A de una barra \( AB \) se puede mover sin fricción a lo largo de una línea horizontal (eje \( x \)). La barra es homogénea de masa \( m \) y longitud \( l \). Se mueve en un plano vertical donde puede rotar libremente alrededor de A. Sobre A se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\Omega t) $, donde  $\Omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\varphi$ y la velocidad angular $\dot{\varphi}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \varphi(0) = \dot{\varphi}(0) $.
 
 \fig{/_assets/problema.png}
 
@@ -96,57 +96,90 @@ $\frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \c
 
 Y damos gracias no haber hecho ese talachita.
 
+Nuestro siguiente paso es obtener la energía cinética rotacional. Para esta sabemos que $T_{rot} = \frac{1}{2} \omega I_{cm} \omega$, aquí estamos suponiento que $I_{cm}$ es el tensor de inercia para ejes el el cuerpo respecto al centro de masa, este tensor, si es que la vida no nos odia demasiado aún, la mayoría de las veces es dado en problemas de este tipo. Continuando, $\omega$ es la velocidad angular, nuestro cuerpo rota respecto al ángulo $\theta$, por lo tanto, con la regla de la mano derecha tendríamos: $\omega = \dot{\theta} \hat{z}$.
+
 ````julia:ex11
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
+````
+
+$\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac{l^2 m}{12} & 0 \\ 0 & 0 & \frac{l^2 m}{12} \end{bmatrix}$
+
+````julia:ex12
 ω = Matrix([0 0 diff(θ, t)])
-T_rot = (1//2)*ω*I*ω.T
+````
+
+$\omega = \begin{bmatrix} 0 & 0 & \frac{d\theta}{dt} \end{bmatrix}$
+
+````julia:ex13
+T_rot = (1//2)*ω*I*ω.T # .T para trasponer la matriz y poder hacer la operación
+
 T_rot = T_rot[1]
 ````
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24}$
 
-````julia:ex12
+Finalmente, sumamos nuestras dos energías cinéticas y obtenemos la energía cinética total.
+
+````julia:ex14
 T = T_cm + T_rot
 ````
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24} + \frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)} + 4 \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{8}$
 
-````julia:ex13
+La expandimos, para que no se vea tan grosera.
+
+````julia:ex15
 T = expand(T)
 ````
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
-````julia:ex14
+Ahora definimos una nueva variable, $\Omega$, que es la frecuencia de la fuerza que se aplica en el eje x.
+
+````julia:ex16
 @syms Ω
+````
 
+Para obtener la energía potencial, tenemos que sumar la que es debido a la gravedad, y el potencial asociado a la fuerza. Lo obtenemos recordando que: $U(\mathbf{x}) = -\int \mathbf{F}(\mathbf{x}) \cdot d\mathbf{x}$
 
+Por lo tanto:
 
+````julia:ex17
 U = (m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
 U = simplify(U)
 ````
 
 $\frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6}$
 
-````julia:ex15
+Finalmente ya tenemos todo para obtener el Lagrangiano, entonces:
+
+````julia:ex18
 L = T - U
 ````
 
 $- \frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6} + \frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
-````julia:ex16
+Obtenemos las ecuaciones de Euler - Lagrange, tal que: $\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) - \frac{\partial L}{\partial q_i} = 0$
+
+Para $x$:
+
+````julia:ex19
 ELX = diff(diff(L, xdot), t) - diff(L, x)
 ````
 
 $- \frac{g m \cos{\left(t Ω \right)}}{3} - \frac{l m \sin{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{2} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{2} + m \frac{d^{2}}{d t^{2}} x{\left(t \right)}$
 
-````julia:ex17
+Para $\theta$:
+
+````julia:ex20
 ELθ = diff(diff(L, thetadot), t) - diff(L, θ)
 ````
 
 $- \frac{g l m \sin{\left(θ{\left(t \right)} \right)}}{2} + \frac{l^{2} m \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{3} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2}$
 
-````julia:ex18
+Ahora despejamos para $\frac{d^{2}}{d t^{2}} x$ de la siguiente forma:
+
+````julia:ex21
 sol_1 = solve(ELX, xddot)
 
 sol_1[1]
@@ -154,7 +187,9 @@ sol_1[1]
 
 $\frac{g \cos{\left(t Ω \right)}}{3} + \frac{l \sin{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{2} - \frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{2}$
 
-````julia:ex19
+Y para $\frac{d^{2}}{d t^{2}} θ$ :
+
+````julia:ex22
 sol_2 = solve(ELθ, thetaddot)
 sol_2[1]
 ````

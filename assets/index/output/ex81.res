@@ -1,1 +1,1 @@
-second_order_system (generic function with 1 method)
+problema_choncho (generic function with 1 method)

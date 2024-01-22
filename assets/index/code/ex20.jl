@@ -1,2 +1,2 @@
 # This file was generated, do not modify it. # hide
-L = T - U
+ELθ = diff(diff(L, thetadot), t) - diff(L, θ)

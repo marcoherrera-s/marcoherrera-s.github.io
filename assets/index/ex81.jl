@@ -1,5 +1,5 @@
 # This file was generated, do not modify it. # hide
-function second_order_system(ddu, du, u, p, t)
+function problema_choncho(ddu, du, u, p, t)
     g, l, Ω = p
 
 
