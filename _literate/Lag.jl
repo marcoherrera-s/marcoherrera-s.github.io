@@ -1,4 +1,4 @@
-using Pkg 
+using Pkg # hideall
 Pkg.activate("_literate/Project.toml")
 Pkg.instantiate()
 
@@ -22,31 +22,30 @@ Pkg.instantiate()
 
 using DifferentialEquations, Plots
 
+using SymPy;
 
 # Ahora, lo primero que haremos será definir nuestras variables y nuestras funciones, para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las coordenadas canónicas, entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
 
 @syms m g y_cm x_cm l t 
 θ = SymFunction("θ")(t)
-x = SymFunction("x")(t)
+x = SymFunction("x")(t);
 
-# a 
+
 xdot = diff(x, t)
 xddot = diff(xdot, t)
 thetadot = diff(θ, t)
-thetaddot = diff(thetadot, t)
+thetaddot = diff(thetadot, t);
 
 
 
 x_cm = x + l//2 * sin(θ)
-y_cm = l//2*cos(θ)
-println(y_cm)
+y_cm = l//2*cos(θ);
 
 # Derivamos nuestras variables haciendo:
 
 
 x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
-println(y_cmd)
+y_cmd = diff(y_cm, t);
 
 
 # Y obtendremos:
@@ -57,8 +56,7 @@ println(y_cmd)
 # El siguiente paso es obtener la energía cinética, este sería un proceso un poco talachudo porque implica elevar al cuadrado los términos y luego sumarlos, hagamos simplemente:
 
 
-T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
-@show T_cm
+T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2);
 
 
 # $\frac{m \left(\frac{l^{2} \sin^{2}{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{4} + \left(\frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{2}$
@@ -98,7 +96,7 @@ T = expand(T);
 # $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
 
-@syms Ω
+@syms Ω;
 
 
 
@@ -130,7 +128,7 @@ ELθ = diff(diff(L, thetadot), t) - diff(L, θ);
 
 
 
-sol_1 = solve(ELX, xddot)
+sol_1 = solve(ELX, xddot);
 
 sol_1[1];
 
