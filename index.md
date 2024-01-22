@@ -26,7 +26,7 @@ tspan = (0.0, 10.0)
 
 \show{./ex88}
 
-Ahora, recordamos los dos monstruos que acabamos de obtener:
+Recordamos los dos monstruos que acabamos de obtener:
 
 $\frac{d^{2}}{d t^{2}} x = \frac{g \cos{\left(t Ω \right)}}{3} + \frac{l \sin{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{2} - \frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{2}$
 
@@ -34,7 +34,7 @@ y
 
 $\frac{d^{2}}{d t^{2}} θ = \frac{3 \left(g \sin{\left(θ{\left(t \right)} \right)} - \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}\right)}{2 l}$
 
-Ahora definimos una función de la siguiente forma en donde únicamente transcribiremos esas ecuaciones a código, hay que ser cuidadosos en respetar la estructura. 
+Definimos una función de la siguiente forma en donde únicamente transcribiremos esas ecuaciones a código, hay que ser cuidadosos en respetar la estructura. 
 
 
 ```julia:./ex81
@@ -90,13 +90,13 @@ ingenuo = plot(sol_ingenuo, dpi=300)
 ![ingenuo](/assets/ingenuo.png)
 
 
-
+Nuestra gráfica no tiene ningun sentido. 
 Entonces, lo que está pasando es que nos estamos enfrentando a un sistema de ecuaciones diferenciales del tipo _stiff_ o _rígidas_ en español. 
 Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más aquí, aquí y aquí. Entre muchos más lados. 
 
 Pero en esencia lo que está pasando es que los algoritmos tradicionales no funcionan correctamente.
 
-Entonces lo que podemos hacer es ir al siguiente enlace, y buscar algún algoritmo especializado para este tipo de ecuaciones.
+Lo que podemos hacer es ir al siguiente enlace, y buscar algún algoritmo especializado para este tipo de ecuaciones.
 
 Aquí usaremos el algoritmo ESDIRK547L2SA2(), que es un método Runge-Kutta implícito, por sus siglas ESDIRK _(Singly Diagonally Implicit Runge Kutta)_, de séptimo nivel, quinto orden y estable para resolver ecuaciones diferenciales ordinarias. 
 
