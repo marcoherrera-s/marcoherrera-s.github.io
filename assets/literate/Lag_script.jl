@@ -4,7 +4,7 @@ using Pkg
 Pkg.activate("_literate/Project.toml")
 Pkg.instantiate()
 
-using SymPy, DifferentialEquations, Plots
+using DifferentialEquations, Plots
 
 @syms m g y_cm x_cm l t
 θ = SymFunction("θ")(t)

@@ -22,7 +22,7 @@ El problema es el siguiente:
 Entonces, lo primero que haremos será importar las paqueterías que vamos a usar.
 
 ````julia:ex2
-using SymPy, DifferentialEquations, Plots
+using DifferentialEquations, Plots
 ````
 
 Ahora, lo primero que haremos será definir nuestras variables y nuestras funciones, para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las coordenadas canónicas, entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
