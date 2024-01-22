@@ -1,2 +1,4 @@
 # This file was generated, do not modify it. # hide
-ELθ = diff(diff(L, thetadot), t) - diff(L, θ);
+sol_1 = solve(ELX, xddot);
+
+sol_1[1];

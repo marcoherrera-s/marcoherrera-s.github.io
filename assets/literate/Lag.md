@@ -1,6 +1,6 @@
 <!--This file was generated, do not modify it.-->
 ````julia:ex1
-using Pkg
+using Pkg # hideall
 Pkg.activate("_literate/Project.toml")
 Pkg.instantiate()
 ````
@@ -23,6 +23,8 @@ Entonces, lo primero que haremos será importar las paqueterías que vamos a usa
 
 ````julia:ex2
 using DifferentialEquations, Plots
+
+using SymPy;
 ````
 
 Ahora, lo primero que haremos será definir nuestras variables y nuestras funciones, para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las coordenadas canónicas, entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
@@ -30,30 +32,25 @@ Ahora, lo primero que haremos será definir nuestras variables y nuestras funcio
 ````julia:ex3
 @syms m g y_cm x_cm l t
 θ = SymFunction("θ")(t)
-x = SymFunction("x")(t)
-````
+x = SymFunction("x")(t);
 
-a
 
-````julia:ex4
 xdot = diff(x, t)
 xddot = diff(xdot, t)
 thetadot = diff(θ, t)
-thetaddot = diff(thetadot, t)
+thetaddot = diff(thetadot, t);
 
 
 
 x_cm = x + l//2 * sin(θ)
-y_cm = l//2*cos(θ)
-println(y_cm)
+y_cm = l//2*cos(θ);
 ````
 
 Derivamos nuestras variables haciendo:
 
-````julia:ex5
+````julia:ex4
 x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
-println(y_cmd)
+y_cmd = diff(y_cm, t);
 ````
 
 Y obtendremos:
@@ -62,9 +59,8 @@ $\frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right
 
 El siguiente paso es obtener la energía cinética, este sería un proceso un poco talachudo porque implica elevar al cuadrado los términos y luego sumarlos, hagamos simplemente:
 
-````julia:ex6
-T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
-@show T_cm
+````julia:ex5
+T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2);
 ````
 
 $\frac{m \left(\frac{l^{2} \sin^{2}{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{4} + \left(\frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{2}$
@@ -73,13 +69,13 @@ Como podemos ver, aún no está tan bien, personas inteligentes como nosotros hu
 
 Eso no es problema, podemos hacer simplemente:
 
-````julia:ex7
+````julia:ex6
 T_cm = simplify(expand(T_cm));
 ````
 
 $\frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)} + 4 \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{8}$
 
-````julia:ex8
+````julia:ex7
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
 ω = Matrix([0 0 diff(θ, t)])
 T_rot = (1//2)*ω*I*ω.T
@@ -88,20 +84,20 @@ T_rot = T_rot[1];
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24}$
 
-````julia:ex9
+````julia:ex8
 T = T_cm + T_rot;
 ````
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24} + \frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)} + 4 \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{8}$
 
-````julia:ex10
+````julia:ex9
 T = expand(T);
 ````
 
 $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
-````julia:ex11
-@syms Ω
+````julia:ex10
+@syms Ω;
 
 
 
@@ -111,40 +107,40 @@ U = simplify(U);
 
 $\frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6}$
 
-````julia:ex12
+````julia:ex11
 L = T - U;
 ````
 
 $- \frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6} + \frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
-````julia:ex13
+````julia:ex12
 ELX = diff(diff(L, xdot), t) - diff(L, x);
 ````
 
 $- \frac{g m \cos{\left(t Ω \right)}}{3} - \frac{l m \sin{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{2} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{2} + m \frac{d^{2}}{d t^{2}} x{\left(t \right)}$
 
-````julia:ex14
+````julia:ex13
 ELθ = diff(diff(L, thetadot), t) - diff(L, θ);
 ````
 
 $- \frac{g l m \sin{\left(θ{\left(t \right)} \right)}}{2} + \frac{l^{2} m \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{3} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2}$
 
-````julia:ex15
-sol_1 = solve(ELX, xddot)
+````julia:ex14
+sol_1 = solve(ELX, xddot);
 
 sol_1[1];
 ````
 
 $\frac{g \cos{\left(t Ω \right)}}{3} + \frac{l \sin{\left(θ{\left(t \right)} \right)} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{2} - \frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{2}$
 
-````julia:ex16
+````julia:ex15
 sol_2 = solve(ELθ, thetaddot)
 sol_2[1];
 ````
 
 $\frac{3 \left(g \sin{\left(θ{\left(t \right)} \right)} - \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}\right)}{2 l}$
 
-````julia:ex17
+````julia:ex16
 params = (9.81, 1.0, sqrt(9.81/1.0))
 tspan = (0.0, 10.0)
 

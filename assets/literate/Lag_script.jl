@@ -1,32 +1,32 @@
 # This file was generated, do not modify it.
 
-using Pkg
+using Pkg # hideall
 Pkg.activate("_literate/Project.toml")
 Pkg.instantiate()
 
 using DifferentialEquations, Plots
 
+using SymPy;
+
 @syms m g y_cm x_cm l t
 θ = SymFunction("θ")(t)
-x = SymFunction("x")(t)
+x = SymFunction("x")(t);
+
 
 xdot = diff(x, t)
 xddot = diff(xdot, t)
 thetadot = diff(θ, t)
-thetaddot = diff(thetadot, t)
+thetaddot = diff(thetadot, t);
 
 
 
 x_cm = x + l//2 * sin(θ)
-y_cm = l//2*cos(θ)
-println(y_cm)
+y_cm = l//2*cos(θ);
 
 x_cmd = diff(x_cm, t)
-y_cmd = diff(y_cm, t)
-println(y_cmd)
+y_cmd = diff(y_cm, t);
 
-T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
-@show T_cm
+T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2);
 
 T_cm = simplify(expand(T_cm));
 
@@ -39,7 +39,7 @@ T = T_cm + T_rot;
 
 T = expand(T);
 
-@syms Ω
+@syms Ω;
 
 
 
@@ -52,7 +52,7 @@ ELX = diff(diff(L, xdot), t) - diff(L, x);
 
 ELθ = diff(diff(L, thetadot), t) - diff(L, θ);
 
-sol_1 = solve(ELX, xddot)
+sol_1 = solve(ELX, xddot);
 
 sol_1[1];
 
