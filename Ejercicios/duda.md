@@ -1,16 +1,9 @@
 <!-- @def showall = true -->
-@def title = "Inicio"
+@def title = "Problema 1"
 @def tags = ["syntax", "code"]
 
 
-# ¿PERO QUÉ ES ESTO?
-
-
-Hola, si has llegado aquí es porque probablemente tenemos cosas en común, y este es mi espacio sobre lo que me gusta compartir.
-<!-- \literate{/_literate/Lag.jl}
-
-
-
+\literate{/_literate/Lag.jl}
 
 Muy bien, ya tenemos nuestras ecuaciones de movimiento, ahora nos toca resolverlas. El problema nos pide asumir ángulos pequeños, esto porque así nos libraríamos de varios términos feos, porque a veces trabajar analíticamente con las ecuaciones de movimiento que obtenemos no sólo es difícil, puede resultar imposible. 
 
@@ -133,4 +126,4 @@ Le hacemos unos cambios, para observar mejor:
 ![solu2](/assets/solu2.png)
 
 
-Entonces, como vemos, ahora ya obtenemos una solución que se ve decente. Para interpretar estos resultados, podemos ver que... -->
+Entonces, como vemos, ahora ya obtenemos una solución que se ve decente. Para interpretar estos resultados, podemos ver que...
