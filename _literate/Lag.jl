@@ -13,12 +13,12 @@ Pkg.instantiate()
 # El problema es el siguiente:
 
 
-# 1. El punto A de una barra \( AB \) se puede mover sin fricción a lo largo de una línea horizontal (eje \( x \)). La barra es homogénea de masa \( m \) y longitud \( l \). Se mueve en un plano vertical donde puede rotar libremente alrededor de A. Sobre A se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\Omega t) $, donde  $\Omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\varphi$ y la velocidad angular $\dot{\varphi}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \varphi(0) = \dot{\varphi}(0) $.
+# 1. El punto A de una barra *AB* se puede mover sin fricción a lo largo de una línea horizontal (_eje x_). La barra es homogénea de masa _m_ y longitud _l_. Se mueve en un plano vertical donde puede rotar libremente alrededor de *A*. Sobre *A* se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\Omega t) $, donde  $\Omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\varphi$ y la velocidad angular $\dot{\varphi}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \varphi(0) = \dot{\varphi}(0) $.
 
 
 # \fig{/_assets/problema.png}
 
-# Entonces, lo primero que haremos será importar las paqueterías que vamos a usar.
+# Lo primero que haremos será importar la primera paquetería que vamos a usar.
 
 # Para la talacha usaremos SymPy, esta es una paquetería de Python que estamos llamando desde Julia, la usaremos para los cálculos simbólicos.
 
@@ -26,7 +26,7 @@ using SymPy
 
 
 
-# Ahora, lo primero que haremos será definir nuestras variables y nuestras funciones, para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las coordenadas canónicas, entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
+# Comenzamos definiendo nuestras variables y nuestras funciones. Para entender rápidamente cuáles serán variables y cuáles funciones, primero hay que tener una idea clara de los grados de libertad de nuestro sistema y de las [coordenadas canónicas](https://en.wikipedia.org/wiki/Canonical_coordinates), entonces, observando el sistema podemos concluir que las coordenadas canónicas serán la distancia en $x$ y el ángulo $\theta$ en el cual está rotando la barra.
 
 # Como en nuestro problema estamos lidiando con un sólido rígido, entonces nos interesan las coordenadas de su centro de masa: $x_{cm}$ y $y_{cm}$.
 
