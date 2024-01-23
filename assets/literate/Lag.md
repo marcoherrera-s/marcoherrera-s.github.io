@@ -11,7 +11,7 @@ A veces, al resolver problemas de física, algunas de las cosas que más me han 
 
 A ver, como físicos, siempre nos vamos a enfrentar a la talacha, a veces es el pan de cada día. No hay manera de terminar con ella, pero sí de hacerla más soportable.
 
-Entonces, lo que haremos hoy, será resolver uno de esos problemas que requeriría un buen arrastre del lápiz, pero sin usar el lapiz.
+Entonces, lo que haremos hoy, será resolver uno de esos problemas que requeriría un buen arrastre del lápiz, pero sin usar el lápiz.
 
 El problema es el siguiente:
 
