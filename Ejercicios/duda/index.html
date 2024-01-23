@@ -117,7 +117,8 @@ sol_ingenuo[<span class=hljs-number >10</span>]</code></pre>
 <p>Entonces hagamos: </p>
 <pre><code class="julia hljs">sol = solve(prob, ESDIRK547L2SA2())
 sol[<span class=hljs-number >10</span>]</code></pre>
-<pre><code class="plaintext hljs">([0.05540283920504997, -0.08310791444570206], [0.00011732092853264195, -0.00017598526357367957])</code></pre>
+<pre><code class="plaintext hljs">BoundsError: attempt to access 1-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}} at index [10]
+</code></pre>
 <p>Y ahora grafiquemos:</p>
 <pre><code class="julia hljs">plotsol = plot(sol, dpi=<span class=hljs-number >300</span>)</code></pre>
 <pre><code class="plaintext hljs">Plot{Plots.GRBackend() n=4}</code></pre>
