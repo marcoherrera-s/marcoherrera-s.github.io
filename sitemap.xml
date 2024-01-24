@@ -43,10 +43,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
-<url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/_weave/problema/</loc>
-    <lastmod>2024-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
 </urlset>
