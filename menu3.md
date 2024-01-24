@@ -1,7 +1,7 @@
 +++
 title = "Menu 3"
+tags = ["syntax", "code"]
 
-weave = true
 +++
 
-{{ insert ../_weave/problema.html }}
+<!-- {{ insert ../_weave/continuacon.html }} -->

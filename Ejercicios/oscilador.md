@@ -5,7 +5,7 @@
 
 # Resolviendo el oscilador armónico
 
-Empezar este blog hablando del oscilador armónico podría resultar hasta irónico, si está en todos lados, es porque todo el tiempo lo estamos invocando, y más porque se sabe que muchos sistemas en física experimentan movimientos oscilatorios, desde la evolución de los planetas, los péndulos, entre los más comunes, otros menos comunes pueden ser las oscilaciones de átomos en sólidos cristalinos, el movimiento de electrones, entre muchos más. 
+Empezar este blog hablando del oscilador armónico podría resultar hasta irónico, si está en todos lados, es porque todo el tiempo lo estamos invocando, y más porque se sabe que muchos sistemas en física experimentan movimientos oscilatorios; desde la evolución de los planetas, los péndulos, entre los más comunes, otros menos comunes pueden ser las oscilaciones de átomos en sólidos cristalinos, el movimiento de electrones, entre muchos más. 
 
 Decimos que un movimiento es oscilatorio si este repite su movimiento regularmente en el tiempo a lo largo de una trayectoria, y además, se ha visto hasta el cansancio, ametralladoramente, que cada sistema mecánico en las proximidades de su mínimo de potencial realiza movimiento oscilatorio, no son por nada los memes. Está en todos lados. 
 
@@ -13,7 +13,7 @@ Entonces, comencemos con la siguiente ecuación:
  
  $\frac{d^2 x}{dt^2} + \frac{b}{m} \frac{dx}{dt} + \frac{k}{m} x  = F(t)$
 
-  esta ecuación podría resultar un poco familiar, y no es ninguna sorpresa. Todo empieza si partimos del famosísimo sistema de una masa atada a un resorte. Sabemos que tenemos:
+  esta ecuación podría resultar un poco familiar, y no es ninguna sorpresa. Se podría comenzar si partimos del famosísimo sistema de una masa atada a un resorte. Sabemos que tenemos:
 
    $F = -kx$
    
@@ -178,7 +178,7 @@ dpi=300
 
 Como podemos ver, aunque tal vez poco, la energía no se está conservando, de hecho, está aumentando, esto no tendría que pasar con el oscilador armónico simple. Ahí está, la culminación de miles de años de ingenio humano se ve reflejado en que la computadora no puede lograr conservar la energía de un simple oscilador. Fin. 
 
-Alto ahí, qué tal si hacemos lo siguiente, aunque ya tenemos una gráfica de posición _vs_ tiempo allá arriba, veamos qué pasa si graficamos la posición que obtuvimos de seleccionar la segunda entrada de neustros resultados, y el tiempo que obtuvimos haciendo _solucion.t_.
+Alto ahí, qué tal si hacemos lo siguiente, aunque ya tenemos una gráfica de posición _vs_ tiempo allá arriba, veamos qué pasa si graficamos la posición que obtuvimos de seleccionar la segunda entrada de nuestros resultados, y el tiempo que obtuvimos haciendo _solucion.t_.
 
 
 ```julia:./ex14
@@ -196,7 +196,7 @@ dpi=300
 
 Esto definitivamente no se ve como la gráfica que habíamos obtenido anteriormente, pero si anteriormente hicimos _graficar(solucion)_ y ahora hicimos _graficar(tiempo de la solucion, posicion de la solucion)_, y los resultados se ven bastante diferentes, ¿qué está pasando entonces?
 
-A ver, lo primero que hay que tener en mente es que cuando resolvemos ecuaciones diferenciales de forma numérica, estamos aproximándonos a la solución real de forma discreta, por lo tanto habrá un error en cada paso del cálculo, ya sea porque sabemos que las computadoras no la arman chido con los números flotantes, por la forma en que se implementó el algoritmo, entre muchas cosas más. Algo que podemos hacer es entonces, jugar con los argumentos que le damos a nuestra función. [Aquí](https://docs.sciml.ai/DiffEqDocs/stable/basics/common_solver_opts/#solver_options) podemos encontrar la enorme cantidad de argumentos que podemos especificar para resolver nuestro problema, pero para enfocarnos en uno, en uno fácil, pensemos en la tolerancia del error, modifiquemos la tolerancia absoluta y la tolerancia relativa, volvámonos locos y pongámosla muy pequeña. 
+A ver, lo primero que hay que tener en mente es que cuando resolvemos ecuaciones diferenciales de forma numérica, estamos aproximándonos a la solución real de forma discreta, por lo tanto habrá un error en cada paso del cálculo, ya sea porque sabemos que las computadoras no la arman chido con los números flotantes, por la forma en que se implementó el algoritmo, entre muchas cosas más. Algo que podemos hacer es, entonces, jugar con los argumentos que le damos a nuestra función. [Aquí](https://docs.sciml.ai/DiffEqDocs/stable/basics/common_solver_opts/#solver_options) podemos encontrar la enorme cantidad de argumentos que podemos especificar para resolver nuestro problema, pero para enfocarnos en uno, en uno fácil, pensemos en la tolerancia del error, modifiquemos la tolerancia absoluta y la tolerancia relativa, volvámonos locos y pongámosla muy pequeña. 
 
 
 ```julia:./ex15
@@ -220,7 +220,7 @@ dpi=300
 ```
 ![Post](/assets/postolera.png)
 
-Como podemos ver, mejoro demasiado, pero ahora veamos qué tal con la energía, repetimos nuestros pasos para calcular la energía, graficamos y obtenemos:
+Como podemos ver, mejoró demasiado, pero ahora veamos qué tal con la energía, repetimos nuestros pasos para calcular la energía, graficamos y obtenemos:
 
 
 ![Ener](/assets/energiatol.png)
@@ -246,7 +246,7 @@ Bastante más, entonces tiene sentido que nuestras gŕaficas se vean mejor, adem
 
 PERO, ¿entonces por qué cuando hicimos únicamente _plot(solucion)_ se veía infinitamente mejor, ¿qué no eran únicamente 33 resultados?, ¿para empezar por qué unicamente 33 resultados?, ¿no son demasiado pocos?, ¿qué está pasando?
 
-Bueno, en primer lugar hay que aclarar lo de los resultados, por qué es que nos está regresando tan pocos resultados, la respuedta es que esto no es del todo cierto. Lo que es cierto es que el solucionador, es decir, al hacer _solve(prob)_, nos regresa una solución continua, eso hay que tenerlo claro. Los pocos resultados que estamos viendo son en los puntos tal que el solucionador en efectó computó el problema. 
+Bueno, en primer lugar hay que aclarar lo de los resultados, por qué es que nos está regresando tan pocos resultados, la respuesta es que esto no es del todo cierto. Lo que es cierto es que el solucionador, es decir, al hacer _solve(prob)_, nos regresa una solución continua, eso hay que tenerlo claro. Los pocos resultados que estamos viendo son en los puntos tal que el solucionador en efectó computó el problema. 
 Sin embargo, el solucionador incluye una función de [interpolación](https://en.wikipedia.org/wiki/Interpolation) que aproxima la solución para cualquier tiempo dado. Rápidamente podemos recordar a la interpolación como un método para construir nuevos puntos de datos dentro de un conjunto discreto de puntos conocidos. 
 
 
@@ -299,5 +299,69 @@ Ahora hacemos los mismos pasos para graficar la energía, y ahora observamos:
 ![es](/assets/energiasimple.png)
 
 Se ve mejor, porque en esencia ya no observamos esa especie de _drift_ que se observaba en los casos anteriores, y lo que vemos ahora es que la energía está oscilando entre su valor real. 
+
+Para continuar, podemos resolver rápidamente el oscilador amortiguado, es decir, modificaremos el parámetro _b_ de nuestra ecuación, para esto sabemos que podemos tener tres escenarios: _sub-amortiguamiento_, _sobre-amortiguamiento_ y un _amortiguamiento crítico_.
+
+Cada estado está caracterizado por la relación que existe entre los parámetros de amortiguamiento y la constante del resorte, por ejemplo, ahora nos encontramos en este caso:
+
+$\frac{d^2x}{dt^2} + \frac{b}{m}\frac{dx}{dt}+ \frac{k}{m}x = 0 $
+
+Entonces definamos lo siguiente para mayor claridad: $\beta = \frac{b}{2m}$ y $\Omega^2 = \frac{k}{m}$.
+
+Así, entonces tenemos:
+
+$\frac{d^2x}{dt^2} + 2 \beta\frac{dx}{dt}+ \Omega^2 x = 0 $
+
+Para que de esta forma sea un poco más cómodo trabajar con la ecuación si lo quiesiéramos hacer analíticamente, pues sabemos que tendríamos que buscar una solución de la forma $x = \exp{\lambda t}$ tal que $\lambda$ satisfaga:
+
+$\lambda^2 + 2 \beta \lambda + \Omega^2 = 0 $
+
+y entonces tendríamos:
+
+$(\lambda + \beta)^2 = \beta^2 - \Omega^2 $
+
+donde justamente salen a la luz los tres casos anteriores que teníamos:
+
+- Sub-amortiguamiento cuando $\beta < \Omega$
+- Sobre-amortiguamiendo cuando $\beta > \Omega$
+- Amortiguamiento crítico cuando $\beta = \Omega$
+
+Aquí me ocuparé únicamente del caso $\beta < \Omega$, ya que, a mi criterio, considero el más interesante y los demás serían análogos. 
+
+Para este caso, se puede llegar analíticamente a que: $x = \exp{-\beta t} = (A \cos{\Omega_{D}t} + B \sin{\Omega_{D}t})$, donde $\Omega_D = (\Omega^2 - \beta^2)^{\frac{1}{2}}$.
+
+Lo interesante de este resultado, como vamos a observar, es que la solución sigue exhibiendo oscilaciones, pues vemos senos y vemos cosenos, pero lo que también vemos es una exponencial negativa, y bueno, una exponencial negativa no perdona. Teóricamente el resultado nos dice que habrá oscilaciones infinitas aún, pero que decaerán exponencialmente. Entonces veamos:
+
+Démosle un nuevo valor a b, tal que se cumpla la condición de sub-amortiguamiento.
+
+```julia:./ex22
+b = 0.35
+p = (b, m, k, F) 
+```
+\show{./ex22}
+
+Y reutilicemos todo, exceto claro, nuestros parámetros que es lo que cambiamos.
+
+```julia:./ex23
+prob_amortiguado = SecondOrderODEProblem(oscilador, du_inicial, u_inicial, tspan, p)
+
+```
+\show{./ex23}
+
+Ahora resolvamos utilizando un método Runge-Kutta simplementa.
+
+```julia:./ex24
+sol_amortiguado = solve(prob_amortiguado, Tsit5())
+sol_amortiguado[1:10]
+```
+\show{./ex24}
+
+
+Graficamos nuestros resultados análogamente a los casos anteriores y obtenemos:
+
+
+![am](/assets/amortiguado.png)
+
+Como se esperaba, un movimiento oscilatorio que se ve opacado por el decaimiento exponencial que lo acompaña. 
 
 
