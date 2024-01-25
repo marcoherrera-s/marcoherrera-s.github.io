@@ -105,46 +105,36 @@ u0: ([0.0, 0.0], [0.0, 0.0])</code></pre>
 <p>Supongamos que ingenuamente, simplemente le damos a resolver e imprimimos los primeros 10 resultados, porque pueden ser demasiados y no queremos llenar de números este sitio.</p>
 <pre><code class="julia hljs">sol_ingenuo = solve(prob)
 sol_ingenuo[<span class=hljs-number >1</span>:<span class=hljs-number >10</span>]</code></pre>
-<pre><code class="plaintext hljs">retcode: MaxIters
-Interpolation: specialized 4th order &quot;free&quot; interpolation
-t: 10-element Vector{Float64}:
- 0.0
- 6.0783752283715164e-5
- 8.75978232715446e-5
- 0.00011892903618011422
- 0.00015213518933081965
- 0.00018844261345590783
- 0.00022890036603102548
- 0.0002748347770804427
- 0.00032791519153886205
- 0.0003902953313258496
-u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}}:
- ([0.0, 0.0], [0.0, 0.0])
- ([0.0005102393680255875, -0.0007653590580723206], [1.4496514888592916e-8, -2.1744772415671053e-8])
- ([0.0007777380071753271, -0.0011666070301330285], [3.17644732673615e-8, -4.7646710301578984e-8])
- ([0.0011146124963379712, -0.0016719187954862696], [6.140929151581813e-8, -9.211393872280197e-8])
- ([0.0014909720668499849, -0.002236458211354276], [1.0467001151410946e-7, -1.5700502132316972e-7])
- ([0.0019183294636425667, -0.002877494414188786], [1.6656148977740833e-7, -2.4984224455521973e-7])
- ([0.0024077830483810766, -0.003611674977637386], [2.540738844811375e-7, -3.8111084896592123e-7])
- ([0.0029747708434878345, -0.004462156988368737], [3.776961057544796e-7, -5.66544206307818e-7])
- ([0.003639739350220167, -0.005459610290375197], [5.532465766060185e-7, -8.298699644420981e-7])
- ([0.004429826183197567, -0.006644741469217403], [8.049368887843708e-7, -1.2074055388091346e-6])</code></pre>
 <p>Muy bien, ahora grafiquemos lo que obtuvimos haciendo:</p>
 <pre><code class="julia hljs">ingenuo = plot(sol_ingenuo, dpi=<span class=hljs-number >300</span>)</code></pre>
-<pre><code class="plaintext hljs">Plot{Plots.GRBackend() n=4}</code></pre>
 <p><img src="/Problemas/assets/ingenuo.png" alt=ingenuo  /></p>
-<p>Nuestra gráfica no tiene ningun sentido.  Entonces, lo que está pasando es que nos estamos enfrentando a un sistema de ecuaciones diferenciales del tipo <em>stiff</em> o <em>rígidas</em> en español.  Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más &#91;aquíhttps://en.wikipedia.org/wiki/Stiff<em>equation&#93;, <a href="https://scicomp.stackexchange.com/questions/891/the-definition-of-stiff-ode-system">aquí</a> y &#91;aquí&#93;&#40;https://docs.sciml.ai/SciMLTutorialsOutput/html/introduction/02-choosing</em>algs.html&#41;. Entre muchos más lados. </p>
+<p>Nuestra gráfica no tiene ningun sentido.  Entonces, lo que está pasando es que nos estamos enfrentando a un sistema de ecuaciones diferenciales del tipo <em>stiff</em> o <em>rígidas</em> en español.  Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más <a href="https://en.wikipedia.org/wiki/Stiff_equation">aquí</a>, <a href="https://scicomp.stackexchange.com/questions/891/the-definition-of-stiff-ode-system">aquí</a> y <a href="https://docs.sciml.ai/SciMLTutorialsOutput/html/introduction/02-choosing_algs.html">aquí</a>. Entre muchos más lados. </p>
 <p>Pero en esencia lo que está pasando es que los algoritmos tradicionales no funcionan correctamente.</p>
 <p>Lo que podemos hacer es ir al siguiente <a href="https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#OrdinaryDiffEq.jl-for-Stiff-Equations">enlace</a>, y buscar algún algoritmo especializado para este tipo de ecuaciones.</p>
 <p>Aquí usaremos el algoritmo ESDIRK547L2SA2&#40;&#41;, que es un método Runge-Kutta implícito, por sus siglas ESDIRK <em>&#40;Singly Diagonally Implicit Runge Kutta&#41;</em>, de séptimo nivel, quinto orden y estable para resolver ecuaciones diferenciales ordinarias, además, aumentemos el número máximo de iteraciones, que es más sencillamente, el número máximo de pasos que el algoritmo tomará antes de parar. </p>
 <p>Entonces hagamos: </p>
-<pre><code class="julia hljs">sol = solve(prob, ESDIRK547L2SA2(), maxiters = <span class=hljs-number >1e7</span>)
-sol[<span class=hljs-number >1</span>:<span class=hljs-number >10</span>]</code></pre>
-<pre><code class="plaintext hljs">BoundsError: attempt to access 1-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}} at index [1:10]
-</code></pre>
+<pre><code class="julia hljs">prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)</code></pre>
+<pre><code class="plaintext hljs">ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}} and tType Float64. In-place: true
+timespan: (0.0, 10.0)
+u0: ([0.0, 0.0], [0.0, 0.0])</code></pre>
+<pre><code class="julia hljs">sol = solve(prob, ESDIRK547L2SA2(), maxiters = <span class=hljs-number >1e9</span>)
+sol[<span class=hljs-number >1</span>:<span class=hljs-number >5</span>]</code></pre>
+<pre><code class="plaintext hljs">retcode: Success
+Interpolation: 3rd order Hermite
+t: 5-element Vector{Float64}:
+ 0.0
+ 2.720225339964249e-6
+ 3.901312411147696e-6
+ 1.571218312298216e-5
+ 8.875848281123726e-5
+u: 5-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}}:
+ ([0.0, 0.0], [0.0, 0.0])
+ ([3.663371570677487e-5, -5.495057356091492e-5], [4.958723914562693e-11, -7.438085871866847e-11])
+ ([5.208233460031107e-5, -7.812350190315521e-5], [1.0197792915763111e-10, -1.5296689373857248e-10])
+ ([0.00020656852365884292, -0.0003098527856769983], [1.6294238522132941e-9, -2.4441357790605776e-9])
+ ([0.0011620141472311, -0.0017430212545810652], [5.161437364033934e-8, -7.742156120965429e-8])</code></pre>
 <p>Y ahora grafiquemos:</p>
 <pre><code class="julia hljs">plotsol = plot(sol, dpi=<span class=hljs-number >300</span>)</code></pre>
-<pre><code class="plaintext hljs">Plot{Plots.GRBackend() n=4}</code></pre>
 <p><img src="/Problemas/assets/solu.png" alt=solu  /></p>
 <p>Le hacemos unos cambios, para observar mejor:</p>
 <p><img src="/Problemas/assets/solu2.png" alt=solu2  /></p>
