@@ -12,10 +12,10 @@ Pero aquí no nos estamos manchando las manos, y además tenemos nuestras podero
 Empezamos importando las siguientes paqueterías de Julia:
 
 
-```julia:./ex17
+```julia:./ex0
 using DifferentialEquations, Plots
 ```
-\show{./ex17}
+\show{./ex0}
 
 Definimos nuestros parámetros, la gravedad de nuestro planeta, una longitud de 1.0, y la frecuencia definida como el problema nos dice. Además el span de tiempo para el cual queremos resolver la ecuación, en forma de tupla. 
 
@@ -65,14 +65,14 @@ prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)
 
 Eso significa que todo va bien, que tenemos bien definido nuestro problema con ese span de tiempo, y esas condiciones iniciales.
 
-Ahora, ya se ha discutido aquí, que resolver ecuaciones diferenciales numéricamente, por lo regular no es tan sencillo como oprimir el botón resolver y listo, hay que tener una idea clara del problema que estamos resolviendo, qué nos interesa del problema, y sobre todo, que tipo de algoritmos existen. 
+Ahora, ya se ha discutido [aquí](https://marcoherrera-s.github.io/Problemas/Ejercicios/oscilador/), que resolver ecuaciones diferenciales numéricamente, por lo regular no es tan sencillo como oprimir el botón resolver y listo, hay que tener una idea clara del problema que estamos resolviendo, qué nos interesa del problema, y sobre todo, que tipo de algoritmos existen. 
 
-Supongamos que ingenuamente, simplemente le damos a resvolver e imprimimos los primeros 10 resultados, porque pueden ser demasiados y no queremos llenar de números este sitio.
+Supongamos que ingenuamente, simplemente le damos a resolver e imprimimos los primeros 10 resultados, porque pueden ser demasiados y no queremos llenar de números este sitio.
 
 
 ```julia:./ex59
 sol_ingenuo = solve(prob)
-sol_ingenuo[10]
+sol_ingenuo[1:10]
 
 ```
 \show{./ex59}
@@ -92,23 +92,23 @@ ingenuo = plot(sol_ingenuo, dpi=300)
 
 Nuestra gráfica no tiene ningun sentido. 
 Entonces, lo que está pasando es que nos estamos enfrentando a un sistema de ecuaciones diferenciales del tipo _stiff_ o _rígidas_ en español. 
-Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más aquí, aquí y aquí. Entre muchos más lados. 
+Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más [aquíhttps://en.wikipedia.org/wiki/Stiff_equation], [aquí](https://scicomp.stackexchange.com/questions/891/the-definition-of-stiff-ode-system) y [aquí](https://docs.sciml.ai/SciMLTutorialsOutput/html/introduction/02-choosing_algs.html). Entre muchos más lados. 
 
 Pero en esencia lo que está pasando es que los algoritmos tradicionales no funcionan correctamente.
 
-Lo que podemos hacer es ir al siguiente enlace, y buscar algún algoritmo especializado para este tipo de ecuaciones.
+Lo que podemos hacer es ir al siguiente [enlace](https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#OrdinaryDiffEq.jl-for-Stiff-Equations), y buscar algún algoritmo especializado para este tipo de ecuaciones.
 
-Aquí usaremos el algoritmo ESDIRK547L2SA2(), que es un método Runge-Kutta implícito, por sus siglas ESDIRK _(Singly Diagonally Implicit Runge Kutta)_, de séptimo nivel, quinto orden y estable para resolver ecuaciones diferenciales ordinarias. 
+Aquí usaremos el algoritmo ESDIRK547L2SA2(), que es un método Runge-Kutta implícito, por sus siglas ESDIRK _(Singly Diagonally Implicit Runge Kutta)_, de séptimo nivel, quinto orden y estable para resolver ecuaciones diferenciales ordinarias, además, aumentemos el número máximo de iteraciones, que es más sencillamente, el número máximo de pasos que el algoritmo tomará antes de parar. 
 
 Entonces hagamos: 
 
 
-```julia:./ex51
-sol = solve(prob, ESDIRK547L2SA2())
-sol[10]
+```julia:./ex03
+sol = solve(prob, ESDIRK547L2SA2(), maxiters = 1e7)
+sol[1:10]
 
 ```
-\show{./ex51}
+\show{./ex03}
 
 Y ahora grafiquemos:
 
