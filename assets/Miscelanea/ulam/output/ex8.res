@@ -1,0 +1,1 @@
+Ulam_n (generic function with 1 method)

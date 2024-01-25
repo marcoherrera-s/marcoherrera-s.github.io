@@ -1,0 +1,128 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/Problemas/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/Problemas/css/franklin.css"> <link rel=stylesheet  href="/Problemas/css/tufte.css"> <link rel=stylesheet  href="/Problemas/css/latex.css"> <link rel=stylesheet  href="/Problemas/css/adjust.css"> <link rel=icon  href="/Problemas/assets/favicon.png"> <title>Ulam y mi cumpleaños</title> <div id=layout > <div id=menu > <ul> <li><a href="/Problemas/">Casa</a> <li><a href="/Problemas/menu1">Física</a> <li><a href="/Problemas/menu2/">Miscelánea</a> <li><a href="/Problemas/menu3/">Extra</a> <li><a href="/Problemas/menu4/">Otro</a> </ul> </div> <div id=main > <div class=franklin-content ><h1 id="sobre_mi_número_favorito_los_números_primos_y_mi_fondo_de_pantalla"><a href="#sobre_mi_número_favorito_los_números_primos_y_mi_fondo_de_pantalla" class=header-anchor >SOBRE MI NÚMERO FAVORITO, LOS NÚMEROS PRIMOS Y MI FONDO DE PANTALLA</a></h1> <p>Es bien sabido que de los números primos se pueden obtener muchas cosas interesantes, son números muy especiales, pues no tienen divisores, bueno, sólo el 1 y él mismo.</p> <p>Lo que haré aquí, como todo lo que hago tambíen por aquí, no es nada nuevo, <em>no hay nada nuevo bajo el sol</em>.</p> <p>Resulta que un día, en un rato libre, me puse a hacer un código que replicara la famosa <a href="https://en.wikipedia.org/wiki/Ulam_spiral">espiral de Ulam</a>. Que como su nombre nos dice, es una espiral en donde se distribuyen los números primos. </p> <p>Lo primero que había que hacer era justamente una función que nos dijera si un número, cual sea, es primo o no. Entonces, hacemos:</p> <pre><code class="julia hljs"><span class=hljs-keyword >function</span> es_primo(n)
+    <span class=hljs-keyword >if</span> n &lt;= <span class=hljs-number >1</span>
+        <span class=hljs-keyword >return</span> <span class=hljs-literal >false</span>
+    <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-number >2</span>:isqrt(n)
+        <span class=hljs-keyword >if</span> n % i == <span class=hljs-number >0</span>
+            <span class=hljs-keyword >return</span> <span class=hljs-literal >false</span>
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >return</span> <span class=hljs-literal >true</span>
+<span class=hljs-keyword >end</span></code></pre> <pre><code class="plaintext hljs">es_primo (generic function with 1 method)</code></pre>
+<p>La forma en la que funciona es la siguiente:</p>
+<ol>
+<li><p><code>if n &lt;&#61; 1</code>: Aquí checamos si el número <code>n</code> es menor o igual a 1. Si es así, la función nos regresa un falso porque sabemos que los números primos son mayores que 1. &#40;No, no vamos a tomar al 1 como primo&#41;</p>
+
+<li><p><code>for i in 2:isqrt&#40;n&#41;</code>: Aqui con un <code>for</code> iteramos sobre todos los números desde 2 hasta la raíz cuadrada entera de <code>n</code>. Esto lo hacemos para optimizar el rendimiento, ya que si hay un divisor de <code>n</code> mayor que su raíz cuadrada, entonces también habrá otro menor que su raíz cuadrada.</p>
+
+<li><p><code>if n &#37; i &#61;&#61; 0</code>: Aquí en cada iteración del bucle, verificamos si <code>n</code> es divisible por <code>i</code> sin dejar residuo &#40;es decir, <code>n</code> es divisible por <code>i</code>&#41;. Si es así, significa que <code>n</code> tiene un divisor que no es 1 ni <code>n</code> mismo, lo cual contradice la definición de un número primo. En este caso, la función nos regresa <code>false</code>.</p>
+
+<li><p>Después de salir del bucle <code>for</code>, la función nos regresa <code>true</code>, indicando que el número <code>n</code> no tiene divisores distintos de 1 y <code>n</code>, y por lo tanto, es primo.</p>
+
+</ol>
+<h2 id="haciendo_una_espiral_de_números"><a href="#haciendo_una_espiral_de_números" class=header-anchor >Haciendo una espiral de números</a></h2>
+<p>El siguiente paso es hacer una espiral de números, este paso tiene su truquito y podría resultar medio complicado, conseguir acomodar los números en cualquier matriz de nxn en forma de espiral puede resultar un poco laborioso.</p>
+<p><img src="/Problemas/assets/espiral.png" alt=espiral  /></p>
+<p>Entonces, lo que haremos será:</p>
+<pre><code class="julia hljs"><span class=hljs-keyword >function</span> spiral_matrix(n::<span class=hljs-built_in >Int</span>)
+    dirs = [(<span class=hljs-number >0</span>, <span class=hljs-number >1</span>), (-<span class=hljs-number >1</span>, <span class=hljs-number >0</span>), (<span class=hljs-number >0</span>, -<span class=hljs-number >1</span>), (<span class=hljs-number >1</span>, <span class=hljs-number >0</span>)]
+    cur = maxsteps = <span class=hljs-number >1</span>
+    steps = num = <span class=hljs-number >0</span>
+    pos = [n ÷ <span class=hljs-number >2</span> + <span class=hljs-number >1</span>, isodd(n) ? n ÷ <span class=hljs-number >2</span> + <span class=hljs-number >1</span> : n ÷ <span class=hljs-number >2</span>]
+    M = <span class=hljs-built_in >Matrix</span>{<span class=hljs-built_in >Int</span>}(<span class=hljs-literal >undef</span>, n, n)
+
+    <span class=hljs-keyword >while</span> num &lt; n^<span class=hljs-number >2</span>
+        num += <span class=hljs-number >1</span>
+        M[pos[<span class=hljs-number >1</span>], pos[<span class=hljs-number >2</span>]] = num
+        steps += <span class=hljs-number >1</span>
+
+        pos .+= dirs[cur]
+
+        <span class=hljs-keyword >if</span> steps == maxsteps
+            steps = <span class=hljs-number >0</span>
+            <span class=hljs-keyword >if</span> iseven(cur)
+                maxsteps += <span class=hljs-number >1</span>
+            <span class=hljs-keyword >end</span>
+            cur += <span class=hljs-number >1</span>
+            <span class=hljs-keyword >if</span> cur &gt; <span class=hljs-number >4</span>
+                cur -= <span class=hljs-number >4</span>
+            <span class=hljs-keyword >end</span>
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+
+    <span class=hljs-keyword >return</span> M
+<span class=hljs-keyword >end</span></code></pre>
+<pre><code class="plaintext hljs">spiral_matrix (generic function with 1 method)</code></pre>
+<p>Aquí basicamente lo que hacemos es crear una matriz cuadrada de tamaño <code>n</code>, comenzamos localizando el centro y empezando ahí, ya sea si la matriz de nxn es con n par o n impar, ya en el centro de la matriz, avanzamos hacia afuera en direcciones predefinidas. Estas direcciones las manejamos mediante la variable <code>cur</code>, que representa la dirección actual, y el vector de direcciones <code>dirs</code>, que contiene las tuplas de desplazamiento correspondientes a cada dirección: hacia la derecha &#40;0, 1&#41;, hacia arriba &#40;-1, 0&#41;, hacia la izquierda &#40;0, -1&#41; y hacia abajo &#40;1, 0&#41;. Finalmente utilizamos un bucle <code>while</code> que continúa hasta que todos los elementos de la matriz están llenos. En cada iteración del bucle:</p>
+<p>Podemos ver nuestro resultado haciendo:</p>
+<pre><code class="julia hljs">spiral_matrix(<span class=hljs-number >7</span>)</code></pre>
+<pre><code class="plaintext hljs">7×7 Matrix{Int64}:
+ 37  36  35  34  33  32  31
+ 38  17  16  15  14  13  30
+ 39  18   5   4   3  12  29
+ 40  19   6   1   2  11  28
+ 41  20   7   8   9  10  27
+ 42  21  22  23  24  25  26
+ 43  44  45  46  47  48  49</code></pre>
+<p>Genial, funciona. Ahora ya toca la parte fácil, para continuar tenemos que importar una paquetería para hacer nuestras imágenes.</p>
+<pre><code class="julia hljs"><span class=hljs-keyword >using</span> Images</code></pre>
+
+<p>Entonces, lo siguiente que haremos será lo siguiente:</p>
+<pre><code class="julia hljs"><span class=hljs-keyword >function</span> Ulam(n)
+    M = spiral_matrix(n)
+    primos = fill(RGB(<span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>), n, n)
+
+    <span class=hljs-keyword >for</span> p <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n, q <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n
+        <span class=hljs-keyword >if</span> es_primo(M[p, q]) 
+            primos[p,q] = RGB(<span class=hljs-number >1.0</span>, <span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>)
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+    primos
+<span class=hljs-keyword >end</span></code></pre>
+<pre><code class="plaintext hljs">Ulam (generic function with 1 method)</code></pre>
+<p>Lo que hicimos fue una función que nos regresará una imagen de nuestra espiral de Ulam, primero creamos una matriz de nxn, y después con la paquetería creamos otra matriz de las mismas dimensiones con objetos RGB, cada elemento será un pixel negro.  Después iteramos sobre cada columna y cada fila, es decir, sobre cada número y con nuestra primera función checamos si es primo, si lo es, sustituimos nuestro pixel negro, por uno rojo. Y así para todos los elementos de nuestra matriz. Veamos:</p>
+<pre><code class="julia hljs">Ulam(<span class=hljs-number >1001</span>)</code></pre>
+<p><img src="/Problemas/assets/primos1001.png" alt=espabu  /></p>
+<p>Perfecto, se ve muy bien. Ahí tenemos nuestra espiral de Ulam.</p>
+<p>Cuando llegué hasta ahí tenía ganas de hacer algo más con todo esto, muy bonito y todo, pero tenía sed de algo más, entonces se me ocurrió algo sencillo. Mi número favorito es el 7, sí, entiendo que es un número favorito <em>cliché</em>, pero me gusta, es el día de mi cumpleaños, <em>en el séptimo día descansó</em>, hay 7 colores en el espectro visible, hay 7 notas musicales. Entre muchas cosas más, simplemente el 7 es el mejor número y no pienso discutirlo. </p>
+<p>Entonces lo que hice fue lo siguiente:</p>
+<pre><code class="julia hljs"><span class=hljs-keyword >function</span> tiene_siete(numero)
+    cadena_numero = string(numero)
+    <span class=hljs-keyword >return</span> <span class=hljs-string >&#x27;7&#x27;</span> <span class=hljs-keyword >in</span> cadena_numero
+<span class=hljs-keyword >end</span></code></pre>
+<pre><code class="plaintext hljs">tiene_siete (generic function with 1 method)</code></pre>
+<p>Esta es una función simple que lo que hace es checar si un número cualquiera, contiene al 7 entre sus dígitos. Entonces, modifiquemos nuestra función <em>Ulam&#40;&#41;</em> añadiendo esa función. </p>
+<pre><code class="julia hljs"><span class=hljs-keyword >function</span> Ulam_n(n)
+    M = spiral_matrix(n)
+    primos = fill(RGB(<span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>), n, n)
+
+    <span class=hljs-keyword >for</span> p <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n, q <span class=hljs-keyword >in</span> <span class=hljs-number >1</span>:n
+        <span class=hljs-keyword >if</span> es_primo(M[p, q]) &amp;&amp; tiene_siete(M[p, q])
+            primos[p,q] = RGB(<span class=hljs-number >1.0</span>, <span class=hljs-number >0.0</span>, <span class=hljs-number >0.0</span>)
+        <span class=hljs-keyword >elseif</span> es_primo(M[p, q]) 
+            primos[p,q] = RGB(<span class=hljs-number >1.0</span>, <span class=hljs-number >1.0</span>, <span class=hljs-number >1.0</span>)
+
+        <span class=hljs-keyword >end</span>
+    <span class=hljs-keyword >end</span>
+    primos
+<span class=hljs-keyword >end</span></code></pre>
+<pre><code class="plaintext hljs">Ulam_n (generic function with 1 method)</code></pre>
+<p>Es la misma función, únicamente agregamos la condición de que si es primo y además tiene el 7, se pinte de rojo, si solamente es un número primo sin tener el 7, es decir, un número primo aburrido, que se pinte de blanco. Volvamos a hacer una imagen de eso. </p>
+<pre><code class="julia hljs">Ulam_n(<span class=hljs-number >1001</span>)</code></pre>
+<p><img src="/Problemas/assets/primoss1001.png" alt=espachi  /></p>
+<p>Bueno, esto sorprendente para mí la primera vez que lo vi, la verdad es que no esperaba para nada esto, lo que yo esperaba era una distribución random de puntos rojos y puntos blancos, pero no, sí, estás viendo bien, se forman especies de márgenes, de cuadrados. </p>
+<p>Resulta que a día de hoy aún no puedo explicar muy bien lo que está pasando, por qué estoy viendo lo que estoy viendo, algún día cuando le pregunté a algún matemático, pondré la respuesta aquí, tengo una idea vaga, pero nada que me atreva a escribir con seguridad. </p>
+<p>Una vez, una amiga mía me preguntó que cuál era mi fondo de pantalla, a punto de enseñarle me dijo que me detuviera, que ella iba a adivinar, empezó diciendo una lista de las cosas que me gustan tales que creía que eso podría ser mi fondo de pantalla, fue un fallo total. Mi fondo de pantalla era un fondo random, algo que literalmente no hubiera recordado cuándo puse, ni por qué, ni dónde lo encontré, algo similar a ese fondo de pantalla del campo verde y el cielo azul que estuvo como predeterminado mucho tiempo en las computadoras.</p>
+<p>En el momento en que obtuve mi imagen, de los números primos y mi número favorito, no dudé en ponerla de fondo de pantalla. </p>
+<p>Tiempo después, al volver a encontrar a mi amiga, me preguntó, casi en tono de burla picaresca, que cuál era mi fondo de pantalla ahora. Y bueno, no pude explicar todo lo que está en esta entrada de blog. </p>
+<div class=page-foot >
+    <a</a> Marco Herrera Solar. Last modified: January 25, 2024.
+    Sitio hecho con <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> y <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div>
+        </div> 
+    </div> 
+    
+    
+        <script src="/Problemas/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>

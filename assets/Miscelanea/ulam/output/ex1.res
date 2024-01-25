@@ -1,0 +1,1 @@
+es_primo (generic function with 1 method)
