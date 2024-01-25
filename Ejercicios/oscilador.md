@@ -328,7 +328,7 @@ donde justamente salen a la luz los tres casos anteriores que teníamos:
 
 Aquí me ocuparé únicamente del caso $\beta < \Omega$, ya que, a mi criterio, considero el más interesante y los demás serían análogos. 
 
-Para este caso, se puede llegar analíticamente a que: $x = \exp{-\beta t} = (A \cos{\Omega_{D}t} + B \sin{\Omega_{D}t})$, donde $\Omega_D = (\Omega^2 - \beta^2)^{\frac{1}{2}}$.
+Para este caso, se puede llegar analíticamente a que: $x = e^{-\beta t} = (A \cos{\Omega_{D}t} + B \sin{\Omega_{D}t})$, donde $\Omega_D = (\Omega^2 - \beta^2)^{\frac{1}{2}}$.
 
 Lo interesante de este resultado, como vamos a observar, es que la solución sigue exhibiendo oscilaciones, pues vemos senos y vemos cosenos, pero lo que también vemos es una exponencial negativa, y bueno, una exponencial negativa no perdona. Teóricamente el resultado nos dice que habrá oscilaciones infinitas aún, pero que decaerán exponencialmente. Entonces veamos:
 
@@ -365,3 +365,39 @@ Graficamos nuestros resultados análogamente a los casos anteriores y obtenemos:
 Como se esperaba, un movimiento oscilatorio que se ve opacado por el decaimiento exponencial que lo acompaña. 
 
 
+Ahora, veamos como se haría el último caso, de manera muy similar, ahora definamos una fuerza externa que dependa del tiempo:
+
+
+```julia:./ex25
+F(t) = 2*cos(t) 
+```
+\show{./ex25}
+
+Entonces, actualicemos nuestros parámetros: 
+
+```julia:./ex26
+p = (b, m, k, F) 
+```
+\show{./ex26}
+
+Definimos un nuevo problema con esos parámetros:
+
+```julia:./ex27
+prob_am_forzado = SecondOrderODEProblem(oscilador, du_inicial, u_inicial, tspan, p)
+```
+\show{./ex27}
+
+Y lo resolvemos de la misma forma usando el algoritmo por defecto, que no es necesario especificar:
+
+
+```julia:./ex28
+sol_am_forzado = solve(prob_am_forzado, Tsit5())
+sol_am_forzado[1:10]
+```
+\show{./ex28}
+
+Finalmente, graficamos y obtenemos:
+
+![fz](/assets/forzado.png)
+
+Y como podemos ver, aunque sige habiendo amortiguamiento, la fuerza externa sobresale más. Además, si hemos sido atentos, podemos darnos cuenta que la frecuencia natural del oscilador es la misma que la de la fuerza aplicada, ambos son 1.0. Por lo tanto, como estamos viendo en la gráfica, hay resonancia. 
