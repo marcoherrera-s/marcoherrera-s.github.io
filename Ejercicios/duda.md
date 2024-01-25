@@ -12,19 +12,19 @@ Pero aquí no nos estamos manchando las manos, y además tenemos nuestras podero
 Empezamos importando las siguientes paqueterías de Julia:
 
 
-```julia:./ex0
+```julia:./ex00
 using DifferentialEquations, Plots
 ```
-\show{./ex0}
+\show{./ex00}
 
 Definimos nuestros parámetros, la gravedad de nuestro planeta, una longitud de 1.0, y la frecuencia definida como el problema nos dice. Además el span de tiempo para el cual queremos resolver la ecuación, en forma de tupla. 
 
-```julia:./ex88
+```julia:./ex1
 params = (9.81, 1.0, sqrt(9.81/1.0))
 tspan = (0.0, 10.0)
 ```
 
-\show{./ex88}
+\show{./ex1}
 
 Recordamos los dos monstruos que acabamos de obtener:
 
@@ -37,7 +37,7 @@ $\frac{d^{2}}{d t^{2}} θ = \frac{3 \left(g \sin{\left(θ{\left(t \right)} \righ
 Definimos una función de la siguiente forma en donde únicamente transcribiremos esas ecuaciones a código, hay que ser cuidadosos en respetar la estructura. 
 
 
-```julia:./ex81
+```julia:./ex02
 function problema_choncho(ddu, du, u, p, t)
     g, l, Ω = p
 
@@ -47,21 +47,21 @@ function problema_choncho(ddu, du, u, p, t)
 end
 ```
 
-\show{./ex81}
+\show{./ex02}
 
 Definimos nuestras condiciones iniciales, tal cual se nos pide.
 
-```julia:./ex88
+```julia:./ex03
 u0 = [0.0, 0.0]
 du0 = [0.0, 0.0]
 ```
 
 Y ahora definimos el problema de la siguiente forma:
 
-```julia:./ex89
+```julia:./ex04
 prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)
 ```
-\show{./ex89}
+\show{./ex04}
 
 Eso significa que todo va bien, que tenemos bien definido nuestro problema con ese span de tiempo, y esas condiciones iniciales.
 
@@ -70,21 +70,20 @@ Ahora, ya se ha discutido [aquí](https://marcoherrera-s.github.io/Problemas/Eje
 Supongamos que ingenuamente, simplemente le damos a resolver e imprimimos los primeros 10 resultados, porque pueden ser demasiados y no queremos llenar de números este sitio.
 
 
-```julia:./ex59
+```julia
 sol_ingenuo = solve(prob)
 sol_ingenuo[1:10]
-
 ```
-\show{./ex59}
+<!-- \show{./ex59} -->
 
 
 Muy bien, ahora grafiquemos lo que obtuvimos haciendo:
 
 
-```julia:./ex58
+```julia
 ingenuo = plot(sol_ingenuo, dpi=300)
 ```
-\show{./ex58}
+<!-- \show{./ex58} -->
 
 
 ![ingenuo](/assets/ingenuo.png)
@@ -92,7 +91,7 @@ ingenuo = plot(sol_ingenuo, dpi=300)
 
 Nuestra gráfica no tiene ningun sentido. 
 Entonces, lo que está pasando es que nos estamos enfrentando a un sistema de ecuaciones diferenciales del tipo _stiff_ o _rígidas_ en español. 
-Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más [aquíhttps://en.wikipedia.org/wiki/Stiff_equation], [aquí](https://scicomp.stackexchange.com/questions/891/the-definition-of-stiff-ode-system) y [aquí](https://docs.sciml.ai/SciMLTutorialsOutput/html/introduction/02-choosing_algs.html). Entre muchos más lados. 
+Este tipo de ecuaciones diferenciales son todo un mundo, sobre el cual pueden saber más [aquí](https://en.wikipedia.org/wiki/Stiff_equation), [aquí](https://scicomp.stackexchange.com/questions/891/the-definition-of-stiff-ode-system) y [aquí](https://docs.sciml.ai/SciMLTutorialsOutput/html/introduction/02-choosing_algs.html). Entre muchos más lados. 
 
 Pero en esencia lo que está pasando es que los algoritmos tradicionales no funcionan correctamente.
 
@@ -103,19 +102,23 @@ Aquí usaremos el algoritmo ESDIRK547L2SA2(), que es un método Runge-Kutta impl
 Entonces hagamos: 
 
 
-```julia:./ex03
-sol = solve(prob, ESDIRK547L2SA2(), maxiters = 1e7)
-sol[1:10]
+```julia:./ex05
+prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)
+```
+\show{./ex05}
+
+```julia:./ex06
+sol = solve(prob, ESDIRK547L2SA2(), maxiters = 1e9)
+sol[1:5]
 
 ```
-\show{./ex03}
+\show{./ex06}
 
 Y ahora grafiquemos:
 
-```julia:./ex55
+```julia
 plotsol = plot(sol, dpi=300)
 ```
-\show{./ex55}
 
 
 ![solu](/assets/solu.png)
