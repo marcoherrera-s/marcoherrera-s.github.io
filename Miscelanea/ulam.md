@@ -175,6 +175,8 @@ Ulam_n(1001)
 
 Bueno, esto sorprendente para mí la primera vez que lo vi, la verdad es que no esperaba para nada esto, lo que yo esperaba era una distribución random de puntos rojos y puntos blancos, pero no, sí, estás viendo bien, se forman especies de márgenes, de cuadrados. 
 
+La parte triste de todo esto es que, como era de esperarse, esos patrones no son una particularidad del 7, sino de todos los números, del 1-9 con los que probé. 
+
 Resulta que a día de hoy aún no puedo explicar muy bien lo que está pasando, por qué estoy viendo lo que estoy viendo, algún día cuando le pregunté a algún matemático, pondré la respuesta aquí, tengo una idea vaga, pero nada que me atreva a escribir con seguridad. 
 
 Una vez, una amiga mía me preguntó que cuál era mi fondo de pantalla, a punto de enseñarle me dijo que me detuviera, que ella iba a adivinar, empezó diciendo una lista de las cosas que me gustan tales que creía que eso podría ser mi fondo de pantalla, fue un fallo total. Mi fondo de pantalla era un fondo random, algo que literalmente no hubiera recordado cuándo puse, ni por qué, ni dónde lo encontré, algo similar a ese fondo de pantalla del campo verde y el cielo azul que estuvo como predeterminado mucho tiempo en las computadoras.
