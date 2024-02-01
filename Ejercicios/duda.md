@@ -146,6 +146,7 @@ prob_CR_aproxx = SecondOrderODEProblem(cuerpo_rigido_aproxx, du0, u0, tspan, par
 
 ```julia:./ex99
 sol_CR_aproxx = solve(prob_CR_aproxx, KenCarp47(), maxiters=1e7)
+sol_CR_aproxx[1:5]
 
 ```
 \show{./ex99}
