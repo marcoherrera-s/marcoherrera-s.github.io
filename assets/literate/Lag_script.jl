@@ -1,5 +1,9 @@
 # This file was generated, do not modify it.
 
+using Pkg # hideall
+Pkg.activate("_literate/Project.toml")
+Pkg.instantiate()
+
 using SymPy
 
 @syms m g y_cm x_cm l t  # Así definimos variables
