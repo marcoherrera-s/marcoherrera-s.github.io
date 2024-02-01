@@ -7,7 +7,7 @@
 
 Muy bien, ya tenemos nuestras ecuaciones de movimiento, ahora nos toca resolverlas. El problema nos pide asumir ángulos pequeños, esto porque así nos libraríamos de varios términos feos, porque a veces trabajar analíticamente con las ecuaciones de movimiento que obtenemos no sólo es difícil, puede resultar imposible. 
 
-Pero aquí no nos estamos manchando las manos, y además tenemos nuestras poderosas computadoras, entonces resolvámosla como dios manda. 
+Pero aquí no nos estamos manchando las manos, y además tenemos nuestras poderosas computadoras, entonces resolvamos como dios manda. 
 
 Empezamos importando las siguientes paqueterías de Julia:
 
@@ -32,18 +32,18 @@ $\frac{d^{2}}{d t^{2}} x = \frac{g \cos{\left(t Ω \right)}}{3} + \frac{l \sin{\
 
 y
 
-$\frac{d^{2}}{d t^{2}} θ = \frac{3 \left(g \sin{\left(θ{\left(t \right)} \right)} - \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}\right)}{2 l}$
+$\frac{d^{2}}{d t^{2}} θ = - \frac{3 g \sin{\left(θ{\left(t \right)} \right)} + 3 \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2 l}$
 
-Definimos una función de la siguiente forma en donde únicamente transcribiremos esas ecuaciones a código, hay que ser cuidadosos en respetar la estructura. 
+Definimos una función de la siguiente forma en donde únicamente transcribiremos esas ecuaciones a código, hay que ser cuidadosos en respetar la estructura. Tomamos de una vez $l = 1$ para que se vea más limpio el código.
 
 
 ```julia:./ex02
-function problema_choncho(ddu, du, u, p, t)
+function cuerpo_rigido(ddu, du, u, p, t)
     g, l, Ω = p
 
 
-    ddu[1] = g * cos(t * Ω) / 3 + l * sin(u[2]) * du[2]^2 / 2 - l * cos(u[2]) * ddu[2] / 2
-    ddu[2] = 3 * (g * sin(u[2]) - cos(u[2]) * ddu[1]) / (2 * l)
+    ddu[1] = (g * cos(t * Ω) / 3) + (sin(u[2]) * du[2]^2 / 2) - (cos(u[2]) * ddu[2] / 2)
+    ddu[2] = -3/2 * (g * sin(u[2]) + cos(u[2]) * ddu[1]) 
 end
 ```
 
@@ -59,7 +59,7 @@ du0 = [0.0, 0.0]
 Y ahora definimos el problema de la siguiente forma:
 
 ```julia:./ex04
-prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)
+prob_CR = SecondOrderODEProblem(cuerpo_rigido, du0, u0, tspan, params)
 ```
 \show{./ex04}
 
@@ -67,12 +67,11 @@ Eso significa que todo va bien, que tenemos bien definido nuestro problema con e
 
 Ahora, ya se ha discutido [aquí](https://marcoherrera-s.github.io/Problemas/Ejercicios/oscilador/), que resolver ecuaciones diferenciales numéricamente, por lo regular no es tan sencillo como oprimir el botón resolver y listo, hay que tener una idea clara del problema que estamos resolviendo, qué nos interesa del problema, y sobre todo, que tipo de algoritmos existen. 
 
-Supongamos que ingenuamente, simplemente le damos a resolver e imprimimos los primeros 10 resultados, porque pueden ser demasiados y no queremos llenar de números este sitio.
+Supongamos que ingenuamente, simplemente le damos a resolver:
 
 
 ```julia
-sol_ingenuo = solve(prob)
-sol_ingenuo[1:10]
+sol_CR_ingenuo = solve(prob_CR)
 ```
 <!-- \show{./ex59} -->
 
@@ -81,7 +80,7 @@ Muy bien, ahora grafiquemos lo que obtuvimos haciendo:
 
 
 ```julia
-ingenuo = plot(sol_ingenuo, dpi=300)
+ingenuo = plot(sol_ingenuo)
 ```
 <!-- \show{./ex58} -->
 
@@ -97,36 +96,78 @@ Pero en esencia lo que está pasando es que los algoritmos tradicionales no func
 
 Lo que podemos hacer es ir al siguiente [enlace](https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#OrdinaryDiffEq.jl-for-Stiff-Equations), y buscar algún algoritmo especializado para este tipo de ecuaciones.
 
-Aquí usaremos el algoritmo ESDIRK547L2SA2(), que es un método Runge-Kutta implícito, por sus siglas ESDIRK _(Singly Diagonally Implicit Runge Kutta)_, de séptimo nivel, quinto orden y estable para resolver ecuaciones diferenciales ordinarias, además, aumentemos el número máximo de iteraciones, que es más sencillamente, el número máximo de pasos que el algoritmo tomará antes de parar. 
+Aquí usaremos el algoritmo KenCarp47(), este es un método ESDIRK _(Explicit Singly Diagonally Implicit Runge Kutta)_, de siete etapas de cuarto orden. Este método es parte de una [familia de algoritmos](https://arxiv.org/abs/1803.01613) que están diseñados para manejar ecuaciones diferenciales rígidas. Aumentaremos el número máximo de iteraciones sólo por si las moscas. 
 
 Entonces hagamos: 
 
 
 ```julia:./ex05
-prob = SecondOrderODEProblem(problema_choncho, du0, u0, tspan, params)
+prob_CR = SecondOrderODEProblem(cuerpo_rigido, du0, u0, tspan, params)
 ```
 \show{./ex05}
 
 ```julia:./ex06
-sol = solve(prob, ESDIRK547L2SA2(), maxiters = 1e9)
-sol[1:5]
+sol_CR= solve(prob_CR, KenCarp47(), maxiters=1e7)
+sol_CR[1:5]
 
 ```
 \show{./ex06}
 
-Y ahora grafiquemos:
+
+Y además, para comparar, podemos hacer la comparación con lo que sería el sistema aproximado, es decir, haciendo: 
+
+$\sin{x} = x$
+
+y 
+
+$\cos{x} = 1$
+
+Por lo que nuestro sistema aproximado nos quedaría:
+
+
+```julia:./ex006
+function cuerpo_rigido_aprox(ddu, du, u, p, t)
+    g, l, Ω = p
+
+
+    ddu[1] = (g * cos(t * Ω) / 3) + (u[2] * du[2]^2 / 2) - (ddu[2] / 2)
+    ddu[2] = -3/2 * (g * u[2] + ddu[1]) 
+end
+
+```
+\show{./ex006}
+
+Y resolviendo con las mismas condiciones, tendríamos:
+
+```julia:./ex0006
+prob_CR_aprox = SecondOrderODEProblem(cuerpo_rigido_aprox, du0, u0, (0.0, 10.0), params)
+```
+\show{./ex0006}
+
+```julia:./ex00006
+sol_CR_aprox= solve(prob_CR_aprox, KenCarp47(), maxiters=1e7)
+sol_CR_aprox[1:5]
+
+```
+\show{./ex00006}
+
+Ahora, graficando en primer lugar la posición del punto, tanto la solución numérica como la solución aproximada tendríamos:
 
 ```julia
-plotsol = plot(sol, dpi=300)
+plot(sol_m, idxs = (0, 2), color=:black, label="Numérico", dpi=500)
+plot!(sol_m_aprox, idxs = (0, 2), linestyle=:dash, label="Aproximación", ylabel="Posición del punto", ylims=(-7,7), color=:red, title="Posición del punto en cuerpo rígido")
 ```
+Y obtenemos:
+
+![poscr](/assets/pospunto.png)
+
+De la misma forma podemos graficar los demás resultados. El índice 0 es el tiempo, el 1 la velocidad del punto, el 2 es la posición del punto como se hizo para graficar el resultado anterior, el índice 3 es la velocidad del ángulo, y el índice 4 es el valor del ángulo, entonces tendríamos:
 
 
-![solu](/assets/solu.png)
+![velpu](/assets/velpunto.png)
 
-Le hacemos unos cambios, para observar mejor:
+![velangu](/assets/velangulo.png)
 
+![valan](/assets/anguba.png)
 
-![solu2](/assets/solu2.png)
-
-
-Entonces, como vemos, ahora ya obtenemos una solución que se ve decente. Para interpretar estos resultados, podemos ver que...
+Y como podemos observar, obtenemos movimientos oscilatorios, y también, como era de esperarse, las solución numérica y la aproximada se parecen demasiado recién comienza el sistema. 
