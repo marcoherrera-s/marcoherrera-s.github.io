@@ -1,3 +1,3 @@
 # This file was generated, do not modify it. # hide
-sol = solve(prob, ESDIRK547L2SA2(), maxiters = 1e9)
-sol[1:5]
+sol_CR= solve(prob_CR, KenCarp47(), maxiters=1e7)
+sol_CR[1:5]

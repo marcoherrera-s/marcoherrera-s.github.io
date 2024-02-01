@@ -41,7 +41,7 @@ T = expand(T)
 
 @syms Ω
 
-U = (m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
+U = -(m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
 U = simplify(U)
 
 L = T - U

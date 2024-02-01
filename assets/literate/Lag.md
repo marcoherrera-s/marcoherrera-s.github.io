@@ -7,7 +7,7 @@ Pkg.instantiate()
 
 # Problema
 
-A veces, al resolver problemas de física, algunas de las cosas que más me han molestado es: una, sufrir por la _talacha_ y dos; no saber qué estoy haciendo.
+A veces, al resolver problemas de física, algunas de las cosas que más me han molestado es: una, sufrir por la _talacha_ y dos; no hay dos.
 
 A ver, como físicos, siempre nos vamos a enfrentar a la talacha, a veces es el pan de cada día. No hay manera de terminar con ella, pero sí de hacerla más soportable.
 
@@ -15,7 +15,7 @@ Entonces, lo que haremos hoy, será resolver uno de esos problemas que requerir�
 
 El problema es el siguiente:
 
-1. El punto A de una barra *AB* se puede mover sin fricción a lo largo de una línea horizontal (_eje x_). La barra es homogénea de masa _m_ y longitud _l_. Se mueve en un plano vertical donde puede rotar libremente alrededor de *A*. Sobre *A* se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\Omega t) $, donde  $\Omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\varphi$ y la velocidad angular $\dot{\varphi}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \varphi(0) = \dot{\varphi}(0) $.
+1. El punto A de una barra *AB* se puede mover sin fricción a lo largo de una línea horizontal (_eje x_). La barra es homogénea de masa _m_ y longitud _l_. Se mueve en un plano vertical donde puede rotar libremente alrededor de *A*. Sobre *A* se ejerce una fuerza periódica en el eje horizontal $F_x = \frac{1}{3} mg \cos(\Omega t) $, donde  $\Omega^2 = \frac{g}{l}$. Encontrar las ecuaciones de movimiento y resolverlas asumiendo que el ángulo $\theta$ y la velocidad angular $\dot{\theta}$ son pequeños. Usar las condiciones iniciales $x(0) = \dot{x}(0) = 0 $ y $ \theta(0) = \dot{\theta}(0) $.
 
 \fig{/_assets/problema.png}
 
@@ -76,7 +76,7 @@ y_cmd = diff(y_cm, t)
 
 $- \frac{l \sin{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2}$
 
-El siguiente paso es obtener la energía cinética, al tratar con un sólido rígido, sabemos que la energía cinética es de la siguiente forma: $T = T_{cm} + T_{rotacional}$. Y es aquí en donde empezaría la talacha si tuviéramos que arrastrar el lápiz. Pero hoy no. Comencemos con $T_{cm}$, esta está fácil, sabemos muy bien que $T_{cm} = \frac{1}{2} m ( \dot{x}^2 + \dot{y}^2 ) $, entonces:
+El siguiente paso es obtener la energía cinética, al tratar con un sólido rígido, sabemos que la energía cinética es de la siguiente forma: $T = T_{cm} + T_{rotacional}$. Y es aquí en donde empezaría la talacha si tuviéramos que arrastrar el lápiz. Pero hoy no. Comencemos con $T_{cm}$, esta está fácil, sabemos muy bien que $T_{cm} = \frac{1}{2} m ( \dot{x_{cm}}^2 + \dot{y_{cm}}^2 ) $, entonces:
 
 ````julia:ex9
 T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
@@ -94,9 +94,9 @@ T_cm = simplify(expand(T_cm))
 
 $\frac{m \left(l^{2} \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2} + 4 l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)} + 4 \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}\right)}{8}$
 
-Y damos gracias no haber hecho ese talachita.
+Y damos gracias no haber hecho esa talachita.
 
-Nuestro siguiente paso es obtener la energía cinética rotacional. Para esta sabemos que $T_{rot} = \frac{1}{2} \omega I_{cm} \omega$, aquí estamos suponiento que $I_{cm}$ es el tensor de inercia para ejes el el cuerpo respecto al centro de masa, este tensor, si es que la vida no nos odia demasiado aún, la mayoría de las veces es dado en problemas de este tipo. Continuando, $\omega$ es la velocidad angular, nuestro cuerpo rota respecto al ángulo $\theta$, por lo tanto, con la regla de la mano derecha tendríamos: $\omega = \dot{\theta} \hat{z}$.
+Nuestro siguiente paso es obtener la energía cinética rotacional. Para esta sabemos que $T_{rot} = \frac{1}{2} \omega I_{cm} \omega$, aquí estamos suponiento que $I_{cm}$ es el tensor de inercia para ejes en el cuerpo respecto al centro de masa, este tensor, si es que la vida no nos odia demasiado aún, la mayoría de las veces es dado en problemas de este tipo. Continuando, $\omega$ es la velocidad angular, nuestro cuerpo rota respecto al ángulo $\theta$, por lo tanto, con la regla de la mano derecha tendríamos: $\omega = \dot{\theta} \hat{z}$.
 
 ````julia:ex11
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
@@ -145,11 +145,11 @@ Para obtener la energía potencial, tenemos que sumar la que es debido a la grav
 Por lo tanto:
 
 ````julia:ex17
-U = (m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
+U = -(m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
 U = simplify(U)
 ````
 
-$\frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6}$
+$- \frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} + 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6}$
 
 Finalmente ya tenemos todo para obtener el Lagrangiano, entonces:
 
@@ -157,7 +157,7 @@ Finalmente ya tenemos todo para obtener el Lagrangiano, entonces:
 L = T - U
 ````
 
-$- \frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} - 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6} + \frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
+$\frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} + 2 x{\left(t \right)} \cos{\left(t Ω \right)}\right)}{6} + \frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} x{\left(t \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{m \left(\frac{d}{d t} x{\left(t \right)}\right)^{2}}{2}$
 
 Obtenemos las ecuaciones de Euler - Lagrange, tal que: $\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) - \frac{\partial L}{\partial q_i} = 0$
 
@@ -175,7 +175,7 @@ Para $\theta$:
 ELθ = diff(diff(L, thetadot), t) - diff(L, θ)
 ````
 
-$- \frac{g l m \sin{\left(θ{\left(t \right)} \right)}}{2} + \frac{l^{2} m \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{3} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2}$
+$\frac{g l m \sin{\left(θ{\left(t \right)} \right)}}{2} + \frac{l^{2} m \frac{d^{2}}{d t^{2}} θ{\left(t \right)}}{3} + \frac{l m \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2}$
 
 Ahora despejamos para $\frac{d^{2}}{d t^{2}} x$ de la siguiente forma:
 
@@ -194,5 +194,5 @@ sol_2 = solve(ELθ, thetaddot)
 sol_2[1]
 ````
 
-$\frac{3 \left(g \sin{\left(θ{\left(t \right)} \right)} - \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}\right)}{2 l}$
+$- \frac{3 g \sin{\left(θ{\left(t \right)} \right)} + 3 \cos{\left(θ{\left(t \right)} \right)} \frac{d^{2}}{d t^{2}} x{\left(t \right)}}{2 l}$
 
