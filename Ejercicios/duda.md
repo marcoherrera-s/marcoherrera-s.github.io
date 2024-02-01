@@ -144,12 +144,12 @@ prob_CR_aprox = SecondOrderODEProblem(cuerpo_rigido_aprox, du0, u0, (0.0, 10.0),
 ```
 \show{./ex0006}
 
-```julia:./ex00006
+```julia:./ex99
 sol_CR_aprox= solve(prob_CR_aprox, KenCarp47(), maxiters=1e6)
 sol_CR_aprox[1:5]
 
 ```
-\show{./ex00006}
+\show{./ex99}
 
 Ahora, graficando en primer lugar la posición del punto, tanto la solución numérica como la solución aproximada tendríamos:
 
