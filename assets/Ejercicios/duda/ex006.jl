@@ -1,5 +1,5 @@
 # This file was generated, do not modify it. # hide
-function cuerpo_rigido_aprox(ddu, du, u, p, t)
+function cuerpo_rigido_aproxx(ddu, du, u, p, t)
     g, l, Ω = p
 
 

@@ -1,1 +1,1 @@
-cuerpo_rigido_aprox (generic function with 1 method)
+cuerpo_rigido_aproxx (generic function with 1 method)
