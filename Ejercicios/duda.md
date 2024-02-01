@@ -126,7 +126,7 @@ Por lo que nuestro sistema aproximado nos quedaría:
 
 
 ```julia:./ex006
-function cuerpo_rigido_aprox(ddu, du, u, p, t)
+function cuerpo_rigido_aproxx(ddu, du, u, p, t)
     g, l, Ω = p
 
 
@@ -140,12 +140,12 @@ end
 Y resolviendo con las mismas condiciones, tendríamos:
 
 ```julia:./ex0006
-prob_CR_aprox = SecondOrderODEProblem(cuerpo_rigido_aprox, du0, u0, (0.0, 10.0), params)
+prob_CR_aproxx = SecondOrderODEProblem(cuerpo_rigido_aproxx, du0, u0, tspan, params)
 ```
 \show{./ex0006}
 
 ```julia:./ex99
-sol_CR_aprox= solve(prob_CR_aprox, KenCarp47(), maxiters=1e6)
+sol_CR_aproxx = solve(prob_CR_aproxx, KenCarp47(), maxiters=1e7)
 
 ```
 \show{./ex99}
