@@ -150,7 +150,7 @@ u: 5-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Flo
 <pre><code class="plaintext hljs">ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}} and tType Float64. In-place: true
 timespan: (0.0, 10.0)
 u0: ([0.0, 0.0], [0.0, 0.0])</code></pre>
-<pre><code class="julia hljs">sol_CR_aprox= solve(prob_CR_aprox, KenCarp47(), maxiters=<span class=hljs-number >1e7</span>)
+<pre><code class="julia hljs">sol_CR_aprox= solve(prob_CR_aprox, KenCarp47(), maxiters=<span class=hljs-number >1e6</span>)
 sol_CR_aprox[<span class=hljs-number >1</span>:<span class=hljs-number >5</span>]</code></pre>
 <pre><code class="plaintext hljs">BoundsError: attempt to access 1-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}} at index [1:5]
 </code></pre>
