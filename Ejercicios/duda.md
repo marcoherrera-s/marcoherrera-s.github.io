@@ -80,7 +80,7 @@ Muy bien, ahora grafiquemos lo que obtuvimos haciendo:
 
 
 ```julia
-ingenuo = plot(sol_ingenuo)
+ingenuo = plot(sol_CR_ingenuo)
 ```
 <!-- \show{./ex58} -->
 
