@@ -1,2 +1,2 @@
 # This file was generated, do not modify it. # hide
-L = T - U
+ELX = diff(diff(L, xdot), t) - diff(L, x)

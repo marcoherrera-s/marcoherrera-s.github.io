@@ -1,10 +1,4 @@
 <!--This file was generated, do not modify it.-->
-````julia:ex1
-using Pkg # hideall
-Pkg.activate("_literate/Project.toml")
-Pkg.instantiate()
-````
-
 # Problema
 
 A veces, al resolver problemas de física, algunas de las cosas que más me han molestado es: una, sufrir por la _talacha_ y dos; no hay dos.
@@ -23,7 +17,7 @@ Lo primero que haremos será importar la primera paquetería que vamos a usar.
 
 Para la talacha usaremos SymPy, esta es una paquetería de Python que estamos llamando desde Julia, la usaremos para los cálculos simbólicos.
 
-````julia:ex2
+````julia:ex1
 using SymPy
 ````
 
@@ -33,7 +27,7 @@ Como en nuestro problema estamos lidiando con un sólido rígido, entonces nos i
 
 $m$ es la masa, $g$ la gravedad, $l$ la longitud de la barra, $t$ el tiempo.
 
-````julia:ex3
+````julia:ex2
 @syms m g y_cm x_cm l t  # Así definimos variables
 θ = SymFunction("θ")(t)  # Así definimos funciones
 x = SymFunction("x")(t)
@@ -41,7 +35,7 @@ x = SymFunction("x")(t)
 
 Ahora necesitamos definir nuestras derivadas para cada una de nuestras funciones, esto para que nos sean más fáciles algunas operaciones futuras.
 
-````julia:ex4
+````julia:ex3
 xdot = diff(x, t)
 xddot = diff(xdot, t)
 thetadot = diff(θ, t)
@@ -50,13 +44,13 @@ thetaddot = diff(thetadot, t)
 
 Obtenemos las coordenadas del centro de masa de la barra:
 
-````julia:ex5
+````julia:ex4
 x_cm = x + l//2 * sin(θ)
 ````
 
 $\frac{l \sin{\left(θ{\left(t \right)} \right)}}{2} + x{\left(t \right)}$
 
-````julia:ex6
+````julia:ex5
 y_cm = l//2*cos(θ)
 ````
 
@@ -64,13 +58,13 @@ $\frac{l \cos{\left(θ{\left(t \right)} \right)}}{2}$
 
 Derivamos nuestras variables haciendo:
 
-````julia:ex7
+````julia:ex6
 x_cmd = diff(x_cm, t)
 ````
 
 $\frac{l \cos{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \right)}}{2} + \frac{d}{d t} x{\left(t \right)}$
 
-````julia:ex8
+````julia:ex7
 y_cmd = diff(y_cm, t)
 ````
 
@@ -78,7 +72,7 @@ $- \frac{l \sin{\left(θ{\left(t \right)} \right)} \frac{d}{d t} θ{\left(t \rig
 
 El siguiente paso es obtener la energía cinética, al tratar con un sólido rígido, sabemos que la energía cinética es de la siguiente forma: $T = T_{cm} + T_{rotacional}$. Y es aquí en donde empezaría la talacha si tuviéramos que arrastrar el lápiz. Pero hoy no. Comencemos con $T_{cm}$, esta está fácil, sabemos muy bien que $T_{cm} = \frac{1}{2} m ( \dot{x_{cm}}^2 + \dot{y_{cm}}^2 ) $, entonces:
 
-````julia:ex9
+````julia:ex8
 T_cm = 1//2 * m * (x_cmd^2 + y_cmd^2)
 ````
 
@@ -88,7 +82,7 @@ Como podemos ver, aún no está tan bien, personas inteligentes como nosotros hu
 
 Eso no es problema, podemos hacer simplemente:
 
-````julia:ex10
+````julia:ex9
 T_cm = simplify(expand(T_cm))
 ````
 
@@ -98,19 +92,19 @@ Y damos gracias no haber hecho esa talachita.
 
 Nuestro siguiente paso es obtener la energía cinética rotacional. Para esta sabemos que $T_{rot} = \frac{1}{2} \omega I_{cm} \omega$, aquí estamos suponiento que $I_{cm}$ es el tensor de inercia para ejes en el cuerpo respecto al centro de masa, este tensor, si es que la vida no nos odia demasiado aún, la mayoría de las veces es dado en problemas de este tipo. Continuando, $\omega$ es la velocidad angular, nuestro cuerpo rota respecto al ángulo $\theta$, por lo tanto, con la regla de la mano derecha tendríamos: $\omega = \dot{\theta} \hat{z}$.
 
-````julia:ex11
+````julia:ex10
 I = sympy.diag(0, m*l^2 // 12, m*l^2 // 12)
 ````
 
 $\begin{bmatrix} 0 & 0 & 0 \\ 0 & \frac{l^2 m}{12} & 0 \\ 0 & 0 & \frac{l^2 m}{12} \end{bmatrix}$
 
-````julia:ex12
+````julia:ex11
 ω = Matrix([0 0 diff(θ, t)])
 ````
 
 $\omega = \begin{bmatrix} 0 & 0 & \frac{d\theta}{dt} \end{bmatrix}$
 
-````julia:ex13
+````julia:ex12
 T_rot = (1//2)*ω*I*ω.T # .T para trasponer la matriz y poder hacer la operación
 
 T_rot = T_rot[1]
@@ -120,7 +114,7 @@ $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24}$
 
 Finalmente, sumamos nuestras dos energías cinéticas y obtenemos la energía cinética total.
 
-````julia:ex14
+````julia:ex13
 T = T_cm + T_rot
 ````
 
@@ -128,7 +122,7 @@ $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{24} + \frac{m
 
 La expandimos, para que no se vea tan grosera.
 
-````julia:ex15
+````julia:ex14
 T = expand(T)
 ````
 
@@ -136,7 +130,7 @@ $\frac{l^{2} m \left(\frac{d}{d t} θ{\left(t \right)}\right)^{2}}{6} + \frac{l 
 
 Ahora definimos una nueva variable, $\Omega$, que es la frecuencia de la fuerza que se aplica en el eje x.
 
-````julia:ex16
+````julia:ex15
 @syms Ω
 ````
 
@@ -144,7 +138,7 @@ Para obtener la energía potencial, tenemos que sumar la que es debido a la grav
 
 Por lo tanto:
 
-````julia:ex17
+````julia:ex16
 U = -(m*g*l//2)*cos(θ) - integrate(1//3 * m*g*cos(Ω*t), x)
 U = simplify(U)
 ````
@@ -153,7 +147,7 @@ $- \frac{g m \left(3 l \cos{\left(θ{\left(t \right)} \right)} + 2 x{\left(t \ri
 
 Finalmente ya tenemos todo para obtener el Lagrangiano, entonces:
 
-````julia:ex18
+````julia:ex17
 L = T - U
 ````
 
@@ -163,7 +157,7 @@ Obtenemos las ecuaciones de Euler - Lagrange, tal que: $\frac{d}{dt} \left( \fra
 
 Para $x$:
 
-````julia:ex19
+````julia:ex18
 ELX = diff(diff(L, xdot), t) - diff(L, x)
 ````
 
@@ -171,7 +165,7 @@ $- \frac{g m \cos{\left(t Ω \right)}}{3} - \frac{l m \sin{\left(θ{\left(t \rig
 
 Para $\theta$:
 
-````julia:ex20
+````julia:ex19
 ELθ = diff(diff(L, thetadot), t) - diff(L, θ)
 ````
 
@@ -179,7 +173,7 @@ $\frac{g l m \sin{\left(θ{\left(t \right)} \right)}}{2} + \frac{l^{2} m \frac{d
 
 Ahora despejamos para $\frac{d^{2}}{d t^{2}} x$ de la siguiente forma:
 
-````julia:ex21
+````julia:ex20
 sol_1 = solve(ELX, xddot)
 
 sol_1[1]
@@ -189,7 +183,7 @@ $\frac{g \cos{\left(t Ω \right)}}{3} + \frac{l \sin{\left(θ{\left(t \right)} \
 
 Y para $\frac{d^{2}}{d t^{2}} θ$ :
 
-````julia:ex22
+````julia:ex21
 sol_2 = solve(ELθ, thetaddot)
 sol_2[1]
 ````
