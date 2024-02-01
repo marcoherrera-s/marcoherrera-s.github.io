@@ -1,6 +1,3 @@
-using Pkg # hideall
-Pkg.activate("_literate/Project.toml")
-Pkg.instantiate()
 
 # # Problema
 
