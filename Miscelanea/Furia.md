@@ -1,7 +1,7 @@
 
 # Furia
 ## Metadata
-* Author: [[Mendoza, Clyo]]
+* Author: **Mendoza, Clyo**
 
 ## Highlights
 Todos me habían advertido que no bebiera del agua de ese pueblo porque estaba maldita y quien bebía de ella ya nunca podía salir de ahí.  ^ref-31231

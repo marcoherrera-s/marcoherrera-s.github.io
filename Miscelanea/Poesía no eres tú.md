@@ -1,0 +1,226 @@
+
+# Poesía no eres tú
+## Metadata
+* Author: **Castellanos, Rosario**
+
+## Highlights
+LA ANUNCIACIÓN  ^ref-5250
+
+---
+Para dejar caer, rendida, mi cabeza ^ref-59192
+busco una piedra lisa por almohada. No pido más que un limbo de soledad y hastío
+que albergue mi ternura derrotada. 
+
+---
+Como la cera blanda, consumida ^ref-13950
+por una llama pálida, mis días
+se consumen ardiendo en tu recuerdo. Apenas iluminas el túnel de silencio y el espanto impreciso hacia el que paso a paso voy entrando. 
+
+---
+Tal vez no estés aquí dominando mis ojos, ^ref-7679
+dirigiendo mi sangre, trabajando en mis células,
+galvanizando un pulso de tinieblas. Tal vez no sea mi pecho la cripta que te guarda. Pero yo no sería si no fuera este castillo en ruinas que ronda tu fantasma. 
+
+---
+Detrás de mí tan sólo las memorias borradas. Mis muertos no trascienden de sus tumbas ^ref-50027
+y por primera vez estoy mirando el mundo. Soy hija de mí misma. De mi sueño nací. Mi sueño me sostiene. No busquéis en mis filtros más que mi propia sangre
+ni remontéis los ríos para alcanzar mi origen. En mi genealogía no hay más que una palabra:
+soledad. III 
+
+---
+Antes acabarán mis pasos que el espacio. Antes caerá la noche de que mi afán concluya. Me cercarán las fieras en ronda enloquecida, ^ref-35459
+cercenarán mis voces cuchillos afilados,
+se romperán los grillos que sujetan el miedo. No prevalecerá sobre mí el enemigo
+si en la tribulación digo Tu nombre. 
+
+---
+No diré con los otros que también me olvidaste. No ingresaré en el coro de los que te desprecian ^ref-6182
+ni seguiré al ejército blasfemo. Si no existes yo te haré a semejanza de mi anhelo,
+a imagen de mis ansias. Llama petrificada, habitarás en mí como en Tu reino. 
+
+---
+Ya no tengo más fuego que el de esta ciega lámpara ^ref-41390
+que camina tanteando, pegada a la pared
+y tiembla a la amenaza del aire más ligero. Si muriera esta noche sería sólo como abrir la mano, como cuando los niños la abren ante su madre para mostrarla limpia, limpia de tan vacía. Nada me llevo. Tuve sólo un hueco
+que no se colmó nunca. Tuve arena
+resbalando en mis dedos. Tuve un gesto
+crispado y tenso. Todo lo he perdido. Todo se queda aquí: la tierra, las pezuñas
+que la huellan, los belfos que la triscan,
+los pájaros llamándose de una enramada a otra,
+ese cielo quebrado que es el mar, las gaviotas
+con sus alas en viaje, las cartas que volaban también y que murieron
+estranguladas con listones viejos. Todo se queda aquí: he venido a saber
+que no era mío nada: ni el trigo, ni la estrella,
+ni su voz, ni su cuerpo, ni mi cuerpo. Que mi cuerpo era un árbol y el dueño de los árboles
+no es su sombra, es el viento. 
+
+---
+Yo no voy a morir de enfermedad ^ref-5329
+ni de vejez, de angustia o de cansancio. Voy a morir de amor, voy a entregarme
+al más hondo regazo. Yo no tendré vergüenza de estas manos vacías
+ni de esta celda hermética que se llama Rosario. En los labios del viento he de llamarme
+árbol de muchos pájaros. 
+
+---
+Lo quisimos eterno. Que viva más allá de nosotros, dijimos. Y un día y otro día nuestra lengua probó sabor de juramento. Lo quisimos eterno, irrevocable. Como el infierno. Lengua de la mentira soy, mano del crimen. En mí aprende ^ref-48668
+su color la vergüenza. 
+
+---
+Los árboles atentos, la luz en la que amé, ^ref-53836
+la piedra que quería decir algo
+con su lengua torpísima
+huyen, como el reflejo huye en el agua. Mi corazón, vestido de su otoño,
+como una hoja amarillenta, cae. Y yo abro las manos. Y consiento. 
+
+---
+Dad a todos el pan, ^ref-15140
+la posada. No ahuyentéis las palomas
+si bajan. 
+
+---
+Esta tierra que piso es la sábana amante de mis muertos. Aquí, aquí vivieron y, como yo, decían: Mi corazón no es mi corazón, ^ref-46644
+es la casa del fuego. Y lanzaban su sangre como un potro vehemente
+a que mordiera el viento
+y alrededor de un árbol danzaban y bebían
+canciones como un vino poderoso y eterno. Ahora estoy yo aquí. Que nadie me salude
+como a un recién llegado. Si camino así, torpe,
+es porque voy palpando y voy reconociendo. No llevo entre las manos más que una breve brasa
+y un día para arder. ¡Alegría! ¡Bailemos! Quiero jurarlo aquí, amigos: otra vez como la primavera volveremos. 
+
+---
+Más hermosa que el mundo tu mirada ^ref-27358
+¡y el mundo es tan hermoso! Preferible tu amor
+a los frutos amables de la tierra,
+a la embriaguez amante de los aires. Tu presencia más grande que los mares. 
+
+---
+En mí su voluntad no fue hermosura. Me hizo, como a la planta del desierto, ^ref-15646
+áspera y taciturna. Me alzó para medir la soledad en la extensión sin término, desnuda. El viento —herido en mis espinas— sangra. Mi única flor es la obediencia oscura. 
+
+---
+Pues ¿quién soy yo, paseante de una ciudad que duerme? A ratos me detengo reclinado en el tronco del monólogo. Soy menos que mi nombre: mi voluntad ya no es heraldo de mi sangre. Hago lo que no hicieron los que vivían: sueño. A veces rememoro y se encabrita en mí ^ref-63272
+el potro del heroísmo y la rapacidad,
+el ulular del rapto. Y las figuras cruzan con esa libertad magnífica y triunfante de los hechos pretéritos. No, no escuchéis mi pulso. Su latido es tan débil
+como el del grillo oculto en la hojarasca. 
+
+---
+MADRE Hubo amor. Y ternura. Y devoción. Y apego. Hubo llegar a él, fervorosa, exaltada, ^ref-30814
+como quien llega a un templo. 
+
+---
+Quiero el amor y su aniquilamiento.  ^ref-51505
+
+---
+No des pábulo al fuego con tus consejas.  ^ref-51857
+
+---
+Yo estoy aquí en alcobas que ninguno ^ref-54637
+traspasa y recorro vestíbulos en vano destrenzada. ¡Cuántas veces mis ansias se estrellaron
+ante un balcón de rejas intrincadas! Él se irá como el viento que no vuelve. Y yo me quedaré como la hoja,
+caída, abandonada. No adivinó mi fiebre ni mi angustia,
+no me vio encadenada. 
+
+---
+No merezco el insulto que dijiste. MADRE No. Todos los insultos no bastan, son menores ^ref-8378
+que tu delito. Ni uno de ellos llega
+hasta donde ha llegado tu insolencia. Yo tendría que ir como los cerdos
+y que ensuciar mi boca donde hozan las piaras
+para esparcir tu fama dignamente. 
+
+---
+más que la muerte puede el olvido.  ^ref-3930
+
+---
+¡Ah, convertirme en sauce ^ref-22888
+y llorar, para siempre, en tus orillas! 
+
+---
+Matamos lo que amamos. Lo demás ^ref-41752
+no ha estado vivo nunca. 
+
+---
+Matamos lo que amamos. ¡Que cese ya esta asfixia ^ref-51104
+de respirar con un pulmón ajeno! El aire no es bastante para los dos. Y no basta la tierra para los cuerpos juntos y la ración de la esperanza es poca y el dolor no se puede compartir. 
+
+---
+Damos la vida sólo a lo que odiamos.  ^ref-31447
+
+---
+Yo muero de mirarte y no entender.  ^ref-1650
+
+---
+Hace frío. Tengo hambre. Y ya casi no veo ^ref-8270
+de oscuridad y lágrimas. 
+
+---
+Para vivir es demasiado el tiempo; ^ref-6995
+para saber no es nada. 
+
+---
+soy un ancho patio, una gran casa abierta: ^ref-42021
+yo soy una memoria. 
+
+---
+Cuerpo criatura, sí, tú y yo nos conocimos.  ^ref-36015
+
+---
+Quienes ahora nos miran (piedras oscuras, trozos ^ref-61649
+de materia ya usada) no sabrán que un instante nuestro nombre fue amor
+y que en la eternidad nos llamamos destino. 
+
+---
+Pero yo no amé nada tanto como amé al fuego.  ^ref-24473
+
+---
+Con Dios no he hablado nunca ni el cielo he visitado pero estoy tan segura del lugar como si en algún mapa lo hubieran señalado.  ^ref-2128
+
+---
+Henos aquí hace un siglo, sentados, meditando ^ref-4841
+encarnizadamente cómo dar el zarpazo último que se aniquile
+de modo inapelable y, para siempre, al otro. 
+
+---
+Mas he aquí que toco una llaga: es mi memoria.  ^ref-41787
+
+---
+El recuerdo embellece lo que toca:  ^ref-19835
+
+---
+Ni el cielo constelado de estrellas ni la ley ^ref-43001
+moral, urdida en la raíz del hombre. No, a diferencia exacta de Kant, no me suscitan tales contemplaciones tales meditaciones, maravilla o asombro. 
+
+---
+“Tal vez, bajo otro cielo, la vida nos sonría.”  ^ref-50157
+
+---
+Desconfía del que ama: tiene hambre, ^ref-36398
+no quiere más que devorar. Busca la compañía de los hartos. Ésos son los que dan. 
+
+---
+Ninguna es tan pequeña como para escribir ^ref-39717
+las letras que quedaron de tu nombre. 
+
+---
+Una cotorra, un timbre postal, un gato, un perro, ^ref-54446
+algún espantapájaros cualquiera,
+alguien que, si recibe una dosis de amor,
+no segregue anticuerpos, no cree resistencias
+sino que simplemente asimile. Asimile
+sin intoxicaciones peligrosas
+y sin alteración de su naturaleza. Y luego, limpiamente, elimine los rastros de la sustancia extraña
+que el otro le inocula. 
+
+---
+Mujer, pues, de palabra. No, de palabra no. Pero sí de palabras, muchas, contradictorias, ay, insignificantes, ^ref-40094
+sonido puro, vacuo cernido de arabescos,
+jugo de salón, chisme, espuma, olvido. 
+
+---
+El que se lamentaba de hacer su propia estatua con arcilla, que pruebe las materias que nosotros usamos. Nosotros, es decir, los marginales: memoria, ensueños, humo, sueño, esperanza. Nada.  ^ref-45552
+
+---
+No comas nunca nada ^ref-14339
+que no seas capaz de digerir,
+que no seas capaz de vomitar. 
+
+---
