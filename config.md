@@ -32,4 +32,4 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
 
-@def prepath = "Problemas"
+@def prepath = "blog"
