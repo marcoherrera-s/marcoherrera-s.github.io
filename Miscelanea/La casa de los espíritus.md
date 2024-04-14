@@ -1,5 +1,18 @@
-# **La casa de los espíritus (Allende, Isabel)** 
-## Highlights 
+# **La casa de los espíritus (Allende, Isabel)**
+
+## Highlights
+
+ Era ésa una larga semana de penitencia y de ayuno, no se jugaba baraja, no se tocaba música que incitara a la lujuria o al olvido, y se observaba, dentro de lo posible, la mayor tristeza y castidad, a pesar de que justamente en esos días, el aguijonazo del demonio tentaba con mayor insistencia la débil carne católica.
+
+
+---
+
+
+ El tono de su piel, con suaves reflejos azulados, y el de su cabello, la lentitud de sus movimientos y su carácter silencioso, evocaban a un habitante del agua.
+
+
+---
+
 
  Lo habían discutido a menudo con sus amigas sufragistas y habían llegado a la conclusión que mientras las mujeres no se cortaran las faldas y el pelo y no se quitaran los refajos, daba igual que pudieran estudiar medicina o tuvieran derecho a voto, porque de ningún modo tendrían ánimo para hacerlo, pero ella misma no tenía valor para ser de las primeras en abandonar la moda.
 
@@ -14,6 +27,66 @@
 
 
  Espere que a la niña le venga la demostración y va a ver que se le quita la maña de andar moviendo los muebles y anunciando desgracias.
+
+
+---
+
+
+ De allí salieron para poblar los sueños de sus descendientes hasta que fueron quemados por error medio siglo más tarde, en una pira infame.
+
+
+---
+
+
+ —¿Qué es eso? —preguntó. —Barrabás —dijo Clara. —Entrégueselo al jardinero, para que se deshaga de él. Puede contagiarnos alguna enfermedad —ordenó Severo. Pero Clara lo había adoptado. —Es mío, papá. Si me lo quita, le juro que dejo de respirar y me muero.
+
+
+---
+
+
+ No sé qué pudo ver Rosa en mí, ni por qué con el tiempo, me aceptó por esposo. Llegué a ser su novio oficial sin tener que realizar ninguna proeza sobrenatural, porque a pesar de su belleza inhumana y sus innumerables virtudes, Rosa no tenía pretendientes. Su madre me dio la explicación: dijo que ningún hombre se sentía lo bastante fuerte como para pasar la vida defendiendo a Rosa de las apetencias de los demás. Muchos la habían rondado, perdiendo la razón por ella, pero hasta que yo aparecí en el horizonte, no se había decidido nadie. Su belleza atemorizaba, por eso la admiraban de lejos, pero no se acercaban.
+
+
+---
+
+
+ Me hice firme propósito de sacarle hasta el último gramo del precioso metal, aunque para ello tuviera que estrujar el cerro con mis propias manos y moler las rocas a patadas. Por Rosa estaba dispuesto a eso y mucho más.
+
+
+---
+
+
+ Él levantó la vista y observó el rostro sin edad, los pómulos indígenas, el moño negro, el amplio regazo donde había visto hipar y dormir a todos sus descendientes y sintió que esa mujer cálida y generosa como la tierra podía darle consuelo. Apoyó
+
+
+---
+
+
+ Sufrí mucho pensando que ella, aburrida de esperarme, decidiera casarse con otro, o que nunca aparecería el maldito filón que pusiera una fortuna en mis manos, o que se desmoronara la mina aplastándome como una cucaracha. Contemplé todas esas posibilidades y algunas más, pero nunca la muerte de Rosa, a pesar de mi proverbial pesimismo, que me hace siempre esperar lo peor. Sentí que sin Rosa la vida no tenía significado para mí.
+
+
+---
+
+
+ Empecé a resignarme a mi desgracia y a pedir, no ya que resucitara, sino tan sólo que yo alcanzara a llegar a tiempo para verla antes que la enterraran.
+
+
+---
+
+
+ Los hermanos estaban muy alejados y lo único que todavía los unía era la presencia de la madre y el recuerdo borroso del amor que se tuvieron en la niñez.
+
+
+---
+
+
+ Desde allí se podía ver todo el valle a través de una bruma impalpable que se desprendía de la tierra mojada por la lluvia de la noche. Las montañas lejanas se perdían entre las nubes de un cielo encapotado y sólo la punta nevada del volcán se distinguía nítidamente, recortada contra el paisaje e iluminada por un tímido sol de invierno.
+
+
+---
+
+
+ retozando como dos cachorros en la gran cama de fierro forjado que había sido del primer Trueba y que ya estaba medio coja, pero aún podía resistir los embates del amor.
 
 
 ---
@@ -151,24 +224,6 @@
 ---
 
 
- De allí salieron para poblar los sueños de sus descendientes hasta que fueron quemados por error medio siglo más tarde, en una pira infame.
-
-
----
-
-
- —¿Qué es eso? —preguntó. —Barrabás —dijo Clara. —Entrégueselo al jardinero, para que se deshaga de él. Puede contagiarnos alguna enfermedad —ordenó Severo. Pero Clara lo había adoptado. —Es mío, papá. Si me lo quita, le juro que dejo de respirar y me muero.
-
-
----
-
-
- Era ésa una larga semana de penitencia y de ayuno, no se jugaba baraja, no se tocaba música que incitara a la lujuria o al olvido, y se observaba, dentro de lo posible, la mayor tristeza y castidad, a pesar de que justamente en esos días, el aguijonazo del demonio tentaba con mayor insistencia la débil carne católica.
-
-
----
-
-
  Eso fue suficiente para tranquilizar a Blanca por completo. Se secó las lágrimas, enderezó la cabeza y no volvió a llorar hasta el día en que murió su madre, siete años más tarde, a pesar de que no le faltaron dolores, soledades y otras razones.
 
 
@@ -223,12 +278,6 @@
 ---
 
 
- No sé qué pudo ver Rosa en mí, ni por qué con el tiempo, me aceptó por esposo. Llegué a ser su novio oficial sin tener que realizar ninguna proeza sobrenatural, porque a pesar de su belleza inhumana y sus innumerables virtudes, Rosa no tenía pretendientes. Su madre me dio la explicación: dijo que ningún hombre se sentía lo bastante fuerte como para pasar la vida defendiendo a Rosa de las apetencias de los demás. Muchos la habían rondado, perdiendo la razón por ella, pero hasta que yo aparecí en el horizonte, no se había decidido nadie. Su belleza atemorizaba, por eso la admiraban de lejos, pero no se acercaban.
-
-
----
-
-
  Se sentía dos veces más grande y pesado que ella y mil veces más fuerte, pero se sabía derrotado de antemano por la ternura y las ansias de protegerla.
 
 
@@ -247,12 +296,6 @@
 ---
 
 
- Me hice firme propósito de sacarle hasta el último gramo del precioso metal, aunque para ello tuviera que estrujar el cerro con mis propias manos y moler las rocas a patadas. Por Rosa estaba dispuesto a eso y mucho más.
-
-
----
-
-
  Blanca era de reacciones lentas y tardó un buen rato en asimilar lo que estaba viendo, porque carecía de experiencia en esos asuntos. Conocía el placer como una última y preciosa etapa en el largo camino que había recorrido con Pedro Tercero, por donde había transitado sin prisa, con buen humor, en el marco de los bosques, los trigales, el río, bajo un inmenso cielo, en el silencio del campo. No alcanzó a tener las inquietudes propias de la adolescencia. Mientras sus compañeras en el colegio leían a escondidas novelas prohibidas con imaginarios galanes apasionados y vírgenes ansiosas por dejar de serlo, ella se sentaba a la sombra de los ciruelos en el patio de las monjas, cerraba los ojos y evocaba con total precisión la magnífica realidad de Pedro Tercero García encerrándola en sus brazos, recorriéndola con sus caricias y arrancándole de lo más profundo los mismos acordes que podía sacar a la guitarra.
 
 
@@ -260,12 +303,6 @@
 
 
  Creo que ha decidido morirse, y la ciencia no tiene remedio alguno contra ese mal —dijo Jaime.
-
-
----
-
-
- Él levantó la vista y observó el rostro sin edad, los pómulos indígenas, el moño negro, el amplio regazo donde había visto hipar y dormir a todos sus descendientes y sintió que esa mujer cálida y generosa como la tierra podía darle consuelo. Apoyó
 
 
 ---
@@ -313,19 +350,7 @@
 ---
 
 
- Sufrí mucho pensando que ella, aburrida de esperarme, decidiera casarse con otro, o que nunca aparecería el maldito filón que pusiera una fortuna en mis manos, o que se desmoronara la mina aplastándome como una cucaracha. Contemplé todas esas posibilidades y algunas más, pero nunca la muerte de Rosa, a pesar de mi proverbial pesimismo, que me hace siempre esperar lo peor. Sentí que sin Rosa la vida no tenía significado para mí.
-
-
----
-
-
  Para reconocer a Amanda, sin embargo, se necesitaba haberla amado mucho.
-
-
----
-
-
- Empecé a resignarme a mi desgracia y a pedir, no ya que resucitara, sino tan sólo que yo alcanzara a llegar a tiempo para verla antes que la enterraran.
 
 
 ---
@@ -374,30 +399,6 @@
 
 
  mientras aguardo que lleguen tiempos mejores, gestando a la criatura que tengo en el vientre, hija de tantas violaciones, o tal vez hija de Miguel pero sobre todo hija mía.
-
-
----
-
-
- Los hermanos estaban muy alejados y lo único que todavía los unía era la presencia de la madre y el recuerdo borroso del amor que se tuvieron en la niñez.
-
-
----
-
-
- El tono de su piel, con suaves reflejos azulados, y el de su cabello, la lentitud de sus movimientos y su carácter silencioso, evocaban a un habitante del agua.
-
-
----
-
-
- Desde allí se podía ver todo el valle a través de una bruma impalpable que se desprendía de la tierra mojada por la lluvia de la noche. Las montañas lejanas se perdían entre las nubes de un cielo encapotado y sólo la punta nevada del volcán se distinguía nítidamente, recortada contra el paisaje e iluminada por un tímido sol de invierno.
-
-
----
-
-
- retozando como dos cachorros en la gran cama de fierro forjado que había sido del primer Trueba y que ya estaba medio coja, pero aún podía resistir los embates del amor.
 
 
 ---

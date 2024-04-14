@@ -1,5 +1,342 @@
-# **Historia Mínima Del Neoliberalismo (Gonzalbo, Fernando Escalante)** 
-## Highlights 
+# **Historia Mínima Del Neoliberalismo (Gonzalbo, Fernando Escalante)**
+
+## Highlights
+
+ La idea fundamental, derivada de la crítica socialista de los derechos civiles, era que la libertad no tenía sentido sin la garantía de un conjunto de condiciones materiales, empezando por un ingreso mínimo, salud,
+
+
+---
+
+
+ Expone Mises su idea de lo que sería una sociedad socialista, que incluye cosas tan improbables como la supresión del matrimonio, y a continuación demuestra que ese orden sería imposible. Los ejemplos a los que se refiere de pasada como aproximaciones a lo que sería el socialismo son el Egipto de los faraones, el imperio de los Incas, y el estado de los jesuitas en Paraguay. O sea, que como crítica del socialismo no tiene en realidad mucho interés.
+
+
+---
+
+
+ Según su argumentación, la limitación de la jornada laboral afecta al rendimiento de la economía; la prohibición del trabajo infantil perjudica sobre todo a las familias obreras, que se ven privadas de ese posible ingreso; los seguros contra accidentes y enfermedades laborales contribuyen al aumento de ambas cosas, accidentes y enfermedades; el seguro de desempleo produce desempleo; y el seguro social, en cualquiera de sus formas, debilita la voluntad y corrompe la moral de los trabajadores.
+
+
+---
+
+
+ Camino de servidumbre. Se publicó en 1944.
+
+
+---
+
+
+ todo movimiento hacia el socialismo, o hacia la planificación de la economía, tan moderado como se quiera, amenaza con llevar finalmente al totalitarismo.
+
+
+---
+
+
+ valores centrales de la civilización están en peligro”; y señalaba como causas el predominio de una interpretación de la historia que niega que haya “estándares morales absolutos”,
+
+
+---
+
+
+ En ese sentido, y dejémoslo de momento sólo anotado, en su contenido propiamente político el neoliberalismo es una teoría sobre la manera de transformar al Estado para que garantice el funcionamiento del mercado
+
+
+---
+
+
+ Nadie puede reunir ese conocimiento disperso, eso que sabe cada quien por su cuenta. Sólo el mercado, y sólo porque funciona de manera automática, impensada, y ajusta mecánicamente los deseos, las necesidades, los intereses y los recursos de todos, de modo que cuando compran y venden libremente sube el precio de lo que más se estima,
+
+
+---
+
+
+ La disyuntiva es simple, estricta: someterse a las fuerzas incontrolables y aparentemente irracionales del mercado, y al movimiento de los precios, o bien someterse al poder, igualmente incontrolable, arbitrario, de otros hombres. La diferencia está en que el mercado permite una asignación eficiente de los recursos, y la dirección autoritaria no puede.
+
+
+---
+
+
+ La ignorancia es un problema si tratamos de poner orden, organizar deliberadamente la vida social.
+
+
+---
+
+
+ Pero si permitimos que opere sin trabas el mecanismo impersonal del mercado, la ignorancia no es un obstáculo. Al contrario, es incluso una virtud:
+
+
+---
+
+
+ de lo que sabemos todos, cada uno por su lado, produce una forma superior de conocimiento: es la sabiduría inconsciente de las multitudes (the wisdom of the crowd).
+
+
+---
+
+
+ Nadie sabe, por ejemplo, qué clase de conocimiento sea más útil, más apreciado, qué línea de investigación vaya a resultar más fructífera: no se puede saber; el modo más eficiente de resolver el problema consiste en dejarlo en manos del mercado, y que la oferta y la demanda se encuentren.
+
+
+---
+
+
+ No imponer nuestra ignorancia. No decidir autoritariamente nada: ni precios ni recursos, ni estándares. Que sea el mercado.
+
+
+---
+
+
+ Así, por ejemplo, una fábrica o una escuela, un ejército. Los órdenes espontáneos, en cambio, son producto impensado de la interacción, no tienen ningún diseño, no han sido pensados de antemano, no obedecen a propósito alguno, sencillamente resultan de la coordinación espontánea de los individuos —tal como sucede en el mercado.
+
+
+---
+
+
+ No dice Hayek que los órdenes espontáneos sean naturales. Pero sí dice que no son artificiales, en el sentido de que no han sido creados por nadie, es decir, no corresponden a ninguna voluntad concreta. No han sido pensados.
+
+
+---
+
+
+ Las organizaciones, es decir, los órdenes artificiales dependen siempre de la coerción, porque tienen que obligar a la gente a hacer determinadas cosas, a comportarse de un modo u otro, a obedecer. Mientras que los órdenes espontáneos reposan sobre normas de carácter general que permiten decisiones libres.
+
+
+---
+
+
+ si no hay un propósito, ninguna finalidad deliberada, consciente, susceptible de ser razonada, entonces no está claro qué significa que un orden sea “eficiente”. Porque la eficiencia es un término relativo.
+
+
+---
+
+
+ pero nada dice que eso sea necesariamente bueno, o deseable. Y de hecho, ese orden, aunque sea eficaz en esos términos, aunque pueda ser casi natural, o natural, produce desempleados, produce pobres, produce hambre —y es difícil sostener que sea eficiente en términos humanos un orden en que hay gente que se muere de hambre, cuando sobra comida. Sabemos que Hayek diría que cualquier otro orden produciría más pobreza, más hambre. Pero esa es sólo una hipótesis contrafáctica.
+
+
+---
+
+
+ Los órdenes artificiales también evolucionan de manera espontánea, permiten ajustes impensados, aleatorios. Ninguna organización, por estrecha que sea, funciona siempre y en todo mediante órdenes explícitas.
+
+
+---
+
+
+ Estado, en su funcionamiento, en su configuración concreta, es producto de una evolución espontánea tanto como el mercado. Desde luego, un Estado se imagina sobre el papel cuando se redacta una constitución y se escriben leyes, y reglamentos, y se establece una jerarquía administrativa; pero la forma concreta de se estado es el producto de un proceso histórico lleno de accidentes, inercias, valores entendidos, conflictos, decisiones individuales.
+
+
+---
+
+
+ El estado mexicano no está en la constitución, ni el mercado mexicano está en la naturaleza.
+
+
+---
+
+
+ decir, que la oposición entre órdenes artificiales y órdenes espontáneos puede tener cierto valor heurístico, en algún plano, pero no permite sostener un argumento general contra la intervención del Estado en la economía.
+
+
+---
+
+
+ Antes de entrar en materia, y hablar de economía, no sobra recordar que el neoliberalismo no es sólo un programa económico, sino una visión completa del mundo, una idea de la naturaleza humana, del orden social, una idea de la justicia.
+
+
+---
+
+
+ una idea también de lo que es el conocimiento científico.
+
+
+---
+
+
+ Primero, la idea de la ciencia: una idea estrecha, doctrinaria, que tiene como modelo la física del siglo XIX.
+
+
+---
+
+
+ Y segundo, la idea del mercado como mecanismo autorregulado, que de manera automática mantiene el equilibrio, o lo recupera
+
+
+---
+
+
+ Para el proyecto neoliberal resulta especialmente atractiva esa idea de la ciencia y de la economía, porque permite tratar al mercado como si fuese un mecanismo natural, movido por fuerzas impersonales.
+
+
+---
+
+
+ En el intento de imitar a la física, lo que hicieron los economistas del siglo XIX fue copiar las ecuaciones, e identificar las transacciones económicas con las transferencias de energía en un campo cerrado.
+
+
+---
+
+
+ Pero no hace falta insistir en esa discusión por ahora. Buena parte del esfuerzo de los economistas en los últimos cien años se ha dedicado a elaborar explicaciones que no dependan del contexto.
+
+
+---
+
+
+ Es decir, se ha dedicado a buscar fórmulas de validez universal, que no dependan de si se está en México, en Indonesia o en Noruega.
+
+
+---
+
+
+ El resultado es que casi todas las ciencias sociales, incluidos algunos economistas, intentan ofrecer explicaciones más ricas en información de contexto, es decir, tratan de dar cuenta de lo singular.
+
+
+---
+
+
+ La economía neoclásica va exactamente en el sentido inverso —trata de suprimir el contexto, y explicar los fenómenos económicos como si fuesen mecánicos, de lógica inalterable, como los fenómenos físicos (de la física del siglo XIX). Y en ese modo de razonar ha encontrado un apoyo considerable el programa neoliberal, porque tiene la misma ambición, o parecida, de establecer verdades de validez universal.
+
+
+---
+
+
+ la economía neoclásica no trabaja a partir de hechos, sino de modelos.
+
+
+---
+
+
+ El procedimiento depende de la postulación de una serie de supuestos, puramente formales. Por ejemplo: supongamos que hay competencia perfecta, supongamos que concurren individuos igualmente informados, supongamos que deciden con entera libertad, supongamos que son perfectamente racionales…
+
+
+---
+
+
+ de base para toda clase de ejercicios matemáticos. Pueden ser más o menos útiles, más o menos reveladores, pero no son descripciones de la realidad —ni aproximaciones a una descripción de la realidad.
+
+
+---
+
+
+ lo que hacen los economistas (los partidarios del programa neoclásico, se entiende) es imaginar “economías de juguete”, que sirven para hacer especulaciones mediante ejercicios de lógica matemática.
+
+
+---
+
+
+ los teoremas, las fórmulas, tienen poco que ver con el mundo real.
+
+
+---
+
+
+ La economía teórica del programa neoclásico es en ese sentido una variante de las matemáticas puras, un ejercicio formal.
+
+
+---
+
+
+ Aquí es donde la economía neoclásica presta un servicio importante al programa neoliberal, porque permite naturalizar, dar un aspecto indudable a las recomendaciones prácticas de política económica. Como si se tratara de fórmulas de física.
+
+
+---
+
+
+ La defensa más conocida del método de la economía neoclásica, y una defensa categórica, es la de Milton Friedman.
+
+
+---
+
+
+ sólo un caso entre muchos. Si el criterio de cientificidad, o de relevancia, fuese la capacidad de predicción, difícilmente sobreviviría la economía como disciplina.
+
+
+---
+
+
+ No hace falta insistir más. El sello característico de la economía académica, en su versión neoclásica, es esa separación de la realidad. Que se lleva orgullosamente, por cierto —el hecho de no estar contaminada por la contingencia de la realidad empírica.
+
+
+---
+
+
+ Porque todos sabemos lo que es el mercado, sabemos lo que quiere decir que el mercado determina los precios, por ejemplo, o que distribuye recursos, o que premia o castiga.
+
+
+---
+
+
+ Todos están inmersos en la sociedad, son hechos sociales, regulados no sólo por leyes, sino por varias clases de normas, formales e informales; para decirlo en una frase, siempre hay una economía moral, un conjunto de reglas, con frecuencia implícitas, que establecen cómo deben comportarse los actores en el mercado (el propósito de darle autonomía completa a la economía, y de subordinar el resto de las relaciones sociales a las relaciones de mercado, es un propósito utópico —imposible en realidad, y peligroso).
+
+
+---
+
+
+ mercado es eficiente porque procesa correctamente la información, asigna los precios correspondientes, favorece la correcta distribución de recursos según la demanda efectiva, etcétera, es decir, porque lleva el pan a quien más paga por él, no a quien tiene hambre.
+
+
+---
+
+
+ Antes de seguir, dos pequeños problemas. Primero, por muchas precauciones que se quieran tomar, la expresión “equilibrio” tiene connotaciones positivas, y con esa intención se emplea con frecuencia. Técnicamente no hay motivo para esa valoración, porque es un hecho nada más: el precio de equilibrio del maíz podría ser inalcanzable para mucha gente, que padecería hambre, y no dejaría de ser un precio de equilibrio —que no es ni bueno ni malo.
+
+
+---
+
+
+ Sólo afirman que ese punto de equilibrio puede existir, si se asume un conjunto de supuestos. Si todos los actores son racionales, las preferencias de todos son fijas, transitivas, completas, si hay competencia perfecta, y una única operación general en que todas las mercancías se venden simultáneamente, como en una gran subasta, en ese caso, entre el infinito número de puntos imaginables de un modelo multidimensional en que se cruzase el infinito número de curvas de oferta y demanda, podría existir uno en que coincidieran oferta y demanda agregadas —de modo que en ese arreglo de precios todos estarían conformes. Es decir, bajo semejantes supuestos puede existir el equilibrio. Pero es tan sólo una posibilidad matemática.
+
+
+---
+
+
+ Para entender el efecto del empleo de la expresión se puede hacer el siguiente ejercicio. Si se habla de obtener un resultado “mejor” para un individuo o una economía, siempre se podrá preguntar: mejor en qué términos, mejor para qué o para quién, mejor en qué sentido; y es claro que se trata de un juicio, una valoración, que no puede dejar de tener connotaciones morales.
+
+
+---
+
+
+ A nadie le cuesta trabajo admitir que los supuestos a partir de los cuales se construye el modelo del equilibrio general de la economía son imposibles —eso aparte de que el resultado más eficiente, el óptimo, no tiene por qué ser deseable en ningún sentido. No obstante, esa imagen del mercado tiene un valor ideológico.
+
+
+---
+
+
+ Insisto: nadie tiene problemas para aceptar que las condiciones del modelo son imposibles. Pero se supone, se argumenta, que la mejor solución posible será siempre la que más se acerque al modelo. En otras palabras, sabemos que no hay competencia perfecta, sabemos que no hay información completa, ni libre movimiento de la mano de obra, no hay muchas de las cosas que supone el modelo ideal del mercado. Pero eso sólo dice que este mundo es imperfecto. La mejor opción asequible será la que más se acerque, y cumpla al menos con algunas de las condiciones, hasta donde eso sea posible. Será una competencia tan perfecta como podemos tenerla, y será lo mejor. Parece sensato; no lo
+
+
+---
+
+
+ estas alturas, no está de más repetir que el neoliberalismo no equivale a la economía neoclásica. Pero hay afinidades importantes entre ambas empresas.
+
+
+---
+
+
+ en buena medida, en este ámbito, el neoliberalismo es la economía neoclásica convertida en ideología.
+
+
+---
+
+
+ Basta dejar dicho que ese modo particular del pensamiento económico, basado en modelos formales, es la base de la mayor parte de las propuestas concretas del programa neoliberal, y no por casualidad
+
+
+---
+
+
+ Barro sostiene que sí. Sostiene que los individuos efectivamente anticipan el nivel futuro de impuestos a partir del endeudamiento del gobierno, y deciden su gasto y su ahorro en función de eso. Por lo tanto, la deuda pública se traduce en un aumento del ahorro privado, y una reducción del consumo —es decir, que no hay manera de estimular la economía con emisión de deuda. No hay ninguna información empírica para sostener las ideas de Barro, que tampoco han sido muy populares.
+
+
+---
+
+
+ La idea central parece casi de sentido común. Los políticos, los funcionarios, son como cualquier otra gente: individuos racionales que tratan de maximizar su utilidad.
+
+
+---
+
 
  De entrada, parecería lógico que, siendo el mercado fundamental para asegurar una asignación eficiente de los recursos, sería necesario proteger la competencia, e impedir la formación de monopolios. No es así.
 
@@ -325,12 +662,6 @@
 ---
 
 
- La idea fundamental, derivada de la crítica socialista de los derechos civiles, era que la libertad no tenía sentido sin la garantía de un conjunto de condiciones materiales, empezando por un ingreso mínimo, salud,
-
-
----
-
-
  El principio es simplísimo. Si en cualquier campo se puede imaginar una elección, o construir una conducta como si fuese una elección, entonces cabe postular que existe algo que es la “utilidad”, la ambición de maximizar, y por tanto hay competencia, y mercado. Y a continuación se ajusta lo que haga falta.
 
 
@@ -535,31 +866,7 @@
 ---
 
 
- Expone Mises su idea de lo que sería una sociedad socialista, que incluye cosas tan improbables como la supresión del matrimonio, y a continuación demuestra que ese orden sería imposible. Los ejemplos a los que se refiere de pasada como aproximaciones a lo que sería el socialismo son el Egipto de los faraones, el imperio de los Incas, y el estado de los jesuitas en Paraguay. O sea, que como crítica del socialismo no tiene en realidad mucho interés.
-
-
----
-
-
- Según su argumentación, la limitación de la jornada laboral afecta al rendimiento de la economía; la prohibición del trabajo infantil perjudica sobre todo a las familias obreras, que se ven privadas de ese posible ingreso; los seguros contra accidentes y enfermedades laborales contribuyen al aumento de ambas cosas, accidentes y enfermedades; el seguro de desempleo produce desempleo; y el seguro social, en cualquiera de sus formas, debilita la voluntad y corrompe la moral de los trabajadores.
-
-
----
-
-
  Desde luego, a favor de la torre de marfil se podría argumentar en los términos de Simon Leys, y decir que la superior utilidad, la eficacia de la universidad depende precisamente de esa aparente inutilidad. Pero de momento no hace falta entrar en esa discusión, es harina de otro costal.
-
-
----
-
-
- Camino de servidumbre. Se publicó en 1944.
-
-
----
-
-
- todo movimiento hacia el socialismo, o hacia la planificación de la economía, tan moderado como se quiera, amenaza con llevar finalmente al totalitarismo.
 
 
 ---
@@ -650,12 +957,6 @@
 
 
  Nuestro sentido común dice que cada quien tiene lo que se merece. Y que si no se les pone un alto, “ellos”, los que no se han esforzado lo suficiente, tratarán de aprovecharse de “nosotros”, y de lo que hemos conseguido con nuestro trabajo.
-
-
----
-
-
- valores centrales de la civilización están en peligro”; y señalaba como causas el predominio de una interpretación de la historia que niega que haya “estándares morales absolutos”,
 
 
 ---
@@ -758,306 +1059,6 @@
 
 
  Y bien: en adelante, habrá que imaginar una salida, como siempre.
-
-
----
-
-
- En ese sentido, y dejémoslo de momento sólo anotado, en su contenido propiamente político el neoliberalismo es una teoría sobre la manera de transformar al Estado para que garantice el funcionamiento del mercado
-
-
----
-
-
- Nadie puede reunir ese conocimiento disperso, eso que sabe cada quien por su cuenta. Sólo el mercado, y sólo porque funciona de manera automática, impensada, y ajusta mecánicamente los deseos, las necesidades, los intereses y los recursos de todos, de modo que cuando compran y venden libremente sube el precio de lo que más se estima,
-
-
----
-
-
- La disyuntiva es simple, estricta: someterse a las fuerzas incontrolables y aparentemente irracionales del mercado, y al movimiento de los precios, o bien someterse al poder, igualmente incontrolable, arbitrario, de otros hombres. La diferencia está en que el mercado permite una asignación eficiente de los recursos, y la dirección autoritaria no puede.
-
-
----
-
-
- La ignorancia es un problema si tratamos de poner orden, organizar deliberadamente la vida social.
-
-
----
-
-
- Pero si permitimos que opere sin trabas el mecanismo impersonal del mercado, la ignorancia no es un obstáculo. Al contrario, es incluso una virtud:
-
-
----
-
-
- de lo que sabemos todos, cada uno por su lado, produce una forma superior de conocimiento: es la sabiduría inconsciente de las multitudes (the wisdom of the crowd).
-
-
----
-
-
- Nadie sabe, por ejemplo, qué clase de conocimiento sea más útil, más apreciado, qué línea de investigación vaya a resultar más fructífera: no se puede saber; el modo más eficiente de resolver el problema consiste en dejarlo en manos del mercado, y que la oferta y la demanda se encuentren.
-
-
----
-
-
- No imponer nuestra ignorancia. No decidir autoritariamente nada: ni precios ni recursos, ni estándares. Que sea el mercado.
-
-
----
-
-
- Así, por ejemplo, una fábrica o una escuela, un ejército. Los órdenes espontáneos, en cambio, son producto impensado de la interacción, no tienen ningún diseño, no han sido pensados de antemano, no obedecen a propósito alguno, sencillamente resultan de la coordinación espontánea de los individuos —tal como sucede en el mercado.
-
-
----
-
-
- No dice Hayek que los órdenes espontáneos sean naturales. Pero sí dice que no son artificiales, en el sentido de que no han sido creados por nadie, es decir, no corresponden a ninguna voluntad concreta. No han sido pensados.
-
-
----
-
-
- Las organizaciones, es decir, los órdenes artificiales dependen siempre de la coerción, porque tienen que obligar a la gente a hacer determinadas cosas, a comportarse de un modo u otro, a obedecer. Mientras que los órdenes espontáneos reposan sobre normas de carácter general que permiten decisiones libres.
-
-
----
-
-
- si no hay un propósito, ninguna finalidad deliberada, consciente, susceptible de ser razonada, entonces no está claro qué significa que un orden sea “eficiente”. Porque la eficiencia es un término relativo.
-
-
----
-
-
- pero nada dice que eso sea necesariamente bueno, o deseable. Y de hecho, ese orden, aunque sea eficaz en esos términos, aunque pueda ser casi natural, o natural, produce desempleados, produce pobres, produce hambre —y es difícil sostener que sea eficiente en términos humanos un orden en que hay gente que se muere de hambre, cuando sobra comida. Sabemos que Hayek diría que cualquier otro orden produciría más pobreza, más hambre. Pero esa es sólo una hipótesis contrafáctica.
-
-
----
-
-
- Los órdenes artificiales también evolucionan de manera espontánea, permiten ajustes impensados, aleatorios. Ninguna organización, por estrecha que sea, funciona siempre y en todo mediante órdenes explícitas.
-
-
----
-
-
- Estado, en su funcionamiento, en su configuración concreta, es producto de una evolución espontánea tanto como el mercado. Desde luego, un Estado se imagina sobre el papel cuando se redacta una constitución y se escriben leyes, y reglamentos, y se establece una jerarquía administrativa; pero la forma concreta de se estado es el producto de un proceso histórico lleno de accidentes, inercias, valores entendidos, conflictos, decisiones individuales.
-
-
----
-
-
- El estado mexicano no está en la constitución, ni el mercado mexicano está en la naturaleza.
-
-
----
-
-
- decir, que la oposición entre órdenes artificiales y órdenes espontáneos puede tener cierto valor heurístico, en algún plano, pero no permite sostener un argumento general contra la intervención del Estado en la economía.
-
-
----
-
-
- Antes de entrar en materia, y hablar de economía, no sobra recordar que el neoliberalismo no es sólo un programa económico, sino una visión completa del mundo, una idea de la naturaleza humana, del orden social, una idea de la justicia.
-
-
----
-
-
- una idea también de lo que es el conocimiento científico.
-
-
----
-
-
- Primero, la idea de la ciencia: una idea estrecha, doctrinaria, que tiene como modelo la física del siglo XIX.
-
-
----
-
-
- Y segundo, la idea del mercado como mecanismo autorregulado, que de manera automática mantiene el equilibrio, o lo recupera
-
-
----
-
-
- Para el proyecto neoliberal resulta especialmente atractiva esa idea de la ciencia y de la economía, porque permite tratar al mercado como si fuese un mecanismo natural, movido por fuerzas impersonales.
-
-
----
-
-
- En el intento de imitar a la física, lo que hicieron los economistas del siglo XIX fue copiar las ecuaciones, e identificar las transacciones económicas con las transferencias de energía en un campo cerrado.
-
-
----
-
-
- Pero no hace falta insistir en esa discusión por ahora. Buena parte del esfuerzo de los economistas en los últimos cien años se ha dedicado a elaborar explicaciones que no dependan del contexto.
-
-
----
-
-
- Es decir, se ha dedicado a buscar fórmulas de validez universal, que no dependan de si se está en México, en Indonesia o en Noruega.
-
-
----
-
-
- El resultado es que casi todas las ciencias sociales, incluidos algunos economistas, intentan ofrecer explicaciones más ricas en información de contexto, es decir, tratan de dar cuenta de lo singular.
-
-
----
-
-
- La economía neoclásica va exactamente en el sentido inverso —trata de suprimir el contexto, y explicar los fenómenos económicos como si fuesen mecánicos, de lógica inalterable, como los fenómenos físicos (de la física del siglo XIX). Y en ese modo de razonar ha encontrado un apoyo considerable el programa neoliberal, porque tiene la misma ambición, o parecida, de establecer verdades de validez universal.
-
-
----
-
-
- la economía neoclásica no trabaja a partir de hechos, sino de modelos.
-
-
----
-
-
- El procedimiento depende de la postulación de una serie de supuestos, puramente formales. Por ejemplo: supongamos que hay competencia perfecta, supongamos que concurren individuos igualmente informados, supongamos que deciden con entera libertad, supongamos que son perfectamente racionales…
-
-
----
-
-
- de base para toda clase de ejercicios matemáticos. Pueden ser más o menos útiles, más o menos reveladores, pero no son descripciones de la realidad —ni aproximaciones a una descripción de la realidad.
-
-
----
-
-
- lo que hacen los economistas (los partidarios del programa neoclásico, se entiende) es imaginar “economías de juguete”, que sirven para hacer especulaciones mediante ejercicios de lógica matemática.
-
-
----
-
-
- los teoremas, las fórmulas, tienen poco que ver con el mundo real.
-
-
----
-
-
- La economía teórica del programa neoclásico es en ese sentido una variante de las matemáticas puras, un ejercicio formal.
-
-
----
-
-
- Aquí es donde la economía neoclásica presta un servicio importante al programa neoliberal, porque permite naturalizar, dar un aspecto indudable a las recomendaciones prácticas de política económica. Como si se tratara de fórmulas de física.
-
-
----
-
-
- La defensa más conocida del método de la economía neoclásica, y una defensa categórica, es la de Milton Friedman.
-
-
----
-
-
- sólo un caso entre muchos. Si el criterio de cientificidad, o de relevancia, fuese la capacidad de predicción, difícilmente sobreviviría la economía como disciplina.
-
-
----
-
-
- No hace falta insistir más. El sello característico de la economía académica, en su versión neoclásica, es esa separación de la realidad. Que se lleva orgullosamente, por cierto —el hecho de no estar contaminada por la contingencia de la realidad empírica.
-
-
----
-
-
- Porque todos sabemos lo que es el mercado, sabemos lo que quiere decir que el mercado determina los precios, por ejemplo, o que distribuye recursos, o que premia o castiga.
-
-
----
-
-
- Todos están inmersos en la sociedad, son hechos sociales, regulados no sólo por leyes, sino por varias clases de normas, formales e informales; para decirlo en una frase, siempre hay una economía moral, un conjunto de reglas, con frecuencia implícitas, que establecen cómo deben comportarse los actores en el mercado (el propósito de darle autonomía completa a la economía, y de subordinar el resto de las relaciones sociales a las relaciones de mercado, es un propósito utópico —imposible en realidad, y peligroso).
-
-
----
-
-
- mercado es eficiente porque procesa correctamente la información, asigna los precios correspondientes, favorece la correcta distribución de recursos según la demanda efectiva, etcétera, es decir, porque lleva el pan a quien más paga por él, no a quien tiene hambre.
-
-
----
-
-
- Antes de seguir, dos pequeños problemas. Primero, por muchas precauciones que se quieran tomar, la expresión “equilibrio” tiene connotaciones positivas, y con esa intención se emplea con frecuencia. Técnicamente no hay motivo para esa valoración, porque es un hecho nada más: el precio de equilibrio del maíz podría ser inalcanzable para mucha gente, que padecería hambre, y no dejaría de ser un precio de equilibrio —que no es ni bueno ni malo.
-
-
----
-
-
- Sólo afirman que ese punto de equilibrio puede existir, si se asume un conjunto de supuestos. Si todos los actores son racionales, las preferencias de todos son fijas, transitivas, completas, si hay competencia perfecta, y una única operación general en que todas las mercancías se venden simultáneamente, como en una gran subasta, en ese caso, entre el infinito número de puntos imaginables de un modelo multidimensional en que se cruzase el infinito número de curvas de oferta y demanda, podría existir uno en que coincidieran oferta y demanda agregadas —de modo que en ese arreglo de precios todos estarían conformes. Es decir, bajo semejantes supuestos puede existir el equilibrio. Pero es tan sólo una posibilidad matemática.
-
-
----
-
-
- Para entender el efecto del empleo de la expresión se puede hacer el siguiente ejercicio. Si se habla de obtener un resultado “mejor” para un individuo o una economía, siempre se podrá preguntar: mejor en qué términos, mejor para qué o para quién, mejor en qué sentido; y es claro que se trata de un juicio, una valoración, que no puede dejar de tener connotaciones morales.
-
-
----
-
-
- A nadie le cuesta trabajo admitir que los supuestos a partir de los cuales se construye el modelo del equilibrio general de la economía son imposibles —eso aparte de que el resultado más eficiente, el óptimo, no tiene por qué ser deseable en ningún sentido. No obstante, esa imagen del mercado tiene un valor ideológico.
-
-
----
-
-
- Insisto: nadie tiene problemas para aceptar que las condiciones del modelo son imposibles. Pero se supone, se argumenta, que la mejor solución posible será siempre la que más se acerque al modelo. En otras palabras, sabemos que no hay competencia perfecta, sabemos que no hay información completa, ni libre movimiento de la mano de obra, no hay muchas de las cosas que supone el modelo ideal del mercado. Pero eso sólo dice que este mundo es imperfecto. La mejor opción asequible será la que más se acerque, y cumpla al menos con algunas de las condiciones, hasta donde eso sea posible. Será una competencia tan perfecta como podemos tenerla, y será lo mejor. Parece sensato; no lo
-
-
----
-
-
- estas alturas, no está de más repetir que el neoliberalismo no equivale a la economía neoclásica. Pero hay afinidades importantes entre ambas empresas.
-
-
----
-
-
- en buena medida, en este ámbito, el neoliberalismo es la economía neoclásica convertida en ideología.
-
-
----
-
-
- Basta dejar dicho que ese modo particular del pensamiento económico, basado en modelos formales, es la base de la mayor parte de las propuestas concretas del programa neoliberal, y no por casualidad
-
-
----
-
-
- Barro sostiene que sí. Sostiene que los individuos efectivamente anticipan el nivel futuro de impuestos a partir del endeudamiento del gobierno, y deciden su gasto y su ahorro en función de eso. Por lo tanto, la deuda pública se traduce en un aumento del ahorro privado, y una reducción del consumo —es decir, que no hay manera de estimular la economía con emisión de deuda. No hay ninguna información empírica para sostener las ideas de Barro, que tampoco han sido muy populares.
-
-
----
-
-
- La idea central parece casi de sentido común. Los políticos, los funcionarios, son como cualquier otra gente: individuos racionales que tratan de maximizar su utilidad.
 
 
 ---

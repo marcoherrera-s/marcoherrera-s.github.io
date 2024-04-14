@@ -1,5 +1,6 @@
-# **Las malas (Villada, Camila Sosa)** 
-## Highlights 
+# **Las malas (Villada, Camila Sosa)**
+
+## Highlights
 
  Lo que la naturaleza no te da, el infierno te lo presta.
 
@@ -13,67 +14,7 @@
 ---
 
 
- Hoy la calle está tranquila. Somos las únicas habitantes de toda la ciudad. Quien nos vea esta tarde, tumbadas sobre el césped, tomando mates al sol, untadas en Coca-Cola, del color del caramelo líquido, va a soñar con nuestros cuerpos y nuestras risas, será una imagen insoportable, como la visión de Dios.
-
-
----
-
-
- «Yo soy puta, no ladrona», le respondo. No sé bien qué quiero decirle. Él no vuelve más y es una pena, porque era guapo, pero se lo merecía, igual que los demás. Para que sepan que somos más caras que lo que sus mentes heterosexuales pueden imaginar.
-
-
----
-
-
- Me pregunto qué habría pasado si, en vez de mandar la rabia a lo más hondo de nuestra alma travesti, nos hubiéramos organizado. ¿Qué pasó, en cambio? ¿Adónde nos llevó tragarnos el veneno? A morir jóvenes. Porque, salvo en esos súbitos y rabiosos estallidos fratricidas, las travestis no matábamos ni una mosca.
-
-
----
-
-
- Así era mi doble vida. El camino a casa de mis padres cruzando las sierras justo por su columna vertebral, la náusea, las continuas ganas de abandonarlo todo, el revoltijo de sentimientos, no terminar de entender si los amaba o si los odiaba, si me era posible seguir viviendo con aquella imposición de ellos, a cambio de su protección y su afecto, o si iba a terminar ahogándome en el rencor y el sufrimiento.
-
-
----
-
-
- Él era la pasión que enfermaba mi vida. Imposible dejar de desearlo, incluso con sus agresiones, incluso con su violencia, yo era con él como quería ser.
-
-
----
-
-
- Tengo miedo, pero también me causa risa verlo tan desesperado por ser penetrado, un niño caprichoso por una verga.
-
-
----
-
-
- Hay que ver cómo se les estruja la escala de valores cuando tienen ese pene adentro.
-
-
----
-
-
- El triunfo de volver a casa habiendo sido invisibles y llegar limpias de agresiones.
-
-
----
-
-
  Van ahí porque saben que no se podría estar más a salvo en ningún otro lugar. Llevan al niño en una cartera.
-
-
----
-
-
- «Ser travesti es una fiesta, mi amor, mirá a todas las que nos miran»,
-
-
----
-
-
- En ese momento de confusión Angie logró encontrar su navajita y se la clavó en la cintura al otro, y yo miré la hermosa cara ensangrentada de mi amiga y al nene de mamá lloriqueando con las dos manos agarrándose la panza, y La Tía Encarna nos gritó: «¡Salgan de una vez, pelotudas!», y vimos una horda de travestis que venían al rescate, dispuestas a descargar su larga furia acumulada.
 
 
 ---
@@ -85,37 +26,7 @@
 ---
 
 
- La había amado como merece amarse lo más sagrado del mundo. Porque para él también había sido una fiesta estar al lado de una travesti.
-
-
----
-
-
- Así fuimos olvidando lo importante: que ser travesti era una fiesta. Porque la más hermosa de todas nosotras ya no estaba ahí para recordárnoslo.
-
-
----
-
-
- Me sacaba toda la ropa, se sacaba toda su ropa y, desnudos bajo el cielo, tratando de no gemir para no molestar a los animales, rendíamos honor al pecado.
-
-
----
-
-
- he dinamitado este cuerpo.
-
-
----
-
-
  Nadie en este mundo ha dormido nunca realmente si una travesti no le ha cantado una canción de cuna.
-
-
----
-
-
- La Tía Encarna había ingresado en la vida blanca. La vida del camaleón, la de adecuarse al mundo tal y como es. Me dice que El Brillo lo sabe todo. No hay nada que ocultarle. Es muy sabio el niño. En ese momento él deja de mirar la televisión y dice: «Sí, lo sé todo. Ella es mi mamá y mi papá. No todos los niños del mundo tienen esa suerte». Yo pensé en cómo se desintegraba el amor en toda familia, pero ellos dos no eran una familia; el título de familia les quedaba corto. Lo de ellos era un amor mucho mayor, era toda la comprensión de la que era capaz el ser humano.
 
 
 ---
@@ -218,6 +129,96 @@
 
 
  rezo para que las tetas me crezcan durante la noche, para que mis padres me perdonen, para que me nazca una vagina entre las piernas. Pero no. Entre las piernas tengo un cuchillo.
+
+
+---
+
+
+ Hoy la calle está tranquila. Somos las únicas habitantes de toda la ciudad. Quien nos vea esta tarde, tumbadas sobre el césped, tomando mates al sol, untadas en Coca-Cola, del color del caramelo líquido, va a soñar con nuestros cuerpos y nuestras risas, será una imagen insoportable, como la visión de Dios.
+
+
+---
+
+
+ «Yo soy puta, no ladrona», le respondo. No sé bien qué quiero decirle. Él no vuelve más y es una pena, porque era guapo, pero se lo merecía, igual que los demás. Para que sepan que somos más caras que lo que sus mentes heterosexuales pueden imaginar.
+
+
+---
+
+
+ Me pregunto qué habría pasado si, en vez de mandar la rabia a lo más hondo de nuestra alma travesti, nos hubiéramos organizado. ¿Qué pasó, en cambio? ¿Adónde nos llevó tragarnos el veneno? A morir jóvenes. Porque, salvo en esos súbitos y rabiosos estallidos fratricidas, las travestis no matábamos ni una mosca.
+
+
+---
+
+
+ Así era mi doble vida. El camino a casa de mis padres cruzando las sierras justo por su columna vertebral, la náusea, las continuas ganas de abandonarlo todo, el revoltijo de sentimientos, no terminar de entender si los amaba o si los odiaba, si me era posible seguir viviendo con aquella imposición de ellos, a cambio de su protección y su afecto, o si iba a terminar ahogándome en el rencor y el sufrimiento.
+
+
+---
+
+
+ Él era la pasión que enfermaba mi vida. Imposible dejar de desearlo, incluso con sus agresiones, incluso con su violencia, yo era con él como quería ser.
+
+
+---
+
+
+ Tengo miedo, pero también me causa risa verlo tan desesperado por ser penetrado, un niño caprichoso por una verga.
+
+
+---
+
+
+ Hay que ver cómo se les estruja la escala de valores cuando tienen ese pene adentro.
+
+
+---
+
+
+ El triunfo de volver a casa habiendo sido invisibles y llegar limpias de agresiones.
+
+
+---
+
+
+ «Ser travesti es una fiesta, mi amor, mirá a todas las que nos miran»,
+
+
+---
+
+
+ En ese momento de confusión Angie logró encontrar su navajita y se la clavó en la cintura al otro, y yo miré la hermosa cara ensangrentada de mi amiga y al nene de mamá lloriqueando con las dos manos agarrándose la panza, y La Tía Encarna nos gritó: «¡Salgan de una vez, pelotudas!», y vimos una horda de travestis que venían al rescate, dispuestas a descargar su larga furia acumulada.
+
+
+---
+
+
+ La había amado como merece amarse lo más sagrado del mundo. Porque para él también había sido una fiesta estar al lado de una travesti.
+
+
+---
+
+
+ Así fuimos olvidando lo importante: que ser travesti era una fiesta. Porque la más hermosa de todas nosotras ya no estaba ahí para recordárnoslo.
+
+
+---
+
+
+ Me sacaba toda la ropa, se sacaba toda su ropa y, desnudos bajo el cielo, tratando de no gemir para no molestar a los animales, rendíamos honor al pecado.
+
+
+---
+
+
+ he dinamitado este cuerpo.
+
+
+---
+
+
+ La Tía Encarna había ingresado en la vida blanca. La vida del camaleón, la de adecuarse al mundo tal y como es. Me dice que El Brillo lo sabe todo. No hay nada que ocultarle. Es muy sabio el niño. En ese momento él deja de mirar la televisión y dice: «Sí, lo sé todo. Ella es mi mamá y mi papá. No todos los niños del mundo tienen esa suerte». Yo pensé en cómo se desintegraba el amor en toda familia, pero ellos dos no eran una familia; el título de familia les quedaba corto. Lo de ellos era un amor mucho mayor, era toda la comprensión de la que era capaz el ser humano.
 
 
 ---

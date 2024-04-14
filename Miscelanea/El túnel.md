@@ -1,7 +1,10 @@
-# **El túnel (Sábato, Ernesto)** 
-## Highlights 
+# **El túnel (Sábato, Ernesto)**
 
- modo que no había competencia posible en Hunter; pero mi capa más profunda se entristeció al pensar (mejor dicho, al sentir) que María formaba también parte de ese círculo y que, de alguna manera, podría tener atributos parecidos.
+## Highlights
+
+
+
+ Pero ¿por qué esa manía de querer encontrar explicación a todos los actos de la vida?
 
 
 ---
@@ -13,49 +16,7 @@
 ---
 
 
- Pero Marta no vino. Cuando llegó el tren y miré hacia el camino por última vez, con la esperanza de que apareciera a último momento, y no la vi llegar, sentí una infinita tristeza.
-
-
----
-
-
- Por un segundo, el espanto de destruir el resto que quedaba de nuestro amor y de quedarme definitivamente solo, me hizo vacilar. Pensé que quizá era posible echar a un lado todas las dudas que me torturaban. ¿Qué me importaba lo que fuera María más allá de nosotros?
-
-
----
-
-
  Sin embargo, de todos los conglomerados detesto particularmente el de los pintores. En parte, naturalmente, porque es el que más conozco y ya se sabe que uno puede detestar con mayor razón lo que se conoce a fondo.
-
-
----
-
-
- y que en todo caso había un solo túnel, oscuro y solitario: el mío,
-
-
----
-
-
- y entonces yo, con la cara apretada contra el muro de vidrio, la veía a lo lejos sonreír o bailar despreocupadamente o, lo que era peor, no la veía en absoluto y la imaginaba en lugares inaccesibles o torpes. Y entonces sentía que mi destino era infinitamente más solitario que lo que había imaginado.
-
-
----
-
-
- ¡Y hablaba con ese monstruo ridículo! ¿De qué podría hablar María con ese infecto personaje? ¿Y en qué lenguaje? ¿O sería yo el monstruo ridículo? ¿Y no se estarían riendo de mí en ese instante? ¿Y no sería yo el imbécil, el ridículo hombre del túnel y de los mensajes secretos?
-
-
----
-
-
- rata.
-
-
----
-
-
- Pero ¿por qué esa manía de querer encontrar explicación a todos los actos de la vida?
 
 
 ---
@@ -110,6 +71,42 @@
 
 
  "Esta gente es frívola, superficial. Gente así no puede producir en María más que un sentimiento de soledad. gente así no puede ser rival."
+
+
+---
+
+
+ modo que no había competencia posible en Hunter; pero mi capa más profunda se entristeció al pensar (mejor dicho, al sentir) que María formaba también parte de ese círculo y que, de alguna manera, podría tener atributos parecidos.
+
+
+---
+
+
+ Pero Marta no vino. Cuando llegó el tren y miré hacia el camino por última vez, con la esperanza de que apareciera a último momento, y no la vi llegar, sentí una infinita tristeza.
+
+
+---
+
+
+ Por un segundo, el espanto de destruir el resto que quedaba de nuestro amor y de quedarme definitivamente solo, me hizo vacilar. Pensé que quizá era posible echar a un lado todas las dudas que me torturaban. ¿Qué me importaba lo que fuera María más allá de nosotros?
+
+
+---
+
+
+ y que en todo caso había un solo túnel, oscuro y solitario: el mío,
+
+
+---
+
+
+ y entonces yo, con la cara apretada contra el muro de vidrio, la veía a lo lejos sonreír o bailar despreocupadamente o, lo que era peor, no la veía en absoluto y la imaginaba en lugares inaccesibles o torpes. Y entonces sentía que mi destino era infinitamente más solitario que lo que había imaginado.
+
+
+---
+
+
+ ¡Y hablaba con ese monstruo ridículo! ¿De qué podría hablar María con ese infecto personaje? ¿Y en qué lenguaje? ¿O sería yo el monstruo ridículo? ¿Y no se estarían riendo de mí en ese instante? ¿Y no sería yo el imbécil, el ridículo hombre del túnel y de los mensajes secretos?
 
 
 ---

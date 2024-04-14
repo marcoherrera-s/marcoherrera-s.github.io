@@ -1,5 +1,54 @@
-# **The Outer Limits of Reason: What Science, Mathematics, and Logic Cannot Tell Us (Yanofsky, Noson S.)** 
-## Highlights 
+# **The Outer Limits of Reason: What Science, Mathematics, and Logic Cannot Tell Us (Yanofsky, Noson S.)**
+
+## Highlights
+
+ However, we cannot simply solve all problems by waving our hand and declaring that the word heterological does not exist or has no meaning. The problem is too deeply rooted in the very nature of language.
+
+
+---
+
+
+ • “The villager who shaves everyone who does not shave themselves.” • “The word that describes all words that do not describe themselves.” • “The reference book that lists all books that do not list themselves.” • “The set that contains all sets that do not contain themselves.” As you can see, all these descriptions have the exact same structure (as do figures 2.1 through 2.3). Every time there is self-reference, there are possibilities for contradictions.
+
+
+---
+
+
+ Such questions go on indefinitely. I will restrain myself and discuss just one more scenario. Imagine that every time a plank is changed, rather than consigning the old planks to the scrap heap, we store them in a warehouse. After some time, all the old planks are assembled into a ship.
+
+
+---
+
+
+ Barings Bank was in existence from 1762 through 1995. In that time, the owners, workers, and customers all changed. The Brooklyn Dodgers have been around since 1883. Their players, managers, owners, and fans have definitely changed. What remains the same about a baseball team?
+
+
+---
+
+
+ We are not only talking about change. Rather, we are discussing what it means for an object to be that object.
+
+
+---
+
+
+ Our bodies are in constant flux. Old cells die and new cells are constantly being born. In fact, most of the cells in our body are replaced every seven years.
+
+
+---
+
+
+ A person is more than a physical object because there is thought.
+
+
+---
+
+
+ To such philosophers, a person is a continuous stream of consciousness—they are memories, intentions, thoughts, and desires.
+
+
+---
+
 
  Rather, all of calculus is based on the modern notions of infinity mentioned in this chapter. Calculus, in turn, is the basis of all of the modern mathematics, physics, and engineering that make our advanced technological civilization possible. The reason the counterintuitive ideas of infinity are central to modern science is that they work. We cannot simply ignore them.
 
@@ -241,18 +290,6 @@
 ---
 
 
- However, we cannot simply solve all problems by waving our hand and declaring that the word heterological does not exist or has no meaning. The problem is too deeply rooted in the very nature of language.
-
-
----
-
-
- • “The villager who shaves everyone who does not shave themselves.” • “The word that describes all words that do not describe themselves.” • “The reference book that lists all books that do not list themselves.” • “The set that contains all sets that do not contain themselves.” As you can see, all these descriptions have the exact same structure (as do figures 2.1 through 2.3). Every time there is self-reference, there are possibilities for contradictions.
-
-
----
-
-
  As we showed, there are countably infinite statements that are also true but unprovable in Peano Arithmetic. It would be nice to see more such statements that are “natural” and look like “real mathematics.” One such statement is Goodstein’s theorem.
 
 
@@ -326,42 +363,6 @@
 
 
  The time we spend with our loved ones is treasured even though there is no logical necessity for it. We feel pain when we are distant from our loved ones. Our decisions are not made on the basis of logic and reason. Instead we use aesthetics, practical experience, moral inclinations, gut impulses, emotions, intuitions, and feelings. In this sense, every one of us already transcends the bounds of reason.
-
-
----
-
-
- Such questions go on indefinitely. I will restrain myself and discuss just one more scenario. Imagine that every time a plank is changed, rather than consigning the old planks to the scrap heap, we store them in a warehouse. After some time, all the old planks are assembled into a ship.
-
-
----
-
-
- Barings Bank was in existence from 1762 through 1995. In that time, the owners, workers, and customers all changed. The Brooklyn Dodgers have been around since 1883. Their players, managers, owners, and fans have definitely changed. What remains the same about a baseball team?
-
-
----
-
-
- We are not only talking about change. Rather, we are discussing what it means for an object to be that object.
-
-
----
-
-
- Our bodies are in constant flux. Old cells die and new cells are constantly being born. In fact, most of the cells in our body are replaced every seven years.
-
-
----
-
-
- A person is more than a physical object because there is thought.
-
-
----
-
-
- To such philosophers, a person is a continuous stream of consciousness—they are memories, intentions, thoughts, and desires.
 
 
 ---

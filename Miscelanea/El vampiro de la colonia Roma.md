@@ -1,5 +1,12 @@
-# **El vampiro de la colonia Roma / The vampire of the Roma neighborhood: Las aventuras, desventuras y suenos de Adonis Garcia / The Adventures, Misadventures and Dreams of Adonis Garcia (Zapata, Luis)** 
-## Highlights 
+# **El vampiro de la colonia Roma / The vampire of the Roma neighborhood: Las aventuras, desventuras y suenos de Adonis Garcia / The Adventures, Misadventures and Dreams of Adonis Garcia (Zapata, Luis)**
+
+## Highlights
+
+ sin embargo se seguía portando muy cuatita conmigo   se preocupaba mucho por mí      me preguntaba que si quería trabajar y yo luego luego me excusaba diciéndole que sí   pero que no encontraba trabajo      pus ni modo de decirle que andaba de vampiro ¿no?
+
+
+---
+
 
  La muerte y yo nos hablamos de tú desde hace tiempo; ella juega conmigo sin hacerme daño.
 
@@ -56,12 +63,6 @@
 
 
  y después la república   y el continente americano   hasta que quedara la tierra nomás como una bolita de billar   que a cada momento se iría haciendo más pequeñita y más pequeñita y más pequeñita   y correríamos a velocidades increíbles   y por la ventanilla   porque sí deben tener ventanillas esas cosas ¿no?   por la ventanilla iría viendo las estrellas que pasaban bien rápido   o una estrella fugaz   y entonces cerraría los ojos y pediría un deseo   que no volviera nunca   pero nunca   por ningún motivo   a este pinche mundo                                                      y ora sí ya apágale ¿no?
-
-
----
-
-
- sin embargo se seguía portando muy cuatita conmigo   se preocupaba mucho por mí      me preguntaba que si quería trabajar y yo luego luego me excusaba diciéndole que sí   pero que no encontraba trabajo      pus ni modo de decirle que andaba de vampiro ¿no?
 
 
 ---

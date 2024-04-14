@@ -1,13 +1,8 @@
-# **La caída (Albert Camus)** 
-## Highlights 
+# **La caída (Albert Camus)**
 
- No, no bromeo sino a medias
+## Highlights
 
-
----
-
-
- es difícil distinguir lo verdadero de lo falso en lo que cuento.
+ A veces imagino lo que habrán de decir de nosotros los historiadores futuros. Les bastará una frase para caracterizar al hombre moderno: fornicaban y leían periódicos.
 
 
 ---
@@ -19,43 +14,13 @@
 ---
 
 
- Y mis historias, verdaderas o falsas, ¿no tienden todas al mismo fin, no tienen todas el mismo sentido
-
-
----
-
-
  Pero es la superabundancia, que se desborda. Apenas abro la boca las frases me afluyen.
 
 
 ---
 
 
- Nosotros, hijos de la mitad del siglo, no tenemos necesidad de ilustraciones para imaginarnos esos lugares
-
-
----
-
-
- A decir verdad, tenía un poco de vergüenza de poseer cosas.
-
-
----
-
-
  más dorado durante la noche; pero noche y día ese sueño está poblado por figuras de Lohengrin,
-
-
----
-
-
- En filosofía, lo mismo que en política, soy, pues, partidario de toda teoría que niega la inocencia del hombre y de toda práctica que lo trata como culpable. En mi está viendo usted, querido amigo, un partidario ilustrado de la servidumbre
-
-
----
-
-
- Yo, por ejemplo, que no soy sentimental, ¿sabe usted con lo que soñé? Con un amor completo, con un amor de todo el corazón y todo el cuerpo, amor de día y de noche, en un abrazo incesante, en el que gozara y me exaltara. Y que esto durara cinco años. Después, la muerte. ¡Ay!
 
 
 ---
@@ -68,18 +33,6 @@
 
 
  Aquí estamos en el último círculo, el círculo de los…, ah, ¿lo sabe? ¡Diablos, cada vez se me hace usted más difícil de clasificar! Quiere decir entonces que usted comprende por qué digo yo que el centro de las cosas está aquí, aunque nos encontremos en el extremo del continente.
-
-
----
-
-
- Soy feliz, le digo; le prohíbo que no crea que soy feliz. ¡Soy feliz a rabiar
-
-
----
-
-
- Ahora es ya demasiado tarde, siempre será demasiado tarde!
 
 
 ---
@@ -229,12 +182,6 @@
 ---
 
 
- A veces imagino lo que habrán de decir de nosotros los historiadores futuros. Les bastará una frase para caracterizar al hombre moderno: fornicaban y leían periódicos.
-
-
----
-
-
  Unos gritan: "¡Ámame!"; los otros: "¡No me ames!" Pero cierta clase de hombres, la más desdichada, dice: "¡No me ames, pero permanéceme fiel!".
 
 
@@ -362,6 +309,60 @@
 
 
  Aún no terminé. Tengo que continuar. Continuar, eso es lo difícil
+
+
+---
+
+
+ No, no bromeo sino a medias
+
+
+---
+
+
+ es difícil distinguir lo verdadero de lo falso en lo que cuento.
+
+
+---
+
+
+ Y mis historias, verdaderas o falsas, ¿no tienden todas al mismo fin, no tienen todas el mismo sentido
+
+
+---
+
+
+ Nosotros, hijos de la mitad del siglo, no tenemos necesidad de ilustraciones para imaginarnos esos lugares
+
+
+---
+
+
+ A decir verdad, tenía un poco de vergüenza de poseer cosas.
+
+
+---
+
+
+ En filosofía, lo mismo que en política, soy, pues, partidario de toda teoría que niega la inocencia del hombre y de toda práctica que lo trata como culpable. En mi está viendo usted, querido amigo, un partidario ilustrado de la servidumbre
+
+
+---
+
+
+ Yo, por ejemplo, que no soy sentimental, ¿sabe usted con lo que soñé? Con un amor completo, con un amor de todo el corazón y todo el cuerpo, amor de día y de noche, en un abrazo incesante, en el que gozara y me exaltara. Y que esto durara cinco años. Después, la muerte. ¡Ay!
+
+
+---
+
+
+ Soy feliz, le digo; le prohíbo que no crea que soy feliz. ¡Soy feliz a rabiar
+
+
+---
+
+
+ Ahora es ya demasiado tarde, siempre será demasiado tarde!
 
 
 ---

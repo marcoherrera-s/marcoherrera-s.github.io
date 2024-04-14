@@ -1,155 +1,6 @@
-# **Too Smart: How Digital Capitalism Is Extracting Data, Controlling Our Lives, and Taking Over the World (Sadowski, Jathan)** 
-## Highlights 
+# **Too Smart: How Digital Capitalism Is Extracting Data, Controlling Our Lives, and Taking Over the World (Sadowski, Jathan)**
 
- “A structure where one man gets to decide whether hundreds of thousands of people will be able to feed their children or pay rent is intolerable,”
-
-
----
-
-
- Capitalism—in any variety, digital or otherwise—is a system that is both intolerable and enduring, but not inevitable.
-
-
----
-
-
- The fight for our imagination—and the world it gives shape to—is not yet over.
-
-
----
-
-
- No mindfulness app, which reminds you to take a few moments to sit quietly every day, is going to steel you against a political economic system designed to concentrate power in the hands of a few.
-
-
----
-
-
- These things might help us tolerate the worst excesses of digital capitalism—to be sure, every little bit of relief helps—but they aren’t going to change the system.
-
-
----
-
-
- The “starter interrupt device” allows auto lenders to track the location of cars, both in real time and over time, and remotely shut off vehicles if the borrower falls behind on payments (sometimes by only a day) or drives outside an approved area. There’s no escaping debt collectors who can, with the push of a button on their smartphones, disable your car until you cough up payment. As one lender said, “I have disabled a car while I was shopping at Walmart.”4 No effort, no stealth, no confrontation required.
-
-
----
-
-
- For those in the West, it is easy to claim that Zhima Credit and the SCS are products of an authoritarian regime.
-
-
----
-
-
- Modern Times ingeniously skewered work and life in industrial society. Even today it remains a masterful film, but what if we made a sequel called Contemporary Times about work in a smart society? What would it look like? Instead of a factory in the 1930s, perhaps it would be set in the early twenty-first century’s version of a brutally exploitative work place: an Amazon warehouse.
-
-
----
-
-
- “All you people care about is the rates, not the well-being of the people. I’ve never worked for an employer that had paramedics waiting outside for people to drop because of the extreme heat.”55
-
-
----
-
-
- While smart tech allows us to quantify and access information about ourselves, that data is not then locked away in our own private vaults. The smart self exists in databases owned by others.
-
-
----
-
-
- “This thing is addressing problems that don’t exist.
-
-
----
-
-
- Finding ways to squeeze more value from workers is a powerful motivation for innovation. In response, workers have always searched for ways to slow down the pace of work, reclaim some of the value they produce, and exercise their human agency.
-
-
----
-
-
- “Within the same room, machines were smashed or spared according to the business practices of their owners.”
-
-
----
-
-
- Luddism was motivated by factory owners using machines to drastically increase productivity targets, accelerate the pace of work, and squeeze more value from workers. Sound familiar? “Luddism wasn’t a war on machines,” writes Byrne.10 It was a working-class movement, which understood the importance of confronting the technopolitics of industrial capitalism.
-
-
----
-
-
- Luddism as policy.12
-
-
----
-
-
- Ultimately unmaking means thinking bigger than just downgrading our smart toasters or detoxing from our smartphones. It is a method of reckoning with the “material foundations” and “form of society” created by digital capitalism.
-
-
----
-
-
- Those that don’t actually enhance life and benefit society—which instantly excludes nearly all smart tech designed to expand data extraction and social control—should be unmade.
-
-
----
-
-
- We’ve been taught to think about innovation as a result of unexpected ideas and great men, which then produce technoscientific advances that improve human life.
-
-
----
-
-
- When I say we need to take control of innovation, I mean we need to democratize innovation by giving more people more power to influence how, why, and for what purpose new technology is created.
-
-
----
-
-
- The problem is that the current model socializes risks and privatizes rewards: governments spend public money and bear the risks of investment, while businesses claim ownership and reap the benefits. Silicon Valley, for example, would basically not exist if not for the long list of technoscientific discoveries funded by government agencies, not to mention the cash injections and business deals that prop up iconic companies like SpaceX and Amazon. Indeed, some of the most exalted entrepreneurs like Elon Musk are, in many respects, glorified government contractors.
-
-
----
-
-
- An institution like a data repository would be a promising step toward preventing private interests from controlling the ability to build and benefit from data-driven tech. For example, instead of a company like Uber—monopolistic, mercenary, and merciless—gathering reams of data about people’s mobility for its own benefit and then charging local governments for access to its insights, a repository could ensure the data is used to enhance and expand public transportation.
-
-
----
-
-
- collectivize data,
-
-
----
-
-
- Through public ownership, the power of data can fuel more socially beneficial innovation, its value can be more equally distributed, and its potential can be more fully unlocked.
-
-
----
-
-
- The three tactics outlined above—deconstructing capital, democratizing innovation, and demanding data—contribute in their own ways to the goal of seizing smartness to build a better society.
-
-
----
-
-
- Resisting, redefining, and redesigning the smart society will be difficult, but it is necessary. Thatcher’s slogan that “there is no alternative” was a declaration of triumph. Silicon Valley is already hanging the “mission accomplished” banner. It’s our job to show that its celebration is premature.
-
-
----
-
+## Highlights
 
  No check out necessary; your account will be autobilled. In return for this convenience, Amazon will track your location and behavior via hundreds of small cameras throughout the store equipped with analytics software—where you browse, how long you linger, and what you pick up and put back.6
 
@@ -392,6 +243,156 @@
 
 
  “It is easier to imagine the end of the world than to imagine the end of capitalism.”
+
+
+---
+
+
+ “A structure where one man gets to decide whether hundreds of thousands of people will be able to feed their children or pay rent is intolerable,”
+
+
+---
+
+
+ Capitalism—in any variety, digital or otherwise—is a system that is both intolerable and enduring, but not inevitable.
+
+
+---
+
+
+ The fight for our imagination—and the world it gives shape to—is not yet over.
+
+
+---
+
+
+ No mindfulness app, which reminds you to take a few moments to sit quietly every day, is going to steel you against a political economic system designed to concentrate power in the hands of a few.
+
+
+---
+
+
+ These things might help us tolerate the worst excesses of digital capitalism—to be sure, every little bit of relief helps—but they aren’t going to change the system.
+
+
+---
+
+
+ The “starter interrupt device” allows auto lenders to track the location of cars, both in real time and over time, and remotely shut off vehicles if the borrower falls behind on payments (sometimes by only a day) or drives outside an approved area. There’s no escaping debt collectors who can, with the push of a button on their smartphones, disable your car until you cough up payment. As one lender said, “I have disabled a car while I was shopping at Walmart.”4 No effort, no stealth, no confrontation required.
+
+
+---
+
+
+ For those in the West, it is easy to claim that Zhima Credit and the SCS are products of an authoritarian regime.
+
+
+---
+
+
+ Modern Times ingeniously skewered work and life in industrial society. Even today it remains a masterful film, but what if we made a sequel called Contemporary Times about work in a smart society? What would it look like? Instead of a factory in the 1930s, perhaps it would be set in the early twenty-first century’s version of a brutally exploitative work place: an Amazon warehouse.
+
+
+---
+
+
+ “All you people care about is the rates, not the well-being of the people. I’ve never worked for an employer that had paramedics waiting outside for people to drop because of the extreme heat.”55
+
+
+---
+
+
+ While smart tech allows us to quantify and access information about ourselves, that data is not then locked away in our own private vaults. The smart self exists in databases owned by others.
+
+
+---
+
+
+ “This thing is addressing problems that don’t exist.
+
+
+---
+
+
+ Finding ways to squeeze more value from workers is a powerful motivation for innovation. In response, workers have always searched for ways to slow down the pace of work, reclaim some of the value they produce, and exercise their human agency.
+
+
+---
+
+
+ “Within the same room, machines were smashed or spared according to the business practices of their owners.”
+
+
+---
+
+
+ Luddism was motivated by factory owners using machines to drastically increase productivity targets, accelerate the pace of work, and squeeze more value from workers. Sound familiar? “Luddism wasn’t a war on machines,” writes Byrne.10 It was a working-class movement, which understood the importance of confronting the technopolitics of industrial capitalism.
+
+
+---
+
+
+ Luddism as policy.12
+
+
+---
+
+
+ Ultimately unmaking means thinking bigger than just downgrading our smart toasters or detoxing from our smartphones. It is a method of reckoning with the “material foundations” and “form of society” created by digital capitalism.
+
+
+---
+
+
+ Those that don’t actually enhance life and benefit society—which instantly excludes nearly all smart tech designed to expand data extraction and social control—should be unmade.
+
+
+---
+
+
+ We’ve been taught to think about innovation as a result of unexpected ideas and great men, which then produce technoscientific advances that improve human life.
+
+
+---
+
+
+ When I say we need to take control of innovation, I mean we need to democratize innovation by giving more people more power to influence how, why, and for what purpose new technology is created.
+
+
+---
+
+
+ The problem is that the current model socializes risks and privatizes rewards: governments spend public money and bear the risks of investment, while businesses claim ownership and reap the benefits. Silicon Valley, for example, would basically not exist if not for the long list of technoscientific discoveries funded by government agencies, not to mention the cash injections and business deals that prop up iconic companies like SpaceX and Amazon. Indeed, some of the most exalted entrepreneurs like Elon Musk are, in many respects, glorified government contractors.
+
+
+---
+
+
+ An institution like a data repository would be a promising step toward preventing private interests from controlling the ability to build and benefit from data-driven tech. For example, instead of a company like Uber—monopolistic, mercenary, and merciless—gathering reams of data about people’s mobility for its own benefit and then charging local governments for access to its insights, a repository could ensure the data is used to enhance and expand public transportation.
+
+
+---
+
+
+ collectivize data,
+
+
+---
+
+
+ Through public ownership, the power of data can fuel more socially beneficial innovation, its value can be more equally distributed, and its potential can be more fully unlocked.
+
+
+---
+
+
+ The three tactics outlined above—deconstructing capital, democratizing innovation, and demanding data—contribute in their own ways to the goal of seizing smartness to build a better society.
+
+
+---
+
+
+ Resisting, redefining, and redesigning the smart society will be difficult, but it is necessary. Thatcher’s slogan that “there is no alternative” was a declaration of triumph. Silicon Valley is already hanging the “mission accomplished” banner. It’s our job to show that its celebration is premature.
 
 
 ---
