@@ -1,11 +1,6 @@
-# **En deuda: una historia alternativa de la economía (Graeber, David)** 
-## Highlights 
+# **En deuda: una historia alternativa de la economía (Graeber, David)**
 
- En lugar de descubrir el trueque, acabaron empleando las mismas técnicas que los economistas de la corriente clásica rechazaban para crear algo parecido a un mercado.
-
-
----
-
+## Highlights
 
  flexibilidad del concepto, es la base de su poder. Si algo enseña la historia, es que no hay mejor manera de justificar relaciones basadas en la violencia, para hacerlas parecer éticas, que darles un nuevo marco en el lenguaje de la deuda, sobre todo porque inmediatamente hace parecer que es la víctima la que ha hecho algo mal.
 
@@ -19,25 +14,7 @@
 ---
 
 
- Entre aproximadamente 1933 y 1979 todos los grandes gobiernos capitalistas invirtieron el rumbo y adoptaron alguna forma de keynesianismo. La ortodoxia keynesiana parte de la percepción de que los mercados capitalistas en realidad no funcionan a menos que los gobiernos capitalistas se esfuercen en hacer de niñeras: sobre todo, realizando gigantescas y deficitarias inyecciones de capital en los momentos de crisis.
-
-
----
-
-
- La ortodoxia keynesiana parte de la percepción de que los mercados capitalistas en realidad no funcionan a menos que los gobiernos capitalistas se esfuercen en hacer de niñeras:
-
-
----
-
-
  En cierta manera se puede contemplar la situación económica del mundo actual como una versión a mayor escala de lo mismo: en este caso, EEUU sería el deudor de lujo y Madagascar el deudor pobre muriendo de inanición en la celda de al lado, mientras los criados del deudor de lujo le aseguran que sus problemas se deben a su propia irresponsabilidad.
-
-
----
-
-
- Tiene mucho sentido si se parte de la premisa inicial de Nietzsche. El problema es que esa premisa es descabellada. Hay muchas razones, también, para creer que el propio Nietzsche sabía que esa premisa era descabellada: en realidad, de eso se trataba. Lo que Nietzsche estaba haciendo era partir de las asunciones estándares y aceptadas como «de sentido común» en su época (y, en gran medida, en la nuestra), de que somos máquinas racionales de calcular, de que el interés egoísta y comercial precede a la sociedad, de que la propia «sociedad» no es sino una manera de poner una protección temporal sobre el conflicto resultante. Es decir, comienza por las acepciones burguesas típicas y las lleva hasta un extremo en que es evidente que han de epatar a una audiencia burguesa.
 
 
 ---
@@ -55,37 +32,7 @@
 ---
 
 
- Es más: aquellas disciplinas, dentro de las teorías sociales, que más se arrogan un estatus científico (la teoría de la elección racional, por ejemplo) parten de las mismas premisas acerca de la psicología humana que los economistas: que los humanos se han de tomar como actores egoístas que calculan cómo obtener el máximo beneficio posible de cada situación; el máximo provecho, placer o felicidad a cambio de la mínima inversión posible.
-
-
----
-
-
  Las discusiones acerca de quién debe realmente qué a quién han jugado un papel esencial en la formación de nuestro vocabulario básico de lo que está bien o mal.
-
-
----
-
-
- Es posiblemente por esto, también, por lo que en los momentos inmediatamente posteriores a un gran desastre (una inundación, un gran apagón o un colapso económico) la gente tiende a comportarse de la misma manera, regresando a un improvisado comunismo. Aunque sea por poco tiempo, las jerarquías, mercados y similares se convierten en lujos que nadie se puede permitir. Cualquiera que haya experimentado un momento así puede dar fe de sus especiales cualidades, de la manera en que perfectos extraños se convierten en hermanos y de la manera en que la propia sociedad humana parece renacer. Esto es importante, porque demuestra que no estamos hablando sólo de cooperación.
-
-
----
-
-
- Cuando la familia de un pretendiente fiyiano regala un diente de ballena para pedir la mano de una mujer, ¿se trata de un pago por adelantado en virtud de los servicios que la mujer proporcionará al cultivar los jardines de su marido? ¿O está comprando la fertilidad de su útero? ¿O se trata solamente de una formalidad, el equivalente al dólar que ha de cambiar de manos para sellar un acuerdo? Según Rospabé, no se trata de nada de todo esto. El diente de ballena, no obstante su valor, no es una forma de pago. Es el reconocimiento de que uno está pidiendo algo de un valor tan único que cualquier pago por ello sería impensable. El único pago adecuado por una mujer es otra mujer; entre tanto, lo único que uno puede hacer es reconocer la enorme deuda.
-
-
----
-
-
- El dinero, pues, comienza, en palabras de Rospabé, como «un sustituto de la vida»[14]. Se lo puede denominar como el reconocimiento de una deuda de vida.
-
-
----
-
-
- Todo esto sólo sirve para subrayar el argumento básico de Rospabé, que es que el dinero se puede considerar, en las economías humanas, ante todo como el reconocimiento de la existencia de una deuda que no se puede pagar.
 
 
 ---
@@ -212,6 +159,60 @@
 
 
  En este sentido, el valor de una unidad de moneda no es la medida del valor de un objeto, sino el valor de la confianza que se tiene en otros seres humanos.
+
+
+---
+
+
+ En lugar de descubrir el trueque, acabaron empleando las mismas técnicas que los economistas de la corriente clásica rechazaban para crear algo parecido a un mercado.
+
+
+---
+
+
+ Entre aproximadamente 1933 y 1979 todos los grandes gobiernos capitalistas invirtieron el rumbo y adoptaron alguna forma de keynesianismo. La ortodoxia keynesiana parte de la percepción de que los mercados capitalistas en realidad no funcionan a menos que los gobiernos capitalistas se esfuercen en hacer de niñeras: sobre todo, realizando gigantescas y deficitarias inyecciones de capital en los momentos de crisis.
+
+
+---
+
+
+ La ortodoxia keynesiana parte de la percepción de que los mercados capitalistas en realidad no funcionan a menos que los gobiernos capitalistas se esfuercen en hacer de niñeras:
+
+
+---
+
+
+ Tiene mucho sentido si se parte de la premisa inicial de Nietzsche. El problema es que esa premisa es descabellada. Hay muchas razones, también, para creer que el propio Nietzsche sabía que esa premisa era descabellada: en realidad, de eso se trataba. Lo que Nietzsche estaba haciendo era partir de las asunciones estándares y aceptadas como «de sentido común» en su época (y, en gran medida, en la nuestra), de que somos máquinas racionales de calcular, de que el interés egoísta y comercial precede a la sociedad, de que la propia «sociedad» no es sino una manera de poner una protección temporal sobre el conflicto resultante. Es decir, comienza por las acepciones burguesas típicas y las lleva hasta un extremo en que es evidente que han de epatar a una audiencia burguesa.
+
+
+---
+
+
+ Es más: aquellas disciplinas, dentro de las teorías sociales, que más se arrogan un estatus científico (la teoría de la elección racional, por ejemplo) parten de las mismas premisas acerca de la psicología humana que los economistas: que los humanos se han de tomar como actores egoístas que calculan cómo obtener el máximo beneficio posible de cada situación; el máximo provecho, placer o felicidad a cambio de la mínima inversión posible.
+
+
+---
+
+
+ Es posiblemente por esto, también, por lo que en los momentos inmediatamente posteriores a un gran desastre (una inundación, un gran apagón o un colapso económico) la gente tiende a comportarse de la misma manera, regresando a un improvisado comunismo. Aunque sea por poco tiempo, las jerarquías, mercados y similares se convierten en lujos que nadie se puede permitir. Cualquiera que haya experimentado un momento así puede dar fe de sus especiales cualidades, de la manera en que perfectos extraños se convierten en hermanos y de la manera en que la propia sociedad humana parece renacer. Esto es importante, porque demuestra que no estamos hablando sólo de cooperación.
+
+
+---
+
+
+ Cuando la familia de un pretendiente fiyiano regala un diente de ballena para pedir la mano de una mujer, ¿se trata de un pago por adelantado en virtud de los servicios que la mujer proporcionará al cultivar los jardines de su marido? ¿O está comprando la fertilidad de su útero? ¿O se trata solamente de una formalidad, el equivalente al dólar que ha de cambiar de manos para sellar un acuerdo? Según Rospabé, no se trata de nada de todo esto. El diente de ballena, no obstante su valor, no es una forma de pago. Es el reconocimiento de que uno está pidiendo algo de un valor tan único que cualquier pago por ello sería impensable. El único pago adecuado por una mujer es otra mujer; entre tanto, lo único que uno puede hacer es reconocer la enorme deuda.
+
+
+---
+
+
+ El dinero, pues, comienza, en palabras de Rospabé, como «un sustituto de la vida»[14]. Se lo puede denominar como el reconocimiento de una deuda de vida.
+
+
+---
+
+
+ Todo esto sólo sirve para subrayar el argumento básico de Rospabé, que es que el dinero se puede considerar, en las economías humanas, ante todo como el reconocimiento de la existencia de una deuda que no se puede pagar.
 
 
 ---

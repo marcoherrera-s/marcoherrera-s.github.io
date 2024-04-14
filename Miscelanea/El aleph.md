@@ -1,5 +1,6 @@
-# **El aleph (Borges, Jorge Luis)** 
-## Highlights 
+# **El aleph (Borges, Jorge Luis)**
+
+## Highlights
 
  La candente mañana de febrero en que Beatriz Viterbo murió, después de una imperiosa agonía que no se rebajó un solo instante ni al sentimentalismo ni al miedo, noté que las carteleras de fierro de la Plaza Constitución habían renovado no sé qué aviso de cigarrillos rubios; el hecho me dolió, pues comprendí que el incesante y vasto universo ya se apartaba de ella y que ese cambio era el primero de una serie infinita.
 

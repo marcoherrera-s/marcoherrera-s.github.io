@@ -1,5 +1,90 @@
-# **Cien años de soledad (Edición conmemorativa) (Gabriel García Márquez)** 
-## Highlights 
+# **Cien años de soledad (Edición conmemorativa) (Gabriel García Márquez)**
+
+## Highlights
+
+ Cuando despertaron, ya con el sol alto, se quedaron pasmados de fascinación. Frente a ellos, rodeado de helechos y palmeras, blanco y polvoriento en la silenciosa luz de la mañana, estaba un enorme galeón español. Ligeramente volteado a estribor, de su arboladura intacta colgaban las piltrafas escuálidas del velamen, entre jarcias adornadas de orquídeas. El
+
+
+---
+
+
+ Uno no es de ninguna parte mientras no tenga un muerto bajo la tierra.
+
+
+---
+
+
+ era el primer hombre que veía desnudo, después de su esposo, y estaba tan bien equipado para la vida, que le pareció anormal. Úrsula, encinta por tercera vez, vivió de nuevo sus terrores de recién casada.
+
+
+---
+
+
+ No se sorprendió, porque sin saberlo lo había estado esperando. Entonces se confió a aquella mano, y en un terrible estado de agotamiento se dejó llevar hasta un lugar sin formas donde le quitaron la ropa y lo zarandearon como un costal de papas y lo voltearon al derecho y al revés, en una oscuridad insondable en la que le sobraban los brazos, donde ya no olía más a mujer, sino a amoníaco, y donde trataba de acordarse del rostro de ella y se encontraba con el rostro de Úrsula, confusamente consciente de que estaba haciendo algo que desde hacía mucho tiempo deseaba que se pudiera hacer, pero que nunca se había imaginado que en realidad se pudiera hacer, sin saber cómo lo estaba haciendo porque no sabía dónde estaban los pies y dónde la cabeza, ni los pies de quién ni la cabeza de quién, y sintiendo que no podía resistir más el rumor glacial de sus riñones y el aire de sus tripas, y el miedo, y el ansia atolondrada de huir y al mismo tiempo de quedarse para siempre en aquel silencio exasperado y aquella soledad espantosa.
+
+
+---
+
+
+ entre muchos otros juegos de artificio, llevaban una estera
+
+
+---
+
+
+ En la entrada del camino de la ciénaga se había puesto un anuncio que decía Macondo y otro más grande en la calle central que decía Dios existe
+
+
+---
+
+
+ Aunque su voz estaba también cuarteada por la incertidumbre y sus manos parecían dudar de la existencia de las cosas, era evidente que venía del mundo donde todavía los hombres podían dormir y recordar.
+
+
+---
+
+
+ Le dio a beber a José Arcadio Buendía una sustancia de color apacible, y la luz se hizo en su memoria.
+
+
+---
+
+
+ Pero cuando se vio a sí mismo y a toda su familia plasmados en una edad eterna sobre una lámina de metal tornasol, se quedó mudo de estupor.
+
+
+---
+
+
+ como fue también ella quien olvidó sus antiguos resquemores
+
+
+---
+
+
+ Melquíades terminó de plasmar en sus placas todo lo que era plasmable en Macondo, y abandonó el laboratorio de daguerrotipia a los delirios de José Arcadio Buendía, quien había resuelto utilizarlo para obtener la prueba científica de la existencia de Dios
+
+
+---
+
+
+ Úrsula ordenaba la posición de la luz y la conducta del calor, y repartía el espacio sin el menor sentido de sus límites.
+
+
+---
+
+
+ por todas partes con su sordo cascabeleo. En aquella incomodidad, respirando cal viva y melaza de alquitrán, nadie entendió muy bien cómo fue surgiendo de las entrañas de la tierra no solo la casa más grande que habría nunca en el pueblo, sino la más hospitalaria y fresca que hubo jamás en el ámbito de la ciénaga.
+
+
+---
+
+
+ —En este pueblo no mandamos con papeles —dijo sin perder la calma—. Y para que lo sepa de una vez, no necesitamos ningún corregidor porque aquí no hay nada que corregir
+
+
+---
+
 
  e instaló en la sala la cámara de Melquíades con la esperanza de obtener el daguerrotipo del ejecutante invisible.
 
@@ -595,12 +680,6 @@
 ---
 
 
- Cuando despertaron, ya con el sol alto, se quedaron pasmados de fascinación. Frente a ellos, rodeado de helechos y palmeras, blanco y polvoriento en la silenciosa luz de la mañana, estaba un enorme galeón español. Ligeramente volteado a estribor, de su arboladura intacta colgaban las piltrafas escuálidas del velamen, entre jarcias adornadas de orquídeas. El
-
-
----
-
-
  Remedios, la bella, fue la única que permaneció inmune a la peste del banano. Se estancó en una adolescencia magnífica, cada vez más impermeable a los formalismos, más indiferente a la malicia y la suspicacia, feliz en un mundo propio de realidades simples.
 
 
@@ -662,12 +741,6 @@
 
 
  La única diferencia actual entre liberales y conservadores, es que los liberales van a misa de cinco y los conservadores van a misa de ocho».
-
-
----
-
-
- Uno no es de ninguna parte mientras no tenga un muerto bajo la tierra.
 
 
 ---
@@ -1021,12 +1094,6 @@
 ---
 
 
- era el primer hombre que veía desnudo, después de su esposo, y estaba tan bien equipado para la vida, que le pareció anormal. Úrsula, encinta por tercera vez, vivió de nuevo sus terrores de recién casada.
-
-
----
-
-
  Su corazón de ceniza apelmazada, que había resistido sin quebrantos a los golpes más certeros de la realidad cotidiana, se desmoronó a los primeros embates de la nostalgia. La necesidad de sentirse triste se le iba convirtiendo en un vicio a medida que la devastaban los años. Se humanizó en la soledad.
 
 
@@ -1046,12 +1113,6 @@
 
 
  Aureliano, encerrado en su cuarto, no se dio cuenta de nada. Esa tarde, habiéndolo echado de menos en la cocina, buscó a José Arcadio por toda la casa, y lo encontró flotando en los espejos perfumados de la alberca, enorme y tumefacto, y todavía pensando en Amaranta. Solo entonces comprendió cuánto había empezado a quererlo
-
-
----
-
-
- No se sorprendió, porque sin saberlo lo había estado esperando. Entonces se confió a aquella mano, y en un terrible estado de agotamiento se dejó llevar hasta un lugar sin formas donde le quitaron la ropa y lo zarandearon como un costal de papas y lo voltearon al derecho y al revés, en una oscuridad insondable en la que le sobraban los brazos, donde ya no olía más a mujer, sino a amoníaco, y donde trataba de acordarse del rostro de ella y se encontraba con el rostro de Úrsula, confusamente consciente de que estaba haciendo algo que desde hacía mucho tiempo deseaba que se pudiera hacer, pero que nunca se había imaginado que en realidad se pudiera hacer, sin saber cómo lo estaba haciendo porque no sabía dónde estaban los pies y dónde la cabeza, ni los pies de quién ni la cabeza de quién, y sintiendo que no podía resistir más el rumor glacial de sus riñones y el aire de sus tripas, y el miedo, y el ansia atolondrada de huir y al mismo tiempo de quedarse para siempre en aquel silencio exasperado y aquella soledad espantosa.
 
 
 ---
@@ -1142,66 +1203,6 @@
 
 
  pueril, en noches de fiesta, desde el patio de los alcaravanes.
-
-
----
-
-
- entre muchos otros juegos de artificio, llevaban una estera
-
-
----
-
-
- En la entrada del camino de la ciénaga se había puesto un anuncio que decía Macondo y otro más grande en la calle central que decía Dios existe
-
-
----
-
-
- Aunque su voz estaba también cuarteada por la incertidumbre y sus manos parecían dudar de la existencia de las cosas, era evidente que venía del mundo donde todavía los hombres podían dormir y recordar.
-
-
----
-
-
- Le dio a beber a José Arcadio Buendía una sustancia de color apacible, y la luz se hizo en su memoria.
-
-
----
-
-
- Pero cuando se vio a sí mismo y a toda su familia plasmados en una edad eterna sobre una lámina de metal tornasol, se quedó mudo de estupor.
-
-
----
-
-
- como fue también ella quien olvidó sus antiguos resquemores
-
-
----
-
-
- Melquíades terminó de plasmar en sus placas todo lo que era plasmable en Macondo, y abandonó el laboratorio de daguerrotipia a los delirios de José Arcadio Buendía, quien había resuelto utilizarlo para obtener la prueba científica de la existencia de Dios
-
-
----
-
-
- Úrsula ordenaba la posición de la luz y la conducta del calor, y repartía el espacio sin el menor sentido de sus límites.
-
-
----
-
-
- por todas partes con su sordo cascabeleo. En aquella incomodidad, respirando cal viva y melaza de alquitrán, nadie entendió muy bien cómo fue surgiendo de las entrañas de la tierra no solo la casa más grande que habría nunca en el pueblo, sino la más hospitalaria y fresca que hubo jamás en el ámbito de la ciénaga.
-
-
----
-
-
- —En este pueblo no mandamos con papeles —dijo sin perder la calma—. Y para que lo sepa de una vez, no necesitamos ningún corregidor porque aquí no hay nada que corregir
 
 
 ---

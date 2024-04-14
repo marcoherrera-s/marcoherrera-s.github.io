@@ -1,5 +1,36 @@
-# **Furia (Mendoza, Clyo)** 
-## Highlights 
+# **Furia (Mendoza, Clyo)**
+
+## Highlights
+
+ Todos me habían advertido que no bebiera del agua de ese pueblo porque estaba maldita y quien bebía de ella ya nunca podía salir de ahí.
+
+
+---
+
+
+ Rapidísimo salió una muchacha de la casa con jardín y en lugar de regañarme, me miró piadosamente y me quitó las espinas del cuerpo mientras yo me comía un mango, unas tunas y bebía mucha agua.
+
+
+---
+
+
+ Antes de que María entrara en el supermercado para comprar lo necesario, se despidió como si nunca fuese a volver, le besó la frente y salió del coche. Estás loca, dijo él, aunque ya no lo oía; pasaba frente al guardia y la puerta automática de vidrio se abría sólo para ella, frente a sus ojos.
+
+
+---
+
+
+ Finalmente recordó unos ojos, o más que nada la sensación de mirar esos ojos, ¿cómo explicarle eso al guardia?
+
+
+---
+
+
+ Después de haberlo visto con aquella mujer, mi día estaba plagado por malos presentimientos. Soñé, por ejemplo, que el mundo se venía abajo y al caer sobre nosotros era de un material ligero, incapaz de hacernos daño. Yo estaba desconsolada porque cuando vi todo derrumbarse tuve una especie de alivio, pensaba que al final del sueño también me destruiría. Sin embargo, al abrir los ojos, seguí viva frente a un mundo que se desmoronaba.
+
+
+---
+
 
  También eso aprendí trabajando en la morgue; lo que todavía no sé es en qué consiste eso que nos deja ver a pesar de la muerte. La
 
@@ -116,36 +147,6 @@
 
 
  Nadie me mira, pensó ella, nadie me mira, y al decir esto se dio cuenta de que estaba presa, de que a menos que no fuera esa mirada, ya no era capaz de percibir otros ojos. O quizá era peor: sólo al ser mirada por él ella validaba su existencia.
-
-
----
-
-
- Todos me habían advertido que no bebiera del agua de ese pueblo porque estaba maldita y quien bebía de ella ya nunca podía salir de ahí.
-
-
----
-
-
- Rapidísimo salió una muchacha de la casa con jardín y en lugar de regañarme, me miró piadosamente y me quitó las espinas del cuerpo mientras yo me comía un mango, unas tunas y bebía mucha agua.
-
-
----
-
-
- Antes de que María entrara en el supermercado para comprar lo necesario, se despidió como si nunca fuese a volver, le besó la frente y salió del coche. Estás loca, dijo él, aunque ya no lo oía; pasaba frente al guardia y la puerta automática de vidrio se abría sólo para ella, frente a sus ojos.
-
-
----
-
-
- Finalmente recordó unos ojos, o más que nada la sensación de mirar esos ojos, ¿cómo explicarle eso al guardia?
-
-
----
-
-
- Después de haberlo visto con aquella mujer, mi día estaba plagado por malos presentimientos. Soñé, por ejemplo, que el mundo se venía abajo y al caer sobre nosotros era de un material ligero, incapaz de hacernos daño. Yo estaba desconsolada porque cuando vi todo derrumbarse tuve una especie de alivio, pensaba que al final del sueño también me destruiría. Sin embargo, al abrir los ojos, seguí viva frente a un mundo que se desmoronaba.
 
 
 ---

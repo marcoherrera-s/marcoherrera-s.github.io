@@ -1,101 +1,6 @@
-# **Reforma o revolución (Luxemburg, Rosa)** 
-## Highlights 
+# **Reforma o revolución (Luxemburg, Rosa)**
 
- Es decir, que las cooperativas de producción (dejando al margen su carácter híbrido) tampoco sirven como instrumento para una transformación social general porque su implantación a escala mundial supondría la abolición del mercado mundial y la disolución de la economía mundial contemporánea en pequeños grupos locales de producción e intercambio; es decir, por su propia esencia representarían un retroceso desde la economía altamente desarrollada del capitalismo a la economía mercantil medieval.
-
-
----
-
-
- Pero el hecho es que los sindicatos no están en situación de realizar ninguna ofensiva de carácter económico contra el beneficio porque no son más que la defensa organizada de la fuerza de trabajo contra los ataques del capital, es decir, expresan la resistencia de la clase obrera contra la opresión de la economía capitalista.
-
-
----
-
-
- Por qué razón hay que degradar la inteligencia, el espíritu de justicia, la voluntad del hombre?» (Vorwärts, 26/3/1899). Para Bernstein, la distribución justa que propone no será consecuencia de la necesidad económica, sino del libre albedrío del hombre; o más precisamente, dado que la voluntad misma no es más que un instrumento, será consecuencia de la comprensión de la justicia, en resumen, de la idea de justicia.
-
-
----
-
-
- La reforma y la revolución no son, por tanto, distintos métodos de progreso histórico que puedan elegirse libremente en el mostrador de la historia, como cuando se eligen salchichas calientes o frías, sino que son momentos distintos en el desarrollo de la sociedad de clases, que se condicionan y complementan entre sí y al mismo tiempo se excluyen mutuamente, como el Polo Norte y el Polo Sur o la burguesía y el proletariado.
-
-
----
-
-
- Toda constitución legal no es más que un producto de la revolución.
-
-
----
-
-
- no busca la realización del socialismo, sino la reforma del capitalismo, no busca la supresión del sistema de trabajo asalariado, sino la disminución de la explotación. En resumen, no busca la supresión del capitalismo, sino la atenuación de sus abusos.
-
-
----
-
-
- La realidad es justamente la contraria. ¿Qué distingue a la sociedad burguesa de las sociedades de clase precedentes, la antigua y la medieval? Precisamente la circunstancia de que la dominación de clase actual no descansa sobre unos «derechos adquiridos», sino sobre relaciones económicas materiales, sobre el hecho de que el trabajo asalariado no es una relación jurídica, sino puramente económica.
-
-
----
-
-
- No es la ley, sino la necesidad y la carencia de medios de producción los que obligan al proletario a someterse al yugo del capital.
-
-
----
-
-
- no hay ley en el mundo que, en el marco de la sociedad burguesa, pueda darle al proletariado esos medios de producción porque no fue la ley la que le privó de ellos, sino el desarrollo económico.
-
-
----
-
-
- La conquista del poder estatal por el proletariado, es decir, por una amplia clase popular, no se puede provocar artificialmente, sino que implica un cierto grado de madurez de las relaciones político-económicas
-
-
----
-
-
- En primer lugar, una transformación tan importante como la transición de la sociedad desde el orden capitalista al socialista es imposible que se produzca de repente, de un solo golpe exitoso del proletariado. Creer esto posible refleja una concepción claramente blanquista. La transformación socialista presupone una lucha larga y tenaz en la que muy probablemente el proletariado habrá de retroceder más de una vez, de modo que, desde el punto de vista del resultado final de toda la lucha, la primera vez que tome el poder habrá de ser necesariamente «demasiado pronto».
-
-
----
-
-
- Así pues, tales asaltos «prematuros» del proletariado al poder político del Estado son en sí mismos un importante factor histórico que determina el momento de la victoria definitiva.
-
-
----
-
-
- Pero el cooperativismo no puede prosperar en medio de la producción capitalista.
-
-
----
-
-
- Cree defender una ciencia humana general, abstracta, un liberalismo abstracto, una moral abstracta. Pero como la sociedad real se compone de clases que tienen intereses, propósitos y concepciones diametralmente opuestos, por el momento resulta ser pura fantasía, un autoengaño, hablar de una ciencia humana general de las cuestiones sociales, un liberalismo abstracto, una moral abstracta. La ciencia, la democracia y la moral que Bernstein cree humanas y universales no son más que la ciencia, la democracia y la moral dominantes, es decir, la ciencia, la democracia y la moral burguesas.
-
-
----
-
-
- Pero una vez que el desarrollo de la lucha de clases y su reflejo en las condiciones sociales llevó al abandono de esas teorías y a la elaboración de los principios del socialismo científico, ya no puede haber más socialismo que el marxista, al menos en Alemania, ni puede haber otra lucha de clases socialista que la socialdemócrata
-
-
----
-
-
- Los momentos de desfallecimiento y temor, lejos de constituir sorpresa alguna para la doctrina marxista, ya fueron previstos por Marx hace mucho tiempo, cuando hace más de medio siglo escribió El 18 Brumario de Luis Bonaparte:
-
-
----
-
+## Highlights
 
  Según Bernstein, el desarrollo del capitalismo hace cada vez más improbable su hundimiento general, debido a que, por un lado, el sistema capitalista muestra cada vez mayor capacidad de adaptación y, por otro lado, la producción se diversifica cada día más.
 
@@ -332,6 +237,102 @@
 
 
  Si Marx pudo descifrar los jeroglíficos de la economía capitalista fue precisamente, y únicamente, porque se enfrentó a ellos desde un punto de vista socialista, es decir, desde una perspectiva histórica.
+
+
+---
+
+
+ Es decir, que las cooperativas de producción (dejando al margen su carácter híbrido) tampoco sirven como instrumento para una transformación social general porque su implantación a escala mundial supondría la abolición del mercado mundial y la disolución de la economía mundial contemporánea en pequeños grupos locales de producción e intercambio; es decir, por su propia esencia representarían un retroceso desde la economía altamente desarrollada del capitalismo a la economía mercantil medieval.
+
+
+---
+
+
+ Pero el hecho es que los sindicatos no están en situación de realizar ninguna ofensiva de carácter económico contra el beneficio porque no son más que la defensa organizada de la fuerza de trabajo contra los ataques del capital, es decir, expresan la resistencia de la clase obrera contra la opresión de la economía capitalista.
+
+
+---
+
+
+ Por qué razón hay que degradar la inteligencia, el espíritu de justicia, la voluntad del hombre?» (Vorwärts, 26/3/1899). Para Bernstein, la distribución justa que propone no será consecuencia de la necesidad económica, sino del libre albedrío del hombre; o más precisamente, dado que la voluntad misma no es más que un instrumento, será consecuencia de la comprensión de la justicia, en resumen, de la idea de justicia.
+
+
+---
+
+
+ La reforma y la revolución no son, por tanto, distintos métodos de progreso histórico que puedan elegirse libremente en el mostrador de la historia, como cuando se eligen salchichas calientes o frías, sino que son momentos distintos en el desarrollo de la sociedad de clases, que se condicionan y complementan entre sí y al mismo tiempo se excluyen mutuamente, como el Polo Norte y el Polo Sur o la burguesía y el proletariado.
+
+
+---
+
+
+ Toda constitución legal no es más que un producto de la revolución.
+
+
+---
+
+
+ no busca la realización del socialismo, sino la reforma del capitalismo, no busca la supresión del sistema de trabajo asalariado, sino la disminución de la explotación. En resumen, no busca la supresión del capitalismo, sino la atenuación de sus abusos.
+
+
+---
+
+
+ La realidad es justamente la contraria. ¿Qué distingue a la sociedad burguesa de las sociedades de clase precedentes, la antigua y la medieval? Precisamente la circunstancia de que la dominación de clase actual no descansa sobre unos «derechos adquiridos», sino sobre relaciones económicas materiales, sobre el hecho de que el trabajo asalariado no es una relación jurídica, sino puramente económica.
+
+
+---
+
+
+ No es la ley, sino la necesidad y la carencia de medios de producción los que obligan al proletario a someterse al yugo del capital.
+
+
+---
+
+
+ no hay ley en el mundo que, en el marco de la sociedad burguesa, pueda darle al proletariado esos medios de producción porque no fue la ley la que le privó de ellos, sino el desarrollo económico.
+
+
+---
+
+
+ La conquista del poder estatal por el proletariado, es decir, por una amplia clase popular, no se puede provocar artificialmente, sino que implica un cierto grado de madurez de las relaciones político-económicas
+
+
+---
+
+
+ En primer lugar, una transformación tan importante como la transición de la sociedad desde el orden capitalista al socialista es imposible que se produzca de repente, de un solo golpe exitoso del proletariado. Creer esto posible refleja una concepción claramente blanquista. La transformación socialista presupone una lucha larga y tenaz en la que muy probablemente el proletariado habrá de retroceder más de una vez, de modo que, desde el punto de vista del resultado final de toda la lucha, la primera vez que tome el poder habrá de ser necesariamente «demasiado pronto».
+
+
+---
+
+
+ Así pues, tales asaltos «prematuros» del proletariado al poder político del Estado son en sí mismos un importante factor histórico que determina el momento de la victoria definitiva.
+
+
+---
+
+
+ Pero el cooperativismo no puede prosperar en medio de la producción capitalista.
+
+
+---
+
+
+ Cree defender una ciencia humana general, abstracta, un liberalismo abstracto, una moral abstracta. Pero como la sociedad real se compone de clases que tienen intereses, propósitos y concepciones diametralmente opuestos, por el momento resulta ser pura fantasía, un autoengaño, hablar de una ciencia humana general de las cuestiones sociales, un liberalismo abstracto, una moral abstracta. La ciencia, la democracia y la moral que Bernstein cree humanas y universales no son más que la ciencia, la democracia y la moral dominantes, es decir, la ciencia, la democracia y la moral burguesas.
+
+
+---
+
+
+ Pero una vez que el desarrollo de la lucha de clases y su reflejo en las condiciones sociales llevó al abandono de esas teorías y a la elaboración de los principios del socialismo científico, ya no puede haber más socialismo que el marxista, al menos en Alemania, ni puede haber otra lucha de clases socialista que la socialdemócrata
+
+
+---
+
+
+ Los momentos de desfallecimiento y temor, lejos de constituir sorpresa alguna para la doctrina marxista, ya fueron previstos por Marx hace mucho tiempo, cuando hace más de medio siglo escribió El 18 Brumario de Luis Bonaparte:
 
 
 ---

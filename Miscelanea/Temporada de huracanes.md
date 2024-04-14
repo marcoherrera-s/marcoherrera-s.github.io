@@ -1,19 +1,8 @@
-# **Temporada de huracanes (Melchor, Fernanda)** 
-## Highlights 
+# **Temporada de huracanes (Melchor, Fernanda)**
 
- Ya tendría que haberlo mandado a la verga, ¿verdá? Cambiarlo por modelo del año, un hombre de a deveras; mira que pretendientes me sobran, ¿eh? Así de ruca como me ves, todavía se voltean a verme cuando me aparezco en Villa y nomás con tronar los dedos yo podría tener aquí mismo una fila de cabrones peleándose para ver quién es más digno de estar conmigo, de ganarse mis favores… Pero pásale, Clarita, no te me apendejes, mamacita.
+## Highlights
 
-
----
-
-
- Porque la verdad era que al principio sí le había gustado; la verdad era que al principio ella incluso había llegado a pensar que Pepe era guapo,
-
-
----
-
-
- por creer que los hombres van a ayudarte pero a la mera hora es una la que tiene que partirse la madre para sacárselos de adentro, y partirse la madre para cuidarlos, y partirse la madre para mantenerlos, mientras el cabrón de tu marido se va de pedo y se aparece cuando se le hincha la gana. ¿O en serio crees que ese pinche Luismi va a cambiar si tienes a tu chamaco? ¡N’ombre, si yo lo conozco! Ya
+ y era por eso que ella decía que no le hacía falta marido, y en efecto, después de la muerte de don Manolo no volvió a conocérsele hombre alguno a la hechicera, y pues cómo, si ella misma se la pasaba echando pestes de los varones, diciendo que eran todos unos borrachos y unos huevones, unos pinches perros revolcados, unos puercos infames, y que antes muerta que dejar que cualquiera de esos culeros entrara a su casa y que ellas, las mujeres del pueblo, eran unas pendejas por aguantarlos, y los ojos le brillaban cuando decía eso y por un segundo volvía a verse hermosa de nuevo, con los cabellos alborotados y las mejillas pintadas de rosa por la emoción, y las mujeres del pueblo se santiguaban porque podían imaginarla desnuda, montando al diablo y hundiéndose en su verga grotesca hasta la empuñadura,
 
 
 ---
@@ -43,7 +32,19 @@
 ---
 
 
- y era por eso que ella decía que no le hacía falta marido, y en efecto, después de la muerte de don Manolo no volvió a conocérsele hombre alguno a la hechicera, y pues cómo, si ella misma se la pasaba echando pestes de los varones, diciendo que eran todos unos borrachos y unos huevones, unos pinches perros revolcados, unos puercos infames, y que antes muerta que dejar que cualquiera de esos culeros entrara a su casa y que ellas, las mujeres del pueblo, eran unas pendejas por aguantarlos, y los ojos le brillaban cuando decía eso y por un segundo volvía a verse hermosa de nuevo, con los cabellos alborotados y las mejillas pintadas de rosa por la emoción, y las mujeres del pueblo se santiguaban porque podían imaginarla desnuda, montando al diablo y hundiéndose en su verga grotesca hasta la empuñadura,
+ Ya tendría que haberlo mandado a la verga, ¿verdá? Cambiarlo por modelo del año, un hombre de a deveras; mira que pretendientes me sobran, ¿eh? Así de ruca como me ves, todavía se voltean a verme cuando me aparezco en Villa y nomás con tronar los dedos yo podría tener aquí mismo una fila de cabrones peleándose para ver quién es más digno de estar conmigo, de ganarse mis favores… Pero pásale, Clarita, no te me apendejes, mamacita.
+
+
+---
+
+
+ Porque la verdad era que al principio sí le había gustado; la verdad era que al principio ella incluso había llegado a pensar que Pepe era guapo,
+
+
+---
+
+
+ por creer que los hombres van a ayudarte pero a la mera hora es una la que tiene que partirse la madre para sacárselos de adentro, y partirse la madre para cuidarlos, y partirse la madre para mantenerlos, mientras el cabrón de tu marido se va de pedo y se aparece cuando se le hincha la gana. ¿O en serio crees que ese pinche Luismi va a cambiar si tienes a tu chamaco? ¡N’ombre, si yo lo conozco! Ya
 
 
 ---

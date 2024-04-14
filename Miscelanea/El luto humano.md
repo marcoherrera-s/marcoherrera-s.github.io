@@ -1,5 +1,30 @@
-# **El luto humano (Revueltas, José)** 
-## Highlights 
+# **El luto humano (Revueltas, José)**
+
+## Highlights
+
+ Él no podía negarse ya, en efecto. Ni siquiera movió la cabeza como antes, terca y dubitativamente; se sentía tonto de tan triste. La muerte ya no estaba en la silla, pero tampoco, ¡oh Dios!, en aquel cuerpo fallecido. Porque la muerte no es morir, sino lo anterior al morir, lo inmediatamente anterior, cuando aún no entra en el cuerpo y está, inmóvil y blanca, negra, violeta, cárdena, sentada en la más próxima silla.
+
+
+---
+
+
+ Tenía Adán esa sangre envenenada, mestiza, en la cual los indígenas veían su propio miedo y encontraban su propia nostalgia imperecedera, su pavor retrospectivo, el naufragio de que aún tenían memoria.
+
+
+---
+
+
+ primitivos, al repetir con desesperada insistencia las jaculatorias.
+
+
+---
+
+
+ Don Vicente la tomó por la cabeza, con dulzura, y luego por los hombros. Lo dijeran ya los antepasados de ella, «que esta tierra había de ser poseída por los hijos del sol». Resignadamente recibió Antonia la semilla con la cual morían sus dioses. Cuando el día de santa Úrsula murió Antonia al brotar de su vientre la obsidiana, don Vicente hízose cargo del entierro y al niño lo llevó a la casa grande, para educarlo.
+
+
+---
+
 
  Tiene sentido su extensión y cuanto la cubre, las estrellas, los animales, el árbol. Hay que detenerse, una de esas noches plenas, para mover el rostro hacia el cielo: aquella constelación, aquel planeta solitario, toda esta materia sinfónica que vibra, ordenada y rigurosa, ¿tendría algún significado si no hubiesen ojos para mirarla, ojos, simplemente ojos de animal o de hombre, desde cualquier punto, desde aquí o desde Urano?
 
@@ -20,12 +45,6 @@
 
 
  Ha terminado la revolución —dijo el coronel—; ahora cada quien, con lo que haiga ganado, puede irse para su casa, o redactar un oficio a la secretaría de Guerra para que lo reconozcan y siga en el ejército. ¡Viva mi general Francisco Villa! —¡Vivaaaa! —respondió la masa. Se encontraban desconcertados. ¡Que aquello terminara parecía tan difícil! ¿Qué hacer ahora? No en vano transcurren diez años de caos, de desorden, de libertinaje. Ellos hubiesen querido que continuara todo otra vez como siempre, con las montañas y llanuras otra vez, con los balazos, con el temor, con la sensualidad ruda y estremecedora de la muerte. Un poder como abismo se les había revelado, grandioso e inalienable. Era un poder tentador y primitivo que de pronto estaba en la sangre, girando con su veneno
-
-
----
-
-
- Tenía Adán esa sangre envenenada, mestiza, en la cual los indígenas veían su propio miedo y encontraban su propia nostalgia imperecedera, su pavor retrospectivo, el naufragio de que aún tenían memoria.
 
 
 ---
@@ -110,24 +129,6 @@
 
 
  Natividad anhelaba transformar la tierra y su doctrina suponía un hombre nuevo y libre sobre una tierra nueva y libre. Por eso Cecilia, que era la tierra de México, lo amó, aunque de manera inconsciente e ignorando las fuerzas secretas, profundas, que determinaban tal amor.
-
-
----
-
-
- primitivos, al repetir con desesperada insistencia las jaculatorias.
-
-
----
-
-
- Él no podía negarse ya, en efecto. Ni siquiera movió la cabeza como antes, terca y dubitativamente; se sentía tonto de tan triste. La muerte ya no estaba en la silla, pero tampoco, ¡oh Dios!, en aquel cuerpo fallecido. Porque la muerte no es morir, sino lo anterior al morir, lo inmediatamente anterior, cuando aún no entra en el cuerpo y está, inmóvil y blanca, negra, violeta, cárdena, sentada en la más próxima silla.
-
-
----
-
-
- Don Vicente la tomó por la cabeza, con dulzura, y luego por los hombros. Lo dijeran ya los antepasados de ella, «que esta tierra había de ser poseída por los hijos del sol». Resignadamente recibió Antonia la semilla con la cual morían sus dioses. Cuando el día de santa Úrsula murió Antonia al brotar de su vientre la obsidiana, don Vicente hízose cargo del entierro y al niño lo llevó a la casa grande, para educarlo.
 
 
 ---
