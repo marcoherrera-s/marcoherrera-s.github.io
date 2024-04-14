@@ -118,20 +118,8 @@ timespan: (0.0, 10.0)
 u0: ([0.0, 0.0], [0.0, 0.0])</code></pre>
 <pre><code class="julia hljs">sol_CR= solve(prob_CR, KenCarp47(), maxiters=<span class=hljs-number >1e7</span>)
 sol_CR[<span class=hljs-number >1</span>:<span class=hljs-number >5</span>]</code></pre>
-<pre><code class="plaintext hljs">retcode: Success
-Interpolation: 3rd order Hermite
-t: 5-element Vector{Float64}:
- 0.0
- 2.4999999999999998e-5
- 0.00027499999999999996
- 0.0027749999999999993
- 0.0043374999999999985
-u: 5-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}}:
- ([0.0, 0.0], [0.0, 0.0])
- ([0.00032685999214312615, -0.0004902899874999309], [4.085969522329402e-9, -6.128954279218507e-9])
- ([0.0035968144933999965, -0.0053952207395484945], [4.945460046962802e-7, -7.418189382655796e-7])
- ([0.036294755093382966, -0.05444110440780338], [5.035995617645005e-5, -7.553922093387915e-5])
- ([0.056724601745096526, -0.0850829759189515], [0.0001230322224232393, -0.00018454407565608402])</code></pre>
+<pre><code class="plaintext hljs">BoundsError: attempt to access 1-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}} at index [1:5]
+</code></pre>
 <p>Y además, para comparar, podemos hacer la comparación con lo que sería el sistema aproximado, es decir, haciendo: </p>
 <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\sin{x} = x</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.6679em;"></span><span class=mop >sin</span><span class=mspace  style="margin-right:0.1667em;"></span><span class=mord ><span class="mord mathnormal">x</span></span><span class=mspace  style="margin-right:0.2778em;"></span><span class=mrel >=</span><span class=mspace  style="margin-right:0.2778em;"></span></span><span class=base ><span class=strut  style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>
 <p>y </p>
@@ -152,20 +140,8 @@ timespan: (0.0, 10.0)
 u0: ([0.0, 0.0], [0.0, 0.0])</code></pre>
 <pre><code class="julia hljs">sol_CR_aproxx = solve(prob_CR_aproxx, KenCarp47(), maxiters=<span class=hljs-number >1e7</span>)
 sol_CR_aproxx[<span class=hljs-number >1</span>:<span class=hljs-number >5</span>]</code></pre>
-<pre><code class="plaintext hljs">retcode: Success
-Interpolation: 3rd order Hermite
-t: 5-element Vector{Float64}:
- 0.0
- 2.4999999999999998e-5
- 0.00027499999999999996
- 0.0027749999999999993
- 0.0043374999999999985
-u: 5-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}}:
- ([0.0, 0.0], [0.0, 0.0])
- ([0.00032685999214312615, -0.0004902899874999309], [4.085969522329402e-9, -6.128954279218507e-9])
- ([0.0035968144934004987, -0.0053952207395495475], [4.945460046963103e-7, -7.418189382656394e-7])
- ([0.036294755201417485, -0.05444110460121449], [5.0359956232369996e-5, -7.553922103294688e-5])
- ([0.056724603186520874, -0.08508297837112858], [0.00012303222338091665, -0.0001845440773035212])</code></pre>
+<pre><code class="plaintext hljs">BoundsError: attempt to access 1-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}} at index [1:5]
+</code></pre>
 <p>Ahora, graficando en primer lugar la posición del punto, tanto la solución numérica como la solución aproximada tendríamos:</p>
 <pre><code class="julia hljs">plot(sol_m, idxs = (<span class=hljs-number >0</span>, <span class=hljs-number >2</span>), color=:black, label=<span class=hljs-string >&quot;Numérico&quot;</span>, dpi=<span class=hljs-number >500</span>)
 plot!(sol_m_aprox, idxs = (<span class=hljs-number >0</span>, <span class=hljs-number >2</span>), linestyle=:dash, label=<span class=hljs-string >&quot;Aproximación&quot;</span>, ylabel=<span class=hljs-string >&quot;Posición del punto&quot;</span>, ylims=(-<span class=hljs-number >7</span>,<span class=hljs-number >7</span>), color=:red, title=<span class=hljs-string >&quot;Posición del punto en cuerpo rígido&quot;</span>)</code></pre>
@@ -177,7 +153,7 @@ plot!(sol_m_aprox, idxs = (<span class=hljs-number >0</span>, <span class=hljs-n
 <p><img src="/blog/assets/anguba.png" alt=valan  /></p>
 <p>Y como podemos observar, obtenemos movimientos oscilatorios, y también, como era de esperarse, las solución numérica y la aproximada se parecen demasiado recién comienza el sistema. </p>
 <div class=page-foot  style="font-size: 13px; font-family: 'Sans-serif', Arial, sans-serif;">
-    <a</a> Marco Herrera Solar. Last modified: April 06, 2024.
+    <a</a> Marco Herrera Solar. Last modified: April 14, 2024.
     Sitio hecho con <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> y <a href="https://julialang.org">Julia programming language</a>.
 </div>
 
