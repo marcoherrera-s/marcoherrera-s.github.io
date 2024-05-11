@@ -92,10 +92,10 @@ spiral_matrix(7)
 Genial, funciona. Ahora ya toca la parte fácil, para continuar tenemos que importar una paquetería para hacer nuestras imágenes.
 
 
-```julia:./ex4
+```julia
 using Images
 ```
-\show{./ex4}
+
 
 Entonces, lo siguiente que haremos será lo siguiente:
 

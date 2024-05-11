@@ -10,7 +10,7 @@ tags = ["syntax", "code"]
 
 # EL MUNDO DE MIS INTENTOS Y DESVARÍOS
 
---> [¡Oscilador armónico completito!](/Ejercicios/oscilador/)
+--> [¡Oscilador armónico!](/Ejercicios/oscilador/)
 
 --> [¡Resolviendo un cuerpo rígido sin talacha!](/Ejercicios/duda/)
 
