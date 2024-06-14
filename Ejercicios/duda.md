@@ -12,19 +12,17 @@ Pero aquí no nos estamos manchando las manos, y además tenemos nuestras podero
 Empezamos importando las siguientes paqueterías de Julia:
 
 
-```julia:./ex00
+```julia
 using DifferentialEquations, Plots
 ```
-\show{./ex00}
 
 Definimos nuestros parámetros, la gravedad de nuestro planeta, una longitud de 1.0, y la frecuencia definida como el problema nos dice. Además el span de tiempo para el cual queremos resolver la ecuación, en forma de tupla. 
 
-```julia:./ex1
+```julia
 params = (9.81, 1.0, sqrt(9.81/1.0))
 tspan = (0.0, 10.0)
 ```
 
-\show{./ex1}
 
 Recordamos los dos monstruos que acabamos de obtener:
 
@@ -51,17 +49,21 @@ end
 
 Definimos nuestras condiciones iniciales, tal cual se nos pide.
 
-```julia:./ex03
+```julia
 u0 = [0.0, 0.0]
 du0 = [0.0, 0.0]
 ```
 
 Y ahora definimos el problema de la siguiente forma:
 
-```julia:./ex04
+```julia
 prob_CR = SecondOrderODEProblem(cuerpo_rigido, du0, u0, tspan, params)
 ```
-\show{./ex04}
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}} and tType Float64. In-place: true
+timespan: (0.0, 10.0)
+u0: ([0.0, 0.0], [0.0, 0.0])
+```
 
 Eso significa que todo va bien, que tenemos bien definido nuestro problema con ese span de tiempo, y esas condiciones iniciales.
 
@@ -101,17 +103,36 @@ Aquí usaremos el algoritmo KenCarp47(), este es un método ESDIRK _(Explicit Si
 Entonces hagamos: 
 
 
-```julia:./ex05
+```julia
 prob_CR = SecondOrderODEProblem(cuerpo_rigido, du0, u0, tspan, params)
 ```
-\show{./ex05}
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}} and tType Float64. In-place: true
+timespan: (0.0, 10.0)
+u0: ([0.0, 0.0], [0.0, 0.0])
+```
 
-```julia:./ex06
+```julia
 sol_CR= solve(prob_CR, KenCarp47(), maxiters=1e7)
 sol_CR[1:5]
-
 ```
-\show{./ex06}
+```
+retcode: Success
+Interpolation: 3rd order Hermite
+t: 5-element Vector{Float64}:
+ 0.0
+ 2.4999999999999998e-5
+ 0.00027499999999999996
+ 0.0027749999999999993
+ 0.0043374999999999985
+u: 5-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}}}:
+ ([0.0, 0.0], [0.0, 0.0])
+ ([0.00032685999214312615, -0.0004902899874999309], [4.085969522329402e-9, -6.128954279218507e-9])
+ ([0.0035968144933999965, -0.0053952207395484945], [4.945460046962802e-7, -7.418189382655796e-7])
+ ([0.036294755093382966, -0.05444110440780338], [5.035995617645005e-5, -7.553922093387915e-5])
+ ([0.056724601745096526, -0.0850829759189515], [0.0001230322224232393, -0.00018454407565608402])
+
+ ```
 
 
 Y además, para comparar, podemos hacer la comparación con lo que sería el sistema aproximado, es decir, haciendo: 
@@ -139,17 +160,20 @@ end
 
 Y resolviendo con las mismas condiciones, tendríamos:
 
-```julia:./ex0006
+```julia
 prob_CR_aproxx = SecondOrderODEProblem(cuerpo_rigido_aproxx, du0, u0, tspan, params)
 ```
-\show{./ex0006}
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Vector{Float64}, Vector{Float64}}} and tType Float64. In-place: true
+timespan: (0.0, 10.0)
+u0: ([0.0, 0.0], [0.0, 0.0])
+```
 
-```julia:./ex99
+```julia
 sol_CR_aproxx = solve(prob_CR_aproxx, KenCarp47(), maxiters=1e7)
 sol_CR_aproxx[1:5]
 
 ```
-\show{./ex99}
 
 Ahora, graficando en primer lugar la posición del punto, tanto la solución numérica como la solución aproximada tendríamos:
 

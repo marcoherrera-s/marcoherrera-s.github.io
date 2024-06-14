@@ -45,10 +45,9 @@ Primero comencemos pensando en el oscilador armónico simple, nada de amortiguam
 
 Comenzamos importando las paquterías que vamos a usar, DifferentialEquations, como su nombre nos delata, la usaremos para resolver ecuaciones diferenciales, es una paquetería muy interesante, con bastantes métodos y ejemplos en su documentación, vale la pena [checar](https://docs.sciml.ai/DiffEqDocs/stable/). Además se jacta de ser bastante buena a comparación de otras herramientas disponibles, por ejemplo [aquí](http://www.stochasticlifestyle.com/comparison-differential-equation-solver-suites-matlab-r-julia-python-c-fortran/).
 
-```julia:./ex1
+```julia
 using DifferentialEquations, Plots
 ```
-\show{./ex1}
 
 Es importante prestar atención a la estructura de las funciones que definiremos, comencemos transcribiendo:
 
@@ -65,7 +64,7 @@ end
 
 Para resolverlo, en primer lugar, en su forma más simple, definamos los siguientes parámetros.
 
-```julia:./ex3
+```julia
 b = 0 # Factor de amortiguamiento en 0
 m = 1.0 # Masa unitaria
 k = 1.0 # Constante del resorte unitaria
@@ -77,7 +76,7 @@ con esos parámetros, nuestra función _oscilador()_ será unicamente $\frac{d^2
 
 Ahora, como estamos resolviendo una ecuación diferencial de segundo orden, entonces sabemos que necesitamos dos condiciones iniciales, definamos pues, la posición inicial y la velocidad inicial:
 
-```julia:./ex4
+```julia
 u_inicial = 0.25
 du_inicial = 0.0
 ```
@@ -85,20 +84,24 @@ du_inicial = 0.0
 Finalmente, ya sólo nos falta el span de tiempo en el cual queremos resolver, digamos:
 
 
-```julia:./ex5
+```julia
 tspan = (0.0, 20.0)
 ```
 
 Usemos la siguiente estructura para definir nuestro problema de segundo orden, que se puede consultar [aquí](https://docs.sciml.ai/DiffEqDocs/stable/types/dynamical_types/#SciMLBase.SecondOrderODEProblem):
 
 
-```julia:./ex6
+```julia
 prob = SecondOrderODEProblem(oscilador, du_inicial, u_inicial, tspan, p)
 ```
 
 Si sale lo siguiente, es porque todo va bien. Se ha definido nuestro problema, en nuestro span de tiempo con las condiciones iniciales:
 
-\show{./ex6}
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}} and tType Float64. In-place: false
+timespan: (0.0, 20.0)
+u0: (0.0, 0.25)
+```
 
 Para resolver, únicamente hacemos:
 
@@ -108,16 +111,43 @@ solucion = solve(prob)
 Ahora imprimamos únicamente los primeros 10 resultados, para no llenar de números esto:
 
 
-```julia:./ex8
+```julia
 solucion[1:10]
 ```
-\show{./ex8}
+
+```
+retcode: Success
+Interpolation: specialized 4th order "free" interpolation
+t: 10-element Vector{Float64}:
+ 0.0
+ 0.00398406374501992
+ 0.043824701195219126
+ 0.17040503555409192
+ 0.3848691269450288
+ 0.6652747463983004
+ 1.02689284444547
+ 1.4605744133795586
+ 1.9362192263860547
+ 2.4374270730621967
+u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}}}:
+ (0.0, 0.25)
+ (-0.000996013301336101, 0.24999801590713389)
+ (-0.010952668555771447, 0.24975996286732172)
+ (-0.04239538303651577, 0.24637904025402796)
+ (-0.09385946099687895, 0.23171189253544547)
+ (-0.15431883265022545, 0.19668679605322734)
+ (-0.2139238243543623, 0.12936997385540439)
+ (-0.24848292540141162, 0.02749949694191406)
+ (-0.2334929667920803, -0.0893365569834332)
+ (-0.16184878236130407, -0.19053862042407382)
+```
+
 
 Entonces, lo que estamos viendo es que nos regresa dos vectores, uno es para cada momento del tiempo en que computó la solución, y el otro vector, contiene vectores de dos entradas, la velocidad y la posición respectivamente. 
 
 Grafiquemos la solución, haciendo únicamente:
 
-```julia:./ex9
+```julia
 plot(solucion,
 linewidth = 2,
 title = "Oscilador armónico",
@@ -143,13 +173,13 @@ Entonces, nuestros resultados nos tienen que mostrar que la energía se conserve
 Comencemos obteniendo los valores de velocidad. Como habíamos mencionado, la velociad son los resultados de la primer entrada del vector *u*, y la posición la segunda entrada, entonces: 
 
 
-```julia:./ex10
+```julia
 velocidad = solucion[1,:]
 posicion = solucion[2,:]
 ```
 Y sabemos que: $E = T + U = \frac{1}{2} m v^2 + \frac{1}{2} k x^2$
 
-```julia:./ex11
+```julia
 cinetica = m .* (velocidad.^2 ./ 2) # El (.) en las operaciones en Julia significa que haremos la operación para cada entrada del vector
 potencial = k .* (posicion.^2 ./ 2)
 energia = cinetica + potencial 
@@ -157,13 +187,13 @@ energia = cinetica + potencial
 
 Para obtener las estampas de tiempo de cada resultado, hacemos: 
 
-```julia:./ex12
+```julia
 tiempo = solucion.t
 ```
 
 Y entonces ahora sí, veamos qué está pasando con la energía:
 
-```julia:./ex13
+```julia
 plot(tiempo, energia,
 linewidth = 2,
 title = "Energía del scilador armónico",
@@ -181,7 +211,7 @@ Como podemos ver, aunque tal vez poco, la energía no se está conservando, de h
 Alto ahí, qué tal si hacemos lo siguiente, aunque ya tenemos una gráfica de posición _vs_ tiempo allá arriba, veamos qué pasa si graficamos la posición que obtuvimos de seleccionar la segunda entrada de nuestros resultados, y el tiempo que obtuvimos haciendo _solucion.t_.
 
 
-```julia:./ex14
+```julia
 plot(tiempo, posicion,
 linewidth = 2,
 title = "x vs t",
@@ -199,16 +229,43 @@ Esto definitivamente no se ve como la gráfica que habíamos obtenido anteriorme
 A ver, lo primero que hay que tener en mente es que cuando resolvemos ecuaciones diferenciales de forma numérica, estamos aproximándonos a la solución real de forma discreta, por lo tanto habrá un error en cada paso del cálculo, ya sea porque sabemos que las computadoras no la arman chido con los números flotantes, por la forma en que se implementó el algoritmo, entre muchas cosas más. Algo que podemos hacer es, entonces, jugar con los argumentos que le damos a nuestra función. [Aquí](https://docs.sciml.ai/DiffEqDocs/stable/basics/common_solver_opts/#solver_options) podemos encontrar la enorme cantidad de argumentos que podemos especificar para resolver nuestro problema, pero para enfocarnos en uno, en uno fácil, pensemos en la tolerancia del error, modifiquemos la tolerancia absoluta y la tolerancia relativa, volvámonos locos y pongámosla muy pequeña. 
 
 
-```julia:./ex15
+```julia
 solucion_tolerancias = solve(prob, abstol = 1e-15, reltol = 1e-15)
 solucion_tolerancias[1:10]
 ```
-\show{./ex15}
+
+```
+retcode: Success
+Interpolation: specialized 7th order lazy interpolation
+t: 10-element Vector{Float64}:
+ 0.0
+ 0.004774625181200294
+ 0.01236360800894473
+ 0.02493410021265082
+ 0.04280227789377106
+ 0.06072798286906811
+ 0.08165962400442964
+ 0.10394243277055
+ 0.1280334897059047
+ 0.15332790491508264
+u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}}}:
+ (0.0, 0.25)
+ (-0.0011936517599990732, 0.24999715037471099)
+ (-0.003090823257574651, 0.2499808928930178)
+ (-0.0062328791664356745, 0.24992229035701602)
+ (-0.010697302469767168, 0.24977103058575534)
+ (-0.015172665854748503, 0.2495391556667213)
+ (-0.02039222479815355, 0.24916692631202397)
+ (-0.02593884191748481, 0.24865071180268064)
+ (-0.03192099413679099, 0.24795372579035582)
+ (-0.038181958755190044, 0.24706707191695332)
+```
+
 
 Ahora graficamos:
 
 
-```julia:./ex16
+```julia
 plot(solucion_tolerancias.t, solucion_tolerancias[2,:],
 linewidth = 2,
 title = "x vs t",
@@ -230,17 +287,23 @@ Bueno, parece que mejoró un poco, al menos pareciera que la energía ya no est�
 
 Primero observemos lo siguiente, veamos cuántos datos estábamos graficando en el primer ejemplo todo feo:
 
-```julia:./ex17
+```julia
 length(solucion)
 ```
-\show{./ex17}
+```
+33
+```
 
 Con razón, son tan pocos resultados, y si vemos cuantos cuando cambiamos la tolerancia, obtenemos:
 
-```julia:./ex18
+```julia
 length(solucion_tolerancias)
 ```
-\show{./ex18}
+
+```
+639
+```
+
 
 Bastante más, entonces tiene sentido que nuestras gŕaficas se vean mejor, además de que estamos disminyendo la toleancia del error, que de por sí eso ya es un costo computacional más alto, estamos simplemente graficando más datos.
 
@@ -258,18 +321,24 @@ Ahora, para dejar en claro que el solucinador en realiad nos regresa una soluci�
 Podemos generar una serie de puntos, digamos que también dentro de neustro span de tiempo, pero que sean 1000 puntos.
 
 
-```julia:./ex19
+```julia
 T = range(0,20,length=1000)
 ```
-\show{./ex19}
+```
+0.0:0.02002002002002002:20.0
+```
 
 Y entonces evaluar esos puntos en nuestra solución:
 
-```julia:./ex20
+```julia
 solucion_1000 = solucion(T)
 length(solucion_1000)
 ```
-\show{./ex20}
+
+```
+1000
+```
+
 
 Como podemos ver, en efecto nos regresa 1000 resultados, podemos evaluarla en diez mil, en cincuenta mil, en un millón, pero bueno ahí ya cada quién sus deseos. El chiste es que la solución es continua. 
 
@@ -288,11 +357,36 @@ Entonces, vamos a buscar algún algoritmo simpléctico en la [documentación](ht
 Aquí usaremos el algoritmo _KahanLi8()_, y para esto nos pide ajustar el paso, entonces hagamos:
 
 
-```julia:./ex21
+```julia
 solucion_simplectica = solve(prob, KahanLi8(), dt=1/10)
 solucion_simplectica[1:10]
 ```
-\show{./ex21}
+```
+retcode: Success
+Interpolation: 3rd order Hermite
+t: 10-element Vector{Float64}:
+ 0.0
+ 0.1
+ 0.2
+ 0.30000000000000004
+ 0.4
+ 0.5
+ 0.6
+ 0.7
+ 0.7999999999999999
+ 0.8999999999999999
+u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}}}:
+ (0.0, 0.25)
+ (-0.02495835416170718, 0.24875104131950634)
+ (-0.049667332698765575, 0.2450166444603102)
+ (-0.07388005166533528, 0.2388341222814012)
+ (-0.0973545855771631, 0.23026524850072075)
+ (-0.1198563846510513, 0.2193956404725924)
+ (-0.14116061834875943, 0.20633390372741853)
+ (-0.16105442180942334, 0.19121054682112074)
+ (-0.1793390227248812, 0.1741766773367896)
+ (-0.19583172740687121, 0.15540249206766393)
+```
 
 Ahora hacemos los mismos pasos para graficar la energía, y ahora observamos:
 
@@ -334,27 +428,54 @@ Lo interesante de este resultado, como vamos a observar, es que la solución sig
 
 Démosle un nuevo valor a b, tal que se cumpla la condición de sub-amortiguamiento.
 
-```julia:./ex22
+```julia
 b = 0.35
 p = (b, m, k, F) 
 ```
-\show{./ex22}
 
 Y reutilicemos todo, exceto claro, nuestros parámetros que es lo que cambiamos.
 
-```julia:./ex23
+```julia
 prob_amortiguado = SecondOrderODEProblem(oscilador, du_inicial, u_inicial, tspan, p)
 
 ```
-\show{./ex23}
-
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}} and tType Float64. In-place: false
+timespan: (0.0, 20.0)
+u0: (0.0, 0.25)
+```
 Ahora resolvamos utilizando un método Runge-Kutta simplementa.
 
-```julia:./ex24
+```julia
 sol_amortiguado = solve(prob_amortiguado, Tsit5())
 sol_amortiguado[1:10]
 ```
-\show{./ex24}
+```
+retcode: Success
+Interpolation: specialized 4th order "free" interpolation
+t: 10-element Vector{Float64}:
+ 0.0
+ 0.00398406374501992
+ 0.043824701195219126
+ 0.17792304447975538
+ 0.4094751846634577
+ 0.7152390795997883
+ 1.104073360843106
+ 1.552204239900723
+ 2.0414571110125554
+ 2.531056227837695
+u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}}}:
+ (0.0, 0.25)
+ (-0.0009953191924160644, 0.24999801682903336)
+ (-0.010869096857591722, 0.24976118541787234)
+ (-0.04289693870616666, 0.24613397267418452)
+ (-0.09272946715811699, 0.2302827387273943)
+ (-0.14505234293696384, 0.19350011804164607)
+ (-0.18528899933555118, 0.1282741267460104)
+ (-0.19334389401083232, 0.0419388850731901)
+ (-0.1607830046890981, -0.0462258213850113)
+ (-0.09862443175652391, -0.11058080226346037)
+```
 
 
 Graficamos nuestros resultados análogamente a los casos anteriores y obtenemos:
@@ -375,26 +496,31 @@ F(t) = 2*cos(t)
 
 Entonces, actualicemos nuestros parámetros: 
 
-```julia:./ex26
+```julia
 p = (b, m, k, F) 
 ```
-\show{./ex26}
+
 
 Definimos un nuevo problema con esos parámetros:
 
-```julia:./ex27
+```julia
 prob_am_forzado = SecondOrderODEProblem(oscilador, du_inicial, u_inicial, tspan, p)
 ```
-\show{./ex27}
+
+```
+ODEProblem with uType RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, Float64}} and tType Float64. In-place: false
+timespan: (0.0, 20.0)
+u0: (0.0, 0.25)
+```
 
 Y lo resolvemos de la misma forma usando el algoritmo por defecto, que no es necesario especificar:
 
 
-```julia:./ex28
+```julia
 sol_am_forzado = solve(prob_am_forzado, Tsit5())
 sol_am_forzado[1:10]
 ```
-\show{./ex28}
+
 
 Finalmente, graficamos y obtenemos:
 
