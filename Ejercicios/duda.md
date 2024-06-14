@@ -195,3 +195,211 @@ De la misma forma podemos graficar los demás resultados. El índice 0 es el tie
 ![valan](/assets/anguba.png)
 
 Y como podemos observar, obtenemos movimientos oscilatorios, y también, como era de esperarse, las solución numérica y la aproximada se parecen demasiado recién comienza el sistema. 
+
+
+
+
+~~~
+<span style="color: darkgreen; font-size: 35px; font-family: 'Helvetica';">¿Por qué todo lo que está arriba está mal?</span>
+~~~
+
+Bueno, casi todo...
+
+
+~~~
+<select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="green">green
+                        <option value="cyan">cyan
+                            <option value="yellow">yellow
+                                <option value="red">red
+                                    <option value="white">white</option>
+</select>&nbsp;&nbsp;Background Color
+
+<br>
+<select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="cyan">cyan
+                        <option value="yellow">yellow
+                            <option value="red">red
+                                <option value="white">white</option>
+</select>&nbsp;&nbsp;Text Color
+~~~
+
+~~~
+                                                
+                                                <!-- this script is provided by https://www.htmlbestcodes.com coded by: Kerixa Inc. -->
+<style>
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    padding: 22px 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.011), 0 6px 8px rgba(0, 0, 0, 0.016), 0 12px 16px rgba(0, 0, 0, 0.02), 0 24px 32px rgba(0, 0, 0, 0.024);
+}
+
+.track {
+    position: relative;
+    display: flex;
+}
+
+label {
+    width: 50px;
+    height: 43px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #fafafa;
+}
+
+label:not(:first-of-type) {
+    margin-left: 16px;
+}
+
+.sr-only {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input[type=radio]:focus-visible + label {
+    box-shadow: 0 0 0 2px #ccc;
+    background-color: #f8f8f8;
+}
+
+.left, .center, .right, .justify {
+    position: relative;
+}
+
+.left::after, .left::before, .center::after, .center::before, .right::after, .right::before, .justify::after, .justify::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #d1d1d1;
+    border-radius: 2px;
+}
+
+.left::after, .center::after, .right::after, .justify::after {
+    top: 9px;
+    left: 8px;
+    width: 34px;
+    box-shadow: 0 10px 0 0 #d1d1d1;
+}
+
+.left::before, .center::before, .right::before, .justify::before {
+    top: 29px;
+    width: 16px;
+}
+
+.left::before {
+    left: 8px;
+}
+
+.center::before {
+    left: 17px;
+}
+
+.right::before {
+    left: 26px;
+}
+
+.justify::before {
+    left: 8px;
+    width: 34px;
+}
+
+.marker {
+    position: absolute;
+    height: 4px;
+    width: 34px;
+    background-color: #333;
+    border-radius: 2px;
+    left: 8px;
+    transition: 0.42s cubic-bezier(0.32, 0.07, 0.64, 1.1);
+}
+
+.marker:nth-of-type(1) {
+    top: 9px;
+}
+
+.marker:nth-of-type(2) {
+    top: 19px;
+    transition-delay: 0.06s;
+}
+
+.marker:nth-of-type(3) {
+    top: 29px;
+    width: 16px;
+    transition-delay: 0.12s;
+}
+
+.radio-center:checked ~ .marker {
+    transform: translateX(66px);
+}
+
+.radio-center:checked ~ .marker:nth-of-type(3) {
+    left: 17px;
+}
+
+.radio-right:checked ~ .marker {
+    transform: translateX(132px);
+}
+
+.radio-right:checked ~ .marker:nth-of-type(3) {
+    left: 26px;
+}
+
+.radio-justify:checked ~ .marker {
+    transform: translateX(198px);
+}
+
+.radio-justify:checked ~ .marker:nth-of-type(3) {
+    left: 8px;
+    width: 34px;
+}
+</style>
+<div class="container">
+  <div class="track">
+    <input class="radio-left" type="radio" id="left" name="alignment" checked="checked"/>
+    <label class="left" for="left"><span class="sr-only">Align left</span></label>
+    <input class="radio-center" type="radio" id="center" name="alignment"/>
+    <label class="center" for="center"><span class="sr-only">Align center</span></label>
+    <input class="radio-right" type="radio" id="right" name="alignment"/>
+    <label class="right" for="right"><span class="sr-only">Align right</span></label>
+    <input class="radio-justify" type="radio" id="justify" name="alignment"/>
+    <label class="justify" for="justify"><span class="sr-only">Justify</span></label>
+    <div class="marker"></div>
+    <div class="marker"></div>
+    <div class="marker"></div>
+  </div>
+</div><a target='_blank' href='https://www.htmlbestcodes.com' style='font-size: 8pt; text-decoration: none'>Html Best Codes</a>                                                
+                                            
+
+~~~
