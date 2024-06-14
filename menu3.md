@@ -13,6 +13,21 @@ Aquí se encuentran las cosas que he resaltado de algunos libros que he leído. 
 ~~~
 <div style="display: flex;">
   <figure style="flex: 50%;">
+    <img src="/assets/libros/tres.jpg" alt="Tres" width="100%">
+    <figcaption><a href="/Miscelanea/TresCuerpos/">El Problema de los Tres Cuerpos, <b>Liu Cixin</b></a></figcaption>
+  </figure>
+  <!-- Espacio para un futuro libro -->
+  <figure style="flex: 50%;">
+    <!-- Imagen y enlace del próximo libro aquí -->
+  </figure>
+</div>
+~~~
+
+
+
+~~~
+<div style="display: flex;">
+  <figure style="flex: 50%;">
     <img src="/assets/libros/furia.JPG" alt="Oscilador" width="100%">
     <figcaption><a href="/Miscelanea/Furia/">Furia, <b>Clyo Mendoza</b></a></figcaption>
   </figure>
