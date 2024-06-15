@@ -17,3 +17,16 @@ code.hljs{padding:3px 5px;font-family: Menlo, Monaco, 'Courier New', monospace }
 .hljs-deletion{color:#b31d28;background-color:#ffeef0}
 
 
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
