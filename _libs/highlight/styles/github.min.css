@@ -1,5 +1,5 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em;font-family: "Menlo"}
-code.hljs{padding:3px 5px;font-family: "Menlo"}
+pre code.hljs{display:block;overflow-x:auto;padding:1em;font-family: Menlo, Monaco, 'Courier New', monospace}
+code.hljs{padding:3px 5px;font-family: Menlo, Monaco, 'Courier New', monospace }
 .hljs{color:#522e1e;background:#feffc5}
 .hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#ff0f27}
 .hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}
