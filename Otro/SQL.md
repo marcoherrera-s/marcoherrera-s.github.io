@@ -1,4 +1,8 @@
+
 # ¿Por qué aprender SQL?
+
+\toc
+
 
 Decidí aprender SQL por una sencilla razón, estoy de vacaciones. Qué tal un día se me cruza una chambita que requiera saberle a esto (dios no lo quiera) y pues mejor saberle. Ahorita que no estoy cursando materias, me sobra mucho tiempo para ver qué tal. Si por algún motivo deseo abandonar esta tarea, también quedará registrado aquí. 
 
@@ -14,11 +18,16 @@ Después de pelearme otro rato tratando de buscar una interfaz gráfica para com
 
 Cree una pequeña base de datos usando la interfaz, nada de código aún, y lo primero que aprendí fue:
 
+
+#### SELECT
+
 + `SELECT * FROM table;` para seleccionar toda la tabla
 
 + `SELECT * name FROM table;` para seleccionar la columna _name_ de la tabla
 
 + `SELECT * user_id, name FROM table;` para seleccionar más columnas
+
+#### DISTINCT
 
 + `SELECT DISTINCT * FROM users;` selecciona los valores distintos
 
@@ -26,12 +35,32 @@ Cree una pequeña base de datos usando la interfaz, nada de código aún, y lo p
 
 Creo que aprender SQL es simplemente aprenderte un montón de comandos. 
 
-+ `SELECT * FROM users WHERE name="Marco";` 
+#### WHERE
 
+
++ `SELECT * FROM users WHERE name="Marco";` 
 
 + `SELECT name FROM users WHERE surname="Herrera";`
 
-
 + `SELECT DISTINCT name FROM users WHERE surname="Herrera";`
 
+#### ORDER BY
 
++ `SELECT * FROM users ORDER BY name;`
+
++ `SELECT * FROM users ORDER BY name DESC;`
+
+
+#### LIKE 
+
++ `SELECT * FROM users WHERE email LIKE '%gmail.com';` el arroba aquí me dice, no me importa lo que haya antes, solo lo que va después. 
+
++ `SELECT * FROM users WHERE name LIKE '%m%';` se puede hacer un poco más complejo, por ejemplo aquí estamos buscano en la columna de nombres, los que llevan la letra _m_ en cualquier posición.
+
+#### NOT, AND, OR
+
++ `SELECT * FROM users WHERE email NOT LIKE "%gmail.com" or surname="Herrera";`
+
+#### LIMIT 
+
++ `SELECT * FROM users WHERE name LIKE "%m%" LIMIT 2;` me selecciona los usuarios cuya nombre contiene la letra m, pero sólo los primeros dos. 
