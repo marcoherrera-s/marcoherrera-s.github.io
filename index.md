@@ -2,7 +2,7 @@
 @def tags = ["syntax", "code"]
 
 
-# **_SOY MALO CON LOS TÍTULOS_**
+# **_SOY MALO CON LOS TÍTULOS_** 
 
 ¡Hola! Soy Marco, estudio física y este es mi blog. 
 
