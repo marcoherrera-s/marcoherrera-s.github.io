@@ -1,1 +1,87 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em;font-family: monospace, Monaco}code.hljs{padding:3px 5px;font-family: monospace, Monaco}.hljs{background:#23241f;color:#f8f8f2}.hljs-subst,.hljs-tag{color:#f8f8f2}.hljs-emphasis,.hljs-strong{color:#a8a8a2}.hljs-bullet,.hljs-link,.hljs-literal,.hljs-number,.hljs-quote,.hljs-regexp{color:#ae81ff}.hljs-code,.hljs-section,.hljs-selector-class,.hljs-title{color:#a6e22e}.hljs-strong{font-weight:700}.hljs-emphasis{font-style:italic}.hljs-attr,.hljs-keyword,.hljs-name,.hljs-selector-tag{color:#f92672}.hljs-attribute,.hljs-symbol{color:#66d9ef}.hljs-class .hljs-title,.hljs-params,.hljs-title.class_{color:#f8f8f2}.hljs-addition,.hljs-built_in,.hljs-selector-attr,.hljs-selector-id,.hljs-selector-pseudo,.hljs-string,.hljs-template-variable,.hljs-type,.hljs-variable{color:#e6db74}.hljs-comment,.hljs-deletion,.hljs-meta{color:#75715e}|
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    font-family: monospace, Monaco;
+  }
+  
+  code.hljs {
+    padding: 3px 5px;
+    font-family: monospace, Monaco;
+  }
+  
+  .hljs {
+    background: #f8f8f2;  /* Fondo claro, casi blanco */
+    color: #383a42;       /* Gris oscuro para texto principal */
+  }
+  
+  .hljs-subst,
+  .hljs-tag {
+    color: #0184bb;  /* Azul moderadamente oscuro */
+  }
+  
+  .hljs-emphasis,
+  .hljs-strong {
+    color: #a626a4;  /* Púrpura oscuro */
+  }
+  
+  .hljs-bullet,
+  .hljs-link,
+  .hljs-literal,
+  .hljs-number,
+  .hljs-quote,
+  .hljs-regexp {
+    color: #cf6915;  /* Verde fresco y claro */
+  }
+  
+  .hljs-code,
+  .hljs-section,
+  .hljs-selector-class,
+  .hljs-title {
+    color: #e45649;  /* Rojo coral */
+  }
+  
+  .hljs-strong {
+    font-weight: 700;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
+  
+  .hljs-attr,
+  .hljs-keyword,
+  .hljs-name,
+  .hljs-selector-tag {
+    color: #c18401;  /* Marrón dorado */
+  }
+  
+  .hljs-attribute,
+  .hljs-symbol {
+    color: #986801;  /* Marrón más oscuro */
+  }
+  
+  .hljs-class .hljs-title,
+  .hljs-params,
+  .hljs-title.class_ {
+    color: #4078f2;  /* Azul brillante */
+  }
+  
+  .hljs-addition,
+  .hljs-built_in,
+  .hljs-selector-attr,
+  .hljs-selector-id,
+  .hljs-selector-pseudo,
+  .hljs-string,
+  .hljs-template-variable,
+  .hljs-type,
+  .hljs-variable {
+    color: #a0a1a7;  /* Gris claro */
+  }
+  
+  .hljs-comment,
+  .hljs-deletion,
+  .hljs-meta {
+    color: #a0a1a7;  /* Gris claro, menos distractor para comentarios */
+  }
+  
