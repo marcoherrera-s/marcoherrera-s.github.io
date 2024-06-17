@@ -76,12 +76,41 @@ pre code.hljs {
   .hljs-template-variable,
   .hljs-type,
   .hljs-variable {
-    color: #a0a1a7;  /* Gris claro */
+    color: #6c78c2;  /* Gris claro */
   }
   
   .hljs-comment,
   .hljs-deletion,
   .hljs-meta {
     color: #a0a1a7;  /* Gris claro, menos distractor para comentarios */
+  }
+  
+
+  /* Estilo para bloques de código */
+pre code.hljs {
+    display: block;
+    overflow-x: scroll;
+    padding: 1em;
+    font-family: monospace, Monaco;
+  }
+  
+  /* Estilo para líneas de código inline */
+  code:not(pre > code) {
+    background: #ffbdbd;  /* Un fondo ligeramente gris para diferenciarlo del texto normal */
+    color: #383a42;       /* Utilizamos el verde fresco y claro para el texto */
+    padding: 0.2em 0.4em; /* Padding ligero para no hacerlo muy robusto */
+    border-radius: 4px;   /* Bordes redondeados para un look más suave */
+    font-family: monospace, Monaco; /* Fuente monoespaciada para coherencia */
+  }
+  
+  /* Reutilizando estilos de .hljs para coherencia */
+  .hljs {
+    background: #ffa2a2;  /* Fondo claro, casi blanco */
+    color: #383a42;       /* Gris oscuro para texto principal */
+  }
+  
+  /* Estilos específicos para bloques de código con hljs */
+  code.hljs {
+    padding: 3px 5px;
   }
   
