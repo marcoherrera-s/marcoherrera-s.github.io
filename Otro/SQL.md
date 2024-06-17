@@ -64,3 +64,119 @@ Creo que aprender SQL es simplemente aprenderte un montón de comandos.
 #### LIMIT 
 
 + `SELECT * FROM users WHERE name LIKE "%m%" LIMIT 2;` me selecciona los usuarios cuya nombre contiene la letra m, pero sólo los primeros dos. 
+
+#### NULL
+
+`SELECT * FROM users WHERE email IS NOT NULL;` 
+
+#### MAX, MIN
+
+`SELECT MAX(init_date) FROM users`
+
+#### COUNT 
+
+`SELECT COUNT(*) FROM users;` cuenta cuántos elementos. También hay SUM, AVG.
+
+#### IN
+
+`SELECT * FROM users WHERE name IN ('marco', 'roman')` me trae todos los Marco, y todos los Roman, no importa si hago la búsqueda en mayúsculas o no. 
+
+#### BETWEEN 
+
+`SELECT * FROM users WHERE age BETWEEN 12 and 20;`
+
+#### ALIAS
+
+`SELECT name, init_date AS 'Fecha de Inicio' FROM users WHERE age BETWEEN 10 and 20;`
+
+#### CONCAT
+
+`SELECT concat(name, ' ', surname) FROM users;`
+
+`SELECT concat(name, ' ', surname) AS 'Nombre Completo' FROM users;`
+
+#### GROUP BY
+
+`SELECT COUNT(age), age FROM users GROUP BY age ORDER BY age ASC;`
+
+#### CASE 
+
+```
+SELECT *, 
+CASE
+	WHEN age > 17 THEN 'Es mayor de edad'
+    ELSE 'NO eres mayor de edad'
+END AS agetext
+FROM users;
+```
+
+#### IFNULL
+
+`SELECT name, surname, IFNULL(email, 'no email') FROM users;`
+
+### Writing
+
+#### INSERT
+
+`INSERT INTO users (name, surname) VALUES ('Julio', 'Perez');`
+
+#### UPDATE
+
+`UPDATE users SET age = '21' WHERE user_id = 9;`
+
+#### DELETE
+
+`DELETE FROM users WHERE user_id = 8;`
+
+### DATA BASES
+
+`CREATE DATABASE test;`
+`DROP DATABASE test;`
+
+### TABLES
+
+#### CREATE TABLE
+
+```
+CREATE TABLE persons (
+	id int NOT NULL AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    age int,
+    email varchar(50),
+    created datetime DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE(id),
+    PRIMARY KEY(id),
+    CHECK(age>=18)
+);
+```
+
+#### DROP TABLE
+
+`DROP TABLE persons8;`
+
+#### ALTER TABLE
+
+```
+ALTER TABLE persons8
+ADD surname varchar(150);
+```
+
+```
+ALTER TABLE persons8
+RENAME COLUMN surname TO description;
+```
+
+```
+ALTER TABLE persons8
+MODIFY COLUMN description varchar(250);
+```
+
+```
+ALTER TABLE persons8
+DROP COLUMN description;
+```
+
+#### RELATIONSHIPS
+
+
+
