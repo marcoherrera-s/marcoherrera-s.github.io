@@ -96,7 +96,7 @@ pre code.hljs {
   
   /* Estilo para líneas de código inline */
   code:not(pre > code) {
-    background: #ffbdbd;  /* Un fondo ligeramente gris para diferenciarlo del texto normal */
+    background: #f8f2f2;  /* Un fondo ligeramente gris para diferenciarlo del texto normal */
     color: #383a42;       /* Utilizamos el verde fresco y claro para el texto */
     padding: 0.2em 0.4em; /* Padding ligero para no hacerlo muy robusto */
     border-radius: 4px;   /* Bordes redondeados para un look más suave */
@@ -105,7 +105,7 @@ pre code.hljs {
   
   /* Reutilizando estilos de .hljs para coherencia */
   .hljs {
-    background: #ffa2a2;  /* Fondo claro, casi blanco */
+    background: #f8f2f2;  /* Fondo claro, casi blanco */
     color: #383a42;       /* Gris oscuro para texto principal */
   }
   
