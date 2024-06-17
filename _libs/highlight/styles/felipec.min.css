@@ -1,4 +1,4 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+pre code.hljs{display:block;overflow-x:auto;padding:1em;font-family: Menlo, Monaco, 'Courier New', monospace}code.hljs{padding:3px 5px;font-family: Menlo, Monaco, 'Courier New', monospace}/*!
  * Theme: FelipeC
  * Author: (c) 2021 Felipe Contreras <felipe.contreras@gmail.com>
  * Website: https://github.com/felipec/vim-felipec
