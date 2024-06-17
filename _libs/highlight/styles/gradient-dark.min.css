@@ -1,1 +1,96 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background-color:#652487;background-image:linear-gradient(160deg,#652487 0,#443ac3 35%,#0174b7 68%,#04988e 100%);color:#e7e4eb}.hljs-subtr{color:#e7e4eb}.hljs-comment,.hljs-doctag,.hljs-meta,.hljs-quote{color:#af8dd9}.hljs-attr,.hljs-regexp,.hljs-selector-id,.hljs-selector-tag,.hljs-tag,.hljs-template-tag{color:#aefbff}.hljs-bullet,.hljs-params,.hljs-selector-class{color:#f19fff}.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-section,.hljs-symbol,.hljs-type{color:#17fc95}.hljs-addition,.hljs-link,.hljs-number{color:#c5fe00}.hljs-string{color:#38c0ff}.hljs-addition,.hljs-attribute{color:#e7ff9f}.hljs-template-variable,.hljs-variable{color:#e447ff}.hljs-built_in,.hljs-class,.hljs-formula,.hljs-function,.hljs-name,.hljs-title{color:#ffc800}.hljs-deletion,.hljs-literal,.hljs-selector-pseudo{color:#ff9e44}.hljs-emphasis,.hljs-quote{font-style:italic}.hljs-keyword,.hljs-params,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-selector-tag,.hljs-strong,.hljs-template-tag{font-weight:700}
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
