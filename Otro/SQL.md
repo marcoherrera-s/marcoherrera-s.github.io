@@ -238,7 +238,7 @@ Bueno, a partir de aquí retomé el estudio de esto después de una semana.
 
 Aquí tenemos distintos tipos de relaciones, SQL, por lo que estoy entendiendo, una de sus fortalezas es que se especializa en bases de datos relacionales. Hay distintos tipos de relaciones, y estas serían:
 
-### Relación 1:1
+### Relación 1 : 1
 
 Esta está un poco clara, nos dice que hay una relación entre el registro de una Tabla A y el registro de una Tabla B. 
 
@@ -256,7 +256,7 @@ CREATE TABLE dni(
 )
 ```
 
-### Relación 1:N
+### Relación 1 : N
 
 Aquí, casi de forma análoga se habla de una relación que puede tener un registro con N registros, el ejemplo que da el curso que estoy siguiendo es el de crear una nueva tabla que se encargue de los registros de nombres de compañias, un empleado puede tener varias compañías pero claramente las compañías pueden tener varios empleados. 
 
@@ -281,3 +281,25 @@ FOREIGN KEY(company_id) REFERENCES companies(company_id)
 Ok, tenía un problemita en entender el ADD CONSTRAINT, pero pues justamente es la línea que añade que habrá una restricción en la tabla users, esta cobra sentido en la siguiente línea pues especifica de qué tratará la constricción, en la relación 1:N no ocupamos esto porque no creabamos ninguna nueva columna en ninguna tabla. O al menos eso es lo que creo. 
 
 Aquí hago un paréntesis. Quiero hablar de la palabra _constraint_, esta palabra fue muy común para mí mientras tomaba mi curso de mecánica analítica, pues al estudiar el formalismo lagrangiano se habla de estas _constraints_. Mi problema con esta palabra es su traducción, la traducción directa es la que escuché en mi curso y la que he escuchado más veces: **constricción**. Se me hace muy fea esta palabra porque siento que suena como cuando estás constriñido del estómago. Por otra parte, la traducción _restricción_ se me hace un poco más buena, sin embargo, aunque sí es una restricción pierde el sentido de una relación que existe, que la traducción _ligadura_ sí comprende, pero a mi parecer, dejando de lado el carácter restrictivo. Así que hasta ahora, no sé muy bien qué palabra me gustaría más usar en estos casos. Ojalá algún día la encuentre, pero no es broma cuando digo que siento un navajazo en el pecho cuando escucho **constricción**. Tal vez la que preferiría sería restricción, pues siento que el carácter restrictivo es más importante que el hecho de que sea claro que exista una relación.
+
+### Relación N : M
+
+El ejemplo que se pone acá es sencillo, creamos una tabla que contiene idiomas, y otra que contiene qué idiomas hablan los usuarios. Es N:M porque varios idiomas pueden ser hablados por varios usuarios y varios usuarios pueden hablar varios idiomas. 
+
+```
+CREATE TABLE languages(
+	language_id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(100) NOT NULL
+);
+```
+
+```
+CREATE TABLE users_languages(
+	users_language_id int AUTO_INCREMENT PRIMARY KEY,
+    user_id int,
+    language_id int,
+    FOREIGN KEY(user_id) REFERENCES users(user_id),
+    FOREIGN KEY(language_id) REFERENCES languages(language_id),
+    UNIQUE (user_id, language_id)
+);
+```
