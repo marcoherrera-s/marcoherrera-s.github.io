@@ -1,5 +1,10 @@
 +++
-title = "Menu 4"
+title = "Otros"
 +++
 
---> [Mi camino aprendiendo SQL](/Otro/SQL/)
+---
+# Aprendiendo SQL
+
+* [Curso Express de SQL](/Otro/SQL/)
+
+---
