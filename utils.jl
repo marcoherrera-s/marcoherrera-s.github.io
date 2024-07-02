@@ -14,3 +14,8 @@ function lx_baz(com, _)
   # do whatever you want here
   return uppercase(brace_content)
 end
+
+function lx_nonumber(com, _)
+  Franklin.PAGE_EQREFS[Franklin.PAGE_EQREFS_COUNTER] -= 1
+  return "@@nonumber " * Franklin.content(com.braces[1]) * "@@"
+end
