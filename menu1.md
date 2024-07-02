@@ -14,5 +14,7 @@ tags = ["syntax", "code"]
 
 * [¡Resolviendo un cuerpo rígido sin talacha!](/Ejercicios/duda/)
 
+* [Dinámica no lineal](/Dinamica/cover/)
+
 
 
