@@ -21,7 +21,7 @@ Dentro del mundo de las ecuaciones diferenciales, podemos distinguir entre dos g
 
 La siguiente ecuación es un ejemplo de ecuación diferencial ordinaria:
 
-$$ m \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + kx = 0 $$
+$$ m \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + kx = 0 \label{eq1} $$ 
 
 lo que la hace _ordinaria_ es que sólo tiene derivadas _ordinarias_, solo hay una variable independiente, en este caso el tiempo. 
 
@@ -38,6 +38,9 @@ Por lo que podríamos ahora definir el tipo de estructura con la que se trabajar
 \end{aligned}
 \end{equation*}
 
+Ahora, podemos observar que la estructura que acabamos de definir 
 
-$$ 3 $$
+$$ 6x + 4 \label{eq2} $$
 
+
+\eqref{eq1} \eqref{eq2}

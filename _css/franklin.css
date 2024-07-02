@@ -256,7 +256,9 @@ td {
     KATEX
 ================================================================== */
 
-body { counter-reset: eqnum; }
+body {
+  counter-reset: eqnum;  /* Establece el contador a 0 */
+}
 
 .katex { font-size: 1em !important; }
 
@@ -269,16 +271,17 @@ body { counter-reset: eqnum; }
 }
 
 .katex-display::after {
-  counter-increment: eqnum;
-  content: "(" counter(eqnum) ")";
+  counter-increment: eqnum;  /* Incrementa el contador */
+  content: "(" counter(eqnum) ")";  /* Muestra el contador */
   position: relative;
   float: right;
   padding-right: 5px;
 }
 
+
 .nonumber .katex-display::after {
   counter-increment: nothing;
-  content: "";
+  content: "\00a0\00a0\00a0\00a0";
 }
 
 /* ==================================================================
