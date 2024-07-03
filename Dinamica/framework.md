@@ -1,3 +1,9 @@
++++
+title = "frame"
+hasmath = true
++++
+
+
 # Casi siempre se empieza definiendo cosas
 
 
@@ -38,9 +44,39 @@ Por lo que podríamos ahora definir el tipo de estructura con la que se trabajar
 \end{aligned}
 \end{equation*}
 
-Ahora, podemos observar que la estructura que acabamos de definir 
-
-$$ 6x + 4 \label{eq2} $$
+Ahora, podemos observar que la estructura que acabamos de definir no parece parecerse al ejemplo que se dio de ecuación diferencial ordinaria, esto por el simple hecho de que la primera es una ecuación de segundo orden, y en la estrucutura que se definió tenemos únicamente derivadas de primer orden.
 
 
-\eqref{eq1} \eqref{eq2}
+Esto lo podemos arreglar con un simple truquito; hacemos que $ x_1 = x $ y $ x_2 = \dot{x} $. 
+
+Entonces tenemos que: $ \dot{x_1} = \dot{x} $ y $ \dot{x_2} = \ddot{x} $. 
+
+Por lo que tenemos:
+
+\begin{equation*}
+\begin{aligned}
+    m \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + kx &= 0 \\
+    m \ddot{x} + b \dot{x} + kx &= 0 \\
+    m \dot{x_2} + b \dot{x_1} + kx_1 &= 0 
+\end{aligned}
+\end{equation*}
+
+Ya solo nos falta un pasito más, nos damos cuenta que, como definimos $ x_2 = \dot{x} $, y $ \dot{x_1} = \dot{x} $, entonces: $\dot{x_1} = x_2$. Por lo tanto, tenemos el siguiente sistema:
+
+\begin{equation*}
+\begin{aligned}
+    \dot{x_1} &= x_2 \\
+    m \dot{x_2} + b x_2 + kx_1 &= 0 
+\end{aligned}
+\end{equation*}
+
+Reacomodando tendríamos:
+
+\begin{equation*}
+\begin{aligned}
+    \dot{x_1} &= x_2 \\
+    \dot{x_2} &= -\frac{b}{m} x_2 - \frac{k}{m}x_1
+\end{aligned}
+\end{equation*}
+
+
