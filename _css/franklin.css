@@ -260,23 +260,18 @@ body {
   counter-reset: eqnum;  /* Establece el contador a 0 */
 }
 
-.katex { font-size: 1em !important; }
-
-.katex-display .katex {
-  /* Overwrite KaTeX settings. */
-  display: inline-block;
-
-  /* Allow display equations to wrap on small screens. */
-  white-space: normal;
+.katex { 
+  font-size: 1em !important; 
 }
 
-.katex-display::after {
-  counter-increment: eqnum;  /* Incrementa el contador */
-  content: "(" counter(eqnum) ")";  /* Muestra el contador */
+.katex-display {
+  display: block;  /* Asegura que cada ecuación de display esté en su propio bloque */
+  white-space: normal;  /* Permite que las ecuaciones de display se ajusten en pantallas pequeñas */
+  counter-increment: eqnum;  /* Incrementa el contador en cada ecuación de display */
   position: relative;
-  float: right;
-  padding-right: 5px;
 }
+
+
 
 
 .nonumber .katex-display::after {
