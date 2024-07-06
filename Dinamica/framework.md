@@ -9,7 +9,7 @@ hasmath = true
 
 Antes de que hablemos de dinámica no lineal, tendríamos que saber qué viene siendo la dinámica lineal, pero antes de eso, tenemos que saber entonces qué es la dinámica. 
 
-En pocas palabras, lo que hace la dinámica es estudiar el _cambio_, cómo es que un sistema _cambia_ en el tiempo. Preguntarnos cómo cambia _algo_ puede parecer una pregunta inocente, pero en realidad es una pregunta muy importante, porque este _algo_ o _sistema_ puede alcanzar un equilibrio, puede estar en un ciclo repitieńdose, puede hacer cosas extrañas, bueno, las posibilidades son muchas. Lo que importa es que usamos la dinámica para estudiar estos comportamientos. 
+En pocas palabras, lo que hace la dinámica es estudiar el _cambio_, cómo es que un sistema _cambia_ en el tiempo. Preguntarnos cómo cambia _algo_ puede parecer una pregunta inocente, pero en realidad es una pregunta muy importante, porque este _algo_ o _sistema_ puede alcanzar un equilibrio, puede estar en un ciclo repitiéndose, puede hacer cosas extrañas, bueno, las posibilidades son muchas. Lo que importa es que usamos la dinámica para estudiar estos comportamientos. 
 
 Una de las hazañas más grandes en la historia del estudio de la dinámica, fue cuando Newton resolvió el problema de los dos cuerpos, calcular el movimiento en cualquier momento en un sistema del tipo sol-tierra. Para el problema de tres cuerpos, hubo más problema, pero al final se dio cuenta de que era imposible obtener soluciones analíticas. Y bueno, ya hablar de el problema de n-cuerpos complica nuestra situación magistralmente. 
 
@@ -81,11 +81,11 @@ Reacomodando tendríamos:
 
 Y ahora sí ya tenemos una estructura como la definida. 
 
-Y bueno, decimos que el sistema que tenemos es lineal porque no tiene cosas raras, todo lo que aparece en el lado derecho del sistema solo hay primeras potencias, no hay productos, no hay cuadrados ni cubos, no hay senos, ni cosas feas. 
+Decimos que el sistema que tenemos es lineal porque no tiene cosas _raras_, todo lo que aparece en el lado derecho del sistema solo hay primeras potencias, no hay productos, no hay cuadrados ni cubos, no hay senos, ni cosas feas. 
 
-Por ejemplo, por poner otro ejemplo, que aunque parezca simple, la no-linealidad lo convierte en un dolor de cabeza.
+Un ejemplo, que aunque parece simple, la no-linealidad lo convierte en un dolor de cabeza.
 
-Un sistema físico simple pero que no es lineal es el péndulo simple, la ecuación de segundo grado es de la siguiente forma:
+Un sistema físico que puede parecer sencillo pero que es no-lineal es el péndulo simple, la ecuación de segundo grado es de la siguiente forma:
 
 \begin{align*}
 \ddot{x} + \frac{g}{L} \sin x &= 0 \\[1ex]
@@ -108,9 +108,11 @@ Si quisieramos resolver este problema analíticamente tendríamos que vernos las
 
 Entonces el objetivo de todo esto es ir descubriendo técnicas y formas bonitas de ir resolviendo sistemas de este tipo sin mancharnos taaaanto las manos.
 
+$$ \star $$
+
 Ahora, si observamos bien la estructura que se definió, notamos que hay un problemita, parece ser que nuestro sistema no toma en cuenta las ecuaciones que dependen del tiempo, es decir, las ecuaciones no-autónomas. 
 
-Por ejemplo, uno de los casos más directos en los que podemos pensar es en un oscilador armónico forzado, me gusta pensar en este tipo de sistema como si se tratase de alguien empujando a alguien en el columpio, este tipo de sistema está bien definito de la siguiente forma: $ m \ddot{x} + b\dot{x} + kx = F \cos{\Omega t} $.
+Uno de los casos más directos en los que podemos pensar es en un oscilador armónico forzado, me gusta pensar en este tipo de sistema como si se tratase de una persona empujando a otra en un columpio, este tipo de sistema está bien definido de la siguiente forma: $ m \ddot{x} + b\dot{x} + kx = F \cos{\Omega t} $.
 
 Para estos casos tenemos un truco más para que quede una estructura como la que definimos; de la misma forma introducimos que $ x_1 = x$ y $x_2 = \dot{x} $ y además, aquí viene el truquito, introducimos que: $x_3 = \Omega t $, entonces $ \dot{x_3} = \Omega $ y tendríamos:
 
@@ -124,11 +126,13 @@ Por lo que podríamos decir que un sistema dependiente del tiempo de n-orden, es
 
 Aunque pareza un truco sacado de la manga esto de aumentarle una dimensión a nuestro sistema, si lo pensamos bien, el verdadero estado de un sistema como el oscilador armónico forzado es 3-dimensional, pues necesitamos de una posición, una velocidad, y el tiempo para poder predecir su movimiento. 
 
+$$ \star $$
+
 
 Finalmente, regresando a la no-linealidad, la razón por la que es necesario desarrollar una serie de técnicas para resolver este tipo de sistemas no es porque se tenga flojera de resolver analíticamente, bueno sí, pero no tanto. Pero pasa que muchas veces este tipo de problemas ni siquiera es posible resolverlos de esta forma. 
 
 Lo que hace no tan difíciles a los problemas lineales es que estos pueden ser divididos en partes y resolverlos en partecitas, son literalmente la suma de sus partes. 
 
-Lo triste es que casi la mayoría de sistemas físicos, de cosas que pasan a nuestro alrededor, son no-lineales. Entonces, al final de cuentas, estos cobran una importancia enorme porque están en todos lados, no son nada extraños. 
+Lo triste es que casi la mayoría de sistemas físicos, de cosas que pasan a nuestro alrededor, son no-lineales. Entonces, al final de cuentas, estos cobran una importancia enorme porque están en todos lados, no son nada extraños, nada _raros_. 
 
 Es por eso que llamarle a un problema, _no-lineal_, es como ir por la vida llamándole a muchos animales _no-elefantes_.
