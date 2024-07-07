@@ -6,3 +6,5 @@ Planeo utilizar principalmente dos recursos, este [curso](https://www.youtube.co
 
 
 ❉ [Defininedo el patio de juegos](/Dinamica/framework/)
+
+❉ [Ecuación diferencial como campo vectorial](/Dinamica/campo/)
