@@ -3,9 +3,7 @@ title = "1. Dinámica no-lineal."
 hasmath = true
 +++
 
-
-# Casi siempre se empieza definiendo cosas
-
+# Definineto el patio de juegos
 
 Antes de que hablemos de dinámica no lineal, tendríamos que saber qué viene siendo la dinámica lineal, pero antes de eso, tenemos que saber entonces qué es la dinámica. 
 
@@ -47,7 +45,7 @@ Por lo que podríamos ahora definir el tipo de estructura con la que se trabajar
 Ahora, podemos observar que la estructura que acabamos de definir no parece parecerse al ejemplo que se dio de ecuación diferencial ordinaria, esto por el simple hecho de que la primera es una ecuación de segundo orden, y en la estrucutura que se definió tenemos únicamente derivadas de primer orden.
 
 
-Esto lo podemos arreglar con un simple truquito; hacemos que $ x_1 = x $ y $ x_2 = \dot{x} $. 
+Esto lo podemos arreglar con un simple truquito; vamos a definir que $ x_1 = x $ y $ x_2 = \dot{x} $. 
 
 Entonces tenemos que: $ \dot{x_1} = \dot{x} $ y $ \dot{x_2} = \ddot{x} $. 
 
