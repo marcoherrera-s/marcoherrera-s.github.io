@@ -26,10 +26,11 @@ $$
 Si suponemos que $x = x_0$ en $ t = 0 $ , entonces:
 
 $$
-\begin{aligned}
--\ln|\csc{x_0} + \cot{x_0}| + C &= 0 \\
-C &= \ln|\csc{x_0} + \cot{x_0}| \\
-\end{aligned}
+-\ln|\csc{x_0} + \cot{x_0}| + C = 0
+$$
+
+$$
+C = \ln|\csc{x_0} + \cot{x_0}| \\
 $$
 
 Por lo tanto, nuestra solución nos quedaría:
@@ -65,7 +66,7 @@ Tenemos tres puntos; A, B y C. Si observamos cómo nos quedaron las direcciones 
 
 Ahora pensemos, supongamos que nos paramos en un punto atractor, ahí estamos a salvo, pues es un punto en donde no hay dinámica, en donde $ \dot{x} = 0 $, ¿pero qué pasa si nos movemos un poquito? Como nos encontramos en un punto atractor, parece que a donde sea que nos movamos, vamos en dirección contraria al flujo, entonces la dinámica del sistema no me está dejando que me vaya del punto fijo en el que me encuentro, entonces estamos parados en un punto fijo **estable**.
 
-Si, nos paramos en un repulsor, y nos movemos tantito, ahora para donde sea que vayamos, iríamos con la dirección del flujo, por lo que movernos tantito, significaría abandonar el punto fijo. Entonces estaríamos parados en un punto fijo **inestable**.
+Si nos paramos en un repulsor, y nos movemos tantito, ahora para donde sea que vayamos, iríamos con la dirección del flujo, por lo que movernos tantito, significaría abandonar el punto fijo. Entonces estaríamos parados en un punto fijo **inestable**.
 
 Por lo tanto, eso es lo que pasa, un atractor es un punto fijo estable, un repulsor es un punto fijo inestable. 
 
@@ -76,7 +77,27 @@ Hace un rato nos preguntamos: ¿Qué haríamos si nos interesara saber qué es l
 
 Si hacemos un análisis gráfico, podemos ver que si partimos de $ \pi / 4 $ el flujo nos llevaría de forma rápida hasta $ \pi / 2 $, llegando a este punto, seguiríamos moviéndonos en la misma dirección, pues la velocidad sigue siendo positiva, pero iríamos cada vez más lento, dirigiéndonos a $ \pi $ de forma asintótica. 
 
-![ej1](/assets/dinamica/5.png)
+![ej1](/assets/dinamica/6.png)
 
+~~~
+<a href="/Dinamica/framework/">
+  <button class="cta">
+    <span>Anterior</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="5 1 1 5 5 9"></polyline>
+    </svg>
+  </button>
+</a>
+<br>
+<a href="/Dinamica/analisis/">
+  <button class="cta">
+    <span>Siguiente</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+</a>
 
-De esta forma, pudimos responder una pregunta, aunque de forma heurística, con mucho valor. 
+~~~

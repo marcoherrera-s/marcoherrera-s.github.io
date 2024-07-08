@@ -3,7 +3,7 @@ title = "1. Dinámica no-lineal."
 hasmath = true
 +++
 
-# Definineto el patio de juegos
+# Definiendo el patio de juegos
 
 Antes de que hablemos de dinámica no lineal, tendríamos que saber qué viene siendo la dinámica lineal, pero antes de eso, tenemos que saber entonces qué es la dinámica. 
 
@@ -134,3 +134,31 @@ Lo que hace no tan difíciles a los problemas lineales es que estos pueden ser d
 Lo triste es que casi la mayoría de sistemas físicos, de cosas que pasan a nuestro alrededor, son no-lineales. Entonces, al final de cuentas, estos cobran una importancia enorme porque están en todos lados, no son nada extraños, nada _raros_. 
 
 Es por eso que llamarle a un problema, _no-lineal_, es como ir por la vida llamándole a muchos animales _no-elefantes_.
+
+~~~
+<a href="/Dinamica/cover/">
+  <button class="cta">
+    <span>Anterior</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="5 1 1 5 5 9"></polyline>
+    </svg>
+  </button>
+</a>
+<br>
+<a href="/Dinamica/campo/">
+  <button class="cta">
+    <span>Siguiente</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+</a>
+
+~~~
+
+
+
+
+

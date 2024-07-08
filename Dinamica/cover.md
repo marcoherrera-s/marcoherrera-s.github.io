@@ -5,6 +5,6 @@ Este es un espacio sobre mi camino aprendiendo dinámica no lineal. Como todo lo
 Planeo utilizar principalmente dos recursos, este [curso](https://www.youtube.com/playlist?list=PLUeHTafWecAUqSh3Gy0NNr7H3OsXoC-aK) y el libro _Nonlinear Dynamics and Chaos_ de Steven Strogatz.
 
 
-❉ [Defininedo el patio de juegos](/Dinamica/framework/)
+1. ❉ [Defininedo el patio de juegos](/Dinamica/framework/) ❉
 
-❉ [Ecuación diferencial como campo vectorial](/Dinamica/campo/)
+2. ❉ [Ecuación diferencial como campo vectorial](/Dinamica/campo/) ❉
