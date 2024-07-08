@@ -19,8 +19,11 @@ $$
 \frac{dx}{dt} &= \sin{x} \\
 \frac{dx}{\sin{x}} &= dt \\
 \int \frac{dx}{\sin{x}} &= \int dt \\
--\ln|\csc{x} + \cot{x}| + C &= t \\
 \end{aligned}
+$$
+
+$$
+-\ln|\csc{x} + \cot{x}| + C = t 
 $$
 
 Si suponemos que $x = x_0$ en $ t = 0 $ , entonces:
@@ -90,7 +93,8 @@ Si hacemos un análisis gráfico, podemos ver que si partimos de $ \pi / 4 $ el 
   </button>
 </a>
 <br>
-<a href="/Dinamica/analisis/">
+<a href="/Dinamica/analisis
+/">
   <button class="cta">
     <span>Siguiente</span>
     <svg width="15px" height="10px" viewBox="0 0 13 10">

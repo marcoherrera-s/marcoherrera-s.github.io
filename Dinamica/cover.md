@@ -8,3 +8,7 @@ Planeo utilizar principalmente dos recursos, este [curso](https://www.youtube.co
 1. ❉ [Defininedo el patio de juegos](/Dinamica/framework/) ❉
 
 2. ❉ [Ecuación diferencial como campo vectorial](/Dinamica/campo/) ❉
+
+3. ❉ [Análisis de estabilidad](/Dinamica/analisis/) ❉
+
+4. ❉ [Existencia y unicidad](/Dinamica/existencia/) ❉
