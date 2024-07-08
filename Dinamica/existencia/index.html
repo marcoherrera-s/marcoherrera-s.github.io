@@ -1,0 +1,152 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/blog/libs/katex/katex.min.css"> <link rel=stylesheet  href="/blog/libs/highlight/styles/monokai-sublime.min.css"> <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin=anonymous ></script> <link rel=stylesheet  href="/blog/css/franklin.css"> <link rel=stylesheet  href="/blog/css/tufte.css"> <link rel=stylesheet  href="/blog/css/latex.css"> <link rel=stylesheet  href="/blog/css/adjust.css"> <link rel=icon  href="/blog/assets/favicon.png"> <title>4. Dinámica no-lineal.</title> <div id=layout > <div id=menu > <ul> <li><a style="font-size:larger;" href=https://github.com/marcoherrera-s><i class="fa-brands fa-github"></i></a> <li><a style="font-size:larger;" href=https://letterboxd.com/marcoherrera/><i class="fa-brands fa-letterboxd"></i></a> <li><a style="font-size:larger;" href=https://www.goodreads.com/user/show/71696585-marco-herrera><i class="fa-brands fa-goodreads"></i></a> <li><a href="/blog/">Casa</a> <li><a href="/blog/menu1">Física</a> <li><a href="/blog/menu2/">Miscelánea</a> <li><a href="/blog/menu3/">Extra</a> <li><a href="/blog/menu4/">Otro</a> </ul> </div> <div id=main > <div class=franklin-content > <h1 id=existencia_y_unicidad ><a href="#existencia_y_unicidad" class=header-anchor >Existencia y unicidad</a></h1> <p>Antes de hablar de existencia y unicidad vale la pena repasar un concepto clave. </p> <p>Regresando al péndulo simple, teníamos que el sistema está descrito por:</p> <div class=nonumber >\[\begin{aligned} &\boxed{ \begin{array}{rcl} \rightarrow \dot{x}_1 &=& x_2 \\[1ex] \rightarrow \dot{x}_2 &=& -\frac{g}{L} \sin x_1 \end{array} } \end{aligned}\]</div> <p>entonces, tener una solución sería tener un par de funciones, \(x_1(t)\) y \(x_2(t)\), una para la posición y otra para la velocidad del péndulo. </p> <p>Con esto, podemos construir un espacio abstracto con coordenadas \( (x_1, x_2) \), aquí nuestra solución \((x_1(t) , x_2(t))\) correspondería a un punto moviéndose a través de una curva en este espacio.</p> <p>Esta curva es lo que llamamos <em>trayectoria</em>, y el espacio abstracto es lo que llamamos <em>espacio-fase</em>. Este espacio-fase está lleno de trayectorias, pues cada punto puede servir como una condición inicial.</p> <p>Veamos, juguemos un poquito con código para visualizar esto:</p> <p>Primero cargamos las paqueterías que necesitamos:</p> <pre><code class=language-julia >using DifferentialEquations, Plots</code></pre>
+<p>Ahora definimos el sistema en una función, le damos unos valores simples a los parámetros, elegimos algunas condiciones iniciales y un span de tiempo para hacer la integración. </p>
+<pre><code class=language-julia ># Definir la ecuación diferencial
+function pendulum&#40;dx, x, p, t&#41;
+    dx&#91;1&#93; &#61; x&#91;2&#93;
+    dx&#91;2&#93; &#61; -&#40;g/L&#41; * sin&#40;x&#91;1&#93;&#41;
+end
+
+x0 &#61; &#91;0.5, 0.5&#93; # Condición inicial
+g, L &#61; 1.0, 1.0 # Parámetros
+tspan &#61; &#40;0.0, 15.0&#41; # Intervalo de tiempo</code></pre>
+<p>Ahora definimos el problema como ya se ha visto <a href="/blog/Ejercicios/oscilador/">aquí.</a></p>
+<pre><code class=language-julia ># Definimos el problema
+prob &#61; ODEProblem&#40;pendulum, x0, tspan&#41;
+
+# Resolver el problema
+sol &#61; solve&#40;prob&#41;
+
+# Graficamos la solución, el índice 1 &#40;posición&#41; vs índice 2 &#40;velocidad&#41;
+plot&#40;sol, 
+    idxs&#61;&#40;1,2&#41;, 
+    xlabel&#61;&quot;x&quot;, 
+    ylabel&#61;&quot;v&quot;,
+    title&#61;&quot;Diagrama de Fase&quot;,
+    label&#61;&quot;Trayectoria&quot;,
+    aspect_ratio&#61;:equal,
+    grid&#61;false
+&#41;</code></pre>
+<p><img src="/blog/assets/dinamica/tray.png" alt=tray  /></p>
+<p>Podemos observar la trayectoria para el péndulo simple con posición inicial \(0.5\) y velocidad inicial \(0.5\).</p>
+<p>Tal vez ahora, para visualizar mejor el concepto de espacio-fase, sea útil observar más trayectorias.</p>
+<p>Definamos unas nuevas condiciones iniciales:</p>
+<pre><code class=language-julia >initial_conditions &#61; &#91;
+    &#91;0.0, 0.0&#93;,    # Equilibrio estable
+    &#91;π, 0.0&#93;,      # Equilibrio inestable
+    &#91;π/2, 0.0&#93;,    # Posición horizontal, sin velocidad inicial
+    &#91;-π/2, 0.0&#93;,   # Posición horizontal opuesta, sin velocidad inicial
+    &#91;π/4, 1.0&#93;,    # 45 grados con velocidad positiva
+    &#91;-π/4, -1.0&#93;,  # -45 grados con velocidad negativa
+    &#91;0.0, 2.0&#93;,    # Posición vertical con alta velocidad inicial
+    &#91;0.0, -2.0&#93;,   # Posición vertical con alta velocidad inicial negativa
+    &#91;π/3, 0.5&#93;,    # 60 grados con velocidad moderada
+    &#91;-π/3, -0.5&#93;,  # -60 grados con velocidad moderada negativa
+    &#91;2π/3, 0.0&#93;,   # 120 grados sin velocidad inicial
+    &#91;-2π/3, 0.0&#93;,  # -120 grados sin velocidad inicial
+    &#91;π/6, 1.5&#93;,    # 30 grados con alta velocidad
+    &#91;-π/6, -1.5&#93;,  # -30 grados con alta velocidad negativa
+    &#91;5π/6, 0.2&#93;    # 150 grados con baja velocidad
+&#93;</code></pre>
+<p>Y entonces resolvemos de la misma forma para cada una de las condiciones iniciales y graficamos en un solo plot cada una de las trayectorias resultantes;</p>
+<pre><code class=language-julia ># Crear un plot vacío
+plot&#40;&#41;
+
+# Resolver y graficar para cada condición inicial
+for x0 in initial_conditions
+    prob &#61; ODEProblem&#40;pendulum, x0, tspan&#41;
+    sol &#61; solve&#40;prob&#41;
+    
+    # Graficar el espacio de fase
+    plot&#33;&#40;sol, idxs&#61;&#40;1,2&#41;, linewidth&#61;2&#41;
+end
+
+# Mostrar el plot
+plot&#33;&#40; 
+    xlabel&#61;&quot;x&quot;, 
+    ylabel&#61;&quot;v&quot;,
+    title&#61;&quot;Espacio-Fase&quot;,
+    legend&#61;false,
+    aspect_ratio&#61;:equal,
+    grid&#61;false
+&#41;</code></pre>
+<p><img src="/blog/assets/dinamica/tray2.png" alt=tray2  /></p>
+<p>Lo que estamos viendo es cómo se va llenando el espacio fase de trayectorias.</p>
+<p>Si googleamos el espacio de fase de un péndulo, podemos ver resultados parecidos a lo que acabamos de obtener:</p>
+<p><img src="/blog/assets/dinamica/web.png" alt=web  /></p>
+<hr />
+<p>Ahora sí, regresando al punto de esta entrada. Hay que ser honestos, hasta ahora, el tratamiendo que se le ha dado a todos nuestros análisis se siente informal.</p>
+<p>En primer lugar, se discutió las soluciones de las ecuaciones del tipo: \( \dot{x} = f(x) \), pero, para empezar, ¿qué nos garantiza que la solución que buscamos exista?, y más aún, que sea única. </p>
+<p>Pensemos en un caso que parece simple, la ecuación:</p>
+\[
+\dot{x} = x^{1/3} \quad\quad \text{con}\quad\quad x(0) = 0
+\]
+<p>una solución claramente es la solución trivial, \( x = 0 \). Pero...</p>
+<p><img src="/blog/assets/dinamica/canvas.png" alt=meme  /></p>
+<p>Resolvamos analíticamente:</p>
+\[
+\frac{dx}{dt} = x^{1/3}
+\]
+\[
+x^{-1/3} \, dx = dt
+\]
+\[
+\int x^{-1/3} \, dx = \int dt
+\]
+\[
+\frac{3}{2} x^{2/3} + C_1 = t + C_2
+\]
+\[
+\frac{3}{2} x^{2/3} = t + C
+\]
+<p>Usamos la condición inicial \(x(0) = 0\) para encontrar \(C\). Cuando \(t = 0\), \(x = 0\), por lo tanto:</p>
+\[
+\frac{3}{2} (0)^{2/3} = 0 + C \implies C = 0
+\]
+<p>Así que la ecuación simplificada es:</p>
+\[
+\frac{3}{2} x^{2/3} = t
+\]
+<p>Despejamos \(x\) para obtener la solución explícita:</p>
+\[
+x^{2/3} = \frac{2}{3} t
+\]
+\[
+x = \left( \frac{2}{3} t \right)^{3/2}
+\]
+<p>Y esta última también es solución. Entonces, ¿cuál es la buena?</p>
+<p>Pues es complicado, aquí cualquier análisis que hemos visto fallaría, porque a ver, la solución \(x(t) = 0\) nos dice que para la condición inicial dada, la partícula ni siquiera se movería. Pero la otra solución, que obtuvimos nos dice que seguiría una trayectoria, entonces, el punto-fase en el origen en nuestro espacio-fase no sabría qué hacer. De hecho, todo se pone peor, porque se puede demostrar que las soluciones son infinitas. </p>
+<p>Todo esto se empieza a esclarecer si le echamos un ojo al teorema de Picard–Lindelöf, o también conocido como teorema de existencia y unicidad, este nos dice que:</p>
+<div class=nonumber >\[\begin{aligned}
+&\boxed{
+\begin{array}{l}
+\text{Sea } D \subseteq \mathbb{R} \times \mathbb{R}^n \text{ un rectángulo cerrado con } (t_0, y_0) \in \text{int} D, \text{ el interior de } D.\\
+\text{Sea } f: D \rightarrow \mathbb{R}^n \text{ una función que es continua en } t \text{ y Lipschitz continua en } y \\
+\text{(con constante de Lipschitz independiente de } t\text{). Entonces, existe algún } \varepsilon > 0 \\
+\text{tal que el problema de valor inicial} \\
+y'(t) = f(t, y(t)), \quad y(t_0) = y_0. \\
+\text{tiene una solución única } y(t) \text{ en el intervalo } [t_0 - \varepsilon, t_0 + \varepsilon].
+\end{array}
+}
+\end{aligned}\]</div>
+<p>En español, nos dice que todo jala bien siempre y cuando nuestra función sea continua en t y Lipschitz continua en y. Básicamente que sea Lipschitz significa que existe una constante \(L\) tal que la tasa de cambio entre dos puntos no supere esta constante. Esto es una forma de decirnos que es continua, peroq ue no cambia tan rápido en tal punto.</p>
+<p>Para que no nos vayamos tan lejos, observemos la función:</p>
+<p><img src="/blog/assets/dinamica/plot.png" alt=plot  /></p>
+<p>Es claro que en 0 no es Lipschitz continua, pues de hecho \(f'(0)\) es infinito. </p>
+<p>Por lo tanto, este teorema nos dice que si \(f(x)\) está lo suficientemente bonita, la solución existe y es única. </p>
+<div class=page-foot  style="font-size: 13px; font-family: 'Sans-serif', Arial, sans-serif;">
+    <a</a> Marco Herrera Solar. Last modified: July 08, 2024.
+    Sitio hecho con <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> y <a href="https://julialang.org">Julia programming language</a>.
+</div>
+
+</div>
+        </div> 
+    </div> 
+    
+        <script src="/blog/libs/katex/katex.min.js"></script>
+<script src="/blog/libs/katex/contrib/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/blog/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
