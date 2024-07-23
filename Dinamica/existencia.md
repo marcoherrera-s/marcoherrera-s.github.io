@@ -210,8 +210,6 @@ Todo esto se empieza a esclarecer si le echamos un ojo al teorema de Picard–Li
 > $y'(t) = f(t, y(t)), \quad y(t_0) = y_0$  
 > tiene una solución única $y(t)$ en el intervalo $[t_0 - \varepsilon, t_0 + \varepsilon]$.
 
-
-¿Hay algo más con lo que pueda asistirte?
 En español, nos dice que todo jala bien siempre y cuando nuestra función sea continua en t y Lipschitz continua en y. Básicamente que sea Lipschitz significa que existe una constante $L$ tal que la tasa de cambio entre dos puntos no supere esta constante. Esto es una forma de decirnos que es continua, peroq ue no cambia tan rápido en tal punto.
 
 Para que no nos vayamos tan lejos, observemos la función:
