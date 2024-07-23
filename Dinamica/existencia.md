@@ -203,20 +203,15 @@ Todo esto se empieza a esclarecer si le echamos un ojo al teorema de Picard–Li
 
 
 
-\begin{align*}
-&\boxed{
-\begin{array}{l}
-\text{Sea } D \subseteq \mathbb{R} \times \mathbb{R}^n \text{ un rectángulo cerrado con } (t_0, y_0) \in \text{int} D, \text{ el interior de } D.\\
-\text{Sea } f: D \rightarrow \mathbb{R}^n \text{ una función que es continua en } t \text{ y Lipschitz continua en } y \\
-\text{(con constante de Lipschitz independiente de } t\text{). Entonces, existe algún } \varepsilon > 0 \\
-\text{tal que el problema de valor inicial} \\
-y'(t) = f(t, y(t)), \quad y(t_0) = y_0. \\
-\text{tiene una solución única } y(t) \text{ en el intervalo } [t_0 - \varepsilon, t_0 + \varepsilon].
-\end{array}
-}
-\end{align*}
 
 
+> Sea $D \subseteq \mathbb{R} \times \mathbb{R}^n$ un rectángulo cerrado con $(t_0, y_0) \in \text{int}(D)$, el interior de $D$.  
+> Sea $f: D \rightarrow \mathbb{R}^n$ una función que es continua en $t$ y Lipschitz continua en $y$ (con constante de Lipschitz independiente de $t$). Entonces, existe algún $\varepsilon > 0$ tal que el problema de valor inicial  
+> $y'(t) = f(t, y(t)), \quad y(t_0) = y_0$  
+> tiene una solución única $y(t)$ en el intervalo $[t_0 - \varepsilon, t_0 + \varepsilon]$.
+
+
+¿Hay algo más con lo que pueda asistirte?
 En español, nos dice que todo jala bien siempre y cuando nuestra función sea continua en t y Lipschitz continua en y. Básicamente que sea Lipschitz significa que existe una constante $L$ tal que la tasa de cambio entre dos puntos no supere esta constante. Esto es una forma de decirnos que es continua, peroq ue no cambia tan rápido en tal punto.
 
 Para que no nos vayamos tan lejos, observemos la función:
