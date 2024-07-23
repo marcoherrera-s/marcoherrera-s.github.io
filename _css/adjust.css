@@ -7,8 +7,9 @@
 .franklin-content { font-size: 1.4rem; }
 
 #main {
-  float: left;
+  float: center;
 }
+
 
 #menu ul {
   text-align: center;
@@ -36,7 +37,7 @@
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: rgba(17, 17, 17, 0.7);
+  background-color: rgba(18, 68, 143, 0.7);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -149,3 +150,4 @@
 .cta:active {
   transform: scale(0.95);
 }
+
