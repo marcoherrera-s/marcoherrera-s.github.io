@@ -116,25 +116,16 @@ x = \left( \frac{2}{3} t \right)^{3/2}
 <p>Y esta última también es solución. Entonces, ¿cuál es la buena?</p>
 <p>Pues es complicado, aquí cualquier análisis que hemos visto fallaría, porque a ver, la solución \(x(t) = 0\) nos dice que para la condición inicial dada, la partícula ni siquiera se movería. Pero la otra solución, que obtuvimos nos dice que seguiría una trayectoria, entonces, el punto-fase en el origen en nuestro espacio-fase no sabría qué hacer. De hecho, todo se pone peor, porque se puede demostrar que las soluciones son infinitas. </p>
 <p>Todo esto se empieza a esclarecer si le echamos un ojo al teorema de Picard–Lindelöf, o también conocido como teorema de existencia y unicidad, este nos dice que:</p>
-<div class=nonumber >\[\begin{aligned}
-&\boxed{
-\begin{array}{l}
-\text{Sea } D \subseteq \mathbb{R} \times \mathbb{R}^n \text{ un rectángulo cerrado con } (t_0, y_0) \in \text{int} D, \text{ el interior de } D.\\
-\text{Sea } f: D \rightarrow \mathbb{R}^n \text{ una función que es continua en } t \text{ y Lipschitz continua en } y \\
-\text{(con constante de Lipschitz independiente de } t\text{). Entonces, existe algún } \varepsilon > 0 \\
-\text{tal que el problema de valor inicial} \\
-y'(t) = f(t, y(t)), \quad y(t_0) = y_0. \\
-\text{tiene una solución única } y(t) \text{ en el intervalo } [t_0 - \varepsilon, t_0 + \varepsilon].
-\end{array}
-}
-\end{aligned}\]</div>
-<p>En español, nos dice que todo jala bien siempre y cuando nuestra función sea continua en t y Lipschitz continua en y. Básicamente que sea Lipschitz significa que existe una constante \(L\) tal que la tasa de cambio entre dos puntos no supere esta constante. Esto es una forma de decirnos que es continua, peroq ue no cambia tan rápido en tal punto.</p>
+<blockquote>
+<p>Sea \(D \subseteq \mathbb{R} \times \mathbb{R}^n\) un rectángulo cerrado con \((t_0, y_0) \in \text{int}(D)\), el interior de \(D\).   Sea \(f: D \rightarrow \mathbb{R}^n\) una función que es continua en \(t\) y Lipschitz continua en \(y\) &#40;con constante de Lipschitz independiente de \(t\)&#41;. Entonces, existe algún \(\varepsilon > 0\) tal que el problema de valor inicial \(y'(t) = f(t, y(t)), \quad y(t_0) = y_0\)   tiene una solución única \(y(t)\) en el intervalo \([t_0 - \varepsilon, t_0 + \varepsilon]\).</p>
+</blockquote>
+<p>¿Hay algo más con lo que pueda asistirte? En español, nos dice que todo jala bien siempre y cuando nuestra función sea continua en t y Lipschitz continua en y. Básicamente que sea Lipschitz significa que existe una constante \(L\) tal que la tasa de cambio entre dos puntos no supere esta constante. Esto es una forma de decirnos que es continua, peroq ue no cambia tan rápido en tal punto.</p>
 <p>Para que no nos vayamos tan lejos, observemos la función:</p>
 <p><img src="/blog/assets/dinamica/plot.png" alt=plot  /></p>
 <p>Es claro que en 0 no es Lipschitz continua, pues de hecho \(f'(0)\) es infinito. </p>
 <p>Por lo tanto, este teorema nos dice que si \(f(x)\) está lo suficientemente bonita, la solución existe y es única. </p>
 <div class=page-foot  style="font-size: 13px; font-family: 'Sans-serif', Arial, sans-serif;">
-    <a</a> Marco Herrera Solar. Last modified: July 08, 2024.
+    <a</a> Marco Herrera Solar. Last modified: July 23, 2024.
     Sitio hecho con <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> y <a href="https://julialang.org">Julia programming language</a>.
 </div>
 
