@@ -89,19 +89,21 @@ html {
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 705px;
+    max-width: 90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 /* On narrow device, reduce margins. */
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 939px) {
   .franklin-content {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
+
 
 /* ==================================================================
     TITLES

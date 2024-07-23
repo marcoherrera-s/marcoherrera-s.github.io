@@ -197,7 +197,14 @@ figure.fullwidth figcaption { margin-right: 24%; }
 a:link,
 a:visited { color: inherit; }
 
-a:link {
+a:link, a:visited {
+  text-decoration: none; /* No underline */
+  color: inherit; /* Inherits the text color from its parent */
+  background: none; /* No background effects */
+  font-weight: 600; /* Semi-bold, lighter than bold but heavier than normal */
+}
+
+/* a:link {
   text-decoration: none;
   background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
   background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
@@ -207,7 +214,8 @@ a:link {
   background-repeat: no-repeat, no-repeat, repeat-x;
   text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
   background-position: 0% 93%, 100% 93%, 0% 93%;
-}
+} */
+
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 87%, 87%, 87%; } }
 
