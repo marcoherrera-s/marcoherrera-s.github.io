@@ -1,5 +1,5 @@
 +++
-title = "Menu 3"
+title = "Subrayados"
 tags = ["syntax", "code"]
 
 +++
@@ -18,7 +18,8 @@ Aquí se encuentran las cosas que he resaltado de algunos libros que he leído. 
   </figure>
   <!-- Espacio para un futuro libro -->
   <figure style="flex: 50%;">
-    <!-- Imagen y enlace del próximo libro aquí -->
+    <img src="/assets/libros/amuleto.jpeg" alt="Tres" width="100%">
+    <figcaption><a href="/Miscelanea/amuleto/">Amuleto, <b>Roberto Bolaño</b></a></figcaption>
   </figure>
 </div>
 ~~~
