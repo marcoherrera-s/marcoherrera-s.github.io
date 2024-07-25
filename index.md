@@ -30,7 +30,7 @@ _**intereses**_:~~~
 
 ~~~~~~
 <span style="font-family: 'Fira Code', monospace; color: #828181; font-size: 12px; font-style: italic;">
-    (me sentí abrumado al elegir mis intereses, así que decidí subir a Claude AI un CSV con los títulos de los videos que me gustan y mis playlists de YouTube para que identifique mis intereses basándose en mis preferencias.)
+    (me sentí abrumado al elegir mis intereses, así que decidí subir a Claude AI un CSV con los títulos de los videos que me gustan en YT para que los enlistara)
 </span>
 ~~~
 
