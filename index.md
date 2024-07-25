@@ -9,20 +9,37 @@
 
 # **҉彡inicio彡 ҉** 
 
-⑇ _marco herrera_
+⑇ ~~~
+<span style="font-family: 'Fira Code', monospace; color: #080808; font-size: 15px; font-style: bold;">
+   marco herrera
+</span>
+~~~
 
-⑇ _actualmente estudiando física en facultad de ciencias, unam._
+⑇ ~~~
+<span style="font-family: 'Fira Code', monospace; color: #080808; font-size: 15px; font-style: bold;">
+   actualmente estudiando física en facultad de cincias, unam. 
+</span>
+~~~
 
 
 ---
-_**intereses**_: _algoritmos y problemas computacionales, análisis de cine 🚬, biohacking, ciencia de datos, programación (especialmente en Julia y Python), computación cuántica, filosofía, física, futurismo, geopolítica, historia, inteligencia artificial, lingüística, literatura y análisis literario, matemáticas, meditación, messi, salud mental y física, música clásica, neurociencia, piratear, poesía, rankear y loggear cosas cosas, urbanismo._~~~
-<span style="color: #828181; font-size: smaller; font-style: italic;">
+_**intereses**_:~~~
+<span style="font-family: 'Fira Code', monospace; color: #080808; font-size: 15px; font-style: bold;">
+    algoritmos, cine 🚬, biohacking, ds, programación (Julia y Python), filosofía, física, historia, IA, lingüística, literatura, matemáticas, meditación, messi, salud mental, ☠︎☠︎☠︎☠︎☠︎, poesía, rankear y loggear cosas.
+</span>
+
+~~~~~~
+<span style="font-family: 'Fira Code', monospace; color: #828181; font-size: 12px; font-style: italic;">
     (me sentí abrumado al elegir mis intereses, así que decidí subir a Claude AI un CSV con los títulos de los videos que me gustan y mis playlists de YouTube para que identifique mis intereses basándose en mis preferencias.)
 </span>
 ~~~
 
 ---
-_**odio con mi ser**_: _comerciales, anuncios y publicidad no deseada._
+_**odio con mi ser**_: ~~~
+<span style="font-family: 'Fira Code', monospace; color: #080808; font-size: 15px; font-style: bold;">
+   comerciales, anuncios y publicidad no deseada. 
+</span>
+~~~
 
 
 ---
