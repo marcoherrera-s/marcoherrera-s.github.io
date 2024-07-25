@@ -10,8 +10,11 @@
 > Einstein es una autoridad académica reaccionaria a disposición del mejor postor! ¡Le faltó tiempo para irse con los imperialistas americanos y ayudarles a construir la bomba atómica!
 
 ---
-
-> hay que derribar primero el negro estandarte del capitalismo que representa la teoría de la relatividad!
+~~~
+<blockquote style="font-family: 'Georgia', serif; color: #333; font-size: 16px;background-color: #f9f9f9; border-left: 5px solid #009688; padding: 16px 20px; margin: 20px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+   Einstein es una autoridad académica reaccionaria a disposición del mejor postor! ¡Le faltó tiempo para irse con los imperialistas americanos y ayudarles a construir la bomba atómica!
+</blockquote>
+~~~
 
 ---
 

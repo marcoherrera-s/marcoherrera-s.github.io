@@ -165,8 +165,7 @@ Esto significa que cuanto mayor sea la tasa de crecimiento $r$, más rápido la 
   </button>
 </a>
 <br>
-<a href="/Dinamica/existencia
-/">
+<a href="/Dinamica/existencia/">
   <button class="cta">
     <span>Siguiente</span>
     <svg width="15px" height="10px" viewBox="0 0 13 10">
