@@ -93,8 +93,7 @@ Si hacemos un análisis gráfico, podemos ver que si partimos de $ \pi / 4 $ el 
   </button>
 </a>
 <br>
-<a href="/Dinamica/analisis
-/">
+<a href="/Dinamica/analisis/">
   <button class="cta">
     <span>Siguiente</span>
     <svg width="15px" height="10px" viewBox="0 0 13 10">
