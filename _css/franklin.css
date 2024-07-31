@@ -282,6 +282,13 @@ body {
   }
 }
 
+.katex {
+  vertical-align: middle; /* Otras opciones podrían ser 'baseline', 'top', 'bottom' */
+}
+
+
+
+
 
 
 
