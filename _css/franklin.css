@@ -275,10 +275,11 @@ body {
 
 @media (max-width: 600px) {
   .katex {
-      font-size: 80%; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-      overflow-x: scroll; /* Añade desplazamiento horizontal si es necesario */
-      overflow-y: hidden; /* Evita el desplazamiento vertical */
-      display: inline-block; /* Asegura que KaTeX ocupe toda la línea */
+      font-size: calc(1em + 1vw); /* Ajuste dinámico basado en el tamaño de la pantalla */
+      overflow-x: auto; /* Solo muestra la barra de desplazamiento cuando sea necesario */
+      overflow-y: hidden;
+      display: inline-block; /* Hace que cada fórmula ocupe una línea completa */
+      padding: 0.1em; /* Añade espacio alrededor del texto */
   }
 }
 
