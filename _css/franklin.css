@@ -275,11 +275,14 @@ body {
 
 @media (max-width: 600px) {
   .katex {
-      font-size: 60%; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+      font-size: 80%; /* Reduce el tamaño de la fuente para pantallas pequeñas */
       overflow-x: scroll; /* Añade desplazamiento horizontal si es necesario */
+      overflow-y: hidden; /* Evita el desplazamiento vertical */
       display: inline-block; /* Asegura que KaTeX ocupe toda la línea */
   }
 }
+
+
 
 
 

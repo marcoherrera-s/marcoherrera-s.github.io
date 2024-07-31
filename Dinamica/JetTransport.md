@@ -128,7 +128,7 @@ scatter(solution[:,1], solution[:,2], color=:black, alpha = 0.7, aspect_ratio=:e
 Y bueno, este resultado es bien conocido, aunque el oscilador armónico es muy importante, es cierto que muchas veces ya nos resulta aburrido. 
 Pero continuando con lo que nos importa, lo que ahora nos interesa es hacer un Transporte de Jet. Como dijimos, ahora no nos importa resolver para una única condición inicial, nos interesa parametrizar una vecindad de condiciones iniciales alrededor de alguna condición inicial dada usando un polinomio, entonces:
 
-Recordando que $\mathcal{P}_{t_0, \mathbf{x_0}}(\xi) = \mathbf{x_0} + \xi = \mathbf{x_0} + (\xi_1, \xi_2, ..., \xi_n)^T$:
+Recordando que $\mathcal{P}_{t_0, \mathbf{x_0}}(\xi) = \mathbf{x_0} + \xi = \mathbf{x_0} + (\xi_1, \xi_2, ..., \xi_n)^T$ 
 
 ```
 varorder = 13 # el orden de nuestro polinomio
