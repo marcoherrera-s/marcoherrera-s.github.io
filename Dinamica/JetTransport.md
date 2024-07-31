@@ -42,9 +42,7 @@ este procedimiento es bien conocido, es el **Método de Euler**.
 
 Sabemos que nuestra condición inicial es tal que $\mathbf{x_0} \in \mathbb{R}^n$, para parametrizar nuestra vecindad $\mathcal{V}_{\mathbf{x}_0}$ usamos un polinomio $\mathcal{P}_{t_0, \mathbf{x_0}}(\xi)$ alrededor de nuestra condición inicial, para ser más claros, veamos que:
 
-$$
-\mathcal{P}_{t_0, \mathbf{x_0}}(\xi) = \mathbf{x_0} + \xi = \mathbf{x_0} + (\xi_1, \xi_2, ..., \xi_n)^T
-$$
+$$\mathcal{P}_{t_0, \mathbf{x_0}}(\xi) = \mathbf{x_0} + \xi = \mathbf{x_0} + (\xi_1, \xi_2, ..., \xi_n)^T$$
 
 Podemos usar el método de Euler y así obtener el flujo de $\mathcal{V}_{\mathbf{x}_0}$ de la forma: $\phi(t; t_0, \mathcal{V}_{\mathbf{x_0}})$, entonces por Euler recordamos que $\mathbf{x}_{n+1} = \mathbf{x}_{n} + hf(\mathbf{x_n}, t_n)$. Por lo tanto:
 
