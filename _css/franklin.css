@@ -277,7 +277,7 @@ body {
   .katex {
       font-size: 80%; /* Reduce el tamaño de la fuente para pantallas pequeñas */
       overflow-x: auto; /* Añade desplazamiento horizontal si es necesario */
-      display: block; /* Asegura que KaTeX ocupe toda la línea */
+      display: inline-block; /* Asegura que KaTeX ocupe toda la línea */
   }
 }
 
