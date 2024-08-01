@@ -281,8 +281,6 @@ Lo que estamos viendo es justamente cómo evolucionó nuestra "cajita" de condic
 
 Para visualizar rápidamente un sistema en el que si podamos ver deformaciones, fijémonos en el siguiente sistema artificial:
 
-En la notación de Newton, que es comúnmente utilizada para denotar derivadas con respecto al tiempo, el sistema de ecuaciones diferenciales se puede representar de la siguiente manera:
-
 $$
 \begin{align*}
 \dot{u}_1 &= -u_1^2 + u_2 \\
