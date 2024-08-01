@@ -1,117 +1,93 @@
+/* Estilo general para bloques de código */
 pre code.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 1em;
-    font-family: monospace, Monaco;
-  }
-  
-  code.hljs {
-    padding: 3px 5px;
-    font-family: monospace, Monaco;
-  }
-  
-  .hljs {
-    background: #f8f8f2;  /* Fondo claro, casi blanco */
-    color: #383a42;       /* Gris oscuro para texto principal */
-  }
-  
-  .hljs-subst,
-  .hljs-tag {
-    color: #0184bb;  /* Azul moderadamente oscuro */
-  }
-  
-  .hljs-emphasis,
-  .hljs-strong {
-    color: #a626a4;  /* Púrpura oscuro */
-  }
-  
-  .hljs-bullet,
-  .hljs-link,
-  .hljs-literal,
-  .hljs-number,
-  .hljs-quote,
-  .hljs-regexp {
-    color: #cf6915;  /* Verde fresco y claro */
-  }
-  
-  .hljs-code,
-  .hljs-section,
-  .hljs-selector-class,
-  .hljs-title {
-    color: #e45649;  /* Rojo coral */
-  }
-  
-  .hljs-strong {
-    font-weight: 700;
-  }
-  
-  .hljs-emphasis {
-    font-style: italic;
-  }
-  
-  .hljs-attr,
-  .hljs-keyword,
-  .hljs-name,
-  .hljs-selector-tag {
-    color: #c18401;  /* Marrón dorado */
-  }
-  
-  .hljs-attribute,
-  .hljs-symbol {
-    color: #986801;  /* Marrón más oscuro */
-  }
-  
-  .hljs-class .hljs-title,
-  .hljs-params,
-  .hljs-title.class_ {
-    color: #4078f2;  /* Azul brillante */
-  }
-  
-  .hljs-addition,
-  .hljs-built_in,
-  .hljs-selector-attr,
-  .hljs-selector-id,
-  .hljs-selector-pseudo,
-  .hljs-string,
-  .hljs-template-variable,
-  .hljs-type,
-  .hljs-variable {
-    color: #6c78c2;  /* Gris claro */
-  }
-  
-  .hljs-comment,
-  .hljs-deletion,
-  .hljs-meta {
-    color: #a0a1a7;  /* Gris claro, menos distractor para comentarios */
-  }
-  
-
-  /* Estilo para bloques de código */
-  pre code.hljs {
-    display: block;
-    overflow-x: scroll;
-    padding: 1em;
-    font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
+  display: block;
+  overflow-x: auto;
+  padding: 1.2em;
+  font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
+  background: #FFFDF0; /* Fondo amarillo crema más claro */
+  border: 1px solid #E0DCC8; /* Contorno más visible */
+  border-radius: 6px; /* Bordes más redondeados */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  line-height: 1.5; /* Mejor espaciado entre líneas */
+  font-size: 14px; /* Tamaño de fuente ligeramente mayor */
 }
 
-  
-  /* Estilo para líneas de código inline */
-  code:not(pre > code) {
-    background: #f8f8f2;  /* Un fondo ligeramente gris para diferenciarlo del texto normal */
-    color: #383a42;       /* Utilizamos el verde fresco y claro para el texto */
-    padding: 0.2em 0.4em; /* Padding ligero para no hacerlo muy robusto */
-    border-radius: 4px;   /* Bordes redondeados para un look más suave */
-    font-family: monospace, Monaco; /* Fuente monoespaciada para coherencia */
-  }
-  
-  /* Reutilizando estilos de .hljs para coherencia */
-  .hljs {
-    background: #f8f2f2;  /* Fondo claro, casi blanco */
-    color: #383a42;       /* Gris oscuro para texto principal */
-  }
-  
-  /* Estilos específicos para bloques de código con hljs */
-  code.hljs {
-    padding: 3px 5px;
-  }
-  
+/* Estilo para líneas de código inline */
+code:not(pre > code) {
+  background: #FFFDF0; /* Fondo amarillo crema más claro */
+  color: #2C3E50; /* Color de texto más oscuro para mejor contraste */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace, Monaco;
+  border: 1px solid #E0DCC8;
+  font-size: 0.9em; /* Tamaño ligeramente menor que el texto normal */
+}
+
+/* Estilos para la sintaxis */
+.hljs {
+  color: #2C3E50; /* Color base más oscuro para mejor legibilidad */
+}
+
+.hljs-subst,
+.hljs-tag {
+  color: #996B1F; /* Dorado más oscuro */
+}
+
+.hljs-emphasis,
+.hljs-strong {
+  color: #9B4F4F; /* Púrpura más oscuro */
+  font-weight: bold;
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-quote,
+.hljs-regexp {
+  color: #B7804A; /* Marrón más oscuro */
+}
+
+.hljs-code,
+.hljs-section,
+.hljs-selector-class,
+.hljs-title {
+  color: #A64242; /* Rojo más oscuro */
+}
+
+.hljs-attr,
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  color: #8A7031; /* Marrón dorado más oscuro */
+}
+
+.hljs-attribute,
+.hljs-symbol {
+  color: #6B5A3E; /* Marrón terroso más oscuro */
+}
+
+.hljs-class .hljs-title,
+.hljs-params,
+.hljs-title.class_ {
+  color: #5D6D9E; /* Azul más oscuro */
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #4A5F8B; /* Azul-gris más oscuro */
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #7F8084; /* Gris más oscuro */
+  font-style: italic; /* Estilo itálico para comentarios */
+}
