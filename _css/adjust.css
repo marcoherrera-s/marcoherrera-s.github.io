@@ -6,20 +6,16 @@
 
 .franklin-content { font-size: 1.4rem; }
 
+
 #main {
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 20px; /* Agrega espacio interno para no tocar los bordes */
-  margin: 20px auto; /* Margen automático para centrar y un poco de espacio exterior */
-  max-width: 800px; /* Limita el ancho para una lectura más cómoda */
   background-color: #f8f8f8; /* Color de fondo suave */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   color: #333; /* Color de texto oscuro pero no puro negro para menos contraste duro */
   line-height: 1.6; /* Espacio vertical entre líneas para mejorar la legibilidad */
-  hyphens: auto; /* Mejora la división de palabras en justificación */
 }
 
 
@@ -28,7 +24,6 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
 }
-
 
 
 #menu ul {
