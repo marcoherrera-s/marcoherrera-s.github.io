@@ -7,15 +7,62 @@
 .franklin-content { font-size: 1.4rem; }
 
 #main {
-  float: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 20px; /* Agrega espacio interno para no tocar los bordes */
+  margin: 20px auto; /* Margen automático para centrar y un poco de espacio exterior */
+  max-width: 800px; /* Limita el ancho para una lectura más cómoda */
+  background-color: #f8f8f8; /* Color de fondo suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  color: #333; /* Color de texto oscuro pero no puro negro para menos contraste duro */
+  line-height: 1.6; /* Espacio vertical entre líneas para mejorar la legibilidad */
+  hyphens: auto; /* Mejora la división de palabras en justificación */
 }
+
+
+/* Opcional: Puedes agregar transiciones para suavizar el cambio de estados si hay interacción */
+#main:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 
 
 #menu ul {
-  text-align: center;
+  list-style-type: none; /* Elimina los marcadores de lista */
+  text-align: center; /* Mantiene el texto centrado */
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0; /* Un color de fondo suave */
+  padding: 10px 0; /* Añade algo de relleno vertical */
+  border-radius: 8px; /* Bordes redondeados para un look moderno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  display: flex; /* Usa Flexbox para alinear los elementos */
+  justify-content: center; /* Centra los elementos en la línea */
+  flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten en varias líneas si es necesario */
 }
+
+#menu ul li {
+  display: inline-block; /* Alinea los elementos de la lista horizontalmente */
+  margin: 0 20px; /* Espaciado horizontal entre elementos de la lista */
+  padding: 8px 16px; /* Relleno para hacer cada elemento más "clickeable" */
+  border-radius: 4px; /* Bordes redondeados para los elementos individuales */
+  transition: background-color 0.3s; /* Suave transición para interacciones del mouse */
+}
+
+#menu ul li:hover {
+  background-color: #e2e2e2; /* Cambio de color al pasar el mouse */
+}
+
+#menu ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #333; /* Color de texto oscuro para mayor legibilidad */
+  font-weight: bold; /* Hace que el texto sea más prominente */
+}
+
 
 #menu ul li {
   margin: 0 0 20px 0;
