@@ -10,19 +10,16 @@
 #main {
   justify-content: center;
   align-items: center;
-  text-align: justify;
-  background-color: #f8f8f8; /* Color de fondo suave */
+  background-color: #333; /* Color de fondo oscuro para modo oscuro */
   border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  color: #333; /* Color de texto oscuro pero no puro negro para menos contraste duro */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Sombra sutil, clara para contraste en modo oscuro */
+  color: #f8f8f8; /* Color de texto claro para alto contraste en fondo oscuro */
   line-height: 1.6; /* Espacio vertical entre líneas para mejorar la legibilidad */
 }
 
-
-/* Opcional: Puedes agregar transiciones para suavizar el cambio de estados si hay interacción */
 #main:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.15); /* Aumenta la sombra al pasar el mouse para un efecto más dramático */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
 }
 
 
@@ -30,11 +27,10 @@
   list-style-type: none; /* Elimina los marcadores de lista */
   text-align: center; /* Mantiene el texto centrado */
   margin: 0;
-  padding: 0;
-  background-color: #f0f0f0; /* Un color de fondo suave */
   padding: 10px 0; /* Añade algo de relleno vertical */
+  background-color: #1d1d1d; /* Color de fondo oscuro */
   border-radius: 8px; /* Bordes redondeados para un look moderno */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1); /* Sombra sutil con color claro para contraste */
   display: flex; /* Usa Flexbox para alinear los elementos */
   justify-content: center; /* Centra los elementos en la línea */
   flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten en varias líneas si es necesario */
@@ -43,20 +39,22 @@
 #menu ul li {
   display: inline-block; /* Alinea los elementos de la lista horizontalmente */
   margin: 0 20px; /* Espaciado horizontal entre elementos de la lista */
-  padding: 8px 16px; /* Relleno para hacer cada elemento más "clickeable" */
+  padding: 8px 16px; /* Relleno para hacer cada elemento más 'clickeable' */
   border-radius: 4px; /* Bordes redondeados para los elementos individuales */
   transition: background-color 0.3s; /* Suave transición para interacciones del mouse */
+  background-color: #2727275d; /* Fondo más oscuro por defecto para los elementos */
 }
 
 #menu ul li:hover {
-  background-color: #e2e2e2; /* Cambio de color al pasar el mouse */
+  background-color: #555; /* Cambio de color al pasar el mouse, un poco más claro para destacar */
 }
 
 #menu ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: #333; /* Color de texto oscuro para mayor legibilidad */
+  color: #ddd; /* Color de texto claro para mayor legibilidad en modo oscuro */
   font-weight: bold; /* Hace que el texto sea más prominente */
 }
+
 
 
 #menu ul li {

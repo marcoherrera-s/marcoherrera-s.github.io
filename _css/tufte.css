@@ -40,16 +40,50 @@ html { font-size: 15px; }
 
 body {
   width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* padding-left: 12.5%; */
+  margin: 0 auto; /* Centrado simplificado, tanto para izquierda como derecha */
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background-color: #fffff8;
-  color: #111;
-  max-width: 1400px;
-  counter-reset: sidenote-counter;
+  background-color: #202023; /* Fondo oscuro pero no completamente negro */
+  color: #ccc; /* Color de texto claro para contraste con fondo oscuro */
+  max-width: 1400px; /* Limita el ancho máximo para una lectura más cómoda */
+  counter-reset: sidenote-counter; /* Reset contador para notas al margen si se usan */
 }
+
+/* Modificaciones para encabezados y otros elementos para modo oscuro */
+h1, h2, h3, h4, h5, h6 {
+  color: #d1d1d1; /* Un tono más claro para títulos para mejorar la jerarquía visual */
+}
+
+a {
+  color: #5591f2; /* Color brillante para enlaces, asegurando buena visibilidad y atractivo */
+  text-decoration: none; /* Sin subrayado para un look más limpio */
+}
+
+a:hover, a:focus {
+  color: #ffcc4d; /* Color más vibrante al pasar el mouse o enfocar para interactividad */
+  text-decoration: underline; /* Subraya en hover para indicar interactividad */
+}
+
+/* Mejorar la legibilidad del texto y elementos interactivos */
+p, li, div {
+  line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+}
+
+button, input[type="submit"], input[type="button"], .cta {
+  background-color: #333; /* Fondo oscuro para botones */
+  color: #fff; /* Texto claro para legibilidad */
+  border: none; /* Sin bordes para un diseño limpio */
+  padding: 10px 20px; /* Acolchado adecuado para facilidad de clic */
+  border-radius: 5px; /* Bordes redondeados para un diseño moderno */
+  transition: background-color 0.3s; /* Transición suave para interacción visual */
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, .cta:hover {
+  background-color: #444; /* Cambio sutil al pasar el mouse */
+}
+
+/* Asegúrate de incluir la fuente adecuada si usas web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Palatino+Linotype:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 h1 {
   font-weight: 400;
