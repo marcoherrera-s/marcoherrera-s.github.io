@@ -87,12 +87,13 @@ pre code.hljs {
   
 
   /* Estilo para bloques de código */
-pre code.hljs {
+  pre code.hljs {
     display: block;
     overflow-x: scroll;
     padding: 1em;
-    font-family: monospace, Monaco;
-  }
+    font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
+}
+
   
   /* Estilo para líneas de código inline */
   code:not(pre > code) {
