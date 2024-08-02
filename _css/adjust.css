@@ -11,28 +11,28 @@
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #FFFEF0;
+  background-color: #FFFEFF;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
   padding-top: 5px; /* Añade espacio en la parte superior */
+  transition: all 0.3s ease;
 }
 
 #main:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
+
 
 #menu ul {
   list-style-type: none;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: #FFFEE8; /* Igual al fondo del body para coherencia */
-  padding: 10px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+  padding: 20px 0;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -40,21 +40,31 @@
 
 #menu ul li {
   display: inline-block;
-  margin: 0 20px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  margin: 8px 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 #menu ul li:hover {
-  background-color: #FFFEF0; /* Un tono ligeramente más oscuro al pasar el mouse */
+  background-color: #F0F0F0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #menu ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
 }
+
+#menu ul li a:hover {
+  color: #4A90E2; /* Cool blue color on hover */
+}
+
+/* hereee */
 
 #menu ul li {
   margin: 0 0 20px 0;
