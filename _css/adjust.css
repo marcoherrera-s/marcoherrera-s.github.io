@@ -11,11 +11,12 @@
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #FFFEF0; /* Color de fondo amarillo pastel más pronunciado */
+  background-color: #FFFEF0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #333;
   line-height: 1.6;
+  padding-top: 5px; /* Añade espacio en la parte superior */
 }
 
 #main:hover {
