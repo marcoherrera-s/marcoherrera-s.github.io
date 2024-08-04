@@ -33,3 +33,5 @@ Add here global latex commands to use throughout your pages.
 
 
 @def prepath = "blog"
+
+keep_path = ["googleeafd0f4ea8245fe0.html"]
