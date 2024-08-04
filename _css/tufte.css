@@ -43,7 +43,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background-color: #FFFEE8; /* Nuevo color de fondo amarillo muy suave */
+  background-color: #ffffff65; /* Nuevo color de fondo amarillo muy suave */
   color: #333; /* Texto un poco más oscuro para mantener la legibilidad */
   max-width: 1400px;
   counter-reset: sidenote-counter;

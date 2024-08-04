@@ -17,7 +17,7 @@
 
 ⑇ ~~~
 <span style="font-family: 'Fira Code', monospace; color: #080808; font-size: 15px; font-style: bold;">
-   actualmente estudiando física en facultad de cincias, unam. 
+   actualmente estudiando física en facultad de ciencias, unam. 
 </span>
 ~~~
 
