@@ -1,0 +1,122 @@
+/* _css/dark-mode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  header.dark-mode, footer.dark-mode {
+    background-color: #1e1e1e;
+  }
+  
+  /* Add more dark mode styles as needed */
+
+  
+  body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #ffffffe3; /* Nuevo color de fondo amarillo muy suave */
+    color: #333; /* Texto un poco más oscuro para mantener la legibilidad */
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+  }
+  
+  body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for readability */
+  }
+  
+  #main {
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFEFF;
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro añadido */
+    box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.8;
+    padding-top: 5px; /* Añade espacio en la parte superior */
+    transition: all 0.3s ease, background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+  }
+  
+  body.dark-mode #main {
+    background-color: #1e1e1e; /* Dark background color for #main */
+    color: #e0e0e0; /* Light text color for readability */
+    border: 0.5px solid rgba(255, 255, 255, 0.685); /* Light border for dark mode */
+  }
+  
+  #main:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  body.dark-mode #main:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Light shadow for dark mode */
+  }
+  
+  #menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro añadido */
+    box-shadow: 0 9px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: background-color 0.3s, border 0.3s; /* Smooth transition for dark mode */
+  }
+  
+  body.dark-mode #menu ul {
+    background-color: #1e1e1e; /* Dark background color for #menu */
+    border: 0.5px solid rgba(255, 255, 255, 0.685); /* Light border for dark mode */
+    box-shadow: 0 9px 15px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+  }
+  
+  #menu ul li {
+    display: inline-block;
+    margin: 8px 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease, background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+  }
+  
+  body.dark-mode #menu ul li {
+    background-color: #333; /* Dark background color for list items */
+    color: #e0e0e0; /* Light text color for readability */
+  }
+  
+  #menu ul li:hover {
+    background-color: #F0F0F0;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode #menu ul li:hover {
+    background-color: #444; /* Slightly lighter dark background color for hover */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Light shadow for dark mode */
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: color 0.3s ease; /* Smooth transition for dark mode */
+  }
+  
+  body.dark-mode #menu ul li a {
+    color: #e0e0e0; /* Light text color for links */
+  }
+  
+  #menu ul li a:hover {
+    color: #4A90E2; /* Cool blue color on hover */
+  }
+  
+  body.dark-mode #menu ul li a:hover {
+    color: #4A90E2; /* Same cool blue color for hover in dark mode */
+  }
+  

@@ -3,19 +3,48 @@
 <head>
   <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY" />
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{if hasmath}} {{insert head_katex.html }}     {{end}}
-    {{if hascode}} {{insert head_highlight.html }}   {{end}}
-    <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous"></script>
-    {{insert style.html}}
-    {{isdef title}} <title>{{fill title}}</title>  {{end}}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{if hasmath}} {{insert head_katex.html }} {{end}}
+  {{if hascode}} {{insert head_highlight.html }} {{end}}
+  <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous"></script>
+  {{insert style.html}}
+  {{isdef title}} <title>{{fill title}}</title> {{end}}
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link id="dark-mode-style" rel="stylesheet" href="css/dark-mode.css" disabled>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleSwitch = document.getElementById('dark-mode-toggle');
+      const darkModeStyle = document.getElementById('dark-mode-style');
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        darkModeStyle.disabled = false;
+        toggleSwitch.checked = true;
+      }
+      toggleSwitch.addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('dark-mode');
+          darkModeStyle.disabled = false;
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-mode');
+          darkModeStyle.disabled = true;
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-{{insert nav.html}}
+  {{insert nav.html}}
 
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <label>
+    Dark Mode
+    <input type="checkbox" id="dark-mode-toggle">
+  </label>
 
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <!-- Content appended here -->
 
-
-<!-- Content appended here -->
+</body>
+</html>
