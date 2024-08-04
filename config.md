@@ -32,6 +32,6 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\scal}[1]{\langle #1 \rangle}
 
 
-@def prepath = "blog"
-
 keep_path = ["googleeafd0f4ea8245fe0.html"]
+
+@def prepath = "blog"
