@@ -11,28 +11,35 @@
   {{isdef title}} <title>{{fill title}}</title> {{end}}
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <link id="dark-mode-style" rel="stylesheet" href="css/dark-mode.css" disabled>
+  <!-- Usar una ruta absoluta para el archivo CSS -->
+  <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css" disabled>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const toggleSwitch = document.getElementById('dark-mode-toggle');
       const darkModeStyle = document.getElementById('dark-mode-style');
       const currentTheme = localStorage.getItem('theme');
+      
       if (currentTheme === 'dark') {
         document.body.classList.add('dark-mode');
         darkModeStyle.disabled = false;
-        toggleSwitch.checked = true;
-      }
-      toggleSwitch.addEventListener('change', function() {
-        if (this.checked) {
-          document.body.classList.add('dark-mode');
-          darkModeStyle.disabled = false;
-          localStorage.setItem('theme', 'dark');
-        } else {
-          document.body.classList.remove('dark-mode');
-          darkModeStyle.disabled = true;
-          localStorage.setItem('theme', 'light');
+        if (toggleSwitch) {
+          toggleSwitch.checked = true;
         }
-      });
+      }
+
+      if (toggleSwitch) {
+        toggleSwitch.addEventListener('change', function() {
+          if (this.checked) {
+            document.body.classList.add('dark-mode');
+            darkModeStyle.disabled = false;
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.body.classList.remove('dark-mode');
+            darkModeStyle.disabled = true;
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      }
     });
   </script>
 </head>
