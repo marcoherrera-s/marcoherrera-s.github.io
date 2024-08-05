@@ -18,7 +18,7 @@
       const toggleSwitch = document.querySelector('.toggle-switch .checkbox');
       const darkModeStyle = document.getElementById('dark-mode-style');
       const currentTheme = localStorage.getItem('theme');
-      
+
       if (currentTheme === 'dark') {
         document.body.classList.add('dark-mode');
         darkModeStyle.disabled = false;
@@ -31,29 +31,28 @@
         toggleSwitch.addEventListener('change', function() {
           if (this.checked) {
             document.body.classList.add('dark-mode');
-            darkModeStyle.disabled = true;
+            darkModeStyle.disabled = false;
             localStorage.setItem('theme', 'dark');
           } else {
             document.body.classList.remove('dark-mode');
-            darkModeStyle.disabled = false;
+            darkModeStyle.disabled = true;
             localStorage.setItem('theme', 'light');
           }
         });
       }
     });
   </script>
-    <!-- Reemplazar el checkbox por el switch -->
-    <div class="toggle-switch">
-      <label class="switch-label">
-        <input type="checkbox" class="checkbox" id="dark-mode-toggle">
-        <span class="slider"></span>
-      </label>
-    </div>
 </head>
 <body>
   {{insert nav.html}}
 
-
+  <!-- Reemplazar el checkbox por el switch -->
+  <div class="toggle-switch">
+    <label class="switch-label">
+      <input type="checkbox" class="checkbox" id="dark-mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
 
   <!-- Content appended here -->
 
