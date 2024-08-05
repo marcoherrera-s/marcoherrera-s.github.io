@@ -15,7 +15,7 @@
   <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css" disabled>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const toggleSwitch = document.getElementById('dark-mode-toggle');
+      const toggleSwitch = document.querySelector('.toggle-switch .checkbox');
       const darkModeStyle = document.getElementById('dark-mode-style');
       const currentTheme = localStorage.getItem('theme');
       
@@ -31,22 +31,24 @@
         toggleSwitch.addEventListener('change', function() {
           if (this.checked) {
             document.body.classList.add('dark-mode');
-            darkModeStyle.disabled = false;
+            darkModeStyle.disabled = true;
             localStorage.setItem('theme', 'dark');
           } else {
             document.body.classList.remove('dark-mode');
-            darkModeStyle.disabled = true;
+            darkModeStyle.disabled = false;
             localStorage.setItem('theme', 'light');
           }
         });
       }
     });
   </script>
-    <label>
-      <i class="fa-solid fa-moon fa-lg"></i>
-      <input type="checkbox" id="dark-mode-toggle">
-    </label>
-    
+    <!-- Reemplazar el checkbox por el switch -->
+    <div class="toggle-switch">
+      <label class="switch-label">
+        <input type="checkbox" class="checkbox" id="dark-mode-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
 </head>
 <body>
   {{insert nav.html}}
