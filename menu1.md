@@ -10,13 +10,13 @@ tags = ["syntax", "code"]
 
 # COSITAS QUE INTENTO
 
-* [¡Oscilador armónico!](/Ejercicios/oscilador/)
+* [oscilador armónico ✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙](/Ejercicios/oscilador/)
 
-* [¡Resolviendo un cuerpo rígido sin talacha!](/Ejercicios/duda/)
+* [resolviendo un cuerpo rígido sin talachita ·˚ ༘₊·꒰➳: ̗̀➛](/Ejercicios/duda/)
 
-* [Dinámica no lineal](/Dinamica/cover/)
+* [dinámica no lineal ☆.𓋼𓍊 𓆏 𓍊𓋼𓍊.☆](/Dinamica/cover/)
 
-* [Jet Transport](/Dinamica/JetTransport/)
+* [jet transport 𓆝 𓆟 𓆞 𓆝 𓆟](/Dinamica/JetTransport/)
 
 
 
