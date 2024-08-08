@@ -7,7 +7,7 @@ tags = ["syntax", "code"]
 <!-- {{ insert ../_weave/continuacon.html }} -->
 # MIS SUBRAYADOS
 
-Aquí se encuentran las cosas que he resaltado de algunos libros que he leído. Subrayar algo puede significar muchas cosas, no siempre buenas, muchas veces geniales. 
+aquí se encuentran las cosas que he resaltado en algunos libros que he leído. pienso que subrayar algo puede significar muchas cosas, no siempre buenas, pero muchas veces sí, me conmovieron, me identifiqué, me sentí bien o me resultó genial o más :)
 
 
 ~~~
