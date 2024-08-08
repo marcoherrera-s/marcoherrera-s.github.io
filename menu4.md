@@ -3,8 +3,8 @@ title = "Otros"
 +++
 
 ---
-# Aprendiendo SQL
+# Extras 
 
-* [Curso Express de SQL](/Otro/SQL/)
+* [aprendiendo SQL ︶꒦꒷꒷꒦︶](/Otro/SQL/)
 
 ---
