@@ -1,4 +1,4 @@
-@def title = " ҉彡marco彡 ҉"
+I@def title = " ҉彡marco彡 ҉"
 @def tags = ["syntax", "code"]
 
 
@@ -11,14 +11,14 @@
 
 ⑇ marco herrera
 
-⑇ actualmente estudiando física en facultad de ciencias, unam.
+⑇ actualmente estudiando física en facultad de ciencias, unam
 
 
 ---
 **_sobre mí_**: 
 
 ---
-_**odio con mi ser**_: comerciales, anuncios y publicidad no deseada.
+_**odio con mi ser**_: los comerciales y ads :(
 
 
 ---
