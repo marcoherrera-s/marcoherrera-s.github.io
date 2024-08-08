@@ -10,7 +10,7 @@ tags = ["syntax", "code"]
 
 # COSITAS QUE INTENTO
 
-* [oscilador armónico ✩̣̣̣̣̣ͯ┄•͙✧⃝•͙┄✩ͯ•͙͙](/Ejercicios/oscilador/)
+* [oscilador armónico ┄•͙✧⃝•͙┄•͙͙](/Ejercicios/oscilador/)
 
 * [resolviendo un cuerpo rígido sin talachita ·˚ ༘₊·꒰➳: ̗̀➛](/Ejercicios/duda/)
 
