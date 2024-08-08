@@ -411,7 +411,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   background-color: var(--dark);
   border-radius: 20px; /* Ajustado de 25px a 20px */
   cursor: pointer;
-  border: 3px solid var(--dark);
+  border: 0px solid var(--dark);
 }
 
 .checkbox {
