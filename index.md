@@ -26,3 +26,4 @@ _**odio con mi ser**_: los comerciales y ads :(
 
 ⇝ [¿Por qué un blog?](/Otro/pblog/)
 
+![fin](/assets/2.jpg)
