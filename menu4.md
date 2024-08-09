@@ -5,6 +5,6 @@ title = "Otros"
 ---
 # Extras 
 
-* [aprendiendo SQL ︶꒦꒷꒷꒦︶](/Otro/SQL/)
+* [aprendiendo SQL  ┈ ⋞ 〈 ⏣ 〉 ⋟ ┈ ](/Otro/SQL/)
 
 ---
