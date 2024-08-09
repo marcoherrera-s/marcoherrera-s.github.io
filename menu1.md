@@ -12,11 +12,11 @@ tags = ["syntax", "code"]
 
 * [oscilador armónico ┄•͙✧⃝•͙┄•͙͙](/Ejercicios/oscilador/)
 
-* [resolviendo un cuerpo rígido sin talachita ·˚ ༘₊·꒰➳: ̗̀➛](/Ejercicios/duda/)
+* [resolviendo un cuerpo rígido sin talachita ⚛》◆《⚛](/Ejercicios/duda/)
 
-* [dinámica no lineal ☆.𓋼𓍊 𓆏 𓍊𓋼𓍊.☆](/Dinamica/cover/)
+* [dinámica no lineal ₓ˚. ୭ ˚○◦˚.](/Dinamica/cover/)
 
-* [jet transport 𓆝 𓆟 𓆞 𓆝 𓆟](/Dinamica/JetTransport/)
+* [jet transport °°•...•°°](/Dinamica/JetTransport/)
 
 
 

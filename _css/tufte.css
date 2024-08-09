@@ -396,12 +396,12 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 /* From Uiverse.io by Madflows */ 
 .toggle-switch {
   position: relative;
-  width: 80px;  /* Ajustado de 100px a 80px */
-  height: 40px; /* Ajustado de 50px a 40px */
-  --light: #28292c;
-  --dark: #d8dbe0;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
+  width: 80px;  /* Ajustado de 100px a 80px para hacerlo más pequeño */
+  height: 40px; /* Ajustado de 50px a 40px para hacerlo más pequeño */
+  --light: #28292c;  /* Color para el modo claro */
+  --dark: #d8dbe0;   /* Color para el modo oscuro */
+  --link: rgb(27, 129, 112);    /* Color para los enlaces */
+  --link-hover: rgb(24, 94, 82);/* Color para enlaces al pasar el mouse */
 }
 
 .switch-label {
@@ -409,51 +409,51 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   width: 100%;
   height: 40px; /* Ajustado de 50px a 40px */
   background-color: var(--dark);
-  border-radius: 20px; /* Ajustado de 25px a 20px */
+  border-radius: 20px; /* Ajustado de 25px a 20px para bordes más redondeados */
   cursor: pointer;
-  border: 3px solid var(--dark);
+  border: 3px solid var(--dark); /* Borde más definido */
 }
 
 .checkbox {
   position: absolute;
-  display: none;
+  display: none; /* Oculta el checkbox real */
 }
 
 .slider {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px; /* Ajustado de 25px a 20px */
-  -webkit-transition: 0.3s;
+  border-radius: 20px; /* Coincide con el borde redondeado del switch-label */
+  -webkit-transition: 0.3s; /* Suaviza la transición de cambio de estado */
   transition: 0.3s;
 }
 
 .checkbox:checked ~ .slider {
-  background-color: var(--light);
+  background-color: var(--light); /* Color de fondo cuando está activado */
 }
 
 .slider::before {
   content: "";
   position: absolute;
-  top: 7px; /* Ajustado de 10px a 7px */
-  left: 7px; /* Ajustado de 10px a 7px */
-  width: 20px; /* Ajustado de 25px a 20px */
-  height: 20px; /* Ajustado de 25px a 20px */
-  border-radius: 50%;
-  -webkit-box-shadow: inset 10px -4px 0px 0px var(--light); /* Ajustado de 12px a 10px */
-  box-shadow: inset 10px -4px 0px 0px var(--light); /* Ajustado de 12px a 10px */
+  top: 7px; /* Ajustado para centrar correctamente el círculo */
+  left: 7px; /* Ajustado para centrar correctamente el círculo */
+  width: 20px; /* Tamaño del círculo dentro del slider */
+  height: 20px;
+  border-radius: 50%; /* Hace el círculo perfectamente redondo */
+  -webkit-box-shadow: inset 10px -4px 0px 0px var(--light); /* Sombra interna para efecto 3D */
+  box-shadow: inset 10px -4px 0px 0px var(--light);
   background-color: var(--dark);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border: 3px solid var(--dark); /* Agregado */
+  border: 3px solid var(--dark); /* Borde del círculo */
 }
 
 .checkbox:checked ~ .slider::before {
-  -webkit-transform: translateX(40px); /* Ajustado de 50px a 40px */
-  -ms-transform: translateX(40px); /* Ajustado de 50px a 40px */
-  transform: translateX(40px); /* Ajustado de 50px a 40px */
+  -webkit-transform: translateX(40px); /* Mueve el círculo al otro lado cuando está activado */
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
   background-color: var(--dark);
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 3px solid var(--dark); /* Agregado */
+  border: 3px solid var(--light); /* Cambia el borde del círculo al color claro */
 }
