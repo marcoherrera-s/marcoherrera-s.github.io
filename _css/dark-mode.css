@@ -559,19 +559,19 @@ pre code.hljs {
   overflow-x: auto;
   padding: 1.2em;
   font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
-  background: #2C3E50; /* Fondo oscuro */
-  border: 1px solid #3E4C59; /* Contorno más visible */
-  border-radius: 6px; /* Bordes más redondeados */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
-  line-height: 1.5; /* Mejor espaciado entre líneas */
-  font-size: 14px; /* Tamaño de fuente ligeramente mayor */
-  color: #FFFDF0; /* Color de texto claro */
+  background: #1A1A1A; /* Fondo muy oscuro */
+  border: 1px solid #333333; /* Contorno discreto */
+  border-radius: 6px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  line-height: 1.5; /* Espaciado entre líneas */
+  font-size: 14px; /* Tamaño de fuente estándar */
+  color: #E0E2E4; /* Color de texto claro */
 }
 
 /* Estilo para líneas de código inline */
 code:not(pre > code) {
-  background: #3E4C59; /* Fondo oscuro */
-  color: #FFFDF0; /* Color de texto claro */
+  background: #2B2B2B; /* Fondo oscuro */
+  color: #E0E2E4; /* Color de texto claro */
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-family: 'Fira Code', monospace, Monaco;
@@ -581,70 +581,50 @@ code:not(pre > code) {
 
 /* Estilos para la sintaxis */
 .hljs {
-  color: #FFFDF0; /* Color base claro para mejor legibilidad */
+  color: #E0E2E4; /* Color base claro para mejor legibilidad */
 }
 
-.hljs-subst,
-.hljs-tag {
-  color: #D1A055; /* Dorado claro */
-}
-
-.hljs-emphasis,
-.hljs-strong {
-  color: #C08080; /* Púrpura claro */
-  font-weight: bold;
-}
-
-.hljs-bullet,
-.hljs-link,
-.hljs-literal,
-.hljs-number,
-.hljs-quote,
-.hljs-regexp {
-  color: #D1A071; /* Marrón claro */
-}
-
-.hljs-code,
-.hljs-section,
-.hljs-selector-class,
-.hljs-title {
-  color: #CC7A7A; /* Rojo claro */
-}
-
-.hljs-attr,
 .hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+  color: #FFC66D; /* Naranja suave */
+}
+
+.hljs-string,
+.hljs-title,
 .hljs-name,
-.hljs-selector-tag {
-  color: #B38A56; /* Marrón dorado claro */
-}
-
+.hljs-type,
 .hljs-attribute,
-.hljs-symbol {
-  color: #A6936E; /* Marrón terroso claro */
-}
-
-.hljs-class .hljs-title,
-.hljs-params,
-.hljs-title.class_ {
-  color: #879EDB; /* Azul claro */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #A8FF60; /* Verde claro */
 }
 
 .hljs-addition,
-.hljs-built_in,
-.hljs-selector-attr,
-.hljs-selector-id,
-.hljs-selector-pseudo,
-.hljs-string,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-  color: #728CAB; /* Azul-gris claro */
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #BED6FF; /* Azul claro */
 }
 
 .hljs-comment,
+.hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #9A9BA0; /* Gris claro */
+  color: #616161; /* Gris oscuro */
   font-style: italic; /* Estilo itálico para comentarios */
 }
 
+.hljs-strong {
+  font-weight: bold;
+  color: #FFFFFF; /* Blanco para resaltar texto */
+}
+
+.hljs-emphasis {
+  font-style: italic;
+  color: #8DA6CE; /* Azul pastel */
+}
