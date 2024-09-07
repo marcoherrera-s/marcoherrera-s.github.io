@@ -34,4 +34,4 @@ Add here global latex commands to use throughout your pages.
 
 keep_path = ["googleeafd0f4ea8245fe0.html"]
 
-<!-- @def prepath = "blog" -->
+@def prepath = "blog"
