@@ -1,4 +1,4 @@
-Sitemap: https://marcoherrera-s.github.io/blog/sitemap.xml
+Sitemap: https://marcoherrera-s.github.io/sitemap.xml
 
 User-agent: *
 Disallow:
