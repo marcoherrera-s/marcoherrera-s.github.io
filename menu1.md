@@ -8,16 +8,16 @@ tags = ["syntax", "code"]
 +++
 
 
-# COSITAS QUE INTENTO
+# cosas que intento
 
-* [oscilador armónico ┄•͙✧⃝•͙┄•͙͙](/Ejercicios/oscilador/)
+* [┌──═━oscilador armónico━═──┐ ](/Ejercicios/oscilador/)
 
-* [resolviendo un cuerpo rígido sin talachita ⚛》◆《⚛](/Ejercicios/duda/)
+* [°°••resolviendo cuerpo rígido sin talachita (o tal vez sí)••°°](/Ejercicios/duda/)
 
-* [dinámica no lineal ₓ˚. ୭ ˚○◦˚.](/Dinamica/cover/)
+* [┏━°⌜ 赤dinámica no lineal糸 ⌟°━┓](/Dinamica/cover/)
 
-* [jet transport °°•...•°°](/Dinamica/JetTransport/)
+* [╚══《jet transport》══╝](/Dinamica/JetTransport/)
 
-
+* [╰ ─┉─¡! cómputo cuántico !¡─┉─ ╯](/Cuantica/cover/)
 
 
