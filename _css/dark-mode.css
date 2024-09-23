@@ -3,7 +3,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background-color: #06091d; /* Fondo oscuro */
+  background-color: #1e1e1e; /* Fondo oscuro */
   color: #e0e0e0; /* Texto claro */
   max-width: 1400px;
   counter-reset: sidenote-counter;
@@ -363,7 +363,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #06091d; /* Fondo más oscuro */
+  background-color: #2a2a2a; /* Fondo más oscuro */
   border-radius: 20px;
   border: 0.5px solid rgba(255, 255, 255, 0.685); /* Contorno claro */
   box-shadow: 0 9px 11px rgba(255, 255, 255, 0.1);
