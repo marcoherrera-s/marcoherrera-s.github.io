@@ -20,4 +20,6 @@ tags = ["syntax", "code"]
 
 * [╰ ─┉─¡! cómputo cuántico !¡─┉─ ╯](/Cuantica/cover/)
 
+* [,,,física de los materiales,,,](/materiales/cover)
+
 
