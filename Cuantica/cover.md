@@ -12,3 +12,9 @@ de nuevo, como ya he dicho muchas veces por aquí, yo no pienso enseñar nada, s
 2. ❉ [El modelo de circuito de computación](/Cuantica/circuito/) ❉
 
 3. ❉ [Cómputo reversible](/Cuantica/reversible/) ❉
+
+4. ❉ [Un poquito de álgebra lineal](/Cuantica/al/) ❉
+
+5. ❉ [Un poquito de cuántica I](/Cuantica/upci/) ❉
+
+6. ❉ [Un poquito de cuántica II](/Cuantica/upcii/) ❉
