@@ -247,7 +247,9 @@ Un superoperador, también conocido como operación cuántica general, es una tr
 
 - Dado un operador de densidad de entrada $\rho_{in}$, un superoperador $\mathcal{E}$ produce un nuevo operador de densidad $\rho_{out}$:
 
-	$\rho_{out} = \mathcal{E}(\rho_{in})$
+$$
+\rho_{out} = \mathcal{E}(\rho_{in})
+$$
 
 
 ## Ejemplo: Desfase
