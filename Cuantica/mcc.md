@@ -67,28 +67,28 @@ $$
     R_{z}(\theta) &= e^{\frac{-i\theta Z}{2}} = \cos\left( \frac{\theta}{2} \right)I - i\sin\left( \frac{\theta}{2} \right)Z
     \end{align*}
     $$
-    - Representación Matricial 
+- **Representación Matricial**
 
-        $$
-        R_{x}(\theta) = \begin{pmatrix}
-        \cos\left(\frac{\theta}{2}\right) & -i\sin\left(\frac{\theta}{2}\right) \\
-        -i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
-        \end{pmatrix}
-        $$
-        
-        $$
-        R_{y}(\theta) = \begin{pmatrix}
-        \cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\theta}{2}\right) \\
-        \sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
-        \end{pmatrix}
-        $$
+$$
+R_{x}(\theta) = \begin{pmatrix}
+\cos\left(\frac{\theta}{2}\right) & -i\sin\left(\frac{\theta}{2}\right) \\
+-i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
+\end{pmatrix}
+$$
 
-        $$
-        R_{z}(\theta) = \begin{pmatrix}
-        e^{-i\frac{\theta}{2}} & 0 \\
-        0 & e^{i\frac{\theta}{2}}
-        \end{pmatrix}
-        $$
+$$
+R_{y}(\theta) = \begin{pmatrix}
+\cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\theta}{2}\right) \\
+\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
+\end{pmatrix}
+$$
+
+$$
+R_{z}(\theta) = \begin{pmatrix}
+e^{-i\frac{\theta}{2}} & 0 \\
+0 & e^{i\frac{\theta}{2}}
+\end{pmatrix}
+$$
 
 ### Aplicación de $R_z(\theta)$ en la Esfera de Bloch
 
@@ -97,15 +97,16 @@ $$
     $$
     R_z(\theta)\ket{\psi} = \alpha e^{-i\frac{\theta}{2}}\ket{0} + \beta e^{i\frac{\theta}{2}}\ket{1}
     $$
-    - Esto rotó el vector de Bloch de $\ket{\psi}$ alrededor del eje $z$ en la esfera de Bloch, cambiando la fase relativa entre $\ket{0}$ y $\ket{1}$.
+- Esto rotó el vector de Bloch de $\ket{\psi}$ alrededor del eje $z$ en la esfera de Bloch, cambiando la fase relativa entre $\ket{0}$ y $\ket{1}$.
 
 - Saber que cualquier compuerta de 1-qubit puede descomponerse en rotaciones sobre los ejes principales de la esfera de Bloch es fundamental para la implementación de circuitos cuánticos complejos.
 - **Teorema de Descomposición:**
-    - Supongamos que $U$ es una compuerta unitaria de 1-qubit. Entonces, existen reales $\alpha$, $\beta$, $\gamma$ y $\delta$ tales que:
+- Supongamos que $U$ es una compuerta unitaria de 1-qubit. Entonces, existen reales $\alpha$, $\beta$, $\gamma$ y $\delta$ tales que:
     $$
     U = e^{i\alpha} R_z(\beta) R_y(\gamma) R_z(\delta)
     $$
-    - Consideremos la compuerta Hadamard $H$. Podemos expresarla como una secuencia de rotaciones:
+
+- Consideremos la compuerta Hadamard $H$. Podemos expresarla como una secuencia de rotaciones:
     $$
     H = R_y\left(\frac{\pi}{2}\right) R_z(\pi) R_y\left(\frac{\pi}{2}\right)
     $$
@@ -148,7 +149,7 @@ $$
     \text{C-}U\ket{1}\ket{\psi} &= \ket{1}U\ket{\psi}
     \end{align*}
     $$
-    - La compuerta $U$ se aplica al segundo qubit únicamente si el primer qubit está en el estado $\ket{1}$.
+- La compuerta $U$ se aplica al segundo qubit únicamente si el primer qubit está en el estado $\ket{1}$.
 
 
 ## Conjuntos Universales de Compuertas Cuánticas
