@@ -18,3 +18,7 @@ de nuevo, como ya he dicho muchas veces por aquí, yo no pienso enseñar nada, s
 5. ❉ [Un poquito de cuántica I](/Cuantica/upci/) ❉
 
 6. ❉ [Un poquito de cuántica II](/Cuantica/upcii/) ❉
+
+7. ❉ [Modelo cuántico de computación](/Cuantica/mcc/) ❉
+
+8. ❉ [Codificación superdensa y teleportación cuántica](/Cuantica/cyt/) ❉

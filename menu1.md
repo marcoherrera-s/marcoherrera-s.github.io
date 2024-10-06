@@ -10,16 +10,16 @@ tags = ["syntax", "code"]
 
 # cosas que intento
 
-* [┌──═━oscilador armónico━═──┐ ](/Ejercicios/oscilador/)
+* [oscilador armónico](/Ejercicios/oscilador/)
 
-* [°°••resolviendo cuerpo rígido sin talachita (o tal vez sí)••°°](/Ejercicios/duda/)
+* [resolviendo cuerpo rígido sin talachita (o tal vez sí)](/Ejercicios/duda/)
 
-* [┏━°⌜ 赤dinámica no lineal糸 ⌟°━┓](/Dinamica/cover/)
+* [dinámica no lineal](/Dinamica/cover/)
 
-* [╚══《jet transport》══╝](/Dinamica/JetTransport/)
+* [jet transport](/Dinamica/JetTransport/)
 
-* [╰ ─┉─¡! cómputo cuántico !¡─┉─ ╯](/Cuantica/cover/)
+* [cómputo cuántico](/Cuantica/cover/)
 
-* [,,,física de los materiales,,,](/materiales/cover)
-
+<!-- * [física de los materiales](/materiales/cover)
+ -->
 
