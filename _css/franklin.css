@@ -282,6 +282,14 @@ body {
   right: 0;
 }
 
+@media (max-width: 600px) {
+  .katex {
+    font-size: calc(1em + 1vw); /* Ajuste dinámico del tamaño de fuente */
+    overflow-x: auto; /* Barra de desplazamiento horizontal cuando sea necesario */
+    overflow-y: hidden;
+    display: inline-block; /* Cada fórmula ocupa una línea completa */
+    padding: 0.1em; /* Espacio alrededor del texto */
+  }
 
 /* ==================================================================
     CODE & HIGHLIGHT.JS
