@@ -320,6 +320,23 @@ td {
   counter-increment: none; /* No incrementa el contador */
 }
 
+/* Estilos para las ecuaciones dentro de align-container */
+.align-container .katex-display {
+  display: flex; /* Usamos flexbox para alinear ecuación y número */
+  justify-content: space-between; /* Espacio entre la ecuación y el número */
+  white-space: normal;  /* Ajuste en pantallas pequeñas */
+  position: relative; /* Posicionamiento relativo para el número */
+  padding-right: 2em; /* Espacio para el número de la ecuación */
+  counter-increment: eqnum;  /* Incrementa el contador aquí */
+}
+
+/* Muestra el número de la ecuación dentro de align-container */
+.align-container .katex-display::after {
+  content: "(" counter(eqnum) ")"; /* Muestra el contador */
+  font-size: 0.9em; /* Tamaño de fuente para el número */
+  color: #555; /* Color del número (ajusta según tu diseño) */
+}
+
 
 /* ==================================================================
     CODE & HIGHLIGHT.JS
