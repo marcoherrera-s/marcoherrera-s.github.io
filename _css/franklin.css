@@ -255,7 +255,8 @@ td {
 }
 
 /* ==================================================================
-    KATEX
+ 
+/* KATEX
 ================================================================== */
 
 body {
@@ -270,7 +271,15 @@ body {
   display: block;  /* Asegura que cada ecuación de display esté en su propio bloque */
   white-space: normal;  /* Permite que las ecuaciones de display se ajusten en pantallas pequeñas */
   counter-increment: eqnum;  /* Incrementa el contador en cada ecuación de display */
-  position: relative;
+  position: relative; /* Necesario para el posicionamiento absoluto del número */
+}
+
+.katex-display::after {
+  content: " (" counter(eqnum) ")";
+  position: absolute;
+  right: 0;
+  font-size: 0.9em;
+  color: #555;
 }
 
 @media (max-width: 600px) {
@@ -287,18 +296,9 @@ body {
   vertical-align: middle; /* Otras opciones podrían ser 'baseline', 'top', 'bottom' */
 }
 
-
-
-
-
-
-
-
 .nonumber .katex-display::after {
-  counter-increment: nothing;
   content: "\00a0\00a0\00a0\00a0";
 }
-
 /* ==================================================================
     CODE & HIGHLIGHT.JS
 ================================================================== */
