@@ -258,47 +258,55 @@ td {
  
 /* KATEX
 ================================================================== */
-
+/* Reinicia el contador de ecuaciones al inicio del cuerpo */
 body {
   counter-reset: eqnum;  /* Establece el contador a 0 */
 }
 
+/* Estilos generales para KaTeX */
 .katex { 
   font-size: 1em !important; 
+  vertical-align: middle; /* Alineación vertical */
 }
 
+/* Estilos para las ecuaciones en display */
 .katex-display {
-  display: block;  /* Asegura que cada ecuación de display esté en su propio bloque */
-  white-space: normal;  /* Permite que las ecuaciones de display se ajusten en pantallas pequeñas */
-  counter-increment: eqnum;  /* Incrementa el contador en cada ecuación de display */
-  position: relative; /* Necesario para el posicionamiento absoluto del número */
+  display: block;  /* Cada ecuación en su propio bloque */
+  white-space: normal;  /* Ajuste en pantallas pequeñas */
+  counter-increment: eqnum;  /* Incrementa el contador */
+  position: relative; /* Posicionamiento relativo para el número */
+  padding-right: 2em; /* Espacio para el número de la ecuación */
 }
 
+/* Muestra el número de la ecuación */
 .katex-display::after {
-  content: " (" counter(eqnum) ")";
+  content: "(" counter(eqnum) ")"; /* Muestra el contador */
   position: absolute;
-  right: 0;
-  font-size: 0.9em;
-  color: #555;
+  right: 0; /* Posiciona el número a la derecha */
+  top: 0;
+  font-size: 0.9em; /* Tamaño de fuente para el número */
+  color: #555; /* Color del número (ajusta según tu diseño) */
 }
 
+/* Estilos para pantallas pequeñas */
 @media (max-width: 600px) {
   .katex {
-      font-size: calc(1em + 1vw); /* Ajuste dinámico basado en el tamaño de la pantalla */
-      overflow-x: auto; /* Solo muestra la barra de desplazamiento cuando sea necesario */
-      overflow-y: hidden;
-      display: inline-block; /* Hace que cada fórmula ocupe una línea completa */
-      padding: 0.1em; /* Añade espacio alrededor del texto */
+    font-size: calc(1em + 1vw); /* Ajuste dinámico del tamaño de fuente */
+    overflow-x: auto; /* Barra de desplazamiento horizontal cuando sea necesario */
+    overflow-y: hidden;
+    display: inline-block; /* Cada fórmula ocupa una línea completa */
+    padding: 0.1em; /* Espacio alrededor del texto */
   }
 }
 
-.katex {
-  vertical-align: middle; /* Otras opciones podrían ser 'baseline', 'top', 'bottom' */
+/* Clase para evitar la numeración en ciertas ecuaciones */
+.nonumber .katex-display::after {
+  content: "\00a0\00a0\00a0\00a0"; /* Espacios en lugar del número */
+  counter-increment: none; /* No incrementa el contador */
 }
 
-.nonumber .katex-display::after {
-  content: "\00a0\00a0\00a0\00a0";
-}
+
+
 /* ==================================================================
     CODE & HIGHLIGHT.JS
 ================================================================== */
