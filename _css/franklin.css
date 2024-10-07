@@ -256,85 +256,30 @@ td {
 
 /* ==================================================================
  
-/* KATEX
+/* ==================================================================
+  KATEX
 ================================================================== */
-/* Estilos generales para KaTeX */
-.katex { 
-  font-size: 1em !important; 
-  vertical-align: middle; /* Alineación vertical */
+
+body {
+  counter-reset: eqnum;
 }
 
-/* Estilos para las ecuaciones en display SIN numeración */
+.katex {
+  font-size: 1em !important;
+}
+
 .katex-display {
-  /* No aplicar numeración aquí */
+  position: relative;
+  counter-increment: eqnum;
 }
 
-/* Contenedor específico para entornos align */
-.align-container {
-  display: block; /* Asegura que el contenedor ocupe todo el ancho */
-}
-
-/* Estilos para las ecuaciones dentro de align-container */
-.align-container .katex-display {
-  display: flex; /* Usamos flexbox para alinear ecuación y número */
-  justify-content: space-between; /* Espacio entre la ecuación y el número */
-  white-space: normal;  /* Ajuste en pantallas pequeñas */
-  position: relative; /* Posicionamiento relativo para el número */
-  padding-right: 2em; /* Espacio para el número de la ecuación */
-}
-
-/* Muestra el número de la ecuación dentro de align-container */
-.align-container .katex-display::after {
-  content: "(" counter(eqnum) ")"; /* Muestra el contador */
-  font-size: 0.9em; /* Tamaño de fuente para el número */
-  color: #555; /* Color del número (ajusta según tu diseño) */
-  counter-increment: eqnum;  /* Incrementa el contador */
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 600px) {
-  .katex {
-    font-size: calc(1em + 1vw); /* Ajuste dinámico del tamaño de fuente */
-    overflow-x: auto; /* Barra de desplazamiento horizontal cuando sea necesario */
-    overflow-y: hidden;
-    display: inline-block; /* Cada fórmula ocupa una línea completa */
-    padding: 0.1em; /* Espacio alrededor del texto */
-  }
-
-  /* Ajustes para align-container en pantallas pequeñas */
-  .align-container .katex-display {
-    flex-direction: column; /* Apila la ecuación y el número */
-    align-items: flex-start; /* Alinea a la izquierda */
-    padding-right: 0; /* Elimina el padding cuando se apilan */
-  }
-
-  .align-container .katex-display::after {
-    position: static; /* Número debajo de la ecuación */
-    margin-top: 0.5em; /* Espacio entre la ecuación y el número */
-  }
-}
-
-/* Clase para evitar la numeración en ciertas ecuaciones dentro de align-container si es necesario */
-.nonumber .katex-display::after {
-  content: "\00a0\00a0\00a0\00a0"; /* Espacios en lugar del número */
-  counter-increment: none; /* No incrementa el contador */
-}
-
-/* Estilos para las ecuaciones dentro de align-container */
-.align-container .katex-display {
-  display: flex; /* Usamos flexbox para alinear ecuación y número */
-  justify-content: space-between; /* Espacio entre la ecuación y el número */
-  white-space: normal;  /* Ajuste en pantallas pequeñas */
-  position: relative; /* Posicionamiento relativo para el número */
-  padding-right: 2em; /* Espacio para el número de la ecuación */
-  counter-increment: eqnum;  /* Incrementa el contador aquí */
-}
-
-/* Muestra el número de la ecuación dentro de align-container */
-.align-container .katex-display::after {
-  content: "(" counter(eqnum) ")"; /* Muestra el contador */
-  font-size: 0.9em; /* Tamaño de fuente para el número */
-  color: #555; /* Color del número (ajusta según tu diseño) */
+.katex-display::after {
+  content: "(" counter(eqnum) ")";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 
 
