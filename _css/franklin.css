@@ -257,39 +257,49 @@ td {
 /* ==================================================================
  
 /* ==================================================================
-  KATEX
+    KATEX
 ================================================================== */
 
 body {
-  counter-reset: eqnum;
+  counter-reset: eqnum;  /* Establece el contador a 0 */
 }
 
-.katex {
-  font-size: 1em !important;
+.katex { 
+  font-size: 1em !important; 
 }
 
 .katex-display {
+  display: block;  /* Asegura que cada ecuación de display esté en su propio bloque */
+  white-space: normal;  /* Permite que las ecuaciones de display se ajusten en pantallas pequeñas */
+  counter-increment: eqnum;  /* Incrementa el contador en cada ecuación de display */
   position: relative;
-  counter-increment: eqnum;
-}
-
-.katex-display::after {
-  content: "(" counter(eqnum) ")";
-  position: absolute;
-  display: block;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
 }
 
 @media (max-width: 600px) {
   .katex {
-    font-size: calc(1em + 1vw); /* Ajuste dinámico del tamaño de fuente */
-    overflow-x: auto; /* Barra de desplazamiento horizontal cuando sea necesario */
-    overflow-y: hidden;
-    display: inline-block; /* Cada fórmula ocupa una línea completa */
-    padding: 0.1em; /* Espacio alrededor del texto */
+      font-size: calc(1em + 1vw); /* Ajuste dinámico basado en el tamaño de la pantalla */
+      overflow-x: auto; /* Solo muestra la barra de desplazamiento cuando sea necesario */
+      overflow-y: hidden;
+      display: inline-block; /* Hace que cada fórmula ocupe una línea completa */
+      padding: 0.1em; /* Añade espacio alrededor del texto */
   }
+}
+
+.katex {
+  vertical-align: middle; /* Otras opciones podrían ser 'baseline', 'top', 'bottom' */
+}
+
+
+
+
+
+
+
+
+.nonumber .katex-display::after {
+  counter-increment: nothing;
+  content: "\00a0\00a0\00a0\00a0";
+}
 
 /* ==================================================================
     CODE & HIGHLIGHT.JS
