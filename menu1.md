@@ -20,6 +20,8 @@ tags = ["syntax", "code"]
 
 * [cómputo cuántico](/Cuantica/cover/)
 
+* [el problema de tres cuerpos](/Ejercicios/cover3c/)
+
 <!-- * [física de los materiales](/materiales/cover)
  -->
 
