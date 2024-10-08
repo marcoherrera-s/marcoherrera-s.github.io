@@ -11,28 +11,28 @@ $$
 $$
 Entonces 
 $$
-\begin{align}
+\begin{aligned}
 r &= |\vec{\boldsymbol{r}}| \\
 &= |\vec{\boldsymbol{r}}_{1} - \vec{\boldsymbol{r}}_{2}|
-\end{align}
+\end{aligned}
 $$
 Por la segunda ley de Newton, sabemos que $m \ddot{r} = F$, entonces:
 
 $$
-\begin{align}
+\begin{aligned}
 m_{1} \ddot{\boldsymbol{r}}_{1} &= \boldsymbol{f}(r)\hat{\boldsymbol{r}}  \\ 
-m_{2} \ddot{\boldsymbol{r}}_{2} &= -\boldsymbol{f}(r)\hat{\boldsymbol{r}} \quad\text{(por la tercera ley)} \tag{1}
-\end{align}
+m_{2} \ddot{\boldsymbol{r}}_{2} &= -\boldsymbol{f}(r)\hat{\boldsymbol{r}} \quad\text{(por la tercera ley)} 
+\end{aligned}
 $$
 Por cómo definimos $\vec{\boldsymbol{r}}$, observamos que si $\boldsymbol{f}(r) > 0$ entonces hay repulsión, y si $\boldsymbol{f}(r)<0$ entonces los cuerpos se atraen.
 
 Dividiendo por $m_{1}$ y por $m_{2}$ respectivamente, las ecuaciones anteriores quedan así:
 
 $$
-\begin{align}
+\begin{aligned}
 \ddot{\boldsymbol{r}}_{1}&=\frac{\boldsymbol{f}(r)}{m_{1}}\hat{\boldsymbol{r}} \\
 \ddot{\boldsymbol{r}}_{2}&=-\frac{\boldsymbol{f}(r)}{m_{2}}\hat{\boldsymbol{r}}
-\end{align}
+\end{aligned}
 $$
 Entonces: 
 $$
@@ -48,36 +48,36 @@ $$
 ---
 Recordando rápidamente las coordenadas polares, tenemos que:
 $$
-\begin{align}
+\begin{aligned}
 \hat{\boldsymbol{r}} &= \cos\theta\hat{\boldsymbol{i}} + \sin \theta  \hat{\boldsymbol{j}} \\
 \hat{\boldsymbol{\theta}} &= -\sin \theta  \hat{\boldsymbol{i}} + \cos \theta \hat{\boldsymbol{j}}
-\end{align}
+\end{aligned}
 $$
 
 Sabemos que $\boldsymbol{r}=r\hat{\boldsymbol{r}}$, entonces:
 
 $$
-\begin{align}
+\begin{aligned}
 \dot{\boldsymbol{r}} = \frac{d}{dt}(r\hat{\boldsymbol{r}}) &= \dot{r}\hat{\boldsymbol{r}} + r \frac{d\hat{\boldsymbol{r}}}{dt} \\
 &=\dot{r}\hat{\boldsymbol{r}} + r \frac{d}{dt}(\cos\theta\hat{\boldsymbol{i}} + \sin \theta  \hat{\boldsymbol{j}}) \\
 &=\dot{r}\hat{\boldsymbol{r}} + r(-\sin \theta\dot{\theta}\hat{\boldsymbol{i}}+\cos \theta   \dot{\theta}\hat{\boldsymbol{j}}) \\
 &=\dot{r}\hat{\boldsymbol{r}}+ r \dot{\theta} \hat{\boldsymbol{\theta}}
-\end{align}
+\end{aligned}
 $$
 Entonces 
 $$
-\begin{align}
+\begin{aligned}
 \ddot{\boldsymbol{r}} &= \frac{d}{dt}(\dot{r}\hat{\boldsymbol{r}}+ r \dot{\theta} \hat{\boldsymbol{\theta}}) \\
 &=(\ddot{r}-r \dot{\theta}^{2})\hat{\boldsymbol{r}} + (r \ddot{\theta}+2 \dot{r} \dot{\theta})\hat{\boldsymbol{\theta}}
-\end{align}
+\end{aligned}
 $$
 ---
 Tenemos una componente radial y una tangencial, y como la fuerza sólo depende de $r$, pues $\boldsymbol{f}(r)\hat{\boldsymbol{r}}$, entonces tenemos que $\mu \ddot{r}=\boldsymbol{f}(r)\hat{\boldsymbol{r}}$ se convierte en:
 $$
-\begin{align}
+\begin{aligned}
 \mu(\ddot{r}-r \dot{\theta}^{2}) &= \boldsymbol{f}(r) \\
 \mu(r \ddot{\theta}+2 \dot{r} \dot{\theta}) &= 0
-\end{align}
+\end{aligned}
 $$
 
 Ahora, para saber cómo es nuestra $\boldsymbol{f}(r)$, recordemos que por Newton, sabemos que la fuerza de atracción gravitacional está dada por:
@@ -93,8 +93,8 @@ En donde hicimos que $\beta=G(m_{1}+m_{2})$.
 
 Por lo que, continuando, tendríamos que: $\mu \ddot{\boldsymbol{r}}=\mu(\ddot{\boldsymbol{r}}_{1}-\ddot{\boldsymbol{r}}_{2})=\mu\left( -\frac{\beta}{r^{2}} \right)\hat{\boldsymbol{r}}=\boldsymbol{f}(r)$. Por lo tanto:
 $$
-\begin{align}
+\begin{aligned}
 \mu(\ddot{r}-r \dot{\theta}^{2}) &= \mu\left( -\frac{\beta}{r^{2}} \right) \\
 \mu(r \ddot{\theta}+2 \dot{r} \dot{\theta}) &= 0
-\end{align}
+\end{aligned}
 $$
