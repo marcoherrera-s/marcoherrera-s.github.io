@@ -1,75 +1,69 @@
-/* adjustments for Franklin */
-
+/* ajustes para Franklin */
 .franklin-content code {
-  font-size: var(--small);
+  font-size: var(--small); /* Define el tamaño de la fuente del código en el contenido de Franklin usando una variable CSS */
 }
 
-.franklin-content { font-size: 1.4rem; }
-
-
+.franklin-content { 
+  font-size: 1.4rem; /* Ajusta el tamaño de fuente general del contenido de Franklin a 1.4rem */
+}
 
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #FFFEFF;
-  border-radius: 20px;
-  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro añadido */
-  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1);
-  color: #333;
-  line-height: 1.8;
-  padding-top: 5px; /* Añade espacio en la parte superior */
-  
+  background-color: #FFF9E6; /* Fondo amarillo pastel sutil */
+  border-radius: 20px; /* Bordes redondeados de 20px */
+  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Añade un contorno negro semitransparente */
+  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+  color: #333; /* Texto en color gris oscuro */
+  line-height: 1.8; /* Altura de línea aumentada para mejorar la legibilidad */
+  padding-top: 5px; /* Espaciado superior dentro del contenedor */
 }
 
 #main:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al pasar el mouse */
 }
 
-
-
 #menu ul {
-  list-style-type: none;
+  list-style-type: none; /* Elimina los puntos de la lista */
   text-align: center;
   margin: 30px 0;
   padding: 10px 0;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro añadido */
-  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background-color: #FFF9E6; /* Fondo amarillo pastel sutil */
+  border-radius: 20px; /* Bordes redondeados */
+  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro semitransparente */
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  display: flex; /* Hace que el menú sea flexible */
+  justify-content: center; /* Alinea los elementos del menú al centro */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
 }
 
 #menu ul li {
-  display: inline-block;
+  display: inline-block; /* Los elementos de la lista se muestran en línea */
   margin: 8px 20px;
   padding: 10px 20px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border-radius: 8px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave en todas las propiedades */
 }
 
 #menu ul li:hover {
-  background-color: #F0F0F0;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #F0F0F0; /* Fondo gris claro al pasar el mouse */
+  transform: translateY(-2px); /* Mueve el elemento ligeramente hacia arriba */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra al pasar el mouse */
 }
 
 #menu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.9em;
-  transition: color 0.3s ease;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #333; /* Color gris oscuro para los enlaces */
+  font-weight: 500; /* Hace el texto del enlace ligeramente más grueso */
+  font-size: 0.9em; /* Ajusta el tamaño del texto de los enlaces */
+  transition: color 0.3s ease; /* Transición suave en el color del enlace */
 }
 
 #menu ul li a:hover {
-  color: #4A90E2; /* Cool blue color on hover */
+  color: #4A90E2; /* Cambia a un color azul claro al pasar el mouse */
 }
 
-
-/* hereee */
-
+/* Sección repetida (posible ajuste en el código original) */
 #menu ul li {
   margin: 0 0 20px 0;
   padding: 0;
@@ -77,130 +71,131 @@
 }
 
 #menu ul li a {
-  color: #111;
-  text-decoration: none;
-  position: relative;
-  padding: 10px 10px;
+  color: #111; /* Cambia el color a un gris más oscuro */
+  text-decoration: none; /* Elimina el subrayado */
+  position: relative; /* Posiciona el elemento relativamente */
+  padding: 10px 10px; /* Ajusta el relleno interno de los enlaces */
 }
 
 #menu ul li a::after {
-  content: "";
+  content: ""; /* Añade un contenido vacío (usado para crear una línea decorativa) */
   position: absolute;
-  height: 2px;
-  bottom: 7px;
+  height: 2px; /* Define el grosor de la línea */
+  bottom: 7px; /* Coloca la línea justo debajo del texto */
   left: 10px;
   right: 10px;
-  background-color: rgba(18, 68, 143, 0.7);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: rgba(18, 68, 143, 0.7); /* Línea azul semitransparente */
+  visibility: hidden; /* La línea es invisible por defecto */
+  transform: scaleX(0); /* La línea está colapsada horizontalmente */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave y fluida */
 }
 
-#menu ul li a:hover {
-  text-decoration: none;
-}
 
 #menu ul li a:hover::after {
-  visibility: visible;
-  transform: scaleX(1);
+  visibility: visible; /* Muestra la línea al pasar el mouse */
+  transform: scaleX(1); /* Expande la línea horizontalmente */
 }
 
-.franklin-content { padding-left: 10%; }
-.franklin-content { padding-right: 5%; }
+.franklin-content { 
+  padding-left: 10%; /* Añade un margen del 10% a la izquierda */
+}
+
+.franklin-content { 
+  padding-right: 5%; /* Añade un margen del 5% a la derecha */
+}
 
 @media (max-width: 940px) {
-  /* narrow display: menu is at the top */
+  /* Pantallas estrechas: el menú está en la parte superior */
   #menu {
-    width: 100%;
+    width: 100%; /* El menú ocupa el 100% del ancho */
     margin-top: 75px;
     margin-bottom: 25px;
   }
 
   #menu li {
-    display: inline-block;
-    line-height: 30px;
+    display: inline-block; /* Los elementos del menú se muestran en línea */
+    line-height: 30px; /* Define la altura de línea */
   }
 
   #main {
-    float: none;
-    width: 100%;
+    float: none; /* Elimina cualquier flotante */
+    width: 100%; /* El contenido principal ocupa el ancho completo */
   }
 }
 
 @media (min-width: 940px) {
   #menu {
     margin-top: 100px;
-    float: left;
-    width: 100px;
-    text-align: right;
+    float: left; /* El menú se flota a la izquierda en pantallas anchas */
+    width: 100px; /* El menú tiene un ancho fijo */
+    text-align: right; /* Los elementos del menú se alinean a la derecha */
   }
-  .franklin-content { width: 600px; }
+
+  .franklin-content { 
+    width: 600px; /* El contenido tiene un ancho fijo en pantallas anchas */
+  }
 }
 
 @media (min-width: 1000px) {
-  .franklin-content { width: 660px; }
+  .franklin-content { 
+    width: 660px; /* El contenido es un poco más ancho en pantallas más grandes */
+  }
 }
 
-
-
-
-
-
 .cta {
-  position: relative;
-  margin: auto;
-  padding: 12px 18px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  cursor: pointer;
+  position: relative; 
+  margin: auto; /* Centra el botón */
+  padding: 12px 18px; /* Ajusta el relleno interno */
+  transition: all 0.2s ease; /* Transición suave */
+  border: none; /* Sin bordes */
+  background: none; /* Sin fondo */
+  cursor: pointer; /* Muestra el cursor de "mano" */
 }
 
 .cta:before {
-  content: "";
-  position: absolute;
+  content: ""; 
+  position: absolute; /* Posición absoluta para crear un efecto detrás del botón */
   top: 0;
   left: 0;
   display: block;
-  border-radius: 50px;
-  background: #b1dae7;
+  border-radius: 50px; /* Bordes redondeados */
+  background: #b1dae7; /* Fondo azul claro */
   width: 45px;
   height: 45px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Transición suave */
 }
 
 .cta span {
   position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #234567;
+  font-family: "Ubuntu", sans-serif; /* Fuente personalizada */
+  font-size: 18px; 
+  font-weight: 700; /* Texto en negrita */
+  letter-spacing: 0.05em; /* Espaciado entre letras */
+  color: #234567; /* Color de texto */
 }
 
 .cta svg {
   position: relative;
   top: 0;
-  margin-left: 10px;
+  margin-left: 10px; /* Margen izquierdo para el icono SVG */
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #234567;
+  stroke: #234567; /* Color de trazo del SVG */
   stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
+  transform: translateX(-5px); /* Mueve el icono hacia la izquierda */
+  transition: all 0.3s ease; /* Transición suave en el movimiento del icono */
 }
 
 .cta:hover:before {
-  width: 100%;
-  background: #b1dae7;
+  width: 100%; /* Expande el fondo detrás del botón en el hover */
+  background: #b1dae7; /* Mantiene el fondo azul claro */
 }
 
 .cta:hover svg {
-  transform: translateX(0);
+  transform: translateX(0); /* Mueve el icono SVG de vuelta a su posición original en hover */
 }
 
 .cta:active {
-  transform: scale(0.95);
+  transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
 }
-
