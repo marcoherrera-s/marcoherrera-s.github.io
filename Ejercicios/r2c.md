@@ -6,18 +6,18 @@
 En la entrada pasada llegamos a que:
 
 $$
-\begin{align}
+\begin{aligned}
 \mu(\ddot{r}-r \dot{\theta}^{2}) &= \mu\left( -\frac{\beta}{r^{2}} \right) \\
 \mu(r \ddot{\theta}+2 \dot{r} \dot{\theta}) &= 0
-\end{align}
+\end{aligned}
 $$
 Simplificando tendríamos que
 
 $$
-\begin{align}
+\begin{aligned}
 \ddot{r}-r \dot{\theta}^{2} &= -\frac{\beta}{r^{2}} \\
 r \ddot{\theta}+2 \dot{r} \dot{\theta} &= 0
-\end{align}
+\end{aligned}
 $$
 
 Para la segunda ecuación, primero recordamos el momento angular $\boldsymbol{L}$ es el producto vectorial entre el vector de posición $\boldsymbol{r}$ y el momento lineal $\boldsymbol{p}$, que es $\mu \dot{\boldsymbol{r}}$, donde $\mu$ es la masa reducida:
@@ -143,10 +143,10 @@ $$
 
 Entonces:
 $$
-\begin{align}
+\begin{aligned}
 \ddot{r}-r \dot{\theta}^{2} &= -\frac{\beta}{r^{2}}  \\
  \frac{d^2r}{d\theta^2} \dot{\theta}^2 + \frac{dr}{d\theta} \ddot{\theta} - r \dot{\theta}^{2} &= -\frac{\beta}{r^{2}}
-\end{align}
+\end{aligned}
 $$
 Recordamos que $\ddot{\theta} = -\frac{2L \dot{r}}{\mu r^3}$, entonces
 $$

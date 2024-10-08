@@ -265,7 +265,7 @@ body {
 }
 
 .katex { 
-  font-size: 1em !important; 
+  font-size: 0.9em !important; 
 }
 
 .katex-display {
@@ -289,17 +289,11 @@ body {
   vertical-align: middle; /* Otras opciones podrían ser 'baseline', 'top', 'bottom' */
 }
 
-
-
-
-
-
-
-
 .nonumber .katex-display::after {
   counter-increment: nothing;
   content: "\00a0\00a0\00a0\00a0";
 }
+
 
 /* ==================================================================
     CODE & HIGHLIGHT.JS

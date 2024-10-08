@@ -44,11 +44,11 @@ Lo que nos dice este teorema es que podemos entender el movimiento de cualquier 
 Por lo tanto, regresando a nuestro problema, tendríamos que:
 
 $$
-\begin{align}
+\begin{align*}
 \mathbf{V^{E}} &= \mathbf{V}^{o'} + \left( \frac{d\mathbf{e'}}{dt} \right)_{\mathcal{F}} \\
  &= \mathbf{V}^{o'} + \Omega \times (\mathbf{e} - \mathbf{D}) \\
 &= \mathbf{V}^{o'} + \Omega \times \mathbf{e'}
-\end{align}
+\end{align*}
 $$
 Entonces podemos concluir que
 $$
@@ -96,19 +96,19 @@ $$
 
 Por lo tanto:
 $$
-\begin{align}
+\begin{align*}
 \left( \frac{d\mathbf{r}}{dt} \right)_{\mathcal{F}} &= \left( \frac{d\mathbf{D}}{dt} \right)_{\mathcal{F}} + \left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}} \\
 \mathbf{ v}&= \mathbf{V} + \left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}}
-\end{align}
+\end{align*}
 $$
 
 Pero ya sabemos que $\left( \frac{d\mathbf{u}}{dt} \right)_{\mathcal{F}} = \left( \frac{d\mathbf{u}}{dt} \right)_{\mathcal{F}'} + \Omega\times \mathbf{u}$, entonces tenemos que:
 
 $$
-\begin{align}
+\begin{align*}
 \left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}} &= \left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}'} + \Omega\times \mathbf{r'} \\
 &= \mathbf{v'} + \Omega\times \mathbf{r'}
-\end{align}
+\end{align*}
 
 $$
 Entonces tendríamos que:
@@ -143,68 +143,65 @@ $$
 \mathbf{a} = \mathbf{A} + \left( \frac{d\mathbf{v'}}{dt} \right)_{\mathcal{F}} + \dot{\Omega} \times \mathbf{r'} + \Omega \times \left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}}
 $$
 Recordamos que $\left( \frac{d\mathbf{r'}}{dt} \right)_{\mathcal{F}} = \mathbf{v'} + \Omega\times \mathbf{r'}$ y entonces $\left( \frac{d\mathbf{v'}}{dt} \right)_{\mathcal{F}} = \mathbf{a'} + \Omega\times \mathbf{v'}$ por lo tanto:
-$$
-\mathbf{a} = \mathbf{A} + \mathbf{a'} + \Omega\times \mathbf{v'}+ \dot{\Omega} \times \mathbf{r'} + \Omega \times (\mathbf{v'} + \Omega\times \mathbf{r'})
-$$
-   $$
-   \mathbf{a} = \mathbf{A} + \mathbf{a'} + \Omega \times \mathbf{v'} + \Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
-   $$
 
-   Simplificando los términos que se repiten, obtenemos:
-   $$
-   \mathbf{a} = \mathbf{A} + \mathbf{a'} + 2\Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
-   $$
+<!-- $$
+\mathbf{a} = \mathbf{A} + \mathbf{a'} + \Omega\times \mathbf{v'}+ \dot{\Omega} \times \mathbf{r'} + \Omega \times (\mathbf{v'} + \Omega\times \mathbf{r'})
+$$ -->
+
+$$
+\mathbf{a} = \mathbf{A} + \mathbf{a'} + \Omega \times \mathbf{v'} + \Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
+$$
+
+Simplificando los términos que se repiten, obtenemos:
+
+$$
+\mathbf{a} = \mathbf{A} + \mathbf{a'} + 2\Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
+$$
 
 La expresión simplificada de la aceleración en un sistema de referencia rotativo que obtuvimos es:
 
 $$
 \mathbf{a} = \mathbf{A} + \mathbf{a'} + 2\Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
 $$
-Podemos entender cada término de la siguiente forma:
 
-1. **$\mathbf{A}$**:
-   - Sabemos que este término representa la aceleración del origen del sistema de referencia móvil $\mathcal{F}'$ respecto al sistema de referencia inercial $\mathcal{F}$.
+<!-- ---
+Podemos interpretar cada término de la siguiente manera:
 
-2. **$\mathbf{a'}$**:
-   - Esta es la aceleración del punto de interés relativa al sistema de referencia móvil. Significa cómo la posición del punto cambia respecto al sistema que se mueve, sin considerar rotaciones.
+1. **$\mathbf{A}$**:  
+   Representa la aceleración del origen del sistema de referencia móvil $\mathcal{F}'$ con respecto al sistema inercial $\mathcal{F}$.
 
-3. **$2\Omega \times \mathbf{v'}$**:
-   - Este término es el que se conoce como aceleración de Coriolis. Surge debido a la rotación del sistema de referencia y afecta a objetos en movimiento dentro de este sistema.
+2. **$\mathbf{a'}$**:  
+   Es la aceleración del punto de interés relativa al sistema móvil $\mathcal{F}'$. Refleja cómo varía la posición del punto sin considerar las rotaciones.
 
-4. **$\dot{\Omega} \times \mathbf{r'}$**:
-   - Este término se conoce como la aceleración de Euler. Surge solo si la velocidad angular $\Omega$ del sistema de referencia está cambiando con el tiempo (es decir, si hay una aceleración angular $\dot{\Omega}$. 
+3. **$2\Omega \times \mathbf{v'}$**:  
+   Este es el término de **aceleración de Coriolis**, que aparece debido a la rotación del sistema de referencia y afecta a los objetos en movimiento dentro de él.
 
-5. **$\Omega \times (\Omega \times \mathbf{r'})$**:
-   - Este término es la aceleración centrífuga. Describe cómo la rotación constante del sistema de referencia influye en un punto que, aunque estático en el sistema de referencia rotativo, experimenta una fuerza que lo aleja del eje de rotación, dependiendo de su distancia radial desde ese eje.
+4. **$\dot{\Omega} \times \mathbf{r'}$**:  
+   Conocido como **aceleración de Euler**, aparece si la velocidad angular $\Omega$ del sistema cambia en el tiempo (es decir, si hay aceleración angular $\dot{\Omega}$).
 
----
+5. **$\Omega \times (\Omega \times \mathbf{r'})$**:  
+   Este es el término de **aceleración centrífuga**, que describe cómo la rotación constante del sistema afecta a un punto que, aunque esté quieto en el sistema rotativo, experimenta una fuerza que lo aleja del eje de rotación, en función de su distancia radial.
+--- -->
 
-Ahora sí, regresando a nuestro problema de interés, me tomé ese paréntesis enorme porque en su momento, cuando vi en mi clase de mecánica, sistemas de referencia no inerciales, si deducimos la fórmula anterior pero omitimos algunos pasos y dimos por hechos algunos otros, entonces me quise tomar el tiempo, de al menos alguna vez en mi vida hacer una derivación de esa aceleración que no me dejara con alguna duda. 
-
-Entonces, habíamos obtenido que:
-
-$$
-\mathbf{a} = \mathbf{A} + \mathbf{a'} + 2\Omega \times \mathbf{v'} + \dot{\Omega} \times \mathbf{r'} + \Omega \times (\Omega \times \mathbf{r'})
-$$
-Y en el problema circular restringido de tres cuerpos, consideramos tres masas: $M_1$, $M_2$, y $m_3$. Aquí, recordamos que $M_1$ y $M_2$ son dos masas grandes (por ejemplo, dos estrellas o un planeta y su luna), y $m_3$ es una masa significativamente menor (como un asteroide o una nave espacial) que no afecta gravitacionalmente a los otros dos cuerpos. Como ya habíamos hablado más o menos, este sistema se analiza comúnmente en un marco de referencia en rotación, donde $M_1$ y $M_2$ están fijos.
+Y en el problema circular restringido de tres cuerpos, consideramos tres masas: $m_1$, $m_2$, y $m_3$. Aquí, recordamos que $m_1$ y $m_2$ son dos masas grandes (por ejemplo, dos estrellas o un planeta y su luna), y $m_3$ es una masa significativamente menor (como un asteroide o una nave espacial) que no afecta gravitacionalmente a los otros dos cuerpos. Como ya habíamos hablado más o menos, este sistema se analiza comúnmente en un marco de referencia en rotación, donde $m_1$ y $m_2$ están fijos.
 
 Ahora, pensemos en cada término para nuestro problema.
 
 1. **$\mathbf{A}$ - Aceleración del origen del sistema de referencia**:
-   - En este marco, $M_1$ y $M_2$ están en reposo por definición. Por tanto, el origen del sistema de referencia no tiene aceleración respecto a un sistema inercial, entonces $\mathbf{A} = 0$. 
+   - En este marco, $m_1$ y $m_2$ están en reposo por definición. Por tanto, el origen del sistema de referencia no tiene aceleración respecto a un sistema inercial, entonces $\mathbf{A} = 0$. 
 
 2. **$\mathbf{a'}$ - Aceleración de $m_3$ relativa al sistema de referencia**:
-   - Este término no se hace cero y es crítico para el análisis. Representa la aceleración de $m_3$ debida principalmente a las fuerzas gravitacionales de $M_1$ y $M_2$, ajustada por la dinámica del marco rotatorio.
+   - Este término no se hace cero y es crítico para el análisis. Representa la aceleración de $m_3$ debida principalmente a las fuerzas gravitacionales de $m_1$ y $m_2$, ajustada por la dinámica del marco rotatorio.
 
 3. **$2\Omega \times \mathbf{v'}$ - Aceleración de Coriolis**:
    - Este término tampoco es cero. Afecta a la trayectoria de $m_3$ dentro del marco rotatorio debido a su velocidad relativa $\mathbf{v'}$ en el sistema. 
 
 4. **$\dot{\Omega} \times \mathbf{r'}$ - Aceleración de Euler**:
-   - Dado que el marco de referencia rota con una velocidad angular constante (la misma velocidad angular de la órbita mutua de $M_1$ y $M_2$, $\dot{\Omega}$ es cero. Por lo tanto, no hay aceleración de Euler en este problema.
+   - Dado que el marco de referencia rota con una velocidad angular constante (la misma velocidad angular de la órbita mutua de $m_1$ y $m_2$, $\dot{\Omega}$ es cero. Por lo tanto, no hay aceleración de Euler en este problema.
 
 5. **$\Omega \times (\Omega \times \mathbf{r'})$ - Aceleración centrífuga**:
    - Este término no es cero. Pues nos dice la fuerza centrífuga experimentada por $m_3$ debido a su posición relativa en el marco rotatorio. Sabemos que este efecto nos dice cómo $m_3$ es empujado hacia afuera desde el eje de rotación.
-y ahora supongamos que estoy haciendo un cambio desde aquí. 
+
 
 
 Entonces, nos quedaría que:
@@ -218,7 +215,7 @@ $$
 \mathbf{a} = \mathbf{a'} + 2\Omega \times \mathbf{v'} + \Omega \times (\Omega \times \mathbf{r'}) = \frac{\mathbf{F}}{m_{3}}
 $$
 Pensando en que estamos describiendo la dinámica del tercer cuerpo $m_{3}$
-Y como $\mathbf{F} = -\nabla U$ entonces:
+y como $\mathbf{F} = -\nabla U$ entonces:
 $$
 \mathbf{a} = \mathbf{a'} + 2\Omega \times \mathbf{v'} + \Omega \times (\Omega \times \mathbf{r'}) = -\frac{\nabla U}{m_{3}}
 $$
@@ -242,49 +239,49 @@ $$
 \mathbf{a'} + 2\Omega \times \mathbf{v'}  = -\nabla\left( \frac{U}{m_{3}} - \frac{1}{2}\Omega^{2}(\mathbf{r'})^{2}  \right) 
 $$
 
-Ahora, $U(\mathbf{r})$ representa el potencial gravitacional que actúa sobre $m_{3}$ debido a $M_{1}$ y $M_{2}$.
+Ahora, $U(\mathbf{r})$ representa el potencial gravitacional que actúa sobre $m_{3}$ debido a $m_{1}$ y $m_{2}$.
 
 En donde para este caso tendríamos que:
 $$
-U(\mathbf{r}) = -\frac{GM_{1}m_{3}}{|\mathbf{r}-\mathbf{r_{1}}|}-\frac{GM_{2}m_{3}}{|\mathbf{r}-\mathbf{r_{1}}|}
+U(\mathbf{r}) = -\frac{Gm_{1}m_{3}}{|\mathbf{r}-\mathbf{r_{1}}|}-\frac{Gm_{2}m_{3}}{|\mathbf{r}-\mathbf{r_{1}}|}
 $$
 Sustituyendo esta expresión tenemos que:
 $$
-\mathbf{a'} + 2\Omega \times \mathbf{v'} = -\nabla\left( -\frac{GM_{1}}{|\mathbf{r}-\mathbf{r_{1}}|} - \frac{GM_{2}}{|\mathbf{r}-\mathbf{r_{2}}|} - \frac{1}{2}\Omega^{2}(\mathbf{r'})^{2} \right)
+\mathbf{a'} + 2\Omega \times \mathbf{v'} = -\nabla\left( -\frac{Gm_{1}}{|\mathbf{r}-\mathbf{r_{1}}|} - \frac{Gm_{2}}{|\mathbf{r}-\mathbf{r_{2}}|} - \frac{1}{2}\Omega^{2}(\mathbf{r'})^{2} \right)
 $$
 ---
 Ahora veamos un simple esquema de nuestro problema.
 [dibujo]
 
-Donde $\mathbf{r} = (x,y,z)$ es la distancia de $m_{3}$ al centro de gravedad de $M_{1}$ y $M_{2}$.
+Donde $\mathbf{r} = (x,y,z)$ es la distancia de $m_{3}$ al centro de gravedad de $m_{1}$ y $m_{2}$.
 
 Ahora, para simplificar, podemos hacer que:
 
 $$
-\begin{align}
-M_{1} + M_{2} &= 1 \\
+\begin{align*}
+m_{1} + m_{2} &= 1 \\
 R = \mathbf{r_{2}} - \mathbf{r_{1}} &= 1 \\
 \Omega &=1  \\
 G &= 1
-\end{align}
+\end{align*}
 $$
 Sabemos que la fórmula general para el centro de masa entre dos puntos masivos es:
 $$
-CM = \frac{M_{1}\mathbf{r_{1}}+M_{2}\mathbf{r_{2}}}{M_{1}+M_{2}}
+CM = \frac{m_{1}\mathbf{r_{1}}+m_{2}\mathbf{r_{2}}}{m_{1}+m_{2}}
 $$
 Que se simplifica a:
 $$
-CM = M_{1}\mathbf{r_{1}}+M_{2}\mathbf{r_{2}}
+CM = m_{1}\mathbf{r_{1}}+m_{2}\mathbf{r_{2}}
 $$
-Si alineamos el centro de masa en el origen, entonces llegamos a que: $M_{1}\mathbf{r_{1}} = -M_{2}\mathbf{r_{2}}$
+Si alineamos el centro de masa en el origen, entonces llegamos a que: $m_{1}\mathbf{r_{1}} = -m_{2}\mathbf{r_{2}}$
 Y por lo tanto:
 $$
-r_{1} = -\frac{M_{2}\mathbf{r}_{2}}{M_{1}} \tag{1}
+r_{1} = -\frac{m_{2}\mathbf{r}_{2}}{m_{1}} \tag{$\alpha$}
 $$
-Si ahora definimos $\mu = M_{2}$, usando que $M_{1} + M_{2} = 1$ entonces $M_{1}+\mu=1 \rightarrow M_{1}=1-\mu$.
-Sustituyendo en la ecuación (1) que teníamos, nos queda que:
+Si ahora definimos $\mu = m_{2}$, usando que $m_{1} + m_{2} = 1$ entonces $m_{1}+\mu=1 \rightarrow m_{1}=1-\mu$.
+Sustituyendo en la ecuación ($\alpha$) que teníamos, nos queda que:
 $$
-r_{1} = -\frac{M_{2}\mathbf{r}_{2}}{M_{1}} \tag{1} = -\frac{\mu}{1-\mu}\mathbf{r_{2}}
+r_{1} = -\frac{m_{2}\mathbf{r}_{2}}{m_{1}} = -\frac{\mu}{1-\mu}\mathbf{r_{2}}
 $$
 Pero recordando que $r_{2} - r_{1} = 1$, entonces:
 $$
@@ -294,36 +291,36 @@ $$
 Simplificando llegamos a que:
 
 $$
-\begin{align}
+\begin{align*}
 r_{2}\left( 1+\frac{\mu}{1-\mu} \right) &= 1 \\
 r_{2}\left( \frac{1-\mu+\mu}{1-\mu} \right) &= 1 \\ 
 r_{2}\left( \frac{1}{1-\mu} \right) &= 1 \\ 
 \therefore r_{2} = 1-\mu
-\end{align}
+\end{align*}
 $$
 Y entonces:
 $$
-r_{1} = -\frac{M_{2}\mathbf{r}_{2}}{M_{1}} = -\frac{\mu}{1-\mu}\mathbf{r_{2}} = -\frac{\mu}{1-\mu}(1-\mu)=-\mu
+r_{1} = -\frac{m_{2}\mathbf{r}_{2}}{m_{1}} = -\frac{\mu}{1-\mu}\mathbf{r_{2}} = -\frac{\mu}{1-\mu}(1-\mu)=-\mu
 $$
 
 Por lo tanto concluímos que:
 $$
-\begin{align}
-r_{1} = -\mu = -M_{2} \\
-r_{2} = 1-\mu=M_{1}
-\end{align}
+\begin{align*}
+r_{1} = -\mu = -m_{2} \\
+r_{2} = 1-\mu=m_{1}
+\end{align*}
 $$
 
 Y entonces, habíamos definido el siguiente potencial efectivo:
  $$
-U(r) = \left( -\frac{GM_{1}}{|\mathbf{r}-\mathbf{r_{1}}|} - \frac{GM_{2}}{|\mathbf{r}-\mathbf{r_{2}}|} - \frac{1}{2}\Omega^{2}r^{2} \right)
+U(r) = \left( -\frac{Gm_{1}}{|\mathbf{r}-\mathbf{r_{1}}|} - \frac{Gm_{2}}{|\mathbf{r}-\mathbf{r_{2}}|} - \frac{1}{2}\Omega^{2}r^{2} \right)
 $$
-Y ya vimos que $M_{1}$ está en $r_{1}=(-\mu, 0)$ y $M_{2}$ está en $r_{2}=(1-\mu, 0)$.
+Y ya vimos que $m_{1}$ está en $r_{1}=(-\mu, 0)$ y $m_{2}$ está en $r_{2}=(1-\mu, 0)$.
 
 
-Dado que $M_1$ está en $r_1 = (-\mu, 0)$ y $M_2$ está en $r_2 = (1-\mu, 0)$, podemos reescribir $U(r)$ en términos de $x, y, z$:
+Dado que $m_1$ está en $r_1 = (-\mu, 0)$ y $m_2$ está en $r_2 = (1-\mu, 0)$, podemos reescribir $U(r)$ en términos de $x, y, z$:
 
-1. **Distancia entre $\mathbf{r}$ y $\mathbf{r_1}$:
+1. Distancia entre $\mathbf{r}$ y $\mathbf{r_1}$:
    $$
    |\mathbf{r} - \mathbf{r_1}| = \sqrt{(x + \mu)^2 + y^2}
    $$
@@ -380,7 +377,6 @@ $$
 \frac{\partial U}{\partial y} = \frac{(1 - \mu)y}{\left[(x + \mu)^2 + y^2\right]^{3/2}} + \frac{\mu y}{\left[(x - 1 + \mu)^2 + y^2\right]^{3/2}} - y.
 $$
 
-### Paso 3: Substituir los gradientes en las ecuaciones de movimiento
 Sustituimos estos gradientes en las ecuaciones de movimiento:
 
 #### Ecuación para $x$:
