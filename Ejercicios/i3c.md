@@ -36,7 +36,7 @@ Como se está moviendo, entonces en un tiempo $t$ el marco de referencia $\mathc
 
 Para que nos sea más fácil visualizar todo esto, pensemos que el marco de referencia móvil $\mathcal{F}'$ está en un cuerpo rígido $\mathcal{B}'$. Así, podemos ver justo a $\mathbf{V}$ y $\mathbf{\Omega}$ como la velocidad traslacional y la velocidad angular del cuerpo $\mathcal{B}'$ respectivamente.
 
-![d1](/Ejercicios/image.png)
+![d1](/Ejercicios/d1.png)
 
 Entonces, con esto ya bien planteado, hay algo importante a tener en mente y es que:
 
