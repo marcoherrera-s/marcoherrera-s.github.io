@@ -1,1 +1,2 @@
-UndefVarError: `solve` not defined
+UndefVarError: `solve` not defined in `Main.FD_SANDBOX_5483099761749037918`
+Suggestion: check for spelling errors or missing imports.
