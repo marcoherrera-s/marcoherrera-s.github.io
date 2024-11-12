@@ -22,3 +22,7 @@ de nuevo, como ya he dicho muchas veces por aquí, yo no pienso enseñar nada, s
 7. ❉ [Modelo cuántico de computación](/Cuantica/mcc/) ❉
 
 8. ❉ [Codificación superdensa y teleportación cuántica](/Cuantica/cyt/) ❉
+
+9. ❉ [Introducción a los algoritmos cuánticos. Deutsch.](/Cuantica/iac/) ❉
+
+10. ❉ [Deutsch–Jozsa](/Cuantica/dj/) ❉
