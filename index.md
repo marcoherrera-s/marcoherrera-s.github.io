@@ -27,3 +27,7 @@ _**odio con mi ser**_: los comerciales y ads :(
 ⇝ [¿Por qué un blog?](/Otro/pblog/)
 
 ![fin](/assets/2.jpg)
+
+~~~
+<a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://mx.pinterest.com/marcoherrera_s/cien-años-de-soledad/"></a>
+~~~
