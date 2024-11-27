@@ -10,7 +10,7 @@
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #FFF9E6; /* Fondo amarillo pastel sutil */
+  background-color: #DAD7CD; /* Fondo amarillo pastel sutil */
   border-radius: 20px; /* Bordes redondeados de 20px */
   border: 0.5px solid rgba(0, 0, 0, 0.685); /* Añade un contorno negro semitransparente */
   box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1); /* Sombra tenue */
@@ -28,7 +28,7 @@
   text-align: center;
   margin: 30px 0;
   padding: 10px 0;
-  background-color: #FFF9E6; /* Fondo amarillo pastel sutil */
+  background-color: #A3B18A; /* Fondo amarillo pastel sutil */
   border-radius: 20px; /* Bordes redondeados */
   border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro semitransparente */
   box-shadow: 0 9px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
