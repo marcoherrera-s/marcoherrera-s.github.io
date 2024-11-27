@@ -28,10 +28,10 @@
   text-align: center;
   margin: 30px 0;
   padding: 10px 0;
-  background-color: #A3B18A; /* Fondo amarillo pastel sutil */
+  background-color: #A3B18A; /* Fondo verde armonioso */
   border-radius: 20px; /* Bordes redondeados */
-  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Contorno negro semitransparente */
-  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  border: 0.5px solid rgba(67, 85, 34, 0.685); /* Contorno verde oscuro semitransparente */
+  box-shadow: 0 9px 15px rgba(67, 85, 34, 0.05); /* Sombra verde suave */
   display: flex; /* Hace que el menú sea flexible */
   justify-content: center; /* Alinea los elementos del menú al centro */
   flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
@@ -46,21 +46,21 @@
 }
 
 #menu ul li:hover {
-  background-color: #F0F0F0; /* Fondo gris claro al pasar el mouse */
+  background-color: #C9D7A7; /* Fondo verde más claro al pasar el mouse */
   transform: translateY(-2px); /* Mueve el elemento ligeramente hacia arriba */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra al pasar el mouse */
+  box-shadow: 0 2px 5px rgba(67, 85, 34, 0.1); /* Añade una sombra verde al pasar el mouse */
 }
 
 #menu ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: #333; /* Color gris oscuro para los enlaces */
+  color: #2F4F2F; /* Color verde oscuro para los enlaces */
   font-weight: 500; /* Hace el texto del enlace ligeramente más grueso */
   font-size: 0.9em; /* Ajusta el tamaño del texto de los enlaces */
   transition: color 0.3s ease; /* Transición suave en el color del enlace */
 }
 
 #menu ul li a:hover {
-  color: #4A90E2; /* Cambia a un color azul claro al pasar el mouse */
+  color: #6B8E23; /* Cambia a un verde más vibrante al pasar el mouse */
 }
 
 /* Sección repetida (posible ajuste en el código original) */
@@ -71,7 +71,7 @@
 }
 
 #menu ul li a {
-  color: #111; /* Cambia el color a un gris más oscuro */
+  color: #2F4F2F; /* Cambia el color a un verde más oscuro */
   text-decoration: none; /* Elimina el subrayado */
   position: relative; /* Posiciona el elemento relativamente */
   padding: 10px 10px; /* Ajusta el relleno interno de los enlaces */
@@ -84,17 +84,17 @@
   bottom: 7px; /* Coloca la línea justo debajo del texto */
   left: 10px;
   right: 10px;
-  background-color: rgba(18, 68, 143, 0.7); /* Línea azul semitransparente */
+  background-color: rgba(43, 77, 43, 0.7); /* Línea verde semitransparente */
   visibility: hidden; /* La línea es invisible por defecto */
   transform: scaleX(0); /* La línea está colapsada horizontalmente */
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave y fluida */
 }
 
-
 #menu ul li a:hover::after {
   visibility: visible; /* Muestra la línea al pasar el mouse */
   transform: scaleX(1); /* Expande la línea horizontalmente */
 }
+
 
 .franklin-content { 
   padding-left: 10%; /* Añade un margen del 10% a la izquierda */
