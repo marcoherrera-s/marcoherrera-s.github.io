@@ -4,11 +4,24 @@ tags = ["syntax", "code"]
 
 +++
 
-<!-- {{ insert ../_weave/continuacon.html }} -->
 # MIS SUBRAYADOS
 
 aquí se encuentran las cosas que he resaltado en algunos libros que he leído. pienso que subrayar algo puede significar muchas cosas, no siempre buenas, pero muchas veces sí, me conmovieron, me identifiqué, me sentí bien o me resultó genial o más :)
 
+
+~~~
+<div style="display: flex;">
+  <figure style="flex: 50%;">
+    <img src="https://static0planetadelibroscommx.cdnstatics.com/usuaris/libros/fotos/398/original/portada_moriras-lejos_jose-emilio-pacheco_202408090314.jpg" alt="Tres" width="100%">
+    <figcaption><a href="/Miscelanea/Moriras/">Morirás lejos, <b>José Emilio Pacheco</b></a></figcaption>
+  </figure>
+  <!-- Espacio para un futuro libro -->
+<figure style="flex: 50%;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdD-oiSXV5pmgf9PMeueMBqeXhkIoyZvVc_g&s" alt="Tres" width="100%">
+    <figcaption><a href="/Miscelanea/Muerte/">Muerte en el bosque, <b>Amparo Dávila</b></a></figcaption>
+</figure>
+</div>
+~~~
 
 ~~~
 <div style="display: flex;">
