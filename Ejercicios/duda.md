@@ -196,13 +196,3 @@ De la misma forma podemos graficar los demás resultados. El índice 0 es el tie
 
 Y como podemos observar, obtenemos movimientos oscilatorios, y también, como era de esperarse, las solución numérica y la aproximada se parecen demasiado recién comienza el sistema. 
 
-
-
-
-~~~
-<span style="color: darkgreen; font-size: 35px; font-family: 'Helvetica';">¿Por qué todo lo que está arriba está mal?</span>
-~~~
-
-Bueno, casi todo...
-
-
