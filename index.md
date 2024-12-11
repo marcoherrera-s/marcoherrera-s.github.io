@@ -6,14 +6,15 @@
 
 ![ini](/assets/klimt.jpg)
 
-
-# **҉彡inicio彡 ҉** 
+~~~
+<div class="typewriter">
+  <h1>**҉彡inicio彡 ҉**</h1>
+</div>
+~~~
 
 ⑇ marco herrera
 
 ⑇ actualmente estudiando física en facultad de ciencias, unam
-
-
 ---
 **_sobre mí_**: 
 
@@ -22,7 +23,8 @@ _**odio con mi ser**_: los comerciales y ads :(
 
 
 ---
-
+ 
+[➴➵➶➴➵➶➴➵➶ caja de herramientas ➴➵➶➴➵➶➴➵➶](/Otro/caja/)
 
 ⇝ [¿Por qué un blog?](/Otro/pblog/)
 

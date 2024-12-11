@@ -199,3 +199,24 @@
 .cta:active {
   transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
 }
+
+
+.typewriter h1 {
+  overflow: hidden; /* Hide content until animation is active */
+  white-space: nowrap; /* Prevent text wrapping */
+  margin: 0 auto; /* Center-align the text */
+  letter-spacing: 0.1em; /* Slightly space out letters for clarity */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; /* Combine typing and blinking animations */
+}
+
+/* Typing effect animation */
+@keyframes typing {
+  from { width: 0; } /* Start with no text visible */
+  to { width: 100%; } /* Reveal full text */
+}
+
+/* Blinking cursor effect animation */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; } /* Make cursor invisible */
+}
+
