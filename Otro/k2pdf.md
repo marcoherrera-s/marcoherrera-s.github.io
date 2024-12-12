@@ -19,7 +19,7 @@ imaginemos que queremos leer este libro en el/la kindle (no sé qué género es,
 
 ![libro](https://m.media-amazon.com/images/I/61wZBUYSWPL._UF894,1000_QL80_.jpg)
 
-si hacemos el intengo medio ingenuo, que es simplemente descargar nuestro pdf y transferirlo. obtendríamos el siguiente resultado, las siguiente imágenes son capturas de pantalla directas de la kindle:
+si hacemos el intento medio ingenuo, que es simplemente descargar nuestro pdf y transferirlo. obtendríamos el siguiente resultado, las siguiente imágenes son capturas de pantalla directas de la kindle:
 
 ![libroantes](/Otro/pdfantes.png)
 
@@ -27,7 +27,7 @@ esto no es tan mortal, digo, no es que se vea horrible. pero esa letra tan peque
 
 entonces, la solución que a mi me gusta se encuentra en un software libre llamado [k2pdfopt](https://www.willus.com/k2pdfopt/). 
 
-la interfaz gráfica del programa se ve medio vieja, y además la primera vez que la usé no se me hizo tan intuitiva. es por eso que creo que si ya se cuenta con linux, es mejor buscar cómo instalar el software en tu distribución. eso es fácil, por lo regular, instalar cosas en linux es mucho más fácil que en linux. 
+la interfaz gráfica del programa se ve medio vieja, y además la primera vez que la usé no se me hizo tan intuitiva. es por eso que creo que si ya se cuenta con linux, es mejor buscar cómo instalar el software en tu distribución. eso es fácil, por lo regular, instalar cosas en linux es mucho más fácil que en windows. 
 
 una vez instalado, abrimos una terminal desde la carpeta en la que está ubicado el libro y ejecutamos `k2pdfopt libro.pdf`, y obtenemos:
 
