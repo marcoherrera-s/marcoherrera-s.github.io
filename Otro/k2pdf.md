@@ -29,7 +29,7 @@ entonces, la solución que a mi me gusta se encuentra en un software libre llama
 
 la interfaz gráfica del programa se ve medio vieja, y además la primera vez que la usé no se me hizo tan intuitiva. es por eso que creo que si ya se cuenta con linux, es mejor buscar cómo instalar el software en tu distribución. eso es fácil, por lo regular, instalar cosas en linux es mucho más fácil que en windows. 
 
-una vez instalado, abrimos una terminal desde la carpeta en la que está ubicado el libro y ejecutamos `k2pdfopt libro.pdf`, y obtenemos:
+una vez instalado, abrimos una terminal desde la carpeta en la que está ubicado el libro y ejecutamos `k2pdfopt libro.pdf`, y obtenemos: 
 
 ![terminal](/Otro/image.png)
 
