@@ -25,13 +25,10 @@ _**odio con mi ser**_: los comerciales y ads :(
 
 ---
  
-[➴➵➶➴➵➶➴➵➶ caja de herramientas ➴➵➶➴➵➶➴➵➶](/Otro/caja/)
+[➴➵➶➴➵ caja de herramientas ➴➵➶➴➵](/Otro/caja/)
 
 ⇝ [¿Por qué un blog?](/Otro/pblog/)
 
 ![fin](/assets/2.jpg)
 
 
-~~~
- <span class="typewriter-text" data-text="Tu texto aquí">Tu texto aquí</span>
-~~~
