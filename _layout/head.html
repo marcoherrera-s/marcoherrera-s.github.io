@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Switch para Modo Oscuro -->
+    <div class="toggle-switch">
+        <label class="switch-label">
+            <input type="checkbox" class="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,26 +36,48 @@
         {{insert head_highlight.html}} 
     {{end}}
 
-    <!-- Scripts Externos -->
-    <script src="dark-mode.js" defer></script>
-    <script src="script.js" defer></script>
+    <!-- Script para Modo Oscuro -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleSwitch = document.querySelector('.toggle-switch .checkbox');
+            const darkModeStyle = document.getElementById('dark-mode-style');
+            const currentTheme = localStorage.getItem('theme');
+
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                darkModeStyle.disabled = false;
+                if (toggleSwitch) {
+                    toggleSwitch.checked = true;
+                }
+            }
+
+            if (toggleSwitch) {
+                toggleSwitch.addEventListener('change', function() {
+                    if (this.checked) {
+                        document.body.classList.add('dark-mode');
+                        darkModeStyle.disabled = false;
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        document.body.classList.remove('dark-mode');
+                        darkModeStyle.disabled = true;
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- Barra de Navegación -->
     {{insert nav.html}}
 
-    <!-- Switch para Modo Oscuro -->
-    <div class="toggle-switch">
-        <label class="switch-label">
-            <input type="checkbox" class="checkbox" id="dark-mode-toggle">
-            <span class="slider"></span>
-        </label>
-    </div>
+
 
     <!-- Contenido Principal -->
     <!-- Aquí se agregará el contenido -->
 
     <!-- Scripts al Final del Body para Mejorar la Carga -->
+    <script src="script.js" defer></script>
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
