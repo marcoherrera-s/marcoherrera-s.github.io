@@ -2,7 +2,7 @@ function typeWriter(element, text, options = {}) {
     const {
         speed = 50,
         randomizeSpeed = false,
-        chars = '!@#$%^&*()-_=+[]{}|;:",.<>?/',
+        chars = '~§±¤¬µøæ©®πΩθΨ≈≠≤≥∞∂∑∆∇∫√∝∴∵∅∈⊂⊃⊆⊇∀∃∈⊥∠⊕⊗♠♣♥♦♩♪♫♬',
         onComplete = () => {}
     } = options;
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = element.dataset.text;
         if (text) {
             const options = {
-                speed: 20,
+                speed: 30,
                 randomizeSpeed: true
             };
             typeWriter(element, text, options);
