@@ -1,63 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{if hasmath}} {{insert head_katex.html }} {{end}}
-  {{if hascode}} {{insert head_highlight.html }} {{end}}
-  <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous"></script>
-  {{insert style.html}}
-  {{isdef title}} <title>{{fill title}}</title> {{end}}
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <!-- Usar una ruta absoluta para el archivo CSS -->
-  <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css" disabled>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const toggleSwitch = document.querySelector('.toggle-switch .checkbox');
-      const darkModeStyle = document.getElementById('dark-mode-style');
-      const currentTheme = localStorage.getItem('theme');
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY">
 
-      if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        darkModeStyle.disabled = false;
-        if (toggleSwitch) {
-          toggleSwitch.checked = true;
-        }
-      }
+    <!-- Conditional Includes for Math and Code Highlighting -->
+    {{if hasmath}} {{insert head_katex.html }} {{end}}
+    {{if hascode}} {{insert head_highlight.html }} {{end}}
 
-      if (toggleSwitch) {
-        toggleSwitch.addEventListener('change', function() {
-          if (this.checked) {
-            document.body.classList.add('dark-mode');
-            darkModeStyle.disabled = false;
-            localStorage.setItem('theme', 'dark');
-          } else {
-            document.body.classList.remove('dark-mode');
-            darkModeStyle.disabled = true;
-            localStorage.setItem('theme', 'light');
-          }
-        });
-      }
-    });
-  </script>
-  <div class="toggle-switch">
-    <label class="switch-label">
-      <input type="checkbox" class="checkbox" id="dark-mode-toggle">
-      <span class="slider"></span>
-    </label>
-  </div>
+    <!-- Page Title -->
+    {{isdef title}} <title>{{fill title}}</title> {{end}}
+
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External Libraries -->
+    <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+    <!-- Stylesheets -->
+    {{insert style.html}}
+    <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css" disabled>
+
+    <!-- Dark Mode Toggle -->
+    <div class="toggle-switch">
+        <label class="switch-label">
+            <input type="checkbox" class="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Scripts -->
+    <script src="dark-mode-button.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  {{insert nav.html}}
-
-  <!-- Reemplazar el checkbox por el switch -->
-
-
-  <!-- Content appended here -->
-
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-
+    {{insert nav.html}}
+    <!-- Content appended here -->
 </body>
 </html>

@@ -6,15 +6,16 @@
 
 ![ini](/assets/klimt.jpg)
 
+
 ~~~
-<div class="typewriter">
-  <h1>**҉彡inicio彡 ҉**</h1>
-</div>
+<div class="typewriter-text" data-text="**҉彡inicio彡 ҉**"></div>
+<div class="typewriter-text" data-text="⑇ marco herrera"></div>
+<div class="typewriter-text" data-text="⑇ actualmente estudiando física en facultad de ciencias, unam"></div>
 ~~~
 
-⑇ marco herrera
 
-⑇ actualmente estudiando física en facultad de ciencias, unam
+
+
 ---
 **_sobre mí_**: 
 
@@ -30,3 +31,7 @@ _**odio con mi ser**_: los comerciales y ads :(
 
 ![fin](/assets/2.jpg)
 
+
+~~~
+ <span class="typewriter-text" data-text="Tu texto aquí">Tu texto aquí</span>
+~~~

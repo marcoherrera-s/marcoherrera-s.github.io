@@ -200,23 +200,61 @@
   transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
 }
 
+/* styles.css */
 
-.typewriter h1 {
-  overflow: hidden; /* Hide content until animation is active */
-  white-space: nowrap; /* Prevent text wrapping */
-  margin: 0 auto; /* Center-align the text */
-  letter-spacing: 0.1em; /* Slightly space out letters for clarity */
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; /* Combine typing and blinking animations */
+.typewriter-text {
+  position: relative;
+  display: block; /* Ajusta el tamaño al contenido */
+  white-space: pre; /* Mantiene los espacios y saltos de línea */
+  padding: 5px 10px; /* Ajusta el espacio interno */
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+  margin: 10px 0; /* Añade espacio entre las líneas */
+  text-align: center; /* Opcional: centra el texto dentro del cuadro */
 }
 
-/* Typing effect animation */
-@keyframes typing {
-  from { width: 0; } /* Start with no text visible */
-  to { width: 100%; } /* Reveal full text */
+
+
+.typewriter-text::after {
+  content: ''; /* Cursor personalizado */
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: slideCursor 0.5s infinite;
+  border-radius: 2px;
 }
 
-/* Blinking cursor effect animation */
-@keyframes blink-caret {
-  0%, 100% { border-color: transparent; } /* Make cursor invisible */
+@keyframes slideCursor {
+  0%, 50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  51%, 100% {
+    transform: translateX(-5px);
+    opacity: 0.5;
+  }
 }
 
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Aplicamos el efecto de resplandor */
+.typewriter-text span {
+  display: inline-block;
+  animation: textGlow 1.5s infinite;
+}
