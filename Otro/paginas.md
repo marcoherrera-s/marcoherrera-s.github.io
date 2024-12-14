@@ -1,4 +1,7 @@
-# una lista de páginas que están chidas
+@def title = "páginas chidas"
+@def tags = ["syntax", "code"]
+
+# ~~~<div class="typewriter-text" data-text="una lista de páginas que están chidas"></div>~~~
 
 aquí pondré algunas páginas que conozco que suelo usar comunmente, unas más que otras, pero siempre estoy volviendo a estas
 

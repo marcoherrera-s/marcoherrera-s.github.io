@@ -459,3 +459,46 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   transform: translate(35px, -50%);
   background-color: var(--dark);
 }
+
+.typewriter-text span {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(67, 85, 34, 0.9); /* Verde oliva semi-transparente */
+  text-shadow: 0 0 5px rgba(67, 85, 34, 0.7), 
+               0 0 10px rgba(67, 85, 34, 0.5), 
+               0 0 15px rgba(67, 85, 34, 0.3); /* Sombra más suave */
+  animation: glitch 1s infinite;
+}
+
+.cursor {
+    color: rgba(67, 85, 34, 0.9);
+    text-shadow: 0 0 5px rgba(67, 85, 34, 0.7), 
+                 0 0 10px rgba(67, 85, 34, 0.5), 
+                 0 0 15px rgba(67, 85, 34, 0.3);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes cursor-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
