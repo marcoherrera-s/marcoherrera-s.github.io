@@ -1,63 +1,62 @@
-# 15 Sitios Web Interesantes que Vale la Pena Explorar
+# una lista de páginas que están chidas
 
-Internet está lleno de recursos fascinantes y útiles para todo tipo de intereses. Aquí hay una lista de páginas web únicas, junto con una breve descripción de para qué sirven y sus respectivos enlaces.
+aquí pondré algunas páginas que conozco que suelo usar comunmente, unas más que otras, pero siempre estoy volviendo a estas
 
-1. **AlphaXiv**  
-   Un agregador que facilita la búsqueda de artículos científicos publicados en arXiv, organizado por temas e intereses.  
-   [Visitar AlphaXiv](https://alphaxiv.com)
+1. [**AlphaXiv**] (https://www.alphaxiv.org/)
+   aquí se pueden ver las discusiones y comentarios calientes de algunos artículos, es un poco más como para estar al tanto de lo que se está diciendo de artículos que recientemente han salido.
 
-2. **Nbviewer**  
-   Herramienta para visualizar notebooks de Jupyter directamente en el navegador, ideal para compartir análisis de datos y código.  
-   [Visitar Nbviewer](https://nbviewer.org)
+2. **Nbviewer**
+   esta está buena cuando quiero ver un notebook pero no quiero correrlo localmente, a veces se me hace más cómoda esta alternativa
+   [Nbviewer](https://nbviewer.org)
 
 3. **LivePlasma**  
-   Descubre música y películas relacionadas con tus favoritos a través de un mapa visual interactivo.  
-   [Visitar LivePlasma](http://www.liveplasma.com)
+   está chida porque si encuentras algún artista que te gusta, puedes encontrar otros artistas que se le parezcan, se siente más correcto que usar la herramienta que es un poco parecida en spotify (radio de canción)
+   [LivePlasma](http://www.liveplasma.com)
 
 4. **Mobilism**  
-   Comunidad en línea para descargar ebooks, aplicaciones y recursos premium para dispositivos móviles.  
-   [Visitar Mobilism](https://mobilism.org)
+   ufff, está es de las que uso muy muy seguido, básicamente aquí te encuentras todos los mods de apk's de forma "segura". como puse en la presentación de este blog, algo que no me gusta es la publicidad, creo que tengo que tratarme. pero bueno, por poner un ejemplo ahí encuentro prácticamente todas mis apps para el celular, youtube sin comerciales, duolingo premium, TWITTER sin que se llame X y sin publicidad, y bueno, entre muchos, muchos más. al principio puede ser un poco difícil de entender qué hacer, pero sólo hay que crearse una cuenta, y pues, explorar. 
+   [Mobilism](https://forum.mobilism.me/)
 
 5. **MagazineLib**  
-   Repositorio de revistas digitales de diferentes categorías, desde tecnología hasta diseño.  
-   [Visitar MagazineLib](https://magazinelib.com)
+   esta es de las que menos ocupo, pero he descargado un buen de revistas que se ven buenas que nunca he leído. iba a poner como chiste que no están las de TVyNovelas y que eso era una desventaja, pero entré a ver y sí están ajjsjaj. 
+   [MagazineLib](https://magazinelib.com)
 
 6. **Top Documentary Films**  
-   Plataforma gratuita para explorar y ver documentales educativos y estimulantes sobre una amplia variedad de temas.  
-   [Visitar Top Documentary Films](https://topdocumentaryfilms.com)
+   aquí nomás es una página donde hay muchos documentales, hay varios chidos.
+   [Top Documentary Films](https://topdocumentaryfilms.com)
 
 7. **IHaveNoTV**  
-   Biblioteca de series y programas de televisión, enfocada en contenido difícil de encontrar y opciones independientes.  
-   [Visitar IHaveNoTV](https://ihavenotv.com)
+   esta también es de documentales, pero es mi favorita, hay muchos buenos que no son fáciles de encontrar en otros lugares. además el nombre de la página está chido.
+   [IHaveNoTV](https://ihavenotv.com)
 
 8. **The Feynman Lectures**  
-   Versión en línea de las icónicas conferencias de física de Richard Feynman, un recurso invaluable para estudiantes y curiosos.  
-   [Visitar The Feynman Lectures](https://www.feynmanlectures.caltech.edu)
+   bueno, pues normal. alguien como físico creo que es normal que esté revisitando de vez en cuando estas clases famosas, muy buenas aunque luego me cague cómo era Feynman.  
+   [The Feynman Lectures](https://www.feynmanlectures.caltech.edu)
 
 9. **PostSecret**  
-   Un proyecto comunitario donde las personas comparten secretos anónimos a través de postales.  
-   [Visitar PostSecret](https://postsecret.com)
+   aquí es para echar el chisme un rato, a veces mientras estoy en el baño. se supone que la gente escribe sus secretos y los manda. unos están buenos y divertidos, otros están como de esto k.
+   [PostSecret](https://postsecret.com)
 
 10. **SimplyScripts**  
-    Un archivo extenso de guiones de películas, programas de televisión y teatro para quienes quieran leer y aprender.  
-    [Visitar SimplyScripts](https://simplyscripts.com)
+   la neta pude no haber puesto este, pero a veces está divertido leer los guiones de las películas que me gustan. no están todos y a veces me parece difícil navegar en la página, pero es eso. una página que tiene guines de películas.
+    [SimplyScripts](https://simplyscripts.com)
 
 11. **Nikon Small World**  
-    Concurso fotográfico que destaca imágenes microscópicas espectaculares de ciencias y naturaleza.  
-    [Visitar Nikon Small World](https://www.nikonsmallworld.com)
+    aquí nomás hay fotos muuuy buenas de cosas que son muy pequeñas.  
+    [Nikon Small World](https://www.nikonsmallworld.com)
 
 12. **MyNoise.net**  
-    Generador de sonidos personalizados para mejorar la concentración, relajarse o dormir mejor.  
-    [Visitar MyNoise.net](https://mynoise.net)
+    está divertido, regularmente cuando no puedo dormir o necesito un ambiente de fondo, pongo el soundtrack de minecraft, pero en esta página puedes fabricar tu propio ambiente. 
+    [MyNoise.net](https://mynoise.net)
 
 13. **Ellpsix.net ArXiv Jokes**  
-    Una colección humorística de chistes y memes inspirados en los artículos científicos de arXiv.  
-    [Visitar Ellpsix.net](https://ellpsix.net)
+    esta está muuuy buena. es una colección de papers pero de broma, por ejemplo, ahí no está el primer paper de ese tipo que conocí: (Un método de inteligencia artificial para escapar discretamente de la fiesta de fin de año del departamento; guía para los socialmente incómodos.)[https://arxiv.org/abs/2003.14169]. pero creo que es el lugar que encontré que tiene la colección más grande. es fácil encontrarlos porque es una dinámica que hay en el día de los inocentes, entonces basta con buscar algo así como _April Fool's on the arXiv_.
+    [Ellpsix.net](https://www.ellipsix.net/arxiv-joke-papers.html)
 
 14. **Short of the Week**  
-    Una plataforma curada que celebra cortometrajes creativos de todo el mundo.  
-    [Visitar Short of the Week](https://www.shortoftheweek.com)
+    es una plataforma en donde hay bastantes cortos, muchos están buenos. y pues sólo eso. es un youtube pero de cortos. unos están disponibles en youtube o en vimeo.
+    [Short of the Week](https://www.shortoftheweek.com)
 
 15. **ArtStation**  
-    Comunidad en línea donde artistas digitales exhiben sus trabajos, conectan con clientes y exploran inspiración.  
-    [Visitar ArtStation](https://www.artstation.com)
+   siempre que quiero cambiar el fondo de mi computadora es aquí a donde acudo.
+    [ArtStation](https://www.artstation.com)
