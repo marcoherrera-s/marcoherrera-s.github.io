@@ -10,5 +10,5 @@ aquí pondré, sin ningún orden en específico, cosas que llego a usar con dist
 
 ⇝ [PDFs en una Kindle](/Otro/k2pdf/)
 
-⇝ [sdfsdfsd](/Otro/paginas/)
+⇝ [páginas web chidas](/Otro/paginas/)
 
