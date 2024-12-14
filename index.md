@@ -13,7 +13,7 @@
 <div class="typewriter-text" data-text="⑇ actualmente estudiando física en facultad de ciencias, unam"></div>
 ~~~
 
-
+esto es una prueba
 
 
 ---
