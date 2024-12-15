@@ -1,6 +1,6 @@
 
 +++
-author = "Marco Herrera Solar"
+author = "Marco Herrera"
 mintoclevel = 2
 source_url = "https://github.com/marcoherrera-s"
 let_url = "https://letterboxd.com/marcoherrera/"
@@ -13,7 +13,7 @@ ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
-website_title = "Marco Herrera Solar"
+website_title = "Marco Herrera"
 website_descr = "Blog de Marco"
 website_url   = "https://marcoherrera-s.github.io/"
 +++
