@@ -9,7 +9,7 @@
 
   <channel>
     <title>
-      <![CDATA[  Marco Herrera Solar  ]]>
+      <![CDATA[  Marco Herrera  ]]>
     </title>
     <link> https://marcoherrera-s.github.io/ </link>
     <description>
@@ -35,7 +35,7 @@
   
   
   <atom:author>
-    <atom:name>Marco Herrera Solar</atom:name>
+    <atom:name>Marco Herrera</atom:name>
   </atom:author>
         
 </item>
@@ -54,7 +54,7 @@
   
   
   <atom:author>
-    <atom:name>Marco Herrera Solar</atom:name>
+    <atom:name>Marco Herrera</atom:name>
   </atom:author>
         
 </item>
