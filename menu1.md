@@ -25,3 +25,4 @@ tags = ["syntax", "code"]
 <!-- * [física de los materiales](/materiales/cover)
  -->
 
+* [física estadística](/fisest/cover/)
