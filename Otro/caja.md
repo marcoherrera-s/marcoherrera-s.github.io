@@ -12,3 +12,4 @@ aquí pondré, sin ningún orden en específico, cosas que llego a usar con dist
 
 ⇝ [páginas web chidas](/Otro/paginas/)
 
+⇝ [blogs chidos](/Otro/blogs/)

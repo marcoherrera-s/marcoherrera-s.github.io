@@ -82,25 +82,3 @@ Si hacemos un análisis gráfico, podemos ver que si partimos de $ \pi / 4 $ el 
 
 ![ej1](/assets/dinamica/6.png)
 
-~~~
-<a href="/Dinamica/framework/">
-  <button class="cta">
-    <span>Anterior</span>
-    <svg width="15px" height="10px" viewBox="0 0 13 10">
-      <path d="M1,5 L11,5"></path>
-      <polyline points="5 1 1 5 5 9"></polyline>
-    </svg>
-  </button>
-</a>
-<br>
-<a href="/Dinamica/analisis/">
-  <button class="cta">
-    <span>Siguiente</span>
-    <svg width="15px" height="10px" viewBox="0 0 13 10">
-      <path d="M1,5 L11,5"></path>
-      <polyline points="8 1 12 5 8 9"></polyline>
-    </svg>
-  </button>
-</a>
-
-~~~
