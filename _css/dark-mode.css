@@ -629,43 +629,47 @@ code:not(pre > code) {
   color: #8DA6CE; /* Azul pastel */
 }
 
+/* Typewriter Text */
 .typewriter-text span {
-  color: rgba(80, 180, 220, 1); /* Light blue color */
-  text-shadow:
-    0 0 4px rgba(80, 180, 255, 0.9), /* Bright blue inner glow */
-    0 0 10px rgba(80, 180, 220, 0.7),
-    0 0 15px rgba(80, 180, 220, 0.4);
-  animation:
-    flicker-blue 2.5s infinite, /* Slower blue flicker */
-    glitch 0.7s infinite alternate-reverse, /* Adjust timing as you like */
-    font-glitch 2.5s steps(3) infinite alternate;
+  color: rgba(160, 255, 160, 1); /* Bright green-ish for dark mode */
+  text-shadow: 
+    0 0 3px rgba(160, 255, 160, 0.8),   /* Inner glow */
+    0 0 8px rgba(120, 200, 120, 0.5),  
+    0 0 12px rgba(80, 160, 80, 0.3);
+  animation: 
+    flicker 2s infinite, 
+    glitch 0.8s infinite alternate-reverse,
+    font-glitch 2s steps(3) infinite alternate;
 }
 
+/* Cursor */
 .cursor {
-  color: rgba(80, 180, 220, 1); /* Match text color */
+  color: rgba(160, 255, 160, 1);
   text-shadow:
-      0 0 4px rgba(80, 180, 255, 0.9),
-      0 0 10px rgba(80, 180, 220, 0.7),
-      0 0 15px rgba(80, 180, 220, 0.4);
+    0 0 3px rgba(160, 255, 160, 0.8),
+    0 0 8px rgba(120, 200, 120, 0.5),
+    0 0 12px rgba(80, 160, 80, 0.3);
+  animation: cursor-blink 1s steps(1) infinite;
 }
 
-@keyframes flicker-blue {
+/* Flicker Animation */
+@keyframes flicker {
   0%, 100% {
-    text-shadow:
-      0 0 4px rgba(80, 180, 255, 0.9),
-      0 0 10px rgba(80, 180, 220, 0.7),
-      0 0 15px rgba(80, 180, 220, 0.4);
+    text-shadow: 
+      0 0 3px rgba(160, 255, 160, 0.8),
+      0 0 8px rgba(120, 200, 120, 0.5),
+      0 0 12px rgba(80, 160, 80, 0.3);
   }
   50% {
     text-shadow:
-      0 0 3px rgba(80, 180, 255, 0.7), /* Slightly weaker glow */
-      0 0 8px rgba(80, 180, 220, 0.5),
-      0 0 12px rgba(80, 180, 220, 0.3);
+      0 0 2px rgba(160, 255, 160, 0.7),
+      0 0 6px rgba(120, 200, 120, 0.4),
+      0 0 10px rgba(80, 160, 80, 0.2);
   }
 }
 
+/* Glitch Animation */
 @keyframes glitch {
-  /* This glitch remains the same, but you can adjust values */
   0% {
     transform: translate(0);
     opacity: 0.9;
@@ -688,21 +692,18 @@ code:not(pre > code) {
   }
 }
 
+/* Font Swap/Glitch Animation */
 @keyframes font-glitch {
-  /* Font glitch can remain the same */
   0% {
-    font-family: 'Special Elite', 'Courier New', Courier, monospace;
   }
   50% {
-    font-family: monospace;
   }
   100% {
-    font-family: 'Special Elite', 'Courier New', Courier, monospace;
   }
 }
 
+/* Cursor Blink Animation */
 @keyframes cursor-blink {
-  /* Cursor blink can also remain the same */
   0% {
     opacity: 0;
     transform: scaleY(0.8);

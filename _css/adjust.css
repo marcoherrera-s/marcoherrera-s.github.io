@@ -10,60 +10,60 @@
 #main {
   justify-content: center;
   align-items: center;
-  background-color: #DAD7CD; /* Fondo amarillo pastel sutil */
-  border-radius: 20px; /* Bordes redondeados de 20px */
-  border: 0.5px solid rgba(0, 0, 0, 0.685); /* Añade un contorno negro semitransparente */
-  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1); /* Sombra tenue */
-  color: #333; /* Texto en color gris oscuro */
-  line-height: 1.8; /* Altura de línea aumentada para mejorar la legibilidad */
-  padding-top: 5px; /* Espaciado superior dentro del contenedor */
+  background-color: #f8faf1; /* Light background */
+  border-radius: 20px; 
+  border: 0.5px solid rgba(0, 0, 0, 0.2); /* Subtle border */
+  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1); 
+  color: #31473a; /* Dark green text */
+  line-height: 1.8; 
+  padding-top: 5px; 
 }
 
 #main:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); 
 }
 
 #menu ul {
-  list-style-type: none; /* Elimina los puntos de la lista */
+  list-style-type: none; 
   text-align: center;
   margin: 30px 0;
   padding: 10px 0;
-  background-color: #A3B18A; /* Fondo verde armonioso */
-  border-radius: 20px; /* Bordes redondeados */
-  border: 0.5px solid rgba(67, 85, 34, 0.685); /* Contorno verde oscuro semitransparente */
-  box-shadow: 0 9px 15px rgba(67, 85, 34, 0.05); /* Sombra verde suave */
-  display: flex; /* Hace que el menú sea flexible */
-  justify-content: center; /* Alinea los elementos del menú al centro */
-  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  background-color: #e1e8d5; /* Light green background */
+  border-radius: 20px; 
+  border: 0.5px solid rgba(67, 85, 34, 0.2); /*  subtle border */
+  box-shadow: 0 9px 15px rgba(67, 85, 34, 0.05); 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
 }
 
 #menu ul li {
-  display: inline-block; /* Los elementos de la lista se muestran en línea */
+  display: inline-block; 
   margin: 8px 20px;
   padding: 10px 20px;
-  border-radius: 8px; /* Bordes redondeados */
-  transition: all 0.3s ease; /* Transición suave en todas las propiedades */
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
 }
 
 #menu ul li:hover {
-  background-color: #C9D7A7; /* Fondo verde más claro al pasar el mouse */
-  transform: translateY(-2px); /* Mueve el elemento ligeramente hacia arriba */
-  box-shadow: 0 2px 5px rgba(67, 85, 34, 0.1); /* Añade una sombra verde al pasar el mouse */
+  background-color: #d4dbca; /* Lighter green on hover */
+  transform: translateY(-2px); 
+  box-shadow: 0 2px 5px rgba(67, 85, 34, 0.1); 
 }
 
 #menu ul li a {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: #2F4F2F; /* Color verde oscuro para los enlaces */
-  font-weight: 500; /* Hace el texto del enlace ligeramente más grueso */
-  font-size: 0.9em; /* Ajusta el tamaño del texto de los enlaces */
-  transition: color 0.3s ease; /* Transición suave en el color del enlace */
+  text-decoration: none; 
+  color: #4d654e; /* Dark green link color */
+  font-weight: 500; 
+  font-size: 0.9em; 
+  transition: color 0.3s ease; 
 }
 
 #menu ul li a:hover {
-  color: #6B8E23; /* Cambia a un verde más vibrante al pasar el mouse */
+  color: #688747; /* Slightly darker green on hover */
 }
 
-/* Sección repetida (posible ajuste en el código original) */
+/*  */
 #menu ul li {
   margin: 0 0 20px 0;
   padding: 0;
@@ -71,23 +71,23 @@
 }
 
 #menu ul li a {
-  color: #2F4F2F; /* Cambia el color a un verde más oscuro */
-  text-decoration: none; /* Elimina el subrayado */
-  position: relative; /* Posiciona el elemento relativamente */
-  padding: 10px 10px; /* Ajusta el relleno interno de los enlaces */
+  color: #4d654e; /* Dark green link color */
+  text-decoration: none; 
+  position: relative; 
+  padding: 10px 10px; 
 }
 
 #menu ul li a::after {
-  content: ""; /* Añade un contenido vacío (usado para crear una línea decorativa) */
+  content: ""; 
   position: absolute;
-  height: 2px; /* Define el grosor de la línea */
-  bottom: 7px; /* Coloca la línea justo debajo del texto */
+  height: 2px; 
+  bottom: 7px; 
   left: 10px;
   right: 10px;
-  background-color: rgba(43, 77, 43, 0.7); /* Línea verde semitransparente */
-  visibility: hidden; /* La línea es invisible por defecto */
-  transform: scaleX(0); /* La línea está colapsada horizontalmente */
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave y fluida */
+  background-color: rgba(77, 101, 78, 0.7); /*  green underline */
+  visibility: hidden; 
+  transform: scaleX(0); 
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
 #menu ul li a:hover::after {
