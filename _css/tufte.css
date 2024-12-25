@@ -35,171 +35,322 @@
   font-style: normal;
 }
 
-/* Tufte CSS styles */
-html { font-size: 15px; }
+/* --- Base Styles --- */
 
-body {
-  width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  background-color: #344E41; /* Nuevo color de fondo amarillo muy suave */
-  color: #333; /* Texto un poco más oscuro para mantener la legibilidad */
-  max-width: 1400px;
-  counter-reset: sidenote-counter;
+html {
+  font-size: 16px; /* Slightly increased base font size for readability */
 }
 
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;  background-color: #121218; /* Very dark blue-ish background */
+  color: #DEDEDE; /* Off-white text for contrast and reduced strain*/
+  max-width: 1500px;
+  counter-reset: sidenote-counter;
+  text-shadow: 0 0 2px rgba(0, 180, 255, 0.2); /* Subtle blue glow for a digital feel */
+}
+
+/* --- Typography --- */
+
 h1 {
-  font-weight: 400;
-  margin-top: 4rem;
-  margin-bottom: 1.5rem;
-  font-size: 3.2rem;
-  line-height: 1;
+  font-weight: 600;
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.05em; /* Spacing between letters */
+  text-transform: uppercase; /* Make visually more impactant */
+  color: #74B2BD;
+  text-shadow:
+    0 0 4px rgba(80, 180, 255, 0.9),
+    0 0 10px rgba(80, 180, 220, 0.7),
+    0 0 15px rgba(80, 180, 220, 0.4);
 }
 
 h2 {
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 2.1rem;
-  margin-bottom: 1.4rem;
-  font-size: 2.2rem;
-  line-height: 1;
-}
+    font-weight: 400;
+    margin-top: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.03em; /* Increase the space between characters */
+    color: #A9D6D6; /* A soft, muted green that's not too harsh on the eyes */
+    text-shadow:
+      0 0 3px rgba(100, 230, 255, 0.7), /* Light glow */
+      0 0 6px rgba(80, 180, 220, 0.5);
+  }
 
 h3 {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.7rem;
-  margin-top: 2rem;
-  margin-bottom: 1.4rem;
-  line-height: 1;
+  font-weight: 500; /* Slightly bolder for distinction */
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #88C8D1; /* Muted Cyan*/
+  text-shadow:
+      0 0 3px rgba(80, 200, 255, 0.7), /* Lighter glow than h2 */
+      0 0 6px rgba(80, 180, 220, 0.5);
 }
 
 hr {
   display: block;
-  height: 1px;
-  width: 55%;
+  height: 2px; /* More thickness for modern style */
+  width: 70%; /* Slightly more wider */
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  background: linear-gradient(90deg, rgba(0,180,255,0.2) 0%, rgba(80,180,255,0.8) 50%, rgba(0,180,255,0.2) 100%); /* Gradient line */
+  margin: 2em auto; /* Center it */
   padding: 0;
 }
 
 p.subtitle {
-  font-style: italic;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  display: block;
-  line-height: 1;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1.1;
+    letter-spacing: 0.04em; /* Slight letter spacing */
+    text-transform: lowercase; /* Lowercase for a techy feel */
+    color: #C4D188; /* Very muted, light yellow */
+    text-shadow:
+      0 0 2px rgba(200, 230, 150, 0.6), /* Subtle glow */
+      0 0 4px rgba(200, 230, 150, 0.3);
+  }
+  
+
+.numeral {
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;  font-feature-settings: "tnum"; /* Use tabular (monospace) figures */
+  letter-spacing: 0.05em;
 }
 
-.numeral { font-family: et-book-roman-old-style; }
+.danger {
+    color: #E57373; /* Soft Red for contrast in the new color scheme*/
+    font-weight: 600; /* Make it bolder */
+    text-shadow: 
+        0 0 3px rgba(255, 100, 100, 0.8),
+        0 0 5px rgba(255, 100, 100, 0.5);
+}
 
-.danger { color: red; }
+/* --- Layout & Structure --- */
 
 article {
   position: relative;
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 p,
 ol,
 ul {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 
 p {
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   padding-right: 0;
   vertical-align: baseline;
 }
 
-/* Chapter Epigraphs */
-div.epigraph { margin: 5em 0; }
+/* --- Chapter Epigraphs --- */
+
+div.epigraph {
+  margin: 6em 0;
+}
 
 div.epigraph > blockquote {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  font-size: 1.6rem; /* Increase font size for impact */
 }
 
 div.epigraph > blockquote,
-div.epigraph > blockquote > p { font-style: italic; }
+div.epigraph > blockquote > p {
+  font-style: italic;
+  color: #ADD8E6; /* Soft blue for quotes */
+  text-shadow:
+    0 0 3px rgba(173, 216, 230, 0.7), /* Match glow color to text */
+    0 0 6px rgba(173, 216, 230, 0.4);
+}
 
-div.epigraph > blockquote > footer { font-style: normal; }
+div.epigraph > blockquote > footer {
+  font-style: normal;
+  color: #DEDEDE; /* Set footer text to match body text */
+  text-shadow:
+    0 0 2px rgba(0, 180, 255, 0.2); /* Match body text glow */
+}
 
-div.epigraph > blockquote > footer > cite { font-style: italic; }
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+    color: #A9D6D6; /* Use the h2 color for citation */
+    text-shadow:
+      0 0 3px rgba(100, 230, 255, 0.7), /* Light glow */
+      0 0 6px rgba(80, 180, 220, 0.5);
+  }
+  
 
-/* end chapter epigraphs styles */
+/* --- Blockquotes --- */
 
-blockquote { font-size: 1.4rem; }
+blockquote {
+  font-size: 1.6rem; /* Slightly bigger font */
+}
 
 blockquote p {
-  width: 55%;
+  width: 60%;
   margin-right: 40px;
+  color: #B0E0E6; /* Lighter blue for contrast */
+  text-shadow:
+    0 0 2px rgba(176, 224, 230, 0.6), /* Light blue glow */
+    0 0 4px rgba(176, 224, 230, 0.4);
 }
 
 blockquote footer {
-  width: 55%;
-  font-size: 1.1rem;
-  text-align: right;
-}
+    width: 60%;
+    font-size: 1.3rem;
+    text-align: right;
+    color: #A9D6D6; /* Match the citation color in epigraphs */
+    text-shadow:
+      0 0 3px rgba(100, 230, 255, 0.7), /* Light glow */
+      0 0 6px rgba(80, 180, 220, 0.5);
+  }
+  
 
 section > p,
 section > footer,
-section > table { width: 55%; }
+section > table {
+  width: 60%; /* Adjusted for a more comfortable reading width */
+}
 
-/* 50 + 5 == 55, to be the same width as paragraph */
 section > ol,
 section > ul {
-  width: 50%;
+  width: 55%;
   -webkit-padding-start: 5%;
 }
 
-li:not(:first-child) { margin-top: 0.25rem; }
+li:not(:first-child) {
+  margin-top: 0.5rem; /* Add some space in the li */
+}
+
+/* --- Figures --- */
 
 figure {
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  max-width: 55%;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  margin: 0 0 3em 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 60%; /* Increased max-width for larger figures */
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 4em 0;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack caption below image */
+    align-items: center; /* Center image in the figure */
+  }
+
+  figure img {
+    width: 100%; /* Image takes full width of the figure */
+    margin-bottom: 0.5em; /* Space between image and caption */
+  }
+  
+  figcaption {
+    margin-top: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center; /* Center-align caption text */
+    color: #8FB8BF; /* Soft grey-blue */
+    text-shadow: 0 0 2px rgba(143, 184, 191, 0.4);
+    width: 100%; /* Match width of the figure */
+    padding: 0.5em 0; /* Add some padding around the caption text */
+  }
+  
+  
+
+/* --- Links --- */
+
+a {
+  font-weight: 600; /* Semi-bold */
+  color: #00BFFF; /* Bright blue link color for visibility and futurist style*/
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 191, 255, 0.5); /* A subtle dashed underline style, instead of no underline */
+  transition: all 0.2s ease-in-out; /* Smooth transitions */
+  text-shadow:
+    0 0 5px rgba(0, 191, 255, 0.4);
 }
 
-figcaption {
-  float: right;
-  clear: right;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  vertical-align: baseline;
-  position: relative;
-  max-width: 40%;
+a:hover,
+a:focus {
+  background-color: rgba(0, 191, 255, 0.2); /* Highlight on hover or focus */
+  border-bottom: 1px solid rgba(0, 191, 255, 0.9); /* Solid underline on hover */
+  text-shadow:
+    0 0 8px rgba(0, 191, 255, 0.8);
 }
 
-figure.fullwidth figcaption { margin-right: 24%; }
+/* --- Typewriter-Style Animation for <p> elements (optional)--- */
 
-/* Links: replicate underline that clears descenders */
-a:link,
-a:visited { color: inherit; }
+.typewriter-text span {
+  font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+  animation:
+      flicker-blue 2.5s infinite,
+      glitch 0.7s infinite alternate-reverse,
+      font-glitch 2.5s steps(3) infinite alternate;
+}
 
-a:link, a:visited {
-  text-decoration: none; /* No underline */
-  color: inherit; /* Inherits the text color from its parent */
-  background: none; /* No background effects */
-  font-weight: 600; /* Semi-bold, lighter than bold but heavier than normal */
+@keyframes flicker-blue {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(80, 180, 255, 0.9),
+      0 0 10px rgba(80, 180, 220, 0.7),
+      0 0 15px rgba(80, 180, 220, 0.4);
+  }
+  50% {
+    text-shadow:
+      0 0 3px rgba(80, 180, 255, 0.7), /* Slightly weaker glow */
+      0 0 8px rgba(80, 180, 220, 0.5),
+      0 0 12px rgba(80, 180, 220, 0.3);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translate(-3px, 2px);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate(2px, -3px);
+    opacity: 0.95;
+  }
+  75% {
+    transform: translate(3px, 1px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes font-glitch {
+  0% {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+  }
+  50% {
+    font-family: monospace;
+  }
+  100% {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+  }
 }
 
 /* a:link {
@@ -215,71 +366,140 @@ a:link, a:visited {
 } */
 
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 87%, 87%, 87%; } }
+/* --- Selection --- */
 
-a:link::selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  a:link {
+    /* Slightly more padding for a more visible effect */
+    background-size: 100% 6px; /* It was set before on 5px */
+    background-repeat: repeat-x;
+    background-position-y: 89%; /* Before was set on 87% */
+  }
 }
 
-a:link::-moz-selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe;
+::selection {
+    background: #086690; /* Cool, slightly transparent, darker blue */
+    color: #fff;
+    text-shadow: 
+      0 0 2px rgba(80, 180, 255, 0.8),
+      0 0 4px rgba(80, 180, 220, 0.6);
+}
+  
+::-moz-selection {
+    background: #086690; /* Cool, slightly transparent, darker blue */
+    color: #fff;
+    text-shadow: 
+      0 0 2px rgba(80, 180, 255, 0.8),
+      0 0 4px rgba(80, 180, 220, 0.6);
 }
 
-/* Sidenotes, margin notes, figures, captions */
-img { max-width: 100%; }
+/* --- Images --- */
+
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  border-radius: 4px; /* Slightly rounded corners for modern feel */
+}
+
+/* --- Sidenotes, Margin Notes, Figures, Captions --- */
 
 .sidenote,
 .marginnote {
-  float: right;
-  clear: right;
-  margin-right: -60%;
-  width: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  vertical-align: baseline;
-  position: relative;
-}
+    float: right;
+    clear: right;
+    margin-right: -62%; /* Slightly increased for visual separation */
+    width: 52%; /* Slightly wider for easier reading */
+    margin-top: 0.5rem; /* Increased vertical spacing for clarity */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    vertical-align: baseline;
+    position: relative;
+    color: #B0C4DE; /* Very light grey-blue for readability and aesthetic */
+    text-shadow:
+        0 0 3px rgba(176, 196, 222, 0.7), /* Soft glow to make it pop */
+        0 0 6px rgba(176, 196, 222, 0.4);
+  }
+  
+  .sidenote-number {
+    counter-increment: sidenote-counter;
+    color: #00BFFF; /* Bright, futuristic blue for the number */
+    text-shadow:
+        0 0 4px rgba(0, 191, 255, 0.9),
+        0 0 8px rgba(0, 191, 255, 0.6); /* Glow for visibility on dark background */
+  }
+  
+  .sidenote-number::after,
+  .sidenote::before {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace; /* Use monospace font for the sidenote number, for the code feels */
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  .sidenote-number::after {
+    content: counter(sidenote-counter);
+    font-size: 1.1rem; /* Increase the font size for more visibility*/
+    top: -0.6rem; /* Adjust for a better look */
+    left: 0.2rem; /* Adjust for a better look */
+  }
+  
+  .sidenote::before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1.1rem; /* The same font-size as sidenote-number::after */
+    top: -0.6rem; /* The same vertical as sidenote-number::after */
+  }
+  
+  blockquote .sidenote,
+  blockquote .marginnote {
+    margin-right: -83%; /* Adjusted for blockquote context */
+    min-width: 60%; /* Slightly wider */
+  }
+  
+  /* --- Tables --- */
+  
+  div.fullwidth,
+  table.fullwidth {
+    width: 100%;
+  }
+  
+  div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a more prominent shadow */
+    margin-bottom: 2em;
+  }
 
-.sidenote-number { counter-increment: sidenote-counter; }
+  table {
+    border-collapse: collapse; /* Makes borders merge together */
+    width: 100%; /* Take full width inside the wrapper */
+    margin: 1em 0;
+  }
 
-.sidenote-number::after,
-.sidenote::before {
-  font-family: et-book-roman-old-style;
-  position: relative;
-  vertical-align: baseline;
-}
+  th,
+  td {
+    border: 1px solid #78909C; /* More subtle border */
+    padding: 0.5em;
+    text-align: left;
+    color: #B0C4DE; /* Slightly lighter color than sidenote */
+    background-color: #1D1D27; /* Darker table cell background */
+  }
+  
+  th {
+    background-color: #121218; /* Dark header background */
+    color: #00BFFF; /* Neon blue header text for futuristic feel */
+    text-shadow:
+        0 0 4px rgba(0, 191, 255, 0.9),
+        0 0 8px rgba(0, 191, 255, 0.6);
+    font-weight: 600; /* Make the header bold */
+  }
 
-.sidenote-number::after {
-  content: counter(sidenote-counter);
-  font-size: 1rem;
-  top: -0.5rem;
-  left: 0.1rem;
-}
+  tr:hover {
+    background-color: #232330; /* Highlight the row on hover */
+  }
 
-.sidenote::before {
-  content: counter(sidenote-counter) " ";
-  font-size: 1rem;
-  top: -0.5rem;
-}
-
-blockquote .sidenote,
-blockquote .marginnote {
-  margin-right: -82%;
-  min-width: 59%;
-  text-align: left;
-}
-
-div.fullwidth,
-table.fullwidth { width: 100%; }
-
-div.table-wrapper {
-  overflow-x: auto;
-  font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
-}
+/* --- Code --- */
 
 .sans {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -287,123 +507,213 @@ div.table-wrapper {
 }
 
 code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1rem;
-  line-height: 1.42;
+  font-family: 'Cutive Mono', 'Courier New', Courier, monospace; /* Monospace font */
+  font-size: 1.1rem; /* Slightly larger for readability */
+  line-height: 1.5;
+  color: #00FA9A; /* A neon green color for visibility against a dark background */
+  background-color: #1D1D27; /* Slightly lighter background than page background */
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  border: 1px solid #37474F; /* Subtle border to give a defined look */
 }
 
-.sans > code { font-size: 1.2rem; }
+.sans > code { font-size: 1.3rem; }
 
 h1 > code,
 h2 > code,
-h3 > code { font-size: 0.8em; }
-
-.marginnote > code,
-.sidenote > code { font-size: 1rem; }
-
-pre.code {
-  font-size: 0.9rem;
-  width: 52.5%;
-  margin-left: 2.5%;
-  overflow-x: auto;
+h3 > code {
+    font-size: 0.8em;
+    padding: 0.2em 0.4em; /* Increase padding to look more readable */
 }
 
-pre.code.fullwidth { width: 90%; }
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem; /* Keep consistent with other code elements */
+    color: #00FA9A;
+    background-color: #1D1D27;
+    padding: 0.1em 0.3em;
+}
+
+pre.code {
+    font-size: 1rem; /* Increased from 0.9rem for readability */
+    width: 55%; /* Slightly wider */
+    margin-left: 2.5%;
+    overflow-x: auto;
+    color: #98FB98; /* Very light green */
+    background-color: #181820;
+    padding: 1em; /* Increase padding to give it a better look */
+    line-height: 1.6;
+    border: 1px solid #37474F;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Add a shadow for definition */
+    border-radius: 4px; /* Rounded corners */
+}
+  
+pre.code.fullwidth {
+    width: 92%; /* Before was set on 90% */
+    margin-left: auto; /* Add some auto margins to center the code */
+    margin-right: auto;
+}
+
+/* --- New Thought --- */
 
 .fullwidth {
-  max-width: 90%;
+  max-width: 92%; /* Before was set on 90% */
   clear: both;
 }
 
 span.newthought {
-  font-variant: small-caps;
-  font-size: 1.2em;
+    font-variant: small-caps;
+    font-size: 1.3em; /* Increased from 1.2em for more emphasis */
+    font-weight: 500;
+    letter-spacing: 0.05em; /* Increased letter-spacing */
+    color: #77A7D4; /* Use h3 color */
+    text-shadow:
+      0 0 3px rgba(80, 180, 255, 0.7), /* Light glow */
+      0 0 6px rgba(80, 180, 220, 0.5);
 }
 
-input.margin-toggle { display: none; }
+/* --- Inputs & Labels --- */
 
-label.sidenote-number { display: inline; }
+input.margin-toggle {
+  display: none;
+}
 
-label.margin-toggle:not(.sidenote-number) { display: none; }
+label.sidenote-number {
+  display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+
+/* --- Iframe --- */
 
 .iframe-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Nice shadow for visual effect */
 }
 
 .iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default border */
 }
+
+/* --- Media Queries for Responsive Design --- */
 
 @media (max-width: 760px) {
-  body {
-    width: 84%;
-    padding-left: 8%;
-    padding-right: 8%;
+    body {
+      width: 90%; /* Adjust body width */
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+      width: 100%;
+    }
+  
+    pre.code {
+      width: 100%; /* Adjusted for smaller screens */
+    }
+  
+    section > ol {
+      width: 100%;
+      padding-left: 10%; /* Adjust padding */
+      padding-right: 5%; /* Adjust padding */
+    }
+  
+    section > ul {
+        width: 100%;
+        padding-left: 10%; /* Adjust padding */
+        padding-right: 5%; /* Adjust padding */
+      }
+  
+    figure {
+      max-width: 100%; /* Full width on small screens */
+    }
+  
+    figcaption,
+    figure.fullwidth figcaption {
+      margin-right: 0;
+      max-width: 90%;
+    }
+  
+    blockquote {
+        margin-left: 0; /* Removed margin for smaller screens */
+        margin-right: 0;
+        padding: 1em; /* Add padding inside the blockquote */
+        border-left: 3px solid #4682B4; /* Steel blue border */
+        background-color: #1D1D27; /* Slightly lighter background */
+        border-radius: 5px; /* Rounded corners */
+    }
+  
+    blockquote p,
+    blockquote footer {
+      width: 100%;
+    }
+  
+    label.margin-toggle:not(.sidenote-number) {
+      display: inline;
+      padding: 0.3em 0.6em; /* Add some padding to the label to look more clickable */
+      border-radius: 3px;
+      background-color: #185e52;
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  
+    .sidenote,
+    .marginnote {
+      display: none;
+    }
+  
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: none; /* Override float to stack vertically */
+        left: auto; /* Reset left positioning */
+        clear: both;
+        width: 90%; /* Adjust width for small screens */
+        margin: 2rem 5%; /* 5% margin on sides, 2rem margin top and bottom */
+        vertical-align: baseline;
+        position: relative;
+    }
+    
+  
+    label {
+      cursor: pointer;
+    }
+  
+    div.table-wrapper,
+    table {
+      width: 100%; /* Adjust table width for smaller screens */
+    }
+  
+    img {
+      width: 100%;
+    }
   }
 
-  hr,
-  section > p,
-  section > footer,
-  section > table { width: 100%; }
-  pre.code { width: 97%; }
-  section > ol { width: 90%; }
-  section > ul { width: 90%; }
-  figure { max-width: 90%; }
+/* --- Toggle Switch --- */
 
-  figcaption,
-  figure.fullwidth figcaption {
-    margin-right: 0%;
-    max-width: none;
-  }
-
-  blockquote {
-    margin-left: 1.5em;
-    margin-right: 0;
-  }
-
-  blockquote p,
-  blockquote footer { width: 100%; }
-  label.margin-toggle:not(.sidenote-number) { display: inline; }
-
-  .sidenote,
-  .marginnote { display: none; }
-
-  .margin-toggle:checked + .sidenote,
-  .margin-toggle:checked + .marginnote {
-    display: block;
-    float: left;
-    left: 1rem;
-    clear: both;
-    width: 95%;
-    margin: 1rem 2.5%;
-    vertical-align: baseline;
-    position: relative;
-  }
-  label { cursor: pointer; }
-
-  div.table-wrapper,
-  table { width: 85%; }
-  img { width: 100%; }
-}
-
-/* Toggle Switch Mejorado */
-
-/* Variables de color actualizadas para una apariencia más moderna y coherente */
 .toggle-switch {
   position: relative;
-  width: 50px;
-  height: 20px;
-  --light: #f0f0f0; /* Color claro más suave */
-  --dark: #4a4a4a;  /* Color oscuro más moderno */
-  --accent: #1b8170; /* Color de acento para enlaces o detalles */
-  --accent-hover: #185e52; /* Color de acento al pasar el mouse */
+  width: 55px;
+  height: 28px;
+  --light: #6495ED; /* Soft, light blue */
+  --dark: #191970;  /* Midnight blue */
+  --accent: #00BFFF; /* Bright blue for toggle element */
+  --accent-hover: #87CEFA; /* Light sky blue on hover */
 }
 
 .switch-label {
@@ -411,10 +721,10 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   width: 100%;
   height: 100%;
   background-color: var(--dark);
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Add transition effect */
 }
 
 .checkbox {
@@ -431,15 +741,15 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--dark);
   transition: background-color 0.3s ease;
 }
 
 .checkbox:checked ~ .slider {
-  background-color: var(--light);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    background-color: var(--light);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); /* Inset shadow for "pressed" effect */
+  }
 
 .slider::before {
   content: "";
@@ -447,58 +757,108 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: var(--accent);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease; /* Add transition and a subtle shadow effect */
 }
 
 .checkbox:checked ~ .slider::before {
-  transform: translate(35px, -50%);
+  transform: translate(25px, -50%);
   background-color: var(--dark);
 }
 
+/* Hover Effect for Slider */
+.switch-label:hover .slider::before {
+  background-color: var(--accent-hover); /* Changes the color of the circle when hovering */
+}
 .typewriter-text span {
-  font-family: 'Courier New', Courier, monospace;
-  color: rgba(67, 85, 34, 0.9); /* Verde oliva semi-transparente */
-  text-shadow: 0 0 5px rgba(67, 85, 34, 0.7), 
-               0 0 10px rgba(67, 85, 34, 0.5), 
-               0 0 15px rgba(67, 85, 34, 0.3); /* Sombra más suave */
-  animation: glitch 1s infinite;
+  color: rgba(50, 90, 30, 1); /* Darker olive green, can also use named colors e.g., 'darkolivegreen' */
+  text-shadow: 
+    0 0 3px rgba(100, 180, 60, 0.8), /* Brighter inner glow */
+    0 0 8px rgba(50, 90, 30, 0.5), 
+    0 0 12px rgba(50, 90, 30, 0.3);
+  animation: 
+    flicker 2s infinite, /* Soft background flicker */
+    glitch 0.8s infinite alternate-reverse; /* More erratic glitch, reverses every other cycle*/
+    font-glitch 2s steps(3) infinite alternate; /* new font style glitch */
+
 }
 
 .cursor {
-    color: rgba(67, 85, 34, 0.9);
-    text-shadow: 0 0 5px rgba(67, 85, 34, 0.7), 
-                 0 0 10px rgba(67, 85, 34, 0.5), 
-                 0 0 15px rgba(67, 85, 34, 0.3);
+    color: rgba(50, 90, 30, 1); /* Match text color*/
+    text-shadow: 0 0 3px rgba(100, 180, 60, 0.8),
+                0 0 8px rgba(50, 90, 30, 0.5),
+                0 0 12px rgba(50, 90, 30, 0.3);
+}
+
+@keyframes flicker {
+  0%, 100% {
+    text-shadow: 
+        0 0 3px rgba(100, 180, 60, 0.8),
+        0 0 8px rgba(50, 90, 30, 0.5),
+        0 0 12px rgba(50, 90, 30, 0.3);
+  }
+  50% {
+      text-shadow:
+      0 0 2px rgba(100, 180, 60, 0.7), /* Slightly weaker glow*/
+      0 0 6px rgba(50, 90, 30, 0.4),
+      0 0 10px rgba(50, 90, 30, 0.2);
+    }
 }
 
 @keyframes glitch {
   0% {
     transform: translate(0);
+    opacity: 0.9; /* slight opacity changes for glitch */
   }
-  20% {
-    transform: translate(-2px, 2px);
+  25% {
+    transform: translate(-3px, 2px); 
+    opacity: 0.85; 
   }
-  40% {
-    transform: translate(-2px, -2px);
+  50% {
+    transform: translate(2px, -3px);
+    opacity: 0.95;
   }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
+  75% {
+      transform: translate(3px, 1px);
+      opacity: 0.8;
   }
   100% {
     transform: translate(0);
+    opacity: 0.9;
   }
 }
 
+@keyframes font-glitch {
+    0% {
+        font-family: 'Special Elite', 'Courier New', Courier, monospace; /* original font */
+    }
+    50% {
+        font-family: monospace; /* simple monospace, could be anything you want e.g., fantasy, sans-serif etc. */
+    }
+    100% {
+        font-family: 'Special Elite', 'Courier New', Courier, monospace; /* Back to the original font*/
+    }
+}
+
 @keyframes cursor-blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+  0% { 
+    opacity: 0; 
+    transform: scaleY(0.8); /* Squish vertically */
+  }
+  45% { 
+    opacity: 1;
+    transform: scaleY(1); /* Normal size */
+  }
+  55% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  100% { 
+    opacity: 0; 
+    transform: scaleY(0.8);
+  }
 }
