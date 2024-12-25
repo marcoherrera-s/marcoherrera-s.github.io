@@ -630,44 +630,93 @@ code:not(pre > code) {
 }
 
 .typewriter-text span {
-  font-family: 'Courier New', Courier, monospace;
-  color: rgba(173, 216, 230, 0.9); /* Azul claro */
-  text-shadow: 0 0 5px rgba(173, 216, 230, 0.7), 
-               0 0 10px rgba(173, 216, 230, 0.5), 
-               0 0 15px rgba(173, 216, 230, 0.3); /* Sombra más suave */
-  animation: glitch 1s infinite;
+  color: rgba(80, 180, 220, 1); /* Light blue color */
+  text-shadow:
+    0 0 4px rgba(80, 180, 255, 0.9), /* Bright blue inner glow */
+    0 0 10px rgba(80, 180, 220, 0.7),
+    0 0 15px rgba(80, 180, 220, 0.4);
+  animation:
+    flicker-blue 2.5s infinite, /* Slower blue flicker */
+    glitch 0.7s infinite alternate-reverse, /* Adjust timing as you like */
+    font-glitch 2.5s steps(3) infinite alternate;
 }
 
 .cursor {
-    color: rgba(173, 216, 230, 0.9); /* Azul claro */
-    text-shadow: 0 0 5px rgba(173, 216, 230, 0.7), 
-                 0 0 10px rgba(173, 216, 230, 0.5), 
-                 0 0 15px rgba(173, 216, 230, 0.3); /* Sombra */
+  color: rgba(80, 180, 220, 1); /* Match text color */
+  text-shadow:
+      0 0 4px rgba(80, 180, 255, 0.9),
+      0 0 10px rgba(80, 180, 220, 0.7),
+      0 0 15px rgba(80, 180, 220, 0.4);
+}
+
+@keyframes flicker-blue {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(80, 180, 255, 0.9),
+      0 0 10px rgba(80, 180, 220, 0.7),
+      0 0 15px rgba(80, 180, 220, 0.4);
+  }
+  50% {
+    text-shadow:
+      0 0 3px rgba(80, 180, 255, 0.7), /* Slightly weaker glow */
+      0 0 8px rgba(80, 180, 220, 0.5),
+      0 0 12px rgba(80, 180, 220, 0.3);
+  }
 }
 
 @keyframes glitch {
+  /* This glitch remains the same, but you can adjust values */
   0% {
     transform: translate(0);
+    opacity: 0.9;
   }
-  20% {
-    transform: translate(-2px, 2px);
+  25% {
+    transform: translate(-3px, 2px);
+    opacity: 0.85;
   }
-  40% {
-    transform: translate(-2px, -2px);
+  50% {
+    transform: translate(2px, -3px);
+    opacity: 0.95;
   }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
+  75% {
+    transform: translate(3px, 1px);
+    opacity: 0.8;
   }
   100% {
     transform: translate(0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes font-glitch {
+  /* Font glitch can remain the same */
+  0% {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+  }
+  50% {
+    font-family: monospace;
+  }
+  100% {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
   }
 }
 
 @keyframes cursor-blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+  /* Cursor blink can also remain the same */
+  0% {
+    opacity: 0;
+    transform: scaleY(0.8);
+  }
+  45% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  55% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0.8);
+  }
 }
