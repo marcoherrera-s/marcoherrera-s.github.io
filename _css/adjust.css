@@ -7,16 +7,6 @@
   font-size: 1.4rem; /* Ajusta el tamaño de fuente general del contenido de Franklin a 1.4rem */
 }
 
-#main {
-
-  color: #31473a; /* Dark green text */
-  line-height: 1.8; 
-  padding-top: 5px; 
-}
-
-#main:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); 
-}
 
 :root {
   --color-green-dark: #31473a;
