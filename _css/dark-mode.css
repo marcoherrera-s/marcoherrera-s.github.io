@@ -575,36 +575,35 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   transform: scale(0.95);
 }
 
-
 /* Estilo general para bloques de código */
 pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1.2em;
   font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
-  background: #1A1A1A; /* Fondo muy oscuro */
-  border: 1px solid #333333; /* Contorno discreto */
+  background: #282c34; /* Fondo oscuro, pero no negro puro */
+  border: 1px solid #3e4451; /* Borde más oscuro que el fondo */
   border-radius: 6px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
   line-height: 1.5; /* Espaciado entre líneas */
   font-size: 14px; /* Tamaño de fuente estándar */
-  color: #E0E2E4; /* Color de texto claro */
+  color: #abb2bf; /* Color de texto claro, no blanco puro */
 }
 
 /* Estilo para líneas de código inline */
 code:not(pre > code) {
-  background: #2B2B2B; /* Fondo oscuro */
-  color: #E0E2E4; /* Color de texto claro */
+  background: #383e4a; /* Fondo un poco más claro que el bloque de código */
+  color: #abb2bf; /* Mismo color de texto que el bloque */
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-family: 'Fira Code', monospace, Monaco;
-  border: 1px solid #4A5F6B;
+  border: 1px solid #5f6a7e; /*Borde acorde al background*/
   font-size: 0.9em; /* Tamaño ligeramente menor que el texto normal */
 }
 
 /* Estilos para la sintaxis */
 .hljs {
-  color: #E0E2E4; /* Color base claro para mejor legibilidad */
+  color: #abb2bf; /* Color base claro, no blanco puro */
 }
 
 .hljs-keyword,
@@ -612,7 +611,7 @@ code:not(pre > code) {
 .hljs-literal,
 .hljs-section,
 .hljs-link {
-  color: #FFC66D; /* Naranja suave */
+  color: #c678dd; /* Morado */
 }
 
 .hljs-string,
@@ -624,32 +623,36 @@ code:not(pre > code) {
 .hljs-bullet,
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #A8FF60; /* Verde claro */
+  color: #98c379; /* Verde */
 }
 
 .hljs-addition,
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: #BED6FF; /* Azul claro */
+  color: #56b6c2; /* Azul verdoso */
 }
 
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #616161; /* Gris oscuro */
+  color: #5c6370; /* Gris más oscuro */
   font-style: italic; /* Estilo itálico para comentarios */
 }
 
 .hljs-strong {
   font-weight: bold;
-  color: #FFFFFF; /* Blanco para resaltar texto */
+  color: #d19a66; /* Naranja oscuro para resaltar */
 }
 
 .hljs-emphasis {
   font-style: italic;
-  color: #8DA6CE; /* Azul pastel */
+  color: #61afef; /* Azul brillante */
+}
+
+.hljs-number {
+  color: #d19a66; /* Naranja, similar a strong */
 }
 
 /* Typewriter Text */

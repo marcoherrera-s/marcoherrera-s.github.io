@@ -4,90 +4,76 @@ pre code.hljs {
   overflow-x: auto;
   padding: 1.2em;
   font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;
-  background: #FFFDF0; /* Fondo amarillo crema más claro */
-  border: 1px solid #E0DCC8; /* Contorno más visible */
-  border-radius: 6px; /* Bordes más redondeados */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-  line-height: 1.5; /* Mejor espaciado entre líneas */
-  font-size: 14px; /* Tamaño de fuente ligeramente mayor */
+  background: #282c34; /* Fondo oscuro, pero no negro puro */
+  border: 1px solid #3e4451; /* Borde más oscuro que el fondo */
+  border-radius: 6px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  line-height: 1.5; /* Espaciado entre líneas */
+  font-size: 14px; /* Tamaño de fuente estándar */
+  color: #abb2bf; /* Color de texto claro, no blanco puro */
 }
 
 /* Estilo para líneas de código inline */
 code:not(pre > code) {
-  background: #FFFDF0; /* Fondo amarillo crema más claro */
-  color: #2C3E50; /* Color de texto más oscuro para mejor contraste */
+  background: #383e4a; /* Fondo un poco más claro que el bloque de código */
+  color: #abb2bf; /* Mismo color de texto que el bloque */
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-family: 'Fira Code', monospace, Monaco;
-  border: 1px solid #E0DCC8;
+  border: 1px solid #5f6a7e; /*Borde acorde al background*/
   font-size: 0.9em; /* Tamaño ligeramente menor que el texto normal */
 }
 
 /* Estilos para la sintaxis */
 .hljs {
-  color: #2C3E50; /* Color base más oscuro para mejor legibilidad */
+  color: #abb2bf; /* Color base claro, no blanco puro */
 }
 
-.hljs-subst,
-.hljs-tag {
-  color: #996B1F; /* Dorado más oscuro */
-}
-
-.hljs-emphasis,
-.hljs-strong {
-  color: #9B4F4F; /* Púrpura más oscuro */
-  font-weight: bold;
-}
-
-.hljs-bullet,
-.hljs-link,
-.hljs-literal,
-.hljs-number,
-.hljs-quote,
-.hljs-regexp {
-  color: #B7804A; /* Marrón más oscuro */
-}
-
-.hljs-code,
-.hljs-section,
-.hljs-selector-class,
-.hljs-title {
-  color: #A64242; /* Rojo más oscuro */
-}
-
-.hljs-attr,
 .hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+  color: #c678dd; /* Morado */
+}
+
+.hljs-string,
+.hljs-title,
 .hljs-name,
-.hljs-selector-tag {
-  color: #8A7031; /* Marrón dorado más oscuro */
-}
-
+.hljs-type,
 .hljs-attribute,
-.hljs-symbol {
-  color: #6B5A3E; /* Marrón terroso más oscuro */
-}
-
-.hljs-class .hljs-title,
-.hljs-params,
-.hljs-title.class_ {
-  color: #5D6D9E; /* Azul más oscuro */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #98c379; /* Verde */
 }
 
 .hljs-addition,
-.hljs-built_in,
-.hljs-selector-attr,
-.hljs-selector-id,
-.hljs-selector-pseudo,
-.hljs-string,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-  color: #4A5F8B; /* Azul-gris más oscuro */
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #56b6c2; /* Azul verdoso */
 }
 
 .hljs-comment,
+.hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #7F8084; /* Gris más oscuro */
+  color: #5c6370; /* Gris más oscuro */
   font-style: italic; /* Estilo itálico para comentarios */
+}
+
+.hljs-strong {
+  font-weight: bold;
+  color: #d19a66; /* Naranja oscuro para resaltar */
+}
+
+.hljs-emphasis {
+  font-style: italic;
+  color: #61afef; /* Azul brillante */
+}
+
+.hljs-number {
+  color: #d19a66; /* Naranja, similar a strong */
 }

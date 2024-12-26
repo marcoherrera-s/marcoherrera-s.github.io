@@ -20,43 +20,40 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 #menu ul li {
   margin: 8px 20px;
-  list-style: none;
 }
 
-/* Hide empty list items */
-#menu ul li:empty {
-  display: none;
-}
-
-/* Hide elements without content or only whitespace */
+/* Ocultar <li> y <a> vacíos */
+#menu ul li:empty,
 #menu ul li a:empty,
 #menu ul li:has(a:empty) {
   display: none;
 }
 
 #menu ul li a {
-  color: var(--color-green-link);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9em;
+  display: block;
   position: relative;
   padding: var(--spacing-standard) 20px;
   border-radius: 8px;
-  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--color-green-link);
+  text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Special styling for home icon */
+/* Estilo especial para el icono 'home' */
 #menu ul li a[href="/"] {
-  padding: var(--spacing-standard);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--spacing-standard);
 }
 
 #menu ul li a:hover {
@@ -65,21 +62,22 @@
   transform: translateY(-2px);
 }
 
+/* Subrayado animado */
 #menu ul li a::after {
   content: "";
   position: absolute;
-  height: 2px;
   bottom: 7px;
   left: 20px;
   right: 20px;
+  height: 2px;
   background-color: var(--color-green-hover);
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s ease;
 }
 
-/* Don't show underline for home icon */
-#menu ul li a[href="/"]:after {
+/* Quitar subrayado en el ícono 'home' */
+#menu ul li a[href="/"]::after {
   display: none;
 }
 
