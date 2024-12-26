@@ -8,12 +8,7 @@
 }
 
 #main {
-  justify-content: center;
-  align-items: center;
-  background-color: #f8faf1; /* Light background */
-  border-radius: 20px; 
-  border: 0.5px solid rgba(0, 0, 0, 0.2); /* Subtle border */
-  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.1); 
+
   color: #31473a; /* Dark green text */
   line-height: 1.8; 
   padding-top: 5px; 
@@ -23,76 +18,84 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); 
 }
 
+:root {
+  --color-green-dark: #31473a;
+  --color-green-link: #4d654e;
+  --color-green-hover: #688747;
+  --color-green-bg-hover: #d4dbca;
+  --spacing-standard: 10px;
+}
+
 #menu ul {
-  list-style-type: none; 
-  text-align: center;
-  margin: 30px 0;
-  padding: 10px 0;
-  background-color: #e1e8d5; /* Light green background */
-  border-radius: 20px; 
-  border: 0.5px solid rgba(67, 85, 34, 0.2); /*  subtle border */
-  box-shadow: 0 9px 15px rgba(67, 85, 34, 0.05); 
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-}
-
-#menu ul li {
-  display: inline-block; 
-  margin: 8px 20px;
-  padding: 10px 20px;
-  border-radius: 8px; 
-  transition: all 0.3s ease; 
-}
-
-#menu ul li:hover {
-  background-color: #d4dbca; /* Lighter green on hover */
-  transform: translateY(-2px); 
-  box-shadow: 0 2px 5px rgba(67, 85, 34, 0.1); 
-}
-
-#menu ul li a {
-  text-decoration: none; 
-  color: #4d654e; /* Dark green link color */
-  font-weight: 500; 
-  font-size: 0.9em; 
-  transition: color 0.3s ease; 
-}
-
-#menu ul li a:hover {
-  color: #688747; /* Slightly darker green on hover */
-}
-
-/*  */
-#menu ul li {
-  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
+}
+
+#menu ul li {
+  margin: 8px 20px;
   list-style: none;
 }
 
+/* Hide empty list items */
+#menu ul li:empty {
+  display: none;
+}
+
+/* Hide elements without content or only whitespace */
+#menu ul li a:empty,
+#menu ul li:has(a:empty) {
+  display: none;
+}
+
 #menu ul li a {
-  color: #4d654e; /* Dark green link color */
-  text-decoration: none; 
-  position: relative; 
-  padding: 10px 10px; 
+  color: var(--color-green-link);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  position: relative;
+  padding: var(--spacing-standard) 20px;
+  border-radius: 8px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Special styling for home icon */
+#menu ul li a[href="/"] {
+  padding: var(--spacing-standard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu ul li a:hover {
+  color: var(--color-green-hover);
+  background-color: var(--color-green-bg-hover);
+  transform: translateY(-2px);
 }
 
 #menu ul li a::after {
-  content: ""; 
+  content: "";
   position: absolute;
-  height: 2px; 
-  bottom: 7px; 
-  left: 10px;
-  right: 10px;
-  background-color: rgba(77, 101, 78, 0.7); /*  green underline */
-  visibility: hidden; 
-  transform: scaleX(0); 
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  height: 2px;
+  bottom: 7px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--color-green-hover);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s ease;
+}
+
+/* Don't show underline for home icon */
+#menu ul li a[href="/"]:after {
+  display: none;
 }
 
 #menu ul li a:hover::after {
-  visibility: visible; /* Muestra la línea al pasar el mouse */
-  transform: scaleX(1); /* Expande la línea horizontalmente */
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 

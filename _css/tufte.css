@@ -46,7 +46,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;  
-  background-color: #0d1f13; /* Very dark green background */
+  background-color: #e1e8d5; /* Very dark green background */
   color: #c5e8b7; /* Light green text for contrast */
   max-width: 1500px;
   counter-reset: sidenote-counter;
