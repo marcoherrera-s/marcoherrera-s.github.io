@@ -142,3 +142,21 @@
   }
 }
 
+#social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 35px; /* Space between the links */
+}
+
+.social-link {
+  font-size: 1.2em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-link.letterboxd {
+  color: #c01c28;
+}
+
+/* Add more specific styles for other social links if needed */
