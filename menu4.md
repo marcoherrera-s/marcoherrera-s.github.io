@@ -9,5 +9,5 @@ title = "Otros"
 
 * [Collages de palabras que no sabía qué eran](/Otro/palabras/)
 
-* [Mis surayados](/menu3) 
+* [Mis subrayados](/menu3) 
 ---
