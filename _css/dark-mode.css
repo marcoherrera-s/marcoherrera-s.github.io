@@ -1,3 +1,8 @@
+
+html {
+  font-size: 14px; 
+}
+
 body {
   width: 87.5%;
   margin-left: auto;
@@ -361,12 +366,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 .franklin-content { font-size: 1.4rem; }
 
 #main {
-  justify-content: center;
-  align-items: center;
-  background-color: #2a2a2a; /* Fondo más oscuro */
-  border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.685); /* Contorno claro */
-  box-shadow: 0 9px 11px rgba(255, 255, 255, 0.1);
+
   color: #e0e0e0; /* Texto claro */
   line-height: 1.8;
   padding-top: 5px; /* Añade espacio en la parte superior */
@@ -377,58 +377,63 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.12);
 }
 
+:root {
+  --color-text: #e0e0e0;
+  --color-hover: #4A90E2;
+  --color-bg-hover: #444444;
+  --color-underline: rgba(18, 68, 143, 0.7);
+  --spacing-standard: 10px;
+}
+
 #menu ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 30px 0;
-  padding: 10px 0;
-  background-color: #333333; /* Fondo oscuro */
-  border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.685); /* Contorno claro */
-  box-shadow: 0 9px 15px rgba(255, 255, 255, 0.05);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
-}
-
-#menu ul li {
-  display: inline-block;
-  margin: 8px 20px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  
-}
-
-#menu ul li:hover {
-  background-color: #444444; /* Fondo más oscuro al pasar el mouse */
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-}
-
-#menu ul li a {
-  text-decoration: none;
-  color: #e0e0e0; /* Texto claro */
-  font-weight: 500;
-  font-size: 0.9em;
-  
-}
-
-#menu ul li a:hover {
-  color: #4A90E2; /* Color azul fresco al pasar el mouse */
-}
-
-#menu ul li {
-  margin: 0 0 20px 0;
   padding: 0;
+}
+
+#menu ul li {
+  margin: 8px 20px;
   list-style: none;
 }
 
+/* Hide empty list items */
+#menu ul li:empty {
+  display: none;
+}
+
+/* Hide elements without content */
+#menu ul li a:empty,
+#menu ul li:has(a:empty) {
+  display: none;
+}
+
 #menu ul li a {
-  color: #e0e0e0;
+  color: var(--color-text);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
   position: relative;
-  padding: 10px 10px;
+  padding: var(--spacing-standard) 20px;
+  border-radius: 8px;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Special styling for home icon */
+#menu ul li a[href="/"] {
+  padding: var(--spacing-standard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu ul li a:hover {
+  color: var(--color-hover);
+  background-color: var(--color-bg-hover);
+  transform: translateY(-2px);
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 #menu ul li a::after {
@@ -436,16 +441,17 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   position: absolute;
   height: 2px;
   bottom: 7px;
-  left: 10px;
-  right: 10px;
-  background-color: rgba(18, 68, 143, 0.7);
+  left: 20px;
+  right: 20px;
+  background-color: var(--color-underline);
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s ease;
 }
 
-#menu ul li a:hover {
-  text-decoration: none;
+/* Don't show underline for home icon */
+#menu ul li a[href="/"]:after {
+  display: none;
 }
 
 #menu ul li a:hover::after {
