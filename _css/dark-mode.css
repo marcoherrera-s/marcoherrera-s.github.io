@@ -414,16 +414,6 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   list-style: none;
 }
 
-/* Hide empty list items */
-#menu ul li:empty {
-  display: none;
-}
-
-/* Hide elements without content */
-#menu ul li a:empty,
-#menu ul li:has(a:empty) {
-  display: none;
-}
 
 #menu ul li a {
   color: var(--color-text);

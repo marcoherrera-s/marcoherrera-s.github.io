@@ -8,55 +8,38 @@
 }
 
 
-/* Variables para colores y espaciado (siéntete libre de modificarlas) */
 :root {
-  --color-principal: #0077cc; /* Azul vibrante */
-  --color-secundario: #ffcc00; /* Amarillo/Dorado para resaltar */
-  --color-fondo: #f5f5f5; /* Gris claro para el fondo */
-  --color-texto: #333; /* Gris oscuro para el texto */
-  --color-hover: #005fa3; /* Azul más oscuro al pasar el mouse */
-  --color-fondo-hover: #fff5cc; /* Amarillo claro para el fondo al pasar el mouse */
+  --color-green-dark: #31473a;
+  --color-green-link: #4d654e;
+  --color-green-hover: #688747;
+  --color-green-bg-hover: #d4dbca;
   --spacing-standard: 10px;
-  --border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Estilos generales para el menú */
-#menu {
-  background-color: var(--color-fondo);
-  padding: var(--spacing-standard) 0; /* Agrega un poco de padding arriba y abajo */
-  border-bottom: 3px solid var(--color-principal); /* Borde inferior para un toque extra */
 }
 
 #menu ul {
   display: flex;
-  justify-content: center; /* Centra los elementos del menú */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 #menu ul li {
-  margin: var(--spacing-standard) 20px;
-  /* Elimina el flex-grow implícito */
-  flex-grow: 0;
-  /* Asegura que los ítems no se encojan más allá de su contenido */
-  flex-shrink: 0;
-  /* Establece una base flexible para que todos los ítems tengan el mismo ancho inicial */
-  flex-basis: auto;
+  margin: 8px 20px;
 }
+
 
 #menu ul li a {
   display: block;
   position: relative;
-  padding: var(--spacing-standard) 15px; /* Ajusta el padding para un tamaño de botón cómodo */
-  border-radius: var(--border-radius);
-  font-size: 1em;
-  font-weight: 600; /* Texto ligeramente más grueso */
-  color: var(--color-texto);
+  padding: var(--spacing-standard) 20px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--color-green-link);
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto "elevado" */
 }
 
 /* Estilo especial para el icono 'home' */
@@ -65,33 +48,23 @@
   align-items: center;
   justify-content: center;
   padding: var(--spacing-standard);
-  background-color: var(--color-principal); /* Fondo azul para el ícono */
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-size: 1.2em;
 }
 
-#menu ul li a[href="/"]:hover {
-    background-color: var(--color-hover);
-}
-
-/* Efecto hover para los enlaces de texto */
 #menu ul li a:hover {
-  color: var(--color-hover);
-  background-color: var(--color-fondo-hover);
-  transform: translateY(-3px); /* Se eleva un poco al pasar el mouse */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+  color: var(--color-green-hover);
+  background-color: var(--color-green-bg-hover);
+  transform: translateY(-2px);
 }
 
-/* Subrayado animado con color secundario */
+/* Subrayado animado */
 #menu ul li a::after {
   content: "";
   position: absolute;
-  bottom: 5px;
-  left: 15px;
-  right: 15px;
-  height: 3px;
-  background-color: var(--color-secundario); /* Usa el color secundario para el subrayado */
+  bottom: 7px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background-color: var(--color-green-hover);
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s ease;
@@ -107,10 +80,7 @@
   transform: scaleX(1);
 }
 
-/* Estilos para el ícono */
-#menu ul li a[href="/"] i {
-  margin: 0; /* Elimina cualquier margen que pueda tener el ícono por defecto */
-}
+
 
 .franklin-content { 
   padding-left: 10%; /* Añade un margen del 10% a la izquierda */
