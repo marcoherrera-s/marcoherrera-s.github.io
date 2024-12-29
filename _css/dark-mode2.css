@@ -275,21 +275,16 @@ blockquote {
   
   a {
     font-weight: 600;
-    color: #90be6d; /* Green link color */
+    color: #6d97be; /* Green link color */
     text-decoration: none;
     border-bottom: 1px dashed rgba(144, 190, 109, 0.7); /*  dashed underline */
     transition: all 0.2s ease-in-out;
     text-shadow:
-      0 0 5px rgba(144, 190, 109, 0.6);
+      0 0 1px rgba(207, 207, 207, 0.6);
   }
   
   a:hover,
-  a:focus {
-    background-color: rgba(144, 190, 109, 0.2);
-    border-bottom: 1px solid rgba(144, 190, 109, 0.9);
-    text-shadow:
-      0 0 8px rgba(144, 190, 109, 0.9);
-  }
+
   
   /* --- Typewriter-Style Animation for <p> elements (optional)--- */
   
@@ -303,14 +298,14 @@ blockquote {
   @keyframes flicker-green {
     0%, 100% {
       text-shadow:
-        0 0 4px rgba(144, 190, 109, 0.9),
-        0 0 10px rgba(144, 190, 109, 0.7),
-        0 0 15px rgba(144, 190, 109, 0.4);
+        0 0 4px rgba(234, 4, 255, 0.9),
+        0 0 10px rgba(111, 255, 0, 0.7),
+        0 0 15px rgba(255, 6, 6, 0.4);
     }
     50% {
       text-shadow:
-        0 0 3px rgba(144, 190, 109, 0.7),
-        0 0 8px rgba(144, 190, 109, 0.5),
+        0 0 3px rgba(190, 109, 163, 0.7),
+        0 0 8px rgba(255, 0, 255, 0.5),
         0 0 12px rgba(144, 190, 109, 0.3);
     }
   }
