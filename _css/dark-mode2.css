@@ -197,46 +197,7 @@ html {
         0 0 6px rgba(162, 209, 73, 0.6);
     }
 
-/* --- Blockquotes --- */
 
-blockquote {
-    font-size: 1.6rem;
-  }
-  
-  blockquote p {
-    width: 60%;
-    margin-right: 40px;
-    color: #a2d149; /*  medium green */
-    text-shadow:
-      0 0 2px rgba(162, 209, 73, 0.7),
-      0 0 4px rgba(162, 209, 73, 0.5);
-  }
-  
-  blockquote footer {
-    width: 60%;
-    font-size: 1.3rem;
-    text-align: right;
-    color: #a2d149; /* Match the citation color in epigraphs */
-    text-shadow:
-      0 0 3px rgba(162, 209, 73, 0.8),
-      0 0 6px rgba(162, 209, 73, 0.6);
-  }
-  
-  section > p,
-  section > footer,
-  section > table {
-    width: 60%;
-  }
-  
-  section > ol,
-  section > ul {
-    width: 55%;
-    -webkit-padding-start: 5%;
-  }
-  
-  li:not(:first-child) {
-    margin-top: 0.5rem;
-  }
   
   /* --- Figures --- */
   
@@ -277,7 +238,6 @@ blockquote {
     font-weight: 600;
     color: #6d97be; /* Green link color */
     text-decoration: none;
-    border-bottom: 1px dashed rgba(144, 190, 109, 0.7); /*  dashed underline */
     transition: all 0.2s ease-in-out;
     text-shadow:
       0 0 1px rgba(207, 207, 207, 0.6);
@@ -298,17 +258,18 @@ blockquote {
   @keyframes flicker-green {
     0%, 100% {
       text-shadow:
-        0 0 4px rgba(234, 4, 255, 0.9),
-        0 0 10px rgba(111, 255, 0, 0.7),
-        0 0 15px rgba(255, 6, 6, 0.4);
+        0 0 4px rgba(162, 209, 73, 0.9), /* Verde claro brillante */
+        0 0 10px rgba(98, 190, 55, 0.7), /* Verde intenso */
+        0 0 15px rgba(144, 238, 144, 0.4); /* Verde pastel suave */
     }
     50% {
       text-shadow:
-        0 0 3px rgba(190, 109, 163, 0.7),
-        0 0 8px rgba(255, 0, 255, 0.5),
-        0 0 12px rgba(144, 190, 109, 0.3);
+        0 0 3px rgba(111, 153, 53, 0.8), /* Verde más oscuro */
+        0 0 8px rgba(178, 255, 89, 0.6), /* Verde neón vibrante */
+        0 0 12px rgba(134, 199, 60, 0.5); /* Verde oliva brillante */
     }
   }
+  
   
   @keyframes glitch {
     0% {
@@ -995,3 +956,17 @@ label.margin-toggle:not(.sidenote-number) {
   .social-link.letterboxd:hover {
       text-shadow: 0 0 4px rgba(192, 28, 40, 0.7);
   }
+
+  /* Spacing between bullet points. */
+.franklin-content li p {
+  margin: 10px 0;
+}
+
+.franklin-content a {
+  color: #90be6d; /*  Dark green */
+  text-decoration: none;
+}
+
+.franklin-content a:hover {
+  text-decoration: underline;
+}

@@ -63,7 +63,7 @@ h1 {
   line-height: 1.1;
   letter-spacing: 0.05em; 
   text-transform: uppercase; 
-  color: #90be6d; /*  A more vibrant green*/
+  color: #2d4d16; /*  A more vibrant green*/
   text-shadow:
     0 0 4px rgba(80, 150, 100, 0.9),
     0 0 10px rgba(80, 150, 100, 0.7),
@@ -199,45 +199,48 @@ div.epigraph > blockquote > footer > cite {
 
 /* --- Blockquotes --- */
 
+/* Bloque de cita */
 blockquote {
-  font-size: 1.6rem; 
+  font-size: 1.4rem;
+  color: #333;               /* Texto principal */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-left: 4px solid #ccc;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
 }
 
 blockquote p {
+  margin: 0 0 0.5rem;
   width: 60%;
   margin-right: 40px;
-  color: #a2d149; /*  medium green */
-  text-shadow:
-    0 0 2px rgba(80, 150, 100, 0.6), 
-    0 0 4px rgba(80, 150, 100, 0.4);
 }
 
+/* Pie de cita */
 blockquote footer {
-    width: 60%;
-    font-size: 1.3rem;
-    text-align: right;
-    color: #a2d149; /* Match the citation color in epigraphs */
-    text-shadow:
-      0 0 3px rgba(80, 150, 100, 0.7), 
-      0 0 6px rgba(80, 150, 100, 0.5);
-  }
-  
+  width: 60%;
+  font-size: 1.2rem;
+  text-align: right;
+  color: #666;               /* Color un poco más claro que el texto principal */
+  margin-top: 0.5rem;
+}
 
+/* Ajuste general para secciones y elementos */
 section > p,
 section > footer,
 section > table {
-  width: 60%; 
+  width: 60%;
 }
 
 section > ol,
 section > ul {
   width: 55%;
-  -webkit-padding-start: 5%;
+  padding-left: 5%; /* Ajuste para listas */
 }
 
 li:not(:first-child) {
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem;
 }
+
 
 /* --- Figures --- */
 
@@ -280,7 +283,6 @@ a {
   font-weight: 600; 
   color: #90be6d; /* Green link color */
   text-decoration: none;
-  border-bottom: 1px dashed rgba(80, 150, 100, 0.5); /*  dashed underline */
   transition: all 0.2s ease-in-out; 
   text-shadow:
     0 0 5px rgba(80, 150, 100, 0.4);

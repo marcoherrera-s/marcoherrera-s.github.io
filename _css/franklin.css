@@ -123,8 +123,6 @@ h6 {
 }
 
 .franklin-content h1 {
-  padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
@@ -136,7 +134,7 @@ h6 {
   margin-bottom: 1em;
 }
 
-.franklin-content h1 a { color: inherit; }
+/* .franklin-content h1 a { color: inherit; }
 .franklin-content h1 a:hover { text-decoration: none; }
 .franklin-content h2 a { color: inherit; }
 .franklin-content h2 a:hover { text-decoration: none; }
@@ -147,7 +145,7 @@ h6 {
 .franklin-content h5 a { color: inherit; }
 .franklin-content h5 a:hover { text-decoration: none; }
 .franklin-content h6 a { color: inherit; }
-.franklin-content h6 a:hover { text-decoration: none; }
+.franklin-content h6 a:hover { text-decoration: none; } */
 
 .franklin-content table {
   margin-left: auto;
