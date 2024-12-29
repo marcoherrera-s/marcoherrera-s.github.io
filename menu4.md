@@ -7,7 +7,11 @@ title = "Otros"
 
 * [aprendiendo SQL  ┈ ⋞ 〈 ⏣ 〉 ⋟ ┈ ](/Otro/SQL/)
 
-* [Collages de palabras que no sabía qué eran](/Otro/palabras/)
+* [collages de palabras que no sabía qué eran](/Otro/palabras/)
 
-* [Mis subrayados](/menu3) 
+* [mis subrayados](/menu3) 
+
+* [PDFs en una Kindle](/Otro/k2pdf/)
+
+* [cómo hacer una playlist (la forma correcta)](/Otro/playlist/)
 ---

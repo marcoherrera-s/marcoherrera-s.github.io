@@ -1,4 +1,4 @@
-## ¿por qué un blog?
+# ¿por qué un blog?
 
 hacer un blog puede parecer algo anticuado actualmente, pero creo sinceramente que tiene su chiste. la idea de hacer uno no fue tan directa, todo comenzó porque quería hacer un canal de youtube programando cosas divertidas en Julia, esto tenía su truco, pues muchas cosas que tenía planeado hacer aún no sabía hacerlas, ja. pero yo soy un fiel creyente del _aprender haciendo_ o _learning by doing_, entonces pensé que sería divertido aprender cosas nuevas, compartirlas y además hacer videos.
 
