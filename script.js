@@ -1,126 +1,155 @@
 class Typewriter {
-    constructor(element, options = {}) {
-      this.element = element;
-      this.options = {
-        speed: 50,
-        randomizeSpeed: false,
-        flicker: false, // Nuevo: efecto de parpadeo
-        flickerIntensity: 0.2, // Nuevo: intensidad del parpadeo (0.0 - 1.0)
-        cursor: true, // Nuevo: mostrar un cursor
-        cursorChar: "|", // Nuevo: carácter del cursor
-        cursorBlinkSpeed: 500, // Nuevo: velocidad de parpadeo del cursor
-        chars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()",
-        onComplete: () => {},
-        ...options,
-      };
-      this.currentText = "";
-      this.iteration = 0;
-      this.inProgress = false;
-      this.rafId = null;
-      this.cursorInterval = null; // Nuevo: para el intervalo del cursor
-      this.originalText = ""; // Nuevo: almacena el texto original
-    }
-  
-    randomChar() {
-      return this.options.chars[
-        Math.floor(Math.random() * this.options.chars.length)
-      ];
-    }
-  
-    animate() {
-      if (this.iteration <= this.originalText.length) {
-        // Efecto de parpadeo (flicker)
-        const flickerEffect =
-          this.options.flicker && Math.random() < this.options.flickerIntensity
-            ? `style="opacity: 0.5;"` // Ajusta la opacidad para el parpadeo
-            : "";
-  
-        this.currentText = this.originalText
-          .split("")
-          .map(
-            (char, index) =>
-              `<span ${
-                index < this.iteration ? "" : flickerEffect
-              }>${index < this.iteration ? char : this.randomChar()}</span>`
-          )
-          .join("");
-  
-        this.element.innerHTML = this.currentText;
-        this.iteration++;
-  
-        const next = this.options.randomizeSpeed
-          ? Math.random() * this.options.speed
-          : this.options.speed;
-        this.rafId = setTimeout(() => requestAnimationFrame(this.animate.bind(this)), next);
-      } else {
-        this.element.innerHTML = this.originalText
-          .split("")
-          .map((char) => `<span>${char}</span>`)
-          .join("");
-        this.stopCursorAnimation(); // Detiene la animación del cursor
-        this.options.onComplete();
-        if (this.rafId) clearTimeout(this.rafId);
-        this.inProgress = false;
-      }
-    }
-  
-    // Nuevo: Inicia la animación del cursor
-    startCursorAnimation() {
-      if (this.options.cursor) {
-        let cursorVisible = true;
-        this.cursorInterval = setInterval(() => {
-          const cursorSpan = `<span class="cursor" style="border-right: 2px solid; margin-right: 3px; animation: cursor-blink ${this.options.cursorBlinkSpeed}ms infinite;">${
-            cursorVisible ? this.options.cursorChar : ""
-          }</span>`;
-          this.element.innerHTML = this.currentText + cursorSpan;
-          cursorVisible = !cursorVisible;
-        }, this.options.cursorBlinkSpeed);
-      }
-    }
-  
-    // Nuevo: Detiene la animación del cursor
-    stopCursorAnimation() {
-      if (this.cursorInterval) {
-        clearInterval(this.cursorInterval);
-        this.cursorInterval = null;
-        // Limpia el cursor al finalizar
-        this.element.innerHTML = this.currentText;
-      }
-    }
-  
-    start(text) {
-      if (!this.inProgress) {
-        this.inProgress = true;
-        this.iteration = 0;
-        this.originalText = text; // Guarda el texto original
-        this.currentText = ""; // Reinicia el texto actual
-        this.animate();
-        this.startCursorAnimation(); // Inicia la animación del cursor
-      }
-    }
+  constructor(element, options = {}) {
+    // Opciones por defecto
+    const defaults = {
+      speed: 50,
+      randomizeSpeed: false,
+      flicker: false,
+      flickerIntensity: 0.2,
+      cursor: true,
+      cursorChar: "|",
+      cursorBlinkSpeed: 500,
+      chars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()",
+      onComplete: () => {},
+    };
+
+    // Combina opciones del usuario con las opciones por defecto
+    this.options = { ...defaults, ...options };
+
+    this.element = element;
+    this.originalText = "";
+    this.currentText = "";
+    this.iteration = 0;
+    this.inProgress = false;
+    this.rafId = null;
+    this.cursorInterval = null;
   }
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".typewriter-text");
-  
-    elements.forEach((element) => {
-      const text = element.dataset.text;
-      if (text) {
-        const options = {
-          speed: 40,
-          randomizeSpeed: true,
-          flicker: true, // Activa el efecto de parpadeo
-          flickerIntensity: 0.3, // Intensidad del parpadeo
-          cursor: true, // Activa el cursor
-          cursorChar: "█", // Carácter del cursor (bloque sólido)
-          cursorBlinkSpeed: 600, // Velocidad de parpadeo del cursor
-        };
-  
-        const typewriter = new Typewriter(element, options);
-        typewriter.start(text);
-  
-        // Reinicia la animación al pasar el cursor
-        element.addEventListener("mouseenter", () => typewriter.start(text));
-      }
-    });
+
+  /**
+   * Devuelve un carácter aleatorio de la lista de caracteres permitidos.
+   */
+  randomChar = () => {
+    const { chars } = this.options;
+    return chars[Math.floor(Math.random() * chars.length)];
+  };
+
+  /**
+   * Ejecuta la animación de tipeo con efecto de flicker opcional.
+   */
+  animate = () => {
+    const { flicker, flickerIntensity, speed, randomizeSpeed, onComplete } = this.options;
+
+    // Si todavía no hemos llegado al final del texto original
+    if (this.iteration <= this.originalText.length) {
+      const arrText = this.originalText.split("");
+
+      // Calcula el efecto de parpadeo (flicker)
+      const flickerEffect = flicker && Math.random() < flickerIntensity ? `style="opacity: 0.5;"` : "";
+
+      // Construye el texto con o sin flicker
+      this.currentText = arrText
+        .map((char, index) => {
+          const isTyped = index < this.iteration;
+          return `<span ${isTyped ? "" : flickerEffect}>${isTyped ? char : this.randomChar()}</span>`;
+        })
+        .join("");
+
+      this.element.innerHTML = this.currentText;
+      this.iteration += 1;
+
+      // Controla la velocidad (con o sin aleatoriedad)
+      const nextSpeed = randomizeSpeed ? Math.random() * speed : speed;
+
+      // Llama a la siguiente iteración
+      this.rafId = setTimeout(
+        () => requestAnimationFrame(this.animate),
+        nextSpeed
+      );
+    } else {
+      // Si ya completó el texto, lo escribe sin caracteres aleatorios
+      this.element.innerHTML = this.originalText
+        .split("")
+        .map((char) => `<span>${char}</span>`)
+        .join("");
+
+      this.stopCursorAnimation(); // Detiene la animación del cursor
+      if (this.rafId) clearTimeout(this.rafId);
+
+      this.inProgress = false;
+      onComplete();
+    }
+  };
+
+  /**
+   * Inicia la animación del cursor parpadeante (si está activado).
+   */
+  startCursorAnimation = () => {
+    const { cursor, cursorChar, cursorBlinkSpeed } = this.options;
+
+    if (!cursor) return;
+
+    let cursorVisible = true;
+    this.cursorInterval = setInterval(() => {
+      // Span que representa el cursor
+      const cursorSpan = `<span class="cursor" style="border-right: 2px solid; margin-right: 3px; animation: cursor-blink ${cursorBlinkSpeed}ms infinite;">${
+        cursorVisible ? cursorChar : ""
+      }</span>`;
+
+      this.element.innerHTML = this.currentText + cursorSpan;
+      cursorVisible = !cursorVisible;
+    }, cursorBlinkSpeed);
+  };
+
+  /**
+   * Detiene la animación del cursor y elimina el span del cursor.
+   */
+  stopCursorAnimation = () => {
+    if (this.cursorInterval) {
+      clearInterval(this.cursorInterval);
+      this.cursorInterval = null;
+    }
+    this.element.innerHTML = this.currentText;
+  };
+
+  /**
+   * Inicia el proceso de tipeo.
+   */
+  start = (text) => {
+    // Evita superponer animaciones si ya está en progreso
+    if (this.inProgress) return;
+
+    this.inProgress = true;
+    this.iteration = 0;
+    this.originalText = text;
+    this.currentText = "";
+
+    this.animate();           // Comienza a animar el texto
+    this.startCursorAnimation(); // Comienza la animación del cursor
+  };
+}
+
+// Ejemplo de uso al cargar el DOM
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".typewriter-text");
+
+  elements.forEach((element) => {
+    const text = element.dataset.text;
+    if (text) {
+      const options = {
+        speed: 15,
+        randomizeSpeed: true,
+        flicker: true,
+        flickerIntensity: 0.3,
+        cursor: true,
+        cursorChar: "█",
+        cursorBlinkSpeed: 600,
+      };
+
+      const typewriter = new Typewriter(element, options);
+      typewriter.start(text);
+
+      // Reinicia la animación al pasar el cursor (si se desea)
+      element.addEventListener("mouseenter", () => typewriter.start(text));
+    }
   });
+});
