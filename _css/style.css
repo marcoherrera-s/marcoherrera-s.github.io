@@ -37,24 +37,24 @@
 
 /* --- Root Variables for Colors and Spacing --- */
 :root {
-  --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  --base-color: #d3d4e0;       /* Texto base claro con un tinte azulado */
-  --background-color: #12151f; /* Fondo principal en azul muy oscuro */
-  --highlight-background: #1b1f2a; /* Fondo de destacados ligeramente más claro */
-  --border-color: #2e3240;    /* Bordes en un gris azulado oscuro */
-
-  --color-primary: #8ab4f8;   /* Azul suave para elementos destacados */
-  --color-secondary: #a8c0ff; /* Acentos en un periwinkle claro */
-  --color-tertiary: #c3d0f9;  /* Detalles en azul pálido */
-  --color-link: #82aaff;      /* Enlaces en azul vibrante */
-  --color-selection: #5c7cfa; /* Selección en un tono azul intenso */
-
-  --text-shadow-strong: 0 0 4px rgba(138, 180, 248, 0.9), 0 0 10px rgba(138, 180, 248, 0.7), 0 0 15px rgba(138, 180, 248, 0.4);
-  --text-shadow-medium: 0 0 3px rgba(168, 192, 255, 0.8), 0 0 6px rgba(168, 192, 255, 0.6);
-  --text-shadow-soft: 0 0 2px rgba(138, 180, 248, 0.6);
-  --text-shadow-subtle: 0 0 2px rgba(195, 208, 249, 0.8);
-}
-
+    --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    --base-color: #333333;              /* Texto en gris oscuro para buena legibilidad */
+    --background-color: #fafafa;         /* Fondo blanco puro y limpio */
+    --highlight-background: #f5f5f5;     /* Un gris clarito para destacar secciones */
+    --border-color: #e0e0e0;             /* Bordes sutiles y modernos */
+  
+    --color-primary: #009688;            /* Turquesa vibrante que da energía */
+    --color-secondary: #ff5722;          /* Naranja intenso, perfecto para acentos */
+    --color-tertiary: #ffc107;           /* Amarillo vibrante para detalles chispeantes */
+    --color-link: #3f51b5;               /* Azul profundo y llamativo para enlaces */
+    --color-selection: #ffab40;          /* Un toque dorado para la selección de texto */
+  
+    --text-shadow-strong: 0 0 4px rgba(0, 150, 136, 0.9), 0 0 10px rgba(0, 150, 136, 0.7), 0 0 15px rgba(0, 150, 136, 0.4);
+    --text-shadow-medium: 0 0 3px rgba(255, 87, 34, 0.8), 0 0 6px rgba(255, 87, 34, 0.6);
+    --text-shadow-soft: 0 0 2px rgba(0, 0, 0, 0.3);
+    --text-shadow-subtle: 0 0 2px rgba(63, 81, 181, 0.8);
+  }
+  
 /* --- Base Styles --- */
 
 html {
