@@ -14,7 +14,7 @@
 
 ⑇ actualmente estudiando física en facultad de ciencias, unam
 
----
+
 
 **_sobre mí_**: 
 
@@ -45,11 +45,11 @@
 ~~~
 
 
----
+
 
 _**odio con mi ser**_: los comerciales y ads :(
     
----
+
  
  - [caja de herramientas](/Otro/caja/)
 
