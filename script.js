@@ -153,3 +153,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerButton = document.getElementById('hamburger-button');
+  const menu = document.getElementById('menu');
+  // Opcional: Si quieres empujar el contenido principal
+  // const mainContent = document.getElementById('main');
+  // const body = document.body;
+
+  if (hamburgerButton && menu) {
+    hamburgerButton.addEventListener('click', () => {
+      // Alterna la clase 'visible' en el menú
+      menu.classList.toggle('visible');
+
+      // Actualiza el atributo aria-expanded para accesibilidad
+      const isExpanded = menu.classList.contains('visible');
+      hamburgerButton.setAttribute('aria-expanded', isExpanded);
+
+      // Opcional: Alterna una clase en el body para empujar el contenido
+      // body.classList.toggle('menu-open');
+    });
+
+    // Opcional: Cerrar el menú si se hace clic fuera de él
+    document.addEventListener('click', (event) => {
+      // Comprueba si el menú está visible y si el clic fue FUERA del menú y FUERA del botón
+      if (menu.classList.contains('visible') &&
+          !menu.contains(event.target) &&
+          !hamburgerButton.contains(event.target)) {
+        menu.classList.remove('visible');
+        hamburgerButton.setAttribute('aria-expanded', 'false');
+        // Opcional: Quita la clase del body si la usaste
+        // body.classList.remove('menu-open');
+      }
+    });
+
+    // Opcional: Cerrar el menú al hacer clic en un enlace del menú (útil para SPAs o enlaces #)
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (menu.classList.contains('visible')) {
+          menu.classList.remove('visible');
+          hamburgerButton.setAttribute('aria-expanded', 'false');
+          // Opcional: Quita la clase del body si la usaste
+          // body.classList.remove('menu-open');
+        }
+      });
+    });
+  } else {
+    console.error("No se encontró el botón de hamburguesa o el elemento del menú.");
+  }
+});

@@ -615,13 +615,17 @@ label.margin-toggle:not(.sidenote-number) {
 /* --- Toggle Switch --- */
 
 .toggle-switch {
-  position: relative;
+  position: fixed; /* Fíjalo respecto a la ventana del navegador */
+  top: 20px;       /* Espacio desde la parte superior */
+  right: 20px;     /* Espacio desde el borde derecho */
   width: 55px;
   height: 28px;
-  --light: #e1e8d5; /* Light green (similar to menu background) */
-  --dark: var(--border-color); /* Dark green */
-  --accent: var(--color-primary); /* Green for toggle element */
-  --accent-hover: var(--color-secondary); /* Lighter green on hover */
+  z-index: 1000;   /* Para que esté encima de otros elementos */
+
+  --light: #e1e8d5;
+  --dark: var(--border-color);
+  --accent: var(--color-primary);
+  --accent-hover: var(--color-secondary);
 }
 
 .switch-label {
@@ -774,11 +778,14 @@ label.margin-toggle:not(.sidenote-number) {
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 0.5rem; /* más limpio que usar márgenes en los <li> */
 }
 
 #menu ul li {
-  margin: 8px 20px;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
 }
+
 
 #menu ul li a {
   display: block;
@@ -793,13 +800,13 @@ label.margin-toggle:not(.sidenote-number) {
   text-shadow: 0 0 3px rgba(144, 190, 109, 0.5);
 }
 
-/* Estilo especial para el icono 'home' */
+/* Estilo especial para el icono 'home'
 #menu ul li a[href="/"] {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: var(--spacing-standard);
-}
+} */
 
 #menu ul li a:hover {
   color: var(--color-secondary);
@@ -919,3 +926,79 @@ label.margin-toggle:not(.sidenote-number) {
 .franklin-content a:hover {
   text-decoration: underline;
 } 
+
+
+#layout {
+  /* Puedes necesitar ajustar padding si el botón fijo interfiere */
+  /* padding-top: 60px; */
+}
+
+/* Estilo del botón de hamburguesa */
+#hamburger-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background: var(--color-primary);      /* Turquesa vibrante */
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 8px;                    /* Más suave y moderno */
+  box-shadow: 0 2px 4px rgba(0, 150, 136, 0.3); /* Sombra sutil */
+  transition: background 0.3s ease;
+}
+
+#hamburger-button:hover {
+  background: var(--color-secondary);    /* Naranja intenso al pasar el mouse */
+}
+
+/* Menú lateral */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--highlight-background); /* Gris clarito */
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Menor opacidad para look limpio */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* Mostrar el menú */
+#menu.visible {
+  transform: translateX(0);
+}
+
+/* Lista del menú */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  border-bottom: 1px solid var(--border-color); /* Línea sutil del root */
+}
+
+#menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--base-color);               /* Gris oscuro legible */
+  transition: background-color 0.2s;
+}
+
+#menu ul li a:hover {
+  background-color: var(--color-tertiary); /* Amarillo chispeante al hover */
+  color: #000; /* Mejor contraste en hover */
+}
+
+#menu ul li a i {
+  margin-right: 10px;
+}

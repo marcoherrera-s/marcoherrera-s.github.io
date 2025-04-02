@@ -1,13 +1,25 @@
 <div id="layout">
+
+  <!-- Botón de Hamburguesa -->
+  <button id="hamburger-button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+    <i class="fas fa-bars"></i> <!-- Icono de barras (Font Awesome) -->
+    <!-- Alternativa sin Font Awesome (ver CSS abajo): -->
+    <!-- <span class="hamburger-bar"></span> -->
+    <!-- <span class="hamburger-bar"></span> -->
+    <!-- <span class="hamburger-bar"></span> -->
+  </button>
+
+  <!-- Tu Menú Original (lo dejamos igual, pero CSS lo ocultará) -->
   <div id="menu">
     <ul>
+      <!-- Corregí el cierre de la etiqueta <i> -->
+      <li><a href="/"><i class="fa-duotone fa-solid fa-house-chimney fa-xs"></i> Inicio</a></li>
       <li><a href="/menu1">Física </a></li>
       <li><a href="/menu2/">Miscelánea</a></li>
-      <li><a href="/"><i class="fa-duotone fa-solid fa-house-chimney fa-xs"></i></li>
       <li><a href="/menu3/">Extra</a></li>
       <li><a href="/menu4/">Otro</a></li>
     </ul>
   </div>
-  <div id="main">
 
-    
+  <!-- Contenido Principal -->
+  <div id="main">
