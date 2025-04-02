@@ -7,8 +7,8 @@
     <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY" />
 
     <!-- Título de la página -->
-    {{isdef title}} 
-        <title>{{fill title}}</title> 
+    {{isdef title}}
+        <title>{{fill title}}</title>
     {{end}}
 
     <!-- Fuentes de Google Fonts -->
@@ -20,17 +20,21 @@
     <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode2.css" disabled>
 
     <!-- Bibliotecas y Scripts Necesarios en el Head -->
-    <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous"></script>
-    
-    {{if hasmath}} 
-        {{insert head_katex.html}} 
+    <script src="https://kit.fontawesome.com/1966c00f87.js" crossorigin="anonymous" defer></script>
+
+    {{if hasmath}}
+        {{insert head_katex.html}}
     {{end}}
-    {{if hascode}} 
-        {{insert head_highlight.html}} 
+    {{if hascode}}
+        {{insert head_highlight.html}}
     {{end}}
 
     <!-- Script para Modo Oscuro -->
     <script src="/dark-mode.js" defer></script>
+
+    <!-- Mueve tu script.js al head y usa defer -->
+    <script src="/script.js" defer></script>
+
 </head>
 <body>
     <!-- Switch para Modo Oscuro -->
@@ -46,7 +50,8 @@
 
 
     <!-- Scripts al Final del Body para Mejorar la Carga -->
-    <script src="/script.js" defer></script>
+    <!-- script.js ya está en el head, quitándolo de aquí -->
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
 </body>
 </html>
