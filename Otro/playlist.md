@@ -93,5 +93,5 @@ Ya que tienes tu lista de canciones ordenadas acorde a esa métrica, toca la par
 Esta playlist que se irá actualizando, está hecha de esta forma:
 
 ~~~
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2LUrb74euP0Aaql68t51nx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/41FlPd2le9PDV5OrMtWjYf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 ~~~
