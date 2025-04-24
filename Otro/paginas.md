@@ -63,4 +63,6 @@ aquí pondré algunas páginas que conozco que suelo usar comunmente, unas más 
 
 15. [ArtStation](https://www.artstation.com)
    siempre que quiero cambiar el fondo de mi computadora es aquí a donde acudo.
-    
+
+16. [open-slum](https://open-slum.org/)
+    a veces es un martirio encontrar cuál es la página buena de libgen que sirve, ya que es normal que se caigan seguido. bueno pues esta es la solución, recopila las principales bibliotecas y su salud. la ocupo demasiado. 
