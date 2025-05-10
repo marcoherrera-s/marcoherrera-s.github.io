@@ -840,7 +840,6 @@ label.margin-toggle:not(.sidenote-number) {
 .franklin-content {
   padding-left: 10%; /* Añade un margen del 10% a la izquierda */
 }
-
 .franklin-content {
   padding-right: 5%; /* Añade un margen del 5% a la derecha */
 }
@@ -999,4 +998,16 @@ label.margin-toggle:not(.sidenote-number) {
 
 #menu ul li a i {
   margin-right: 10px;
+}
+
+:root {
+  --blockquote-bg: #1b2b1f; /* fondo oscuro para citas (verde grisáceo oscuro) */
+  --blockquote-text: var(--base-color); /* el base-color en modo oscuro es texto claro */
+  --blockquote-border: var(--color-secondary); /* por ejemplo, usar el naranja secundario en oscuro */
+}
+/* La misma regla blockquote se aplica, heredando ahora los valores ajustados: */
+.franklin-content blockquote {
+  background: var(--background-color);
+  border-left: 4px solid var(--blockquote-border);
+  color: var(--blockquote-text);
 }

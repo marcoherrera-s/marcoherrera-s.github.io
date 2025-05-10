@@ -26,3 +26,5 @@ tags = ["syntax", "code"]
  -->
 
 * [física estadística](/fisest/cover/)
+
+* [mecánica hamiltoniana](/Hamilton/cover/)
