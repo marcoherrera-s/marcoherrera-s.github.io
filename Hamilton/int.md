@@ -32,7 +32,7 @@ y además
 $$
 \hat{A}g(p) = f(x)
 $$
-Esto se ve más bonito cuando se ve geométricamente qué es lo que está pasando. Pero lamentablemente no me quiero meter tanto en eso en este espacio. Sin embargo, si es de interés, hay algunas cosas divertidas aquí: [1](arxiv.org/pdf/0806.1147), [2](https://physics.stackexchange.com/questions/4384/physical-meaning-of-legendre-transformation/69374#69374).
+Esto se ve más bonito cuando se ve geométricamente qué es lo que está pasando. Pero lamentablemente no me quiero meter tanto en eso en este espacio. Sin embargo, si es de interés, hay algunas cosas divertidas aquí: [1](https://arxiv.org/pdf/0806.1147), [2](https://physics.stackexchange.com/questions/4384/physical-meaning-of-legendre-transformation/69374#69374).
 
 ---
 
