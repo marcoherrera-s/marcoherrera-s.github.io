@@ -16,7 +16,7 @@ $$
 \frac{df}{dx} = p
 $$
 donde sabemos que la información de cómo cambia la pendiente de $f(x)$ está ahora contenida en $p$. 
-Para construir $g(p)$, la transformada de Fourier nos dice que 
+Para construir $g(p)$, la transformada de Legendre nos dice que 
 $$
 g(p) = px - f(x)
 $$
