@@ -1,12 +1,31 @@
 @charset "UTF-8";
 
-/* Import ET Book styles
-   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+/* ==================================================================
+   STYLE.CSS - Archivo CSS principal reorganizado
+   
+   Estructura:
+   1. Font faces
+   2. CSS Variables
+   3. Base styles
+   4. Typography
+   5. Layout & Structure
+   6. Components (links, figures, tables, code, etc.)
+   7. Specific sections (menu, toggle, social, franklin)
+   8. Animations
+   9. Media queries
+================================================================== */
+
+/* ==================================================================
+   1. FONT FACES
+================================================================== */
 
 @font-face {
   font-family: "et-book";
   src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), 
+       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), 
+       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), 
+       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +33,10 @@
 @font-face {
   font-family: "et-book";
   src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), 
+       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), 
+       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), 
+       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
   font-weight: normal;
   font-style: italic;
 }
@@ -22,7 +44,10 @@
 @font-face {
   font-family: "et-book";
   src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), 
+       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), 
+       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), 
+       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
   font-weight: bold;
   font-style: normal;
 }
@@ -30,32 +55,50 @@
 @font-face {
   font-family: "et-book-roman-old-style";
   src: url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), 
+       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), 
+       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), 
+       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* --- Root Variables for Colors and Spacing --- */
+/* ==================================================================
+   2. CSS VARIABLES
+================================================================== */
+
 :root {
-    --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    --base-color: #333333;              /* Texto en gris oscuro para buena legibilidad */
-    --background-color: #fafafa;         /* Fondo blanco puro y limpio */
-    --highlight-background: #f5f5f5;     /* Un gris clarito para destacar secciones */
-    --border-color: #e0e0e0;             /* Bordes sutiles y modernos */
+  /* Fonts */
+  --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   
-    --color-primary: #009688;            /* Turquesa vibrante que da energía */
-    --color-secondary: #ff5722;          /* Naranja intenso, perfecto para acentos */
-    --color-tertiary: #ffc107;           /* Amarillo vibrante para detalles chispeantes */
-    --color-link: #3f51b5;               /* Azul profundo y llamativo para enlaces */
-    --color-selection: #ffab40;          /* Un toque dorado para la selección de texto */
+  /* Colors */
+  --base-color: #333333;
+  --background-color: #fafafa;
+  --highlight-background: #f5f5f5;
+  --border-color: #e0e0e0;
   
-    --text-shadow-strong: 0 0 4px rgba(0, 150, 136, 0.9), 0 0 10px rgba(0, 150, 136, 0.7), 0 0 15px rgba(0, 150, 136, 0.4);
-    --text-shadow-medium: 0 0 3px rgba(255, 87, 34, 0.8), 0 0 6px rgba(255, 87, 34, 0.6);
-    --text-shadow-soft: 0 0 2px rgba(0, 0, 0, 0.3);
-    --text-shadow-subtle: 0 0 2px rgba(63, 81, 181, 0.8);
-  }
+  --color-primary: #009688;
+  --color-secondary: #ff5722;
+  --color-tertiary: #ffc107;
+  --color-link: #3f51b5;
+  --color-selection: #ffab40;
   
-/* --- Base Styles --- */
+  /* Text shadows */
+  --text-shadow-strong: 0 0 4px rgba(0, 150, 136, 0.9), 0 0 10px rgba(0, 150, 136, 0.7), 0 0 15px rgba(0, 150, 136, 0.4);
+  --text-shadow-medium: 0 0 3px rgba(255, 87, 34, 0.8), 0 0 6px rgba(255, 87, 34, 0.6);
+  --text-shadow-soft: 0 0 2px rgba(0, 0, 0, 0.3);
+  --text-shadow-subtle: 0 0 2px rgba(63, 81, 181, 0.8);
+  
+  /* Spacing */
+  --spacing-standard: 10px;
+  
+  /* Franklin variables */
+  --small: 14px;
+}
+
+/* ==================================================================
+   3. BASE STYLES
+================================================================== */
 
 html {
   font-size: 14px;
@@ -63,22 +106,24 @@ html {
 
 body {
   width: 90%;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--base-font);
   background-color: var(--background-color);
   color: var(--base-color);
-  max-width: 1500px;
   counter-reset: sidenote-counter;
-  text-shadow: 0 0 2px rgba(144, 190, 109, 0.8); /* More pronounced green glow */
+  text-shadow: 0 0 2px rgba(144, 190, 109, 0.8);
 }
 
-/* --- Typography --- */
+/* ==================================================================
+   4. TYPOGRAPHY
+================================================================== */
 
 h1 {
   font-weight: 600;
   margin-top: 4.5rem;
-  margin-bottom: var(--spacing-standard);
+  margin-bottom: 2rem;
   font-size: 3.5rem;
   line-height: 1.1;
   letter-spacing: 0.05em;
@@ -108,14 +153,13 @@ h3 {
   text-shadow: var(--text-shadow-strong);
 }
 
-hr {
-  display: block;
-  height: 2px;
-  width: 70%;
-  border: 0;
-  background: linear-gradient(90deg, rgba(144, 190, 109, 0.2) 0%, rgba(144, 190, 109, 0.8) 50%, rgba(144, 190, 109, 0.2) 100%); /* Green gradient line */
-  margin: 2em auto;
-  padding: 0;
+p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-right: 0;
+  vertical-align: baseline;
 }
 
 p.subtitle {
@@ -131,6 +175,26 @@ p.subtitle {
   text-shadow: var(--text-shadow-medium);
 }
 
+ol,
+ul {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  width: 70%;
+  border: 0;
+  background: linear-gradient(90deg, rgba(144, 190, 109, 0.2) 0%, rgba(144, 190, 109, 0.8) 50%, rgba(144, 190, 109, 0.2) 100%);
+  margin: 2em auto;
+  padding: 0;
+}
+
 .numeral {
   font-family: var(--base-font);
   font-feature-settings: "tnum";
@@ -143,7 +207,18 @@ p.subtitle {
   text-shadow: var(--text-shadow-strong);
 }
 
-/* --- Layout & Structure --- */
+span.newthought {
+  font-variant: small-caps;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow-medium);
+}
+
+/* ==================================================================
+   5. LAYOUT & STRUCTURE
+================================================================== */
 
 article {
   position: relative;
@@ -155,49 +230,59 @@ section {
   padding-bottom: var(--spacing-standard);
 }
 
-p,
-ol,
-ul {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+section > p,
+section > footer,
+section > table {
+  width: 60%;
 }
 
-p {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding-right: 0;
-  vertical-align: baseline;
+section > ol,
+section > ul {
+  width: 55%;
+  padding-left: 5%;
 }
 
-/* --- Chapter Epigraphs --- */
-
-div.epigraph {
-  margin: 6em 0;
+.fullwidth {
+  max-width: 92%;
+  clear: both;
 }
 
-div.epigraph > blockquote {
-  margin-top: 4em;
-  margin-bottom: 4em;
-  font-size: 1.6rem;
+/* ==================================================================
+   6. COMPONENTS
+================================================================== */
+
+/* --- Links --- */
+
+a {
+  font-weight: 600;
+  color: var(--color-link);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 1px rgba(207, 207, 207, 0.6);
 }
 
-div.epigraph > blockquote,
-div.epigraph > blockquote > p {
-  font-style: italic;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
+a:hover {
+  /* Add hover styles if needed */
 }
 
-div.epigraph > blockquote > footer {
-  font-style: normal;
-  color: var(--base-color);
-  text-shadow: var(--text-shadow-subtle);
+/* --- Selection --- */
+
+::selection {
+  background: var(--color-selection);
+  color: #fff;
+  text-shadow: var(--text-shadow-strong);
 }
 
-div.epigraph > blockquote > footer > cite {
-  font-style: italic;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
+::-moz-selection {
+  background: var(--color-selection);
+  color: #fff;
+  text-shadow: var(--text-shadow-strong);
+}
+
+/* --- Images --- */
+
+img {
+  max-width: 100%;
 }
 
 /* --- Figures --- */
@@ -233,91 +318,43 @@ figcaption {
   padding: 0.5em 0;
 }
 
-/* --- Links --- */
-
-a {
-  font-weight: 600;
-  color: var(--color-link);
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  text-shadow: 0 0 1px rgba(207, 207, 207, 0.6);
+div.fullwidth,
+figure.fullwidth {
+  width: 100%;
 }
 
-a:hover {
+/* --- Blockquotes & Epigraphs --- */
+
+div.epigraph {
+  margin: 6em 0;
 }
 
-/* --- Typewriter-Style Animation for <p> elements (optional)--- */
-
-.typewriter-text span {
-  animation: flicker-green 2.5s infinite, glitch 0.7s infinite alternate-reverse, font-glitch 2.5s steps(3) infinite alternate;
+div.epigraph > blockquote {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  font-size: 1.6rem;
 }
 
-@keyframes flicker-green {
-  0%,
-  100% {
-    text-shadow: 0 0 4px rgba(162, 209, 73, 0.9), 0 0 10px rgba(98, 190, 55, 0.7), 0 0 15px rgba(144, 238, 144, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 3px rgba(111, 153, 53, 0.8), 0 0 8px rgba(178, 255, 89, 0.6), 0 0 12px rgba(134, 199, 60, 0.5);
-  }
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+  font-style: italic;
+  color: var(--color-secondary);
+  text-shadow: var(--text-shadow-medium);
 }
 
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-    opacity: 0.9;
-  }
-  25% {
-    transform: translate(-3px, 2px);
-    opacity: 0.85;
-  }
-  50% {
-    transform: translate(2px, -3px);
-    opacity: 0.95;
-  }
-  75% {
-    transform: translate(3px, 1px);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 0.9;
-  }
+div.epigraph > blockquote > footer {
+  font-style: normal;
+  color: var(--base-color);
+  text-shadow: var(--text-shadow-subtle);
 }
 
-@keyframes font-glitch {
-  0% {
-    font-family: "Cutive Mono", "Courier New", Courier, monospace;
-  }
-  50% {
-    font-family: monospace;
-  }
-  100% {
-    font-family: "Cutive Mono", "Courier New", Courier, monospace;
-  }
+div.epigraph > blockquote > footer > cite {
+  font-style: italic;
+  color: var(--color-secondary);
+  text-shadow: var(--text-shadow-medium);
 }
 
-/* --- Selection --- */
-
-::selection {
-  background: var(--color-selection);
-  color: #fff;
-  text-shadow: var(--text-shadow-strong);
-}
-
-::-moz-selection {
-  background: var(--color-selection);
-  color: #fff;
-  text-shadow: var(--text-shadow-strong);
-}
-
-/* --- Images --- */
-
-img {
-  max-width: 100%;
-}
-
-/* --- Sidenotes, Margin Notes, Figures, Captions --- */
+/* --- Sidenotes & Margin Notes --- */
 
 .sidenote,
 .marginnote {
@@ -343,33 +380,50 @@ img {
 
 .sidenote-number::after,
 .sidenote::before {
-  font-family: "Cutive Mono", "Courier New", Courier, monospace; /* Use monospace font for the sidenote number, for the code feels */
+  font-family: "Cutive Mono", "Courier New", Courier, monospace;
   position: relative;
   vertical-align: baseline;
 }
 
 .sidenote-number::after {
   content: counter(sidenote-counter);
-  font-size: 1.1rem; /* Increase the font size for more visibility*/
-  top: -0.6rem; /* Adjust for a better look */
-  left: 0.2rem; /* Adjust for a better look */
+  font-size: 1.1rem;
+  top: -0.6rem;
+  left: 0.2rem;
 }
 
 .sidenote::before {
   content: counter(sidenote-counter) " ";
-  font-size: 1.1rem; /* The same font-size as sidenote-number::after */
-  top: -0.6rem; /* The same vertical as sidenote-number::after */
+  font-size: 1.1rem;
+  top: -0.6rem;
 }
 
 blockquote .sidenote,
 blockquote .marginnote {
-  margin-right: -83%; /* Adjusted for blockquote context */
-  min-width: 60%; /* Slightly wider */
+  margin-right: -83%;
+  min-width: 60%;
+}
+
+input.margin-toggle {
+  display: none;
+}
+
+label.sidenote-number {
+  display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
 }
 
 /* --- Tables --- */
 
-div.fullwidth,
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
 table.fullwidth {
   width: 100%;
 }
@@ -377,15 +431,9 @@ table.fullwidth {
 div.table-wrapper {
   overflow-x: auto;
   font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
-  border-radius: 5px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(144, 190, 109, 0.4); /* Add a more prominent shadow, with green tint */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(144, 190, 109, 0.4);
   margin-bottom: 2em;
-}
-
-table {
-  border-collapse: collapse; /* Makes borders merge together */
-  width: 100%; /* Take full width inside the wrapper */
-  margin: 1em 0;
 }
 
 th,
@@ -455,7 +503,7 @@ pre.code {
   padding: 1em;
   line-height: 1.6;
   border: 1px solid var(--border-color);
-  box-shadow: 0 2px 6px rgba(144, 190, 109, 0.4); /* Green-tinted shadow */
+  box-shadow: 0 2px 6px rgba(144, 190, 109, 0.4);
   border-radius: 4px;
 }
 
@@ -465,36 +513,6 @@ pre.code.fullwidth {
   margin-right: auto;
 }
 
-/* --- New Thought --- */
-
-.fullwidth {
-  max-width: 92%;
-  clear: both;
-}
-
-span.newthought {
-  font-variant: small-caps;
-  font-size: 1.3em;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--color-primary);
-  text-shadow: var(--text-shadow-medium);
-}
-
-/* --- Inputs & Labels --- */
-
-input.margin-toggle {
-  display: none;
-}
-
-label.sidenote-number {
-  display: inline;
-}
-
-label.margin-toggle:not(.sidenote-number) {
-  display: none;
-}
-
 /* --- Iframe --- */
 
 .iframe-wrapper {
@@ -502,8 +520,8 @@ label.margin-toggle:not(.sidenote-number) {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(144, 190, 109, 0.4); /* Green-tinted shadow */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(144, 190, 109, 0.4);
 }
 
 .iframe-wrapper iframe {
@@ -512,116 +530,177 @@ label.margin-toggle:not(.sidenote-number) {
   left: 0;
   width: 100%;
   height: 100%;
-  border: none; /* Remove default border */
+  border: none;
 }
 
-/* --- Media Queries for Responsive Design --- */
+/* ==================================================================
+   7. SPECIFIC SECTIONS
+================================================================== */
 
-@media (max-width: 760px) {
-  body {
-    width: 90%; /* Adjust body width */
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+/* --- Menu (Hamburger + Navigation) --- */
 
-  hr,
-  section > p,
-  section > footer,
-  section > table {
-    width: 100%;
-  }
+#layout {
+  /* Adjust padding if fixed button interferes */
+}
 
-  pre.code {
-    width: 100%; /* Adjusted for smaller screens */
-  }
+/* Hamburger Button - Modern & Clean */
+#hamburger-button {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 1002;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
 
-  section > ol {
-    width: 100%;
-    padding-left: 10%; /* Adjust padding */
-    padding-right: 5%; /* Adjust padding */
-  }
+#hamburger-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 150, 136, 0.3);
+}
 
-  section > ul {
-    width: 100%;
-    padding-left: 10%; /* Adjust padding */
-    padding-right: 5%; /* Adjust padding */
-  }
+#hamburger-button:active {
+  transform: scale(0.95);
+}
 
-  figure {
-    max-width: 100%; /* Full width on small screens */
-  }
+/* Menu Backdrop Overlay */
+#menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
 
-  figcaption,
-  figure.fullwidth figcaption {
-    margin-right: 0;
-    max-width: 90%;
-  }
+#menu-backdrop.visible {
+  opacity: 1;
+  visibility: visible;
+}
 
-  blockquote {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1em;
-    border-left: 3px solid var(--border-color);
-    background-color: #0d1f13; /* dark green background */
-    border-radius: 5px;
-  }
+/* Sidebar Menu */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  background: linear-gradient(135deg, var(--background-color) 0%, var(--highlight-background) 100%);
+  padding-top: 80px;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-color);
+}
 
-  blockquote p,
-  blockquote footer {
-    width: 100%;
-  }
+#menu.visible {
+  transform: translateX(0);
+}
 
-  label.margin-toggle:not(.sidenote-number) {
-    display: inline;
-    padding: 0.3em 0.6em;
-    border-radius: 3px;
-    background-color: #185e52;
-    color: var(--color-tertiary); /*light green*/
-    font-size: 1.1rem;
-    cursor: pointer;
-  }
+/* Custom scrollbar for menu */
+#menu::-webkit-scrollbar {
+  width: 6px;
+}
 
-  .sidenote,
-  .marginnote {
-    display: none;
-  }
+#menu::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-  .margin-toggle:checked + .sidenote,
-  .margin-toggle:checked + .marginnote {
-    display: block;
-    float: none; /* Override float to stack vertically */
-    left: auto; /* Reset left positioning */
-    clear: both;
-    width: 90%; /* Adjust width for small screens */
-    margin: 2rem 5%; /* 5% margin on sides, 2rem margin top and bottom */
-    vertical-align: baseline;
-    position: relative;
-  }
+#menu::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
 
-  label {
-    cursor: pointer;
-  }
+#menu::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
 
-  div.table-wrapper,
-  table {
-    width: 100%; /* Adjust table width for smaller screens */
-  }
+#menu ul {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+}
 
-  img {
-    width: 100%;
-  }
+#menu ul li {
+  margin-bottom: 4px;
+}
+
+#menu ul li a {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--base-color);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#menu ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--color-primary);
+  transform: scaleY(0);
+  transition: transform 0.2s ease;
+}
+
+#menu ul li a:hover {
+  background-color: rgba(0, 150, 136, 0.08);
+  padding-left: 20px;
+  color: var(--color-primary);
+}
+
+#menu ul li a:hover::before {
+  transform: scaleY(1);
+}
+
+#menu ul li a:active {
+  transform: scale(0.98);
+}
+
+#menu ul li a i {
+  margin-right: 12px;
+  font-size: 1.1em;
+  min-width: 20px;
+  text-align: center;
 }
 
 /* --- Toggle Switch --- */
 
 .toggle-switch {
-  position: fixed; /* Fíjalo respecto a la ventana del navegador */
-  top: 20px;       /* Espacio desde la parte superior */
-  right: 20px;     /* Espacio desde el borde derecho */
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 55px;
   height: 28px;
-  z-index: 1000;   /* Para que esté encima de otros elementos */
-
+  z-index: 1000;
   --light: #e1e8d5;
   --dark: var(--border-color);
   --accent: var(--color-primary);
@@ -636,7 +715,7 @@ label.margin-toggle:not(.sidenote-number) {
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Add transition effect */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
 .checkbox {
@@ -660,7 +739,7 @@ label.margin-toggle:not(.sidenote-number) {
 
 .checkbox:checked ~ .slider {
   background-color: var(--light);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); /* Inset shadow for "pressed" effect */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .slider::before {
@@ -674,7 +753,7 @@ label.margin-toggle:not(.sidenote-number) {
   border-radius: 50%;
   background-color: var(--accent);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease; /* Add transition and a subtle shadow effect */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
 .checkbox:checked ~ .slider::before {
@@ -682,10 +761,67 @@ label.margin-toggle:not(.sidenote-number) {
   background-color: var(--dark);
 }
 
-/* Hover Effect for Slider */
 .switch-label:hover .slider::before {
-  background-color: var(--accent-hover); /* Changes the color of the circle when hovering */
+  background-color: var(--accent-hover);
 }
+
+/* --- Social Media Links --- */
+
+#social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.social-link {
+  font-size: 1.2em;
+  color: var(--color-primary);
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(144, 190, 109, 0.5);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--color-secondary);
+  text-shadow: 0 0 5px rgba(162, 209, 73, 0.7);
+}
+
+.social-link.letterboxd {
+  color: #c01c28;
+  text-shadow: none;
+}
+
+.social-link.letterboxd:hover {
+  text-shadow: 0 0 4px rgba(192, 28, 40, 0.7);
+}
+
+/* --- Franklin Overrides (Consolidated) --- */
+
+.franklin-content {
+  font-size: 1.4rem;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.franklin-content code {
+  font-size: var(--small);
+}
+
+.franklin-content li p {
+  margin: 10px 0;
+}
+
+.franklin-content a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.franklin-content a:hover {
+  text-decoration: underline;
+}
+
+/* --- Typewriter Effect --- */
 
 .typewriter-text span {
   color: var(--color-primary);
@@ -694,13 +830,26 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 .cursor {
-  color: var(--color-primary); /* Match text color */
+  color: var(--color-primary);
   text-shadow: 0 0 3px rgba(144, 190, 109, 0.9), 0 0 8px rgba(144, 190, 109, 0.7), 0 0 12px rgba(144, 190, 109, 0.5);
+  animation: cursor-blink 1s steps(1) infinite;
+}
+
+/* ==================================================================
+   8. ANIMATIONS
+================================================================== */
+
+@keyframes flicker-green {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(162, 209, 73, 0.9), 0 0 10px rgba(98, 190, 55, 0.7), 0 0 15px rgba(144, 238, 144, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 3px rgba(111, 153, 53, 0.8), 0 0 8px rgba(178, 255, 89, 0.6), 0 0 12px rgba(134, 199, 60, 0.5);
+  }
 }
 
 @keyframes flicker {
-  0%,
-  100% {
+  0%, 100% {
     text-shadow: 0 0 3px rgba(144, 190, 109, 0.9), 0 0 8px rgba(144, 190, 109, 0.7), 0 0 12px rgba(144, 190, 109, 0.5);
   }
   50% {
@@ -762,243 +911,131 @@ label.margin-toggle:not(.sidenote-number) {
   }
 }
 
-/* ajustes para Franklin */
-.franklin-content code {
-  font-size: var(--small); /* Define el tamaño de la fuente del código en el contenido de Franklin usando una variable CSS */
+/* ==================================================================
+   9. MEDIA QUERIES (Mobile & Responsive)
+================================================================== */
+
+/* --- Tablets and smaller screens --- */
+@media (max-width: 760px) {
+  body {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+
+  section > ol,
+  section > ul {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  figure {
+    max-width: 100%;
+  }
+
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0;
+    max-width: 90%;
+  }
+
+  pre.code {
+    width: 100%;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-left: 3px solid var(--border-color);
+    background-color: #0d1f13;
+    border-radius: 5px;
+  }
+
+  blockquote p,
+  blockquote footer {
+    width: 100%;
+  }
+
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    background-color: #185e52;
+    color: var(--color-tertiary);
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+    display: block;
+    float: none;
+    left: auto;
+    clear: both;
+    width: 90%;
+    margin: 2rem 5%;
+    vertical-align: baseline;
+    position: relative;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  div.table-wrapper,
+  table {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  /* Menu adjustments for mobile */
+  #menu {
+    width: 85vw;
+    max-width: 320px;
+  }
+  
+  #hamburger-button {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
 }
 
-.franklin-content {
-  font-size: 1.4rem; /* Ajusta el tamaño de fuente general del contenido de Franklin a 1.4rem */
-}
-
-#menu ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 0.5rem; /* más limpio que usar márgenes en los <li> */
-}
-
-#menu ul li {
-  padding: 0.25rem 0.5rem;
-  transition: all 0.3s ease;
-}
-
-
-#menu ul li a {
-  display: block;
-  position: relative;
-  padding: var(--spacing-standard) 20px;
-  border-radius: 8px;
-  font-size: 0.9em;
-  font-weight: 500;
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-  text-shadow: 0 0 3px rgba(144, 190, 109, 0.5);
-}
-
-/* Estilo especial para el icono 'home'
-#menu ul li a[href="/"] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--spacing-standard);
-} */
-
-#menu ul li a:hover {
-  color: var(--color-secondary);
-  background-color: var(--highlight-background);
-  transform: translateY(-2px);
-  text-shadow: 0 0 5px rgba(162, 209, 73, 0.7);
-}
-
-/* Subrayado animado */
-#menu ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 20px;
-  right: 20px;
-  height: 2px;
-  background-color: var(--color-secondary);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s ease;
-}
-
-/* Quitar subrayado en el ícono 'home' */
-#menu ul li a[href="/"]::after {
-  display: none;
-}
-
-#menu ul li a:hover::after {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.franklin-content {
-  padding-left: 10%; /* Añade un margen del 10% a la izquierda */
-}
-
-.franklin-content {
-  padding-right: 5%; /* Añade un margen del 5% a la derecha */
-}
-
+/* --- Small desktops and large tablets --- */
 @media (max-width: 940px) {
-  /* Pantallas estrechas: el menú está en la parte superior */
-  #menu {
-    width: 100%; /* El menú ocupa el 100% del ancho */
-    margin-top: 75px;
-    margin-bottom: 25px;
-  }
-
-  #menu li {
-    display: inline-block; /* Los elementos del menú se muestran en línea */
-    line-height: 30px; /* Define la altura de línea */
-  }
-
   #main {
-    float: none; /* Elimina cualquier flotante */
-    width: 100%; /* El contenido principal ocupa el ancho completo */
+    float: none;
+    width: 100%;
   }
 }
 
+/* --- Medium desktops --- */
 @media (min-width: 940px) {
-  #menu {
-    margin-top: 100px;
-    float: left; /* El menú se flota a la izquierda en pantallas anchas */
-    width: 100px; /* El menú tiene un ancho fijo */
-    text-align: right; /* Los elementos del menú se alinean a la derecha */
-  }
-
   .franklin-content {
-    width: 600px; /* El contenido tiene un ancho fijo en pantallas anchas */
+    width: 600px;
   }
 }
 
+/* --- Large desktops --- */
 @media (min-width: 1000px) {
   .franklin-content {
-    width: 660px; /* El contenido es un poco más ancho en pantallas más grandes */
+    width: 660px;
   }
-}
-
-#social-media {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centers the links horizontally */
-  gap: 35px; /* Space between the links */
-}
-
-.social-link {
-  font-size: 1.2em;
-  color: var(--color-primary);
-  text-decoration: none;
-  text-shadow: 0 0 3px rgba(144, 190, 109, 0.5);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.social-link:hover {
-  color: var(--color-secondary);
-  text-shadow: 0 0 5px rgba(162, 209, 73, 0.7);
-}
-
-.social-link.letterboxd {
-  color: #c01c28;
-  text-shadow: none; /* Remove text-shadow for Letterboxd link */
-}
-.social-link.letterboxd:hover {
-  text-shadow: 0 0 4px rgba(192, 28, 40, 0.7);
-}
-
-/* Spacing between bullet points. */
-.franklin-content li p {
-  margin: 10px 0;
-}
-
-.franklin-content a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-.franklin-content a:hover {
-  text-decoration: underline;
-} 
-
-
-#layout {
-  /* Puedes necesitar ajustar padding si el botón fijo interfiere */
-  /* padding-top: 60px; */
-}
-
-/* Estilo del botón de hamburguesa */
-#hamburger-button {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1001;
-  background: var(--color-primary);      /* Turquesa vibrante */
-  color: white;
-  border: none;
-  padding: 10px 12px;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 8px;                    /* Más suave y moderno */
-  box-shadow: 0 2px 4px rgba(0, 150, 136, 0.3); /* Sombra sutil */
-  transition: background 0.3s ease;
-}
-
-#hamburger-button:hover {
-  background: var(--color-secondary);    /* Naranja intenso al pasar el mouse */
-}
-
-/* Menú lateral */
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: var(--highlight-background); /* Gris clarito */
-  padding-top: 60px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Menor opacidad para look limpio */
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-  overflow-y: auto;
-}
-
-/* Mostrar el menú */
-#menu.visible {
-  transform: translateX(0);
-}
-
-/* Lista del menú */
-#menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#menu ul li {
-  border-bottom: 1px solid var(--border-color); /* Línea sutil del root */
-}
-
-#menu ul li a {
-  display: block;
-  padding: 15px 20px;
-  text-decoration: none;
-  color: var(--base-color);               /* Gris oscuro legible */
-  transition: background-color 0.2s;
-}
-
-#menu ul li a:hover {
-  background-color: var(--color-tertiary); /* Amarillo chispeante al hover */
-  color: #000; /* Mejor contraste en hover */
-}
-
-#menu ul li a i {
-  margin-right: 10px;
 }
