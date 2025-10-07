@@ -1,8 +1,8 @@
 /* ==================================================================
-   DARK MODE CSS - Solo sobrescribe las variables y estilos necesarios
+   DARK MODE CSS - Solo se aplica cuando html.dark-theme está presente
    ================================================================== */
 
-:root {
+.dark-theme {
   /* Colores de modo oscuro */
   --base-color: #d3d4e0;              /* Texto claro */
   --background-color: #12151f;         /* Fondo oscuro azulado */
@@ -19,59 +19,56 @@
   --text-shadow-medium: 0 0 3px rgba(168, 192, 255, 0.8), 0 0 6px rgba(168, 192, 255, 0.6);
   --text-shadow-soft: 0 0 2px rgba(138, 180, 248, 0.6);
   --text-shadow-subtle: 0 0 2px rgba(195, 208, 249, 0.8);
-}
 
-/* Variables para código */
-:root {
+  /* Variables para código */
   --block-background: #1e2127;
   --output-background: #181a1f;
 }
 
 /* Ajustes específicos para el modo oscuro */
-body {
+.dark-theme body {
   text-shadow: 0 0 2px rgba(144, 190, 109, 0.8);
 }
 
 /* Ajuste para blockquote en modo oscuro */
-.franklin-content blockquote {
+.dark-theme .franklin-content blockquote {
   background: var(--highlight-background);
   border-left: 4px solid var(--color-secondary);
   color: var(--base-color);
 }
 
 @media (max-width: 760px) {
-  blockquote {
+  .dark-theme blockquote {
     background-color: #0d1f13; /* dark green background */
   }
   
-  label.margin-toggle:not(.sidenote-number) {
+  .dark-theme label.margin-toggle:not(.sidenote-number) {
     background-color: #185e52;
     color: var(--color-tertiary);
   }
 }
 
 /* Ajuste de tabla para modo oscuro */
-.franklin-content th,
-td {
+.dark-theme .franklin-content th,
+.dark-theme td {
   border: 1px solid var(--border-color);
 }
 
 /* Ajustes específicos del menu para modo oscuro */
-#hamburger-button {
+.dark-theme #hamburger-button {
   box-shadow: 0 2px 4px rgba(138, 180, 248, 0.3);
 }
 
-#menu {
+.dark-theme #menu {
   background-color: var(--highlight-background);
   box-shadow: 2px 0 5px rgba(0,0,0,0.3);
 }
 
-#menu ul li {
+.dark-theme #menu ul li {
   border-bottom: 1px solid var(--border-color);
 }
 
-#menu ul li a:hover {
+.dark-theme #menu ul li a:hover {
   background-color: var(--color-tertiary);
   color: #000;
 }
-
