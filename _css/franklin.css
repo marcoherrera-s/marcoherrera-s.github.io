@@ -307,6 +307,7 @@ body {
   font-size: var(--small);
   line-height: 1.4em;
   border-radius: 8px;
+  padding: 1.2em; /* Ensure consistent padding */
 }
 
 /* Special meta tags for shell prompts */
