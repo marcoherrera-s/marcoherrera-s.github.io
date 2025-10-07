@@ -3,12 +3,12 @@
 ================================================================== */
 
 :root {
-  --block-background: hsl(0, 0%, 94%);
-  --output-background: hsl(0, 0%, 98%);
-  --small: 14px;
   --normal: 19px;
   --text-color: hsv(0, 0%, 20%);
 }
+
+/* Note: --block-background, --output-background, and --small 
+   are now defined in style.css to avoid conflicts */
 
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
@@ -297,37 +297,38 @@ body {
     CODE & HIGHLIGHT.JS
 ================================================================== */
 
-code {
-  background-color: var(--block-background);
-  padding: 0.1em 0.2em;
-  border-radius: 2px;
+/* Franklin-specific code adjustments */
+.franklin-content code {
   font-size: var(--small);
 }
 
-/* .franklin-content code { */
-
-/* background-color: rgba(27,31,35,0.05); */
-
-/* padding: 0.1em 0.2em; */
-
-/* border-radius: 2px; */
-
-/* font-size: 90%; } */
-
+/* Minimal Highlight.js adjustments - let the theme CSS handle colors */
 .hljs {
   font-size: var(--small);
-  line-height: 1.35em;
-  border-radius: 10px;
+  line-height: 1.4em;
+  border-radius: 8px;
 }
 
-.hljs-meta { font-weight: bold;}
+/* Special meta tags for shell prompts */
+.hljs-meta { 
+  font-weight: bold;
+}
 
-.hljs-meta.shell_ {color: crimson;}
-.hljs-meta.prompt_ {color: rgb(25, 179, 51);}
+.hljs-meta.shell_ {
+  color: crimson;
+}
 
+.hljs-meta.prompt_ {
+  color: rgb(25, 179, 51);
+}
+
+/* Code output blocks */
 .code-output {
   background: var(--output-background);
-  border: 1px dashed #dbdbdb;
+  border: 1px dashed var(--code-border);
+  border-radius: 6px;
+  padding: 1em;
+  margin-top: 1em;
 }
 
 /* ==================================================================

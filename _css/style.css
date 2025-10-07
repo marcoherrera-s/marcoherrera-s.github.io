@@ -94,6 +94,13 @@
   
   /* Franklin variables */
   --small: 14px;
+  
+  /* Code block colors */
+  --code-bg: #f6f8fa;
+  --code-text: #24292f;
+  --code-border: #d0d7de;
+  --block-background: #f6f8fa;
+  --output-background: #ffffff;
 }
 
 /* ==================================================================
@@ -463,54 +470,107 @@ tr:hover {
   letter-spacing: 0.03em;
 }
 
+/* Inline code */
 code {
   font-family: "Cutive Mono", "Courier New", Courier, monospace;
-  font-size: 1.1rem;
+  font-size: 0.9em;
   line-height: 1.5;
-  color: var(--color-primary);
-  background-color: var(--background-color);
-  border-radius: 3px;
-  padding: 0.1em 0.3em;
-  border: 1px solid var(--border-color);
+  color: var(--code-text);
+  background-color: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  border: 1px solid var(--code-border);
+  font-weight: 500;
 }
 
 .sans > code {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 h1 > code,
 h2 > code,
 h3 > code {
-  font-size: 0.8em;
-  padding: 0.2em 0.4em;
+  font-size: 0.85em;
+  padding: 0.2em 0.45em;
 }
 
 .marginnote > code,
 .sidenote > code {
-  font-size: 1rem;
-  color: var(--color-primary);
-  background-color: var(--background-color);
-  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+  color: var(--code-text);
+  background-color: var(--code-bg);
+  padding: 0.15em 0.4em;
 }
 
-pre.code {
-  font-size: 1rem;
-  width: 55%;
-  margin-left: 2.5%;
+
+
+/* Code blocks - Let Highlight.js handle syntax highlighting styles */
+/* Only add minimal layout/spacing adjustments */
+pre {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   overflow-x: auto;
-  color: var(--color-primary);
-  background-color: var(--background-color);
-  padding: 1em;
-  line-height: 1.6;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 2px 6px rgba(144, 190, 109, 0.4);
-  border-radius: 4px;
+  position: relative; /* For absolute positioning of copy button */
 }
 
-pre.code.fullwidth {
-  width: 92%;
-  margin-left: auto;
-  margin-right: auto;
+/* Ensure code inside pre doesn't get inline code styles */
+pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* Copy code button */
+.copy-code-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--base-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+pre:hover .copy-code-button {
+  opacity: 1;
+}
+
+.copy-code-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.copy-code-button:active {
+  transform: scale(0.95);
+}
+
+.copy-code-button.copied {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+  opacity: 1;
+}
+
+.copy-code-button svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
 }
 
 /* --- Iframe --- */
@@ -947,8 +1007,19 @@ pre.code.fullwidth {
     max-width: 90%;
   }
 
+  pre,
   pre.code {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+  
+  /* Always show copy button on mobile */
+  .copy-code-button {
+    opacity: 1;
+    font-size: 0.7rem;
+    padding: 5px 10px;
   }
 
   blockquote {
