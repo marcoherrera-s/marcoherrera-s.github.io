@@ -120,7 +120,7 @@ body {
   background-color: var(--background-color);
   color: var(--base-color);
   counter-reset: sidenote-counter;
-  text-shadow: 0 0 2px rgba(144, 190, 109, 0.8);
+  /* text-shadow: 0 0 2px rgba(144, 190, 109, 0.8); */
 }
 
 /* ==================================================================
@@ -510,7 +510,6 @@ pre {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   overflow-x: auto;
-  position: relative; /* For absolute positioning of copy button */
 }
 
 /* Ensure code inside pre doesn't get inline code styles */
@@ -521,56 +520,6 @@ pre code {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
-}
-
-/* Copy code button */
-.copy-code-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 6px 12px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--base-color);
-  background-color: var(--background-color);
-  border: 1px solid var(--code-border);
-  border-radius: 6px;
-  cursor: pointer;
-  opacity: 0;
-  transition: all 0.2s ease;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-pre:hover .copy-code-button {
-  opacity: 1;
-}
-
-.copy-code-button:hover {
-  background-color: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
-  transform: scale(1.05);
-}
-
-.copy-code-button:active {
-  transform: scale(0.95);
-}
-
-.copy-code-button.copied {
-  background-color: #28a745;
-  color: white;
-  border-color: #28a745;
-  opacity: 1;
-}
-
-.copy-code-button svg {
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
 }
 
 /* --- Iframe --- */
@@ -1008,18 +957,12 @@ pre:hover .copy-code-button {
   }
 
   pre,
-  pre.code {
+  pre.code,
+  .hljs {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     font-size: 0.85rem;
-  }
-  
-  /* Always show copy button on mobile */
-  .copy-code-button {
-    opacity: 1;
-    font-size: 0.7rem;
-    padding: 5px 10px;
   }
 
   blockquote {
