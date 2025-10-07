@@ -158,46 +158,58 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', () => {
   const hamburgerButton = document.getElementById('hamburger-button');
   const menu = document.getElementById('menu');
-  // Opcional: Si quieres empujar el contenido principal
-  // const mainContent = document.getElementById('main');
-  // const body = document.body;
+  
+  // Crear el backdrop si no existe
+  let backdrop = document.getElementById('menu-backdrop');
+  if (!backdrop && menu) {
+    backdrop = document.createElement('div');
+    backdrop.id = 'menu-backdrop';
+    document.body.appendChild(backdrop);
+  }
 
-  if (hamburgerButton && menu) {
+  if (hamburgerButton && menu && backdrop) {
+    // Función para abrir el menú
+    const openMenu = () => {
+      menu.classList.add('visible');
+      backdrop.classList.add('visible');
+      hamburgerButton.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+    };
+
+    // Función para cerrar el menú
+    const closeMenu = () => {
+      menu.classList.remove('visible');
+      backdrop.classList.remove('visible');
+      hamburgerButton.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = ''; // Restaurar scroll
+    };
+
+    // Toggle del menú al hacer clic en el botón
     hamburgerButton.addEventListener('click', () => {
-      // Alterna la clase 'visible' en el menú
-      menu.classList.toggle('visible');
-
-      // Actualiza el atributo aria-expanded para accesibilidad
-      const isExpanded = menu.classList.contains('visible');
-      hamburgerButton.setAttribute('aria-expanded', isExpanded);
-
-      // Opcional: Alterna una clase en el body para empujar el contenido
-      // body.classList.toggle('menu-open');
-    });
-
-    // Opcional: Cerrar el menú si se hace clic fuera de él
-    document.addEventListener('click', (event) => {
-      // Comprueba si el menú está visible y si el clic fue FUERA del menú y FUERA del botón
-      if (menu.classList.contains('visible') &&
-          !menu.contains(event.target) &&
-          !hamburgerButton.contains(event.target)) {
-        menu.classList.remove('visible');
-        hamburgerButton.setAttribute('aria-expanded', 'false');
-        // Opcional: Quita la clase del body si la usaste
-        // body.classList.remove('menu-open');
+      if (menu.classList.contains('visible')) {
+        closeMenu();
+      } else {
+        openMenu();
       }
     });
 
-    // Opcional: Cerrar el menú al hacer clic en un enlace del menú (útil para SPAs o enlaces #)
+    // Cerrar el menú al hacer clic en el backdrop
+    backdrop.addEventListener('click', closeMenu);
+
+    // Cerrar el menú al hacer clic en un enlace
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         if (menu.classList.contains('visible')) {
-          menu.classList.remove('visible');
-          hamburgerButton.setAttribute('aria-expanded', 'false');
-          // Opcional: Quita la clase del body si la usaste
-          // body.classList.remove('menu-open');
+          closeMenu();
         }
       });
+    });
+
+    // Cerrar con la tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('visible')) {
+        closeMenu();
+      }
     });
   } else {
     console.error("No se encontró el botón de hamburguesa o el elemento del menú.");

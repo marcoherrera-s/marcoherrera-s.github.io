@@ -56,19 +56,33 @@
 
 /* Ajustes específicos del menu para modo oscuro */
 .dark-theme #hamburger-button {
-  box-shadow: 0 2px 4px rgba(138, 180, 248, 0.3);
+  background-color: rgba(18, 21, 31, 0.9);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(138, 180, 248, 0.2);
+}
+
+.dark-theme #hamburger-button:hover {
+  background-color: var(--color-primary);
+  color: var(--background-color);
+  box-shadow: 0 4px 12px rgba(138, 180, 248, 0.4);
 }
 
 .dark-theme #menu {
-  background-color: var(--highlight-background);
-  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, var(--background-color) 0%, var(--highlight-background) 100%);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+  border-right: 1px solid var(--border-color);
 }
 
-.dark-theme #menu ul li {
-  border-bottom: 1px solid var(--border-color);
+.dark-theme #menu ul li a {
+  color: var(--base-color);
 }
 
 .dark-theme #menu ul li a:hover {
-  background-color: var(--color-tertiary);
-  color: #000;
+  background-color: rgba(138, 180, 248, 0.1);
+  color: var(--color-primary);
+}
+
+.dark-theme #menu-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }
