@@ -4,7 +4,7 @@
 
 
 
-![ini](/assets/klimt.jpg)
+![ini](/assets/fondo.png)
 
 
 
@@ -53,6 +53,5 @@ _**odio con mi ser**_: los comerciales y ads :(
  - [caja de herramientas](/Otro/caja/)
 
 - [¿por qué un blog?](/Otro/pblog/)
-
 
 
