@@ -1,2 +1,2 @@
 UndefVarError: `ω` not defined in `Main.FD_SANDBOX_2988439550927964328`
-Suggestion: check for spelling errors or missing imports.
+Suggestion: add an appropriate import or assignment. This global was declared but not assigned.
