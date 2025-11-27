@@ -4,7 +4,7 @@
 
 
 
-![ini](/assets/fondo.png)
+![ini](/assets/klimt.jpg)
 
 
 
@@ -33,10 +33,10 @@
     <i class="fa-brands fa-goodreads"></i>
   </a>
   
-  <!-- <a href="{{ rym_url }}" aria-label="Rate Your Music" class="social-link rateyourmusic">
-    <i class="fa-solid fa-music"></i>
+  <a href="{{ rym_url }}" aria-label="Rate Your Music" class="social-link rateyourmusic">
+    <i class="ri-music-2-line"></i>
   </a>
-   -->
+  
   <!-- Add more social links as needed -->
 </nav>
 

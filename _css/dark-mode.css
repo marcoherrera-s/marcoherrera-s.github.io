@@ -3,29 +3,52 @@
    ================================================================== */
 
 .dark-theme {
-  /* Colores de modo oscuro */
-  --base-color: #d3d4e0;              /* Texto claro */
-  --background-color: #12151f;         /* Fondo oscuro azulado */
-  --highlight-background: #1b1f2a;     /* Fondo de destacados */
-  --border-color: #2e3240;             /* Bordes grises azulados */
+  /* Fondo: Profundidad Oceánica / Espacio Profundo */
+  --background-color: #020617;         /* Azul noche casi negro, infinito */
+  --highlight-background: #0f172a;     /* Un tono más arriba, como agua profunda */
+  
+  /* Texto: Luz de Estrella */
+  /* No uses gris, usa un cian casi blanco para que brille */
+  --base-color: #e2e8f0;               /* Blanco hielo */
+  --border-color: #1e293b;             /* Azul acero oscuro */
 
-  --color-primary: #8ab4f8;            /* Azul suave */
-  --color-secondary: #a8c0ff;          /* Periwinkle claro */
-  --color-tertiary: #c3d0f9;           /* Azul pálido */
-  --color-link: #82aaff;               /* Enlaces en azul vibrante */
-  --color-selection: #5c7cfa;          /* Selección azul intenso */
+  /* Acentos: LÁSER Y NEÓN (Maximalismo Puro) */
+  --color-primary: #38bdf8;            /* Azul Cielo Eléctrico */
+  --color-secondary: #818cf8;          /* Índigo Fantasma */
+  --color-tertiary: #22d3ee;           /* Cian Turquesa Brillante */
+  --color-link: #60a5fa;               /* Azul Cristal */
+  
+  /* Selección: Un barrido de energía */
+  --color-selection: rgba(56, 189, 248, 0.3); /* Resplandor cian transparente */
 
-  --text-shadow-strong: 0 0 4px rgba(138, 180, 248, 0.9), 0 0 10px rgba(138, 180, 248, 0.7), 0 0 15px rgba(138, 180, 248, 0.4);
-  --text-shadow-medium: 0 0 3px rgba(168, 192, 255, 0.8), 0 0 6px rgba(168, 192, 255, 0.6);
-  --text-shadow-soft: 0 0 2px rgba(138, 180, 248, 0.6);
-  --text-shadow-subtle: 0 0 2px rgba(195, 208, 249, 0.8);
+  /* Text shadows: EL EFECTO BIOLUMINISCENTE */
+  /* En dark mode, la sombra es LUZ. Hacemos que el texto parezca neón. */
+  
+  /* Strong: Efecto TRON / Cyberpunk */
+  --text-shadow-strong: 
+      0 0 5px rgba(56, 189, 248, 1),      /* Núcleo blanco/azul brillante */
+      0 0 15px rgba(56, 189, 248, 0.6),   /* Halo medio */
+      0 0 30px rgba(34, 211, 238, 0.4);   /* Atmósfera exterior cian */
 
-  /* Code block colors for dark mode */
-  --code-bg: #1e2127;
-  --code-text: #abb2bf;
-  --code-border: #3e4451;
-  --block-background: #282c34;
-  --output-background: #21252b;
+  /* Medium: Resplandor suave */
+  --text-shadow-medium: 
+      0 0 4px rgba(129, 140, 248, 0.8), 
+      0 0 8px rgba(129, 140, 248, 0.3);
+
+  /* Soft: Legibilidad con toque místico */
+  --text-shadow-soft: 
+      0 0 2px rgba(226, 232, 240, 0.3);   /* Pequeño desenfoque estelar */
+
+  --text-shadow-subtle: 
+      0 0 4px rgba(96, 165, 250, 0.4);
+
+  /* Code block colors - "Hacker Console" */
+  /* Fondo negro azulado profundo para máximo contraste con el código neón */
+  --code-bg: #0b0e14;                  /* Casi negro absoluto */
+  --code-text: #a5f3fc;                /* Texto cian pálido (muy legible y tech) */
+  --code-border: #1e3a8a;              /* Borde azul oscuro saturado */
+  --block-background: #0f172a;         
+  --output-background: #020617;
 }
 
 /* Ajustes específicos para el modo oscuro */
