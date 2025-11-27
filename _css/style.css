@@ -71,35 +71,52 @@
   /* Fonts */
   --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   
-  /* Colors */
-  --base-color: #333333;
-  --background-color: #fafafa;
-  --highlight-background: #f5f5f5;
-  --border-color: #e0e0e0;
+  /* Colors - BASE ATMOSFÉRICA */
+  --base-color: #0a192f;           /* Azul Midnight profundo (no negro, azul abismo) */
+  --background-color: #f0fbff;     /* Blanco "Hielo" (con tinte cian muy claro) */
+  --highlight-background: #dbeafe; /* Azul cielo saturado */
+  --border-color: #81d4fa;         /* Borde color cristal */
   
-  --color-primary: #009688;
-  --color-secondary: #ff5722;
-  --color-tertiary: #ffc107;
-  --color-link: #3f51b5;
-  --color-selection: #ffab40;
+  /* Colors - ACENTOS ELÉCTRICOS */
+  --color-primary: #2979ff;        /* Azul Azure Brillante (Láser) */
+  --color-secondary: #00e5ff;      /* Cian Neón Puro (para el maximalismo) */
+  --color-tertiary: #651fff;       /* Índigo Eléctrico Profundo */
+  --color-link: #0044ff;           /* Azul absoluto */
+  --color-selection: #b388ff;      /* Lila eléctrico al seleccionar */
   
-  /* Text shadows */
-  --text-shadow-strong: 0 0 4px rgba(0, 150, 136, 0.9), 0 0 10px rgba(0, 150, 136, 0.7), 0 0 15px rgba(0, 150, 136, 0.4);
-  --text-shadow-medium: 0 0 3px rgba(255, 87, 34, 0.8), 0 0 6px rgba(255, 87, 34, 0.6);
-  --text-shadow-soft: 0 0 2px rgba(0, 0, 0, 0.3);
-  --text-shadow-subtle: 0 0 2px rgba(63, 81, 181, 0.8);
+  /* Text shadows - EL FACTOR "WOW" (Auras de energía) */
+  
+  /* Efecto "Sable de Luz Azul" */
+  /* Capa 1: Cian duro, Capa 2: Azul blur, Capa 3: Atmósfera índigo */
+  --text-shadow-strong: 
+      0 0 4px rgba(0, 229, 255, 0.9), 
+      0 0 12px rgba(41, 121, 255, 0.7), 
+      0 0 25px rgba(101, 31, 255, 0.5);
+
+  /* Efecto "Resplandor Submarino" */
+  --text-shadow-medium: 
+      0 0 3px rgba(0, 200, 255, 0.8), 
+      2px 2px 5px rgba(0, 50, 255, 0.3);
+
+  /* Lectura con cuerpo */
+  --text-shadow-soft: 
+      0 0 1px rgba(10, 25, 47, 0.2);
+
+  --text-shadow-subtle: 
+      0 0 5px rgba(129, 212, 250, 0.6);
   
   /* Spacing */
-  --spacing-standard: 10px;
+  --spacing-standard: 12px;
   
   /* Franklin variables */
   --small: 14px;
   
-  /* Code block colors */
-  --code-bg: #f6f8fa;
-  --code-text: #24292f;
-  --code-border: #d0d7de;
-  --block-background: #f6f8fa;
+  /* Code block colors - "Terminal del Futuro" */
+  /* Fondo muy oscuro para que las letras neón resalten al máximo */
+  --code-bg: #0d1117;              /* Casi negro azulado */
+  --code-text: #7ee787;            /* Texto verde matrix o cian */
+  --code-border: #2979ff;          /* Borde azul brillante */
+  --block-background: #e3f2fd;     /* Fondo de bloques suave */
   --output-background: #ffffff;
 }
 
@@ -796,14 +813,6 @@ pre code {
   text-shadow: 0 0 5px rgba(162, 209, 73, 0.7);
 }
 
-.social-link.letterboxd {
-  color: #c01c28;
-  text-shadow: none;
-}
-
-.social-link.letterboxd:hover {
-  text-shadow: 0 0 4px rgba(192, 28, 40, 0.7);
-}
 
 /* --- Franklin Overrides (Consolidated) --- */
 
