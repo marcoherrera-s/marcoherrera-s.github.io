@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* Contenedor wrapper para carrusel + indicadores */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+/* Contenedor del carrusel */
+ula {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0;
+  
+  /* Smooth scrolling estilo Instagram */
+  -webkit-overflow-scrolling: touch;
+  
+  /* Indicadores de scroll (puntitos) */
+  position: relative;
+}
+
+ula::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cada item del carrusel */
+lia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  
+  /* Una imagen a la vez - 100% del contenedor */
+  width: 100%;
+  padding: 0;
+  
+  /* Transición suave */
+  transition: opacity 0.3s ease;
+}
+
+lia img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  object-fit: cover;
+}
+
+/* Link de descarga */
+lia a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  color: inherit;
+}
+
+lia a:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+}
+
+/* Indicadores de Instagram */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+  margin-top: 8px;
+}
+
+.carousel-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background: rgba(0, 123, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.carousel-indicator:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Versión dark mode */
+@media (prefers-color-scheme: dark) {
+  .carousel-indicator {
+    background: rgba(50, 72, 194, 0.418);
+  }
+  
+  .carousel-indicator.active {
+    background: rgba(100, 180, 255, 0.9);
+  }
+  
+  .carousel-indicator:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}

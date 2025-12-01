@@ -215,3 +215,68 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("No se encontró el botón de hamburguesa o el elemento del menú.");
   }
 });
+
+// Sistema de indicadores de carrusel tipo Instagram
+document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('ula');
+  
+  carousels.forEach((carousel) => {
+    const items = carousel.querySelectorAll('lia');
+    
+    // Solo agregar indicadores si hay más de una imagen
+    if (items.length <= 1) return;
+    
+    // Crear contenedor de indicadores
+    const indicatorsContainer = document.createElement('div');
+    indicatorsContainer.className = 'carousel-indicators';
+    
+    // Crear indicador para cada imagen
+    items.forEach((item, index) => {
+      const indicator = document.createElement('div');
+      indicator.className = 'carousel-indicator';
+      if (index === 0) indicator.classList.add('active');
+      
+      // Click en indicador para navegar
+      indicator.addEventListener('click', () => {
+        items[index].scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      });
+      
+      indicatorsContainer.appendChild(indicator);
+    });
+    
+    // Insertar indicadores después del carrusel
+    carousel.parentNode.insertBefore(indicatorsContainer, carousel.nextSibling);
+    
+    // Actualizar indicador activo en scroll
+    const updateActiveIndicator = () => {
+      const scrollLeft = carousel.scrollLeft;
+      const itemWidth = items[0].offsetWidth;
+      const activeIndex = Math.round(scrollLeft / itemWidth);
+      
+      const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+      indicators.forEach((indicator, index) => {
+        if (index === activeIndex) {
+          indicator.classList.add('active');
+        } else {
+          indicator.classList.remove('active');
+        }
+      });
+    };
+    
+    // Escuchar scroll con throttle para mejor performance
+    let scrollTimeout;
+    carousel.addEventListener('scroll', () => {
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      scrollTimeout = setTimeout(updateActiveIndicator, 50);
+    });
+    
+    // Actualizar en resize por si cambia el tamaño
+    window.addEventListener('resize', updateActiveIndicator);
+  });
+});
