@@ -2,55 +2,52 @@
    DARK MODE CSS - Solo se aplica cuando html.dark-theme está presente
    ================================================================== */
 
-.dark-theme {
-  /* Fondo: Profundidad Oceánica / Espacio Profundo */
-  --background-color: #020617;         /* Azul noche casi negro, infinito */
-  --highlight-background: #0f172a;     /* Un tono más arriba, como agua profunda */
+   .dark-theme {
+    /* Fondo: oscuridad sofisticada, no cybercafé de 2007 */
+    --background-color: #050814;        /* Azul tinta casi negro */
+    --highlight-background: #111827;    /* Paneles ligeramente elevados */
+    
+    /* Texto: marfil frío sobre azul profundo */
+    --base-color: #e6e1d5;              /* Marfil suave, un poco cálido */
+    --border-color: #2d3748;            /* Gris pizarra oscuro */
   
-  /* Texto: Luz de Estrella */
-  /* No uses gris, usa un cian casi blanco para que brille */
-  --base-color: #e2e8f0;               /* Blanco hielo */
-  --border-color: #1e293b;             /* Azul acero oscuro */
-
-  /* Acentos: LÁSER Y NEÓN (Maximalismo Puro) */
-  --color-primary: #38bdf8;            /* Azul Cielo Eléctrico */
-  --color-secondary: #818cf8;          /* Índigo Fantasma */
-  --color-tertiary: #22d3ee;           /* Cian Turquesa Brillante */
-  --color-link: #60a5fa;               /* Azul Cristal */
+    /* Acentos: azules sobrios + dorado contenido */
+    --color-primary: #8aa4d1;           /* Azul pálido elegante */
+    --color-secondary: #c89b4f;         /* Dorado ámbar moderado */
+    --color-tertiary: #6b8b8e;          /* Verde-azul grisáceo */
+    --color-link: #9fb4e4;              /* Azul para links, legible sin gritar */
+    
+    /* Selección: baño de luz dorada muy suave */
+    --color-selection: rgba(200, 155, 79, 0.18);
   
-  /* Selección: Un barrido de energía */
-  --color-selection: rgba(56, 189, 248, 0.3); /* Resplandor cian transparente */
-
-  /* Text shadows: EL EFECTO BIOLUMINISCENTE */
-  /* En dark mode, la sombra es LUZ. Hacemos que el texto parezca neón. */
+    /* Text shadows: nada de neón, solo profundidad discreta */
   
-  /* Strong: Efecto TRON / Cyberpunk */
-  --text-shadow-strong: 
-      0 0 5px rgba(56, 189, 248, 1),      /* Núcleo blanco/azul brillante */
-      0 0 15px rgba(56, 189, 248, 0.6),   /* Halo medio */
-      0 0 30px rgba(34, 211, 238, 0.4);   /* Atmósfera exterior cian */
-
-  /* Medium: Resplandor suave */
-  --text-shadow-medium: 
-      0 0 4px rgba(129, 140, 248, 0.8), 
-      0 0 8px rgba(129, 140, 248, 0.3);
-
-  /* Soft: Legibilidad con toque místico */
-  --text-shadow-soft: 
-      0 0 2px rgba(226, 232, 240, 0.3);   /* Pequeño desenfoque estelar */
-
-  --text-shadow-subtle: 
-      0 0 4px rgba(96, 165, 250, 0.4);
-
-  /* Code block colors - "Hacker Console" */
-  /* Fondo negro azulado profundo para máximo contraste con el código neón */
-  --code-bg: #0b0e14;                  /* Casi negro absoluto */
-  --code-text: #a5f3fc;                /* Texto cian pálido (muy legible y tech) */
-  --code-border: #1e3a8a;              /* Borde azul oscuro saturado */
-  --block-background: #0f172a;         
-  --output-background: #020617;
-}
-
+    /* Strong: títulos con un leve halo, no cartel de rave */
+    --text-shadow-strong: 
+        0 1px 3px rgba(0, 0, 0, 0.8),
+        0 0 18px rgba(138, 164, 209, 0.35);
+  
+    /* Medium: buen contraste sin dramatismo */
+    --text-shadow-medium: 
+        0 1px 2px rgba(0, 0, 0, 0.7),
+        0 0 10px rgba(25, 39, 52, 0.5);
+  
+    /* Soft: para texto de lectura larga */
+    --text-shadow-soft: 
+        0 1px 2px rgba(0, 0, 0, 0.55);
+  
+    /* Subtle: micro-efecto para detalles finos */
+    --text-shadow-subtle: 
+        0 0 4px rgba(0, 0, 0, 0.3);
+  
+    /* Code block: consola de desarrollador que sí cobra caro */
+    --code-bg: #050814;                 /* Fondo muy oscuro coherente con el body */
+    --code-text: #e5e7eb;               /* Gris claro neutro, legible */
+    --code-border: #374151;             /* Gris pizarra */
+    --block-background: #0b1120;        /* Panels / cards en dark */
+    --output-background: #020617;       /* Fondo de salida aún más oscuro */
+  }
+  
 /* Ajustes específicos para el modo oscuro */
 .dark-theme body {
   /* text-shadow: 0 0 2px rgba(144, 190, 109, 0.8); */
