@@ -14,4 +14,6 @@ title = "Otros"
 * [PDFs en una Kindle](/Otro/k2pdf/)
 
 * [cómo hacer una playlist (la forma correcta)](/Otro/playlist/)
+
+* [visitando todas las estaciones del metro cdmx](/Otro/metro/)
 ---

@@ -71,39 +71,34 @@
   /* Fonts */
   --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   
-  /* Colors - BASE ATMOSFÉRICA */
-  --base-color: #0a192f;           /* Azul Midnight profundo (no negro, azul abismo) */
-  --background-color: #f0fbff;     /* Blanco "Hielo" (con tinte cian muy claro) */
-  --highlight-background: #dbeafe; /* Azul cielo saturado */
-  --border-color: #81d4fa;         /* Borde color cristal */
+  /* Colors - BASE ELEGANTE */
+  --base-color: #101827;           /* Azul tinta profundo */
+  --background-color: #f5f3ef;     /* Marfil cálido suave */
+  --highlight-background: #e4ddd2; /* Beige elegante para resaltar bloques */
+  --border-color: #c0b59f;         /* Borde color lino / champagne suave */
   
-  /* Colors - ACENTOS ELÉCTRICOS */
-  --color-primary: #2979ff;        /* Azul Azure Brillante (Láser) */
-  --color-secondary: #00e5ff;      /* Cian Neón Puro (para el maximalismo) */
-  --color-tertiary: #651fff;       /* Índigo Eléctrico Profundo */
-  --color-link: #0044ff;           /* Azul absoluto */
-  --color-selection: #b388ff;      /* Lila eléctrico al seleccionar */
+  /* Colors - ACENTOS SOFISTICADOS */
+  --color-primary: #2f4f7f;        /* Azul pizarra sofisticado */
+  --color-secondary: #c08a3a;      /* Dorado ámbar moderado (no gritón) */
+  --color-tertiary: #5f7c85;       /* Verde-azul grisáceo */
+  --color-link: #1f4a72;           /* Azul profundo para links */
+  --color-selection: #f1ddba;      /* Champán suave al seleccionar */
   
-  /* Text shadows - EL FACTOR "WOW" (Auras de energía) */
-  
-  /* Efecto "Sable de Luz Azul" */
-  /* Capa 1: Cian duro, Capa 2: Azul blur, Capa 3: Atmósfera índigo */
+  /* Text shadows - DETALLE DISCRETO */
   --text-shadow-strong: 
-      0 0 4px rgba(0, 229, 255, 0.9), 
-      0 0 12px rgba(41, 121, 255, 0.7), 
-      0 0 25px rgba(101, 31, 255, 0.5);
+      0 0 10px rgba(47, 79, 127, 0.35),
+      0 0 26px rgba(192, 138, 58, 0.25);
 
-  /* Efecto "Resplandor Submarino" */
   --text-shadow-medium: 
-      0 0 3px rgba(0, 200, 255, 0.8), 
-      2px 2px 5px rgba(0, 50, 255, 0.3);
+      0 1px 3px rgba(5, 10, 20, 0.55),
+      0 0 10px rgba(95, 124, 133, 0.25);
 
   /* Lectura con cuerpo */
   --text-shadow-soft: 
-      0 0 1px rgba(10, 25, 47, 0.2);
+      0 1px 2px rgba(0, 0, 0, 0.18);
 
   --text-shadow-subtle: 
-      0 0 5px rgba(129, 212, 250, 0.6);
+      0 0 4px rgba(0, 0, 0, 0.08);
   
   /* Spacing */
   --spacing-standard: 12px;
@@ -111,14 +106,14 @@
   /* Franklin variables */
   --small: 14px;
   
-  /* Code block colors - "Terminal del Futuro" */
-  /* Fondo muy oscuro para que las letras neón resalten al máximo */
-  --code-bg: #0d1117;              /* Casi negro azulado */
-  --code-text: #7ee787;            /* Texto verde matrix o cian */
-  --code-border: #2979ff;          /* Borde azul brillante */
-  --block-background: #e3f2fd;     /* Fondo de bloques suave */
-  --output-background: #ffffff;
+  /* Code block colors - "Terminal Clásico" */
+  --code-bg: #111827;              /* Azul carbón muy oscuro */
+  --code-text: #e5e7eb;            /* Gris claro legible */
+  --code-border: #374151;          /* Borde gris pizarra */
+  --block-background: #f0ece4;     /* Fondo de bloques marfil apagado */
+  --output-background: #fbfaf7;    /* Fondo casi blanco cálido */
 }
+
 
 /* ==================================================================
    3. BASE STYLES
@@ -1062,3 +1057,5 @@ pre code {
     width: 660px;
   }
 }
+
+
