@@ -487,8 +487,6 @@ code {
   font-family: "Cutive Mono", "Courier New", Courier, monospace;
   font-size: 0.9em;
   line-height: 1.5;
-  color: var(--code-text);
-  background-color: var(--code-bg);
   border-radius: 4px;
   padding: 0.15em 0.4em;
   border: 1px solid var(--code-border);
