@@ -1,0 +1,165 @@
+# _data/libros.toml
+# Lista de libros para la sección de subrayados
+# Para agregar un libro: copia un bloque [[libro]] y edita los campos
+
+[[libro]]
+titulo = "Morirás lejos"
+autor = "José Emilio Pacheco"
+cover = "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1725473034i/218482570.jpg"
+url = "/Miscelanea/Moriras/"
+
+[[libro]]
+titulo = "Muerte en el bosque"
+autor = "Amparo Dávila"
+cover = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdD-oiSXV5pmgf9PMeueMBqeXhkIoyZvVc_g&s"
+url = "/Miscelanea/Muerte/"
+
+[[libro]]
+titulo = "El Problema de los Tres Cuerpos"
+autor = "Liu Cixin"
+cover = "/assets/libros/tres.jpg"
+url = "/Miscelanea/TresCuerpos/"
+
+[[libro]]
+titulo = "Amuleto"
+autor = "Roberto Bolaño"
+cover = "/assets/libros/amuleto.jpeg"
+url = "/Miscelanea/amuleto/"
+
+[[libro]]
+titulo = "Furia"
+autor = "Clyo Mendoza"
+cover = "/assets/libros/furia.JPG"
+url = "/Miscelanea/Furia/"
+
+[[libro]]
+titulo = "La caída"
+autor = "Albert Camus"
+cover = "/assets/libros/lacaida.jpg"
+url = "/Miscelanea/caída/"
+
+[[libro]]
+titulo = "El túnel"
+autor = "Ernesto Sabato"
+cover = "/assets/libros/tunel.jpg"
+url = "/Miscelanea/El%20túnel/"
+
+[[libro]]
+titulo = "¿Qué te importa lo que piensen los demás?"
+autor = "Richard Feynman"
+cover = "/assets/libros/queimportq.jpg"
+url = "/Miscelanea/Qué%20te%20importa%20lo%20que%20piensen%20los%20demás/"
+
+[[libro]]
+titulo = "Cien años de soledad"
+autor = "Gabriel García Márquez"
+cover = "/assets/libros/cien.jpg"
+url = "/Miscelanea/Cien%20años%20de%20soledad/"
+
+[[libro]]
+titulo = "Cuentos completos"
+autor = "Jorge Luis Borges"
+cover = "/assets/libros/cuentos.jpg"
+url = "/Miscelanea/Cuentos%20completos/"
+
+[[libro]]
+titulo = "La casa de los espíritus"
+autor = "Isabel Allende"
+cover = "/assets/libros/casa.jpg"
+url = "/Miscelanea/La%20casa%20de%20los%20espíritus/"
+
+[[libro]]
+titulo = "Las malas"
+autor = "Camila Sosa Villada"
+cover = "/assets/libros/malas.jpg"
+url = "/Miscelanea/Las%20malas/"
+
+[[libro]]
+titulo = "Los recuerdos del porvenir"
+autor = "Elena Garro"
+cover = "/assets/libros/recuerdos.jpg"
+url = "/Miscelanea/Los%20recuerdos%20del%20porvenir/"
+
+[[libro]]
+titulo = "Poesía no eres tú"
+autor = "Rosario Castellanos"
+cover = "/assets/libros/poesia.jpg"
+url = "/Miscelanea/Poesía%20no%20eres%20tú/"
+
+[[libro]]
+titulo = "Popper y Kuhn"
+autor = "Ulises Moulines"
+cover = "/assets/libros/popper.jpg"
+url = "/Miscelanea/Popper%20y%20Kuhn/"
+
+[[libro]]
+titulo = "Reforma o revolución"
+autor = "Rosa Luxemburgo"
+cover = "/assets/libros/reforma.jpg"
+url = "/Miscelanea/Reforma%20o%20revolución/"
+
+[[libro]]
+titulo = "Temporada de huracanes"
+autor = "Fernanda Melchor"
+cover = "/assets/libros/huracanes.jpg"
+url = "/Miscelanea/Temporada%20de%20huracanes/"
+
+[[libro]]
+titulo = "The Outer Limits of Reason"
+autor = "Noson S. Yanofsky"
+cover = "/assets/libros/outer.jpg"
+url = "/Miscelanea/The%20Outer%20Limits%20of%20Reason/"
+
+[[libro]]
+titulo = "El Aleph"
+autor = "Jorge Luis Borges"
+cover = "/assets/libros/aleph.jpg"
+url = "/Miscelanea/El%20aleph/"
+
+[[libro]]
+titulo = "El luto humano"
+autor = "José Revueltas"
+cover = "/assets/libros/luto.jpg"
+url = "/Miscelanea/El%20luto%20humano/"
+
+[[libro]]
+titulo = "El mono infinito"
+autor = "Martha Riva Palacio"
+cover = "/assets/libros/mono.jpg"
+url = "/Miscelanea/El%20mono%20infinito/"
+
+[[libro]]
+titulo = "Too Smart"
+autor = "Jathan Sadowski"
+cover = "/assets/libros/too.jpg"
+url = "/Miscelanea/Too%20Smart/"
+
+[[libro]]
+titulo = "El vampiro de la colonia Roma"
+autor = "Luis Zapata"
+cover = "/assets/libros/vampiro.jpg"
+url = "/Miscelanea/El%20vampiro%20de%20la%20colonia%20Roma/"
+
+[[libro]]
+titulo = "En deuda"
+autor = "David Graeber"
+cover = "/assets/libros/deuda.jpg"
+url = "/Miscelanea/En%20deuda/"
+
+[[libro]]
+titulo = "Esculpir en el tiempo"
+autor = "Andrei Tarkovski"
+cover = "/assets/libros/esculpir.jpg"
+url = "/Miscelanea/Esculpir%20en%20el%20tiempo/"
+
+[[libro]]
+titulo = "Guns, Germs, and Steel"
+autor = "Jared Diamond"
+cover = "/assets/libros/guns.jpg"
+url = "/Miscelanea/Guns,%20Germs,%20and%20Steel/"
+
+[[libro]]
+titulo = "Historia Mínima del Neoliberalismo"
+autor = "Fernando Escalante"
+cover = "/assets/libros/neolib.jpg"
+url = "/Miscelanea/Historia%20Mínima%20Del%20Neoliberalismo/"

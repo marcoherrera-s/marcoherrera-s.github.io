@@ -167,14 +167,17 @@ td {
 
 .franklin-content blockquote {
   background: var(--block-background);
-  border-left: 7px solid #a8a8a8;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-style: italic;
+  border-left: 5px solid #9a9a9a;
+  border-radius: 0 6px 6px 0;
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+  color: inherit;
+  opacity: 0.92;
 }
 
 .franklin-content blockquote p {
   display: inline;
+  line-height: 1.5em;
 }
 
 /* ==================================================================
