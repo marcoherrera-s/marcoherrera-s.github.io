@@ -1,7 +1,3 @@
-# _data/libros.toml
-# Lista de libros para la sección de subrayados
-# Para agregar un libro: copia un bloque [[libro]] y edita los campos
-
 [[libro]]
 titulo = "Morirás lejos"
 autor = "José Emilio Pacheco"

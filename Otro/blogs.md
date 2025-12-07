@@ -1,11 +1,11 @@
 @def title = "blogs chidos"
 @def tags = ["syntax", "code"]
 
-# ~~~<div class="typewriter-text" data-text="una lista de blogs que están chidos"></div>~~~
-
+---
 
 aquí pondré algunos blogs que se me han hecho interesantes, considero que valen la pena y algunos se siguen actualizando constantemente
 
+---
 
 1. [**Vicki Boykis**](https://vickiboykis.com/)  
    aquí se habla de inteligencia artificial y a veces se siente medio reflexivo, Vicki Boykis comparte ensayos, además de su experiencia en empresas como Mozilla.ai. está bien para mantenerse actualizado en temas de tecnología.

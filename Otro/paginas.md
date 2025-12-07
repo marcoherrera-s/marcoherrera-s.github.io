@@ -1,12 +1,13 @@
 @def title = "páginas chidas"
 @def tags = ["syntax", "code"]
 
-# ~~~<div class="typewriter-text" data-text="una lista de páginas que están chidas"></div>~~~
+---
 
 aquí pondré algunas páginas que conozco que suelo usar comunmente, unas más que otras, pero siempre estoy volviendo a estas
 
+---
 
-1. [**AlphaXiv**] (https://www.alphaxiv.org/)
+1. [**AlphaXiv**](https://www.alphaxiv.org/)
    aquí se pueden ver las discusiones y comentarios calientes de algunos artículos, es un poco más como para estar al tanto de lo que se está diciendo de artículos que recientemente han salido.
 
 2. [Nbviewer](https://nbviewer.org)
