@@ -22,6 +22,14 @@ jobs:
       uses: julia-actions/setup-julia@v2
       with:
         version: '1.10'
+    - name: Setup Julia registry
+      run: |
+        julia -e '
+          using Pkg
+          Pkg.Registry.add(RegistrySpec(url="https://github.com/JuliaRegistries/General.git"))
+        '
+      env:
+        JULIA_PKG_SERVER: ""
     - name: Build site
       run: julia -e '
             using Pkg;
@@ -30,6 +38,8 @@ jobs:
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             optimize()'
+      env:
+        JULIA_PKG_SERVER: ""
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
