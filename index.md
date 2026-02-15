@@ -12,8 +12,6 @@
 
 ⑇ marco herrera
 
-⑇ actualmente estudiando física en facultad de ciencias, unam
-
 
 **_sobre mí_**: 
 
