@@ -1,3 +1,2 @@
-LoadError: UndefVarError: `@syms` not defined in `Main.FD_SANDBOX_2988439550927964328`
-Suggestion: check for spelling errors or missing imports.
+LoadError: UndefVarError: `@syms` not defined
 in expression starting at none:1

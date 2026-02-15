@@ -1,2 +1,1 @@
-UndefVarError: `sympy` not defined in `Main.FD_SANDBOX_2988439550927964328`
-Suggestion: check for spelling errors or missing imports.
+UndefVarError: `sympy` not defined
