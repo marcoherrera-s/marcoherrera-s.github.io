@@ -1,23 +1,16 @@
 +++
-title = "Otros"
+title = "Ocio"
 +++
 
 ---
-# Extras 
-
-* [aprendiendo SQL  ┈ ⋞ 〈 ⏣ 〉 ⋟ ┈ ](/Otro/SQL/)
-
-* [collages de palabras que no sabía qué eran](/Otro/palabras/)
-
-* [mis subrayados](/menu3) 
-
-* [PDFs en una Kindle](/Otro/k2pdf/)
+# Ocio
 
 * [cómo hacer una playlist (la forma correcta)](/Otro/playlist/)
 
-* [visitando todas las estaciones del metro cdmx](/Otro/metro/)
+* [arte que me gusta](/Otro/arte/)
 
-* [arte que me gusta](/Otro/arte)
+* [blogs chidos](/Otro/blogs/)
 
-* [prueba](/Otro/thou/)
+* [páginas web chidas](/Otro/paginas/)
+
 ---

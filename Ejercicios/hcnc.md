@@ -175,7 +175,7 @@ p = contour(x, y, U_values,
 display(p)
 ```
 
-![curvas](/Ejercicios/potencial_efectivo_alta_resolucion.png)
+![curvas](/assets/ejercicios/potencial_efectivo_alta_resolucion.png)
 
 ### Explicación del Código
 
@@ -216,7 +216,7 @@ gif(anim, "mi_animacion.gif", fps = 10)  # Cambia los fotogramas por segundo seg
 ```
 
 
-![gifpot](/Ejercicios/mi_animacion.gif)
+![gifpot](/assets/ejercicios/mi_animacion.gif)
 
 
 El enfoque **hamiltoniano** nos da una forma clara y organizada de entender el sistema de tres cuerpos en un marco de referencia que se mueve con ellos. A través de las **curvas de nivel cero** del potencial efectivo, podemos visualizar las áreas en el espacio donde la energía cinética del sistema se anula. Esto resulta clave para comprender cómo se mueven y mantienen estables los cuerpos en órbita.

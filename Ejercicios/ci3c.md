@@ -13,7 +13,7 @@ Los puntos de Lagrange son cinco posiciones específicas en el espacio donde las
 Estos puntos son de particular interés no solo por su estabilidad dinámica, sino también por sus aplicaciones prácticas en la planificación de misiones espaciales, donde se utilizan para posicionar satélites.
 
 
-![lagra](/Ejercicios/lagrangepoints.jpg)
+![lagra](/assets/ejercicios/lagrangepoints.jpg)
 
 ### ¿Por qué nos interesan para nuestras condiciones iniciales?
 
@@ -114,4 +114,4 @@ end
 println("Nuevo μ = $nuevo_μ:$(nuevo)")
 ```
 
-![pltlagr](/Ejercicios/plot_lagrange_points.png)
+![pltlagr](/assets/ejercicios/plot_lagrange_points.png)

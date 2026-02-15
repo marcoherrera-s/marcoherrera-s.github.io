@@ -109,7 +109,7 @@ $$
 
 Los números $0 \leq θ \leq \pi$ y $0 \leq \phi \leq 2\pi$ definen un punto en una esfera unitaria de tres dimensiones. **Esta es la esfera de Bloch**. Siempre vale la pena ver la derivación de esta expresión, hay muchos recursos en internet donde hacen esto, yo la vi [aquí](http://web.cecs.pdx.edu/~mperkows/june2007/bloch-sphere.pdf). 
 
-![bloch](/Cuantica/boch.png)
+![bloch](/assets/cuantica/boch.png)
 
 
 **Comparación entre Bits Clásicos y Qubits**

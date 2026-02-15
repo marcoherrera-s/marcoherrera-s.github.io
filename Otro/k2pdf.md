@@ -21,7 +21,7 @@ imaginemos que queremos leer este libro en el/la kindle (no sé qué género es,
 
 si hacemos el intento medio ingenuo, que es simplemente descargar nuestro pdf y transferirlo. obtendríamos el siguiente resultado, las siguiente imágenes son capturas de pantalla directas de la kindle:
 
-![libroantes](/Otro/pdfantes.png)
+![libroantes](/assets/otro/pdfantes.png)
 
 esto no es tan mortal, digo, no es que se vea horrible. pero esa letra tan pequeña en una pantalla que de por sí ya es pequeña, con el tiempo, agota. 
 
@@ -31,42 +31,42 @@ la interfaz gráfica del programa se ve medio vieja, y además la primera vez qu
 
 una vez instalado, abrimos una terminal desde la carpeta en la que está ubicado el libro y ejecutamos `k2pdfopt libro.pdf`, y obtenemos: 
 
-![terminal](/Otro/image.png)
+![terminal](/assets/otro/image.png)
 
 aquí vemos muchas opciones, la verdad no sé qué sean la mayoría pero no importa, sólo nos vamos a interesar en una. en la de `device selection`, entonces escribimos la letra `d`y damos enter.
 
-![device](/Otro/image-1.png)
+![device](/assets/otro/image-1.png)
 
 si reconoces tu dispositivo en la lista, pues ganga. pero aunque lo hicieras, para mayor seguridad, yo preferiría ir a esta [página](https://en.wikipedia.org/wiki/Amazon_Kindle#Specifications) y buscar las especificaciones de tu dispositivo. por ejemplo, la mía es esta:
 
-![kindle](/Otro/image-2.png)
+![kindle](/assets/otro/image-2.png)
 
 de aquí, sólo nos importan los datos de las dimensiones y de los píxeles por pulgada (PPI). entonces ya con esa información en la terminal seleccionamos la opción `24. Other (specify width, height, etc.)`
 
 nos va a pedir justo esa información, y pues simplemente la ponemos:
 
-![datos](/Otro/image-3.png)
+![datos](/assets/otro/image-3.png)
 
 
 ya después simplemente le damos enter a todo hasta que empice a convertir nuestro archivo.
 
-![cobertir](/Otro/image-4.png)
+![cobertir](/assets/otro/image-4.png)
 
 
 una vez que termine, tendremos nuestro nuevo pdf, que en nuestro dispositivo se verá de la siguiente forma:
 
-![final](/Otro/pdfdespues.png)
+![final](/assets/otro/pdfdespues.png)
 
 y bueno, para compararlos, tenemos los resultados:
 
 ~~~
 <div style="display: flex; align-items: flex-start;">
   <figure style="margin-right: 10px; text-align: center;">
-    <img src="/Otro/pdfantes.png" alt="antes" style="width: 200px;">
+    <img src="/assets/otro/pdfantes.png" alt="antes" style="width: 200px;">
     <figcaption>Antes</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="/Otro/pdfdespues.png" alt="después" style="width: 200px;">
+    <img src="/assets/otro/pdfdespues.png" alt="después" style="width: 200px;">
     <figcaption>Después</figcaption>
   </figure>
 </div>

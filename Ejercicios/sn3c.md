@@ -83,11 +83,11 @@ plot(d2.x[:,1], d2.x[:,2], label="", color=:black, alpha=0.5)
 ```
 Lo que estamos viendo es la trayectoria del tercer cuerpo visto desde el marco de referencia no inercial.
 
-![oribta](/Ejercicios/orbita_alta_resolucion.png)
+![oribta](/assets/ejercicios/orbita_alta_resolucion.png)
 
 Podemos observar que si hacemos la transformación al sistema de referencia inercial, ya vemos algo más familiar.
 
-![inercial](/Ejercicios/orbita_inercial_alta_resolucion.png)
+![inercial](/assets/ejercicios/orbita_inercial_alta_resolucion.png)
 
 En nuestros resultados podemos observar algunas cosas interesantes:
 

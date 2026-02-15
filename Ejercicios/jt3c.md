@@ -93,16 +93,16 @@ display(p)
 ```
 Como podemos ver, tenemos una serie de trayectorias que parece que de alguna forma van divergiendo. 
 
-![jet](/Ejercicios/1jet.png)
+![jet](/assets/ejercicios/1jet.png)
 
 Acerquémonos un poco más a la región en donde parece que todo estaba bien.
 
 
-![jet](/Ejercicios/2jet.png)
+![jet](/assets/ejercicios/2jet.png)
 
 Un poco más.
 
-![jet](/Ejercicios/jet3.png)
+![jet](/assets/ejercicios/jet3.png)
 
 De esta forma no es tan práctico observar cómo es que las trayectorias van divergiendo conforme vamos cambiando el parámetro de masa, pero en la siguiente animación se ve un poco más claro de qué es lo que está pasando.
 
@@ -119,7 +119,7 @@ end
 gif(anim, "trayectorias.gif", fps=7)
 ```
 
-![gif](/Ejercicios/trayectorias_mejoradas.gif)
+![gif](/assets/ejercicios/trayectorias_mejoradas.gif)
 
 La animación creada muestra la evolución de las trayectorias a medida que `μ` varía, el punto rojo muestra el final de la trayectoria para el tiempo especificado, esto es el comportamiento del sistema cerca de L5.
 
