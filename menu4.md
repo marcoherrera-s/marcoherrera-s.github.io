@@ -18,4 +18,6 @@ title = "Otros"
 * [visitando todas las estaciones del metro cdmx](/Otro/metro/)
 
 * [arte que me gusta](/Otro/arte)
+
+* [prueba](/Otro/thou/)
 ---
