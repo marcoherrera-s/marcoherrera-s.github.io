@@ -711,115 +711,80 @@ pre code {
 }
 
 /* ==================================================================
-   9. NEWSLETTER (follow.it)
+   9. NEWSLETTER (Buttondown)
 ================================================================== */
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] {
+.newsletter-form {
   max-width: 420px;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem auto 2rem auto;
+  padding: clamp(17px, 5%, 35px) clamp(17px, 7%, 45px);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 18px rgba(47, 79, 127, 0.12);
+  display: flex;
+  flex-direction: column;
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  padding: clamp(17px, 5%, 35px) clamp(17px, 7%, 45px) !important;
-  max-width: none !important;
-  border-radius: 6px !important;
-  border: 1px solid var(--border-color) !important;
-  background-color: var(--background-color) !important;
-  box-shadow: 0 4px 18px rgba(47, 79, 127, 0.12) !important;
+.newsletter-form h5 {
+  margin: 0 0 16px 0;
+  font-family: var(--base-font);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  text-shadow: var(--text-shadow-strong);
+  text-transform: lowercase;
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview * {
-  box-sizing: border-box !important;
+.newsletter-form input[type="email"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--output-background);
+  outline: none;
+  color: var(--base-color);
+  font-family: var(--base-font);
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0 12px;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
-  width: 100% !important;
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(47, 79, 127, 0.15);
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  font-family: var(--base-font) !important;
-  font-weight: 600 !important;
-  color: var(--color-primary) !important;
-  font-size: 1.4rem !important;
-  text-align: left !important;
-  letter-spacing: 0.03em !important;
-  text-shadow: var(--text-shadow-strong) !important;
-  text-transform: lowercase !important;
+.newsletter-form input[type="email"]::placeholder {
+  color: var(--color-tertiary);
+  opacity: 0.7;
+  font-style: italic;
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
-  margin-top: 16px !important;
-  width: 100% !important;
+.newsletter-form input[type="submit"] {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--background-color);
+  font-family: var(--base-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
-  width: 100% !important;
-  height: 40px !important;
-  border-radius: 4px !important;
-  border: 1px solid var(--border-color) !important;
-  background-color: var(--output-background) !important;
-  outline: none !important;
-  color: var(--base-color) !important;
-  font-family: var(--base-font) !important;
-  font-size: 1.1rem !important;
-  font-weight: 400 !important;
-  line-height: 20px !important;
-  text-align: left !important;
-  padding: 0 12px !important;
-  transition: border-color 0.2s ease-in-out !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:focus {
-  border-color: var(--color-primary) !important;
-  box-shadow: 0 0 0 2px rgba(47, 79, 127, 0.15) !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
-  color: var(--color-tertiary) !important;
-  opacity: 0.7 !important;
-  font-style: italic !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
-  color: var(--color-tertiary) !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
-  color: var(--color-tertiary) !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
-  margin-top: 10px !important;
-  width: 100% !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
-  width: 100% !important;
-  height: 40px !important;
-  border: 1px solid var(--color-primary) !important;
-  border-radius: 4px !important;
-  line-height: 0px !important;
-  background-color: var(--color-primary) !important;
-  color: var(--background-color) !important;
-  font-family: var(--base-font) !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  letter-spacing: 0.04em !important;
-  text-transform: lowercase !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
-  cursor: pointer !important;
-  background-color: var(--color-secondary) !important;
-  border-color: var(--color-secondary) !important;
-  box-shadow: 0 2px 8px rgba(192, 138, 58, 0.3) !important;
+.newsletter-form input[type="submit"]:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 2px 8px rgba(192, 138, 58, 0.3);
 }
 
 /* ==================================================================
