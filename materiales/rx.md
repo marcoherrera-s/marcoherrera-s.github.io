@@ -6,7 +6,7 @@
 ### 1.1 Definición de Difracción
 La difracción se define como el fenómeno ondulatorio que implica la curvatura y dispersión de ondas al encontrarse con obstáculos o aberturas cuyas dimensiones son comparables a la longitud de onda del fenómeno incidente. Este proceso resulta en patrones de interferencia característicos.
 
-![difrac](/materiales/image-2.png)
+![difrac](/assets/materiales/image-2.png)
 
 ### 1.2 Asociación con Rayos X
 La asociación entre rayos X y difracción se debe a:

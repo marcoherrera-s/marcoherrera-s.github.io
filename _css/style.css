@@ -12,7 +12,8 @@
    6. Components (links, figures, tables, code, etc.)
    7. Specific sections (menu, toggle, social, franklin)
    8. Animations
-   9. Media queries
+   9. Newsletter
+   10. Media queries
 ================================================================== */
 
 /* ==================================================================
@@ -49,17 +50,6 @@
        url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), 
        url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "et-book-roman-old-style";
-  src: url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), 
-       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), 
-       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), 
-       url("../assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
   font-style: normal;
 }
 
@@ -131,8 +121,6 @@ body {
   font-family: var(--base-font);
   background-color: var(--background-color);
   color: var(--base-color);
-  counter-reset: sidenote-counter;
-  /* text-shadow: 0 0 2px rgba(144, 190, 109, 0.8); */
 }
 
 /* ==================================================================
@@ -181,19 +169,6 @@ p {
   vertical-align: baseline;
 }
 
-p.subtitle {
-  font-style: italic;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  display: block;
-  line-height: 1.1;
-  letter-spacing: 0.04em;
-  text-transform: lowercase;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
-}
-
 ol,
 ul {
   font-size: 1.5rem;
@@ -214,35 +189,9 @@ hr {
   padding: 0;
 }
 
-.numeral {
-  font-family: var(--base-font);
-  font-feature-settings: "tnum";
-  letter-spacing: 0.05em;
-}
-
-.danger {
-  color: var(--color-primary);
-  font-weight: 600;
-  text-shadow: var(--text-shadow-strong);
-}
-
-span.newthought {
-  font-variant: small-caps;
-  font-size: 1.3em;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--color-primary);
-  text-shadow: var(--text-shadow-medium);
-}
-
 /* ==================================================================
    5. LAYOUT & STRUCTURE
 ================================================================== */
-
-article {
-  position: relative;
-  padding: 6rem 0;
-}
 
 section {
   padding-top: var(--spacing-standard);
@@ -342,99 +291,6 @@ figure.fullwidth {
   width: 100%;
 }
 
-/* --- Blockquotes & Epigraphs --- */
-
-div.epigraph {
-  margin: 6em 0;
-}
-
-div.epigraph > blockquote {
-  margin-top: 4em;
-  margin-bottom: 4em;
-  font-size: 1.6rem;
-}
-
-div.epigraph > blockquote,
-div.epigraph > blockquote > p {
-  font-style: italic;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
-}
-
-div.epigraph > blockquote > footer {
-  font-style: normal;
-  color: var(--base-color);
-  text-shadow: var(--text-shadow-subtle);
-}
-
-div.epigraph > blockquote > footer > cite {
-  font-style: italic;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
-}
-
-/* --- Sidenotes & Margin Notes --- */
-
-.sidenote,
-.marginnote {
-  float: right;
-  clear: right;
-  margin-right: -62%;
-  width: 52%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  vertical-align: baseline;
-  position: relative;
-  color: var(--color-secondary);
-  text-shadow: var(--text-shadow-medium);
-}
-
-.sidenote-number {
-  counter-increment: sidenote-counter;
-  color: var(--color-primary);
-  text-shadow: var(--text-shadow-strong);
-}
-
-.sidenote-number::after,
-.sidenote::before {
-  font-family: "Cutive Mono", "Courier New", Courier, monospace;
-  position: relative;
-  vertical-align: baseline;
-}
-
-.sidenote-number::after {
-  content: counter(sidenote-counter);
-  font-size: 1.1rem;
-  top: -0.6rem;
-  left: 0.2rem;
-}
-
-.sidenote::before {
-  content: counter(sidenote-counter) " ";
-  font-size: 1.1rem;
-  top: -0.6rem;
-}
-
-blockquote .sidenote,
-blockquote .marginnote {
-  margin-right: -83%;
-  min-width: 60%;
-}
-
-input.margin-toggle {
-  display: none;
-}
-
-label.sidenote-number {
-  display: inline;
-}
-
-label.margin-toggle:not(.sidenote-number) {
-  display: none;
-}
-
 /* --- Tables --- */
 
 table {
@@ -477,14 +333,9 @@ tr:hover {
 
 /* --- Code --- */
 
-.sans {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  letter-spacing: 0.03em;
-}
-
 /* Inline code */
 code {
-  font-family: "Cutive Mono", "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.9em;
   line-height: 1.5;
   border-radius: 4px;
@@ -493,26 +344,12 @@ code {
   font-weight: 500;
 }
 
-.sans > code {
-  font-size: 1.1rem;
-}
-
 h1 > code,
 h2 > code,
 h3 > code {
   font-size: 0.85em;
   padding: 0.2em 0.45em;
 }
-
-.marginnote > code,
-.sidenote > code {
-  font-size: 0.9em;
-  color: var(--code-text);
-  background-color: var(--code-bg);
-  padding: 0.15em 0.4em;
-}
-
-
 
 /* Code blocks - Let Highlight.js handle syntax highlighting styles */
 /* Only add minimal layout/spacing adjustments */
@@ -530,26 +367,6 @@ pre code {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
-}
-
-/* --- Iframe --- */
-
-.iframe-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(144, 190, 109, 0.4);
-}
-
-.iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 /* ==================================================================
@@ -704,13 +521,6 @@ pre code {
   transform: scale(0.98);
 }
 
-#menu ul li a i {
-  margin-right: 12px;
-  font-size: 1.1em;
-  min-width: 20px;
-  text-align: center;
-}
-
 /* --- Toggle Switch --- */
 
 .toggle-switch {
@@ -806,7 +616,6 @@ pre code {
   text-shadow: 0 0 5px rgba(162, 209, 73, 0.7);
 }
 
-
 /* --- Franklin Overrides (Consolidated) --- */
 
 .franklin-content {
@@ -837,7 +646,7 @@ pre code {
 .typewriter-text span {
   color: var(--color-primary);
   text-shadow: 0 0 3px rgba(144, 190, 109, 0.9), 0 0 8px rgba(144, 190, 109, 0.7), 0 0 12px rgba(144, 190, 109, 0.5);
-  animation: flicker 2s infinite, glitch 0.8s infinite alternate-reverse, font-glitch 2s steps(3) infinite alternate;
+  animation: flicker 2s infinite, glitch 0.8s infinite alternate-reverse;
 }
 
 .cursor {
@@ -849,15 +658,6 @@ pre code {
 /* ==================================================================
    8. ANIMATIONS
 ================================================================== */
-
-@keyframes flicker-green {
-  0%, 100% {
-    text-shadow: 0 0 4px rgba(162, 209, 73, 0.9), 0 0 10px rgba(98, 190, 55, 0.7), 0 0 15px rgba(144, 238, 144, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 3px rgba(111, 153, 53, 0.8), 0 0 8px rgba(178, 255, 89, 0.6), 0 0 12px rgba(134, 199, 60, 0.5);
-  }
-}
 
 @keyframes flicker {
   0%, 100% {
@@ -888,18 +688,6 @@ pre code {
   100% {
     transform: translate(0);
     opacity: 0.9;
-  }
-}
-
-@keyframes font-glitch {
-  0% {
-    font-family: "Special Elite", "Courier New", Courier, monospace;
-  }
-  50% {
-    font-family: monospace;
-  }
-  100% {
-    font-family: "Special Elite", "Courier New", Courier, monospace;
   }
 }
 
@@ -1034,7 +822,6 @@ pre code {
   box-shadow: 0 2px 8px rgba(192, 138, 58, 0.3) !important;
 }
 
-
 /* ==================================================================
    10. MEDIA QUERIES (Mobile & Responsive)
 ================================================================== */
@@ -1094,33 +881,6 @@ pre code {
     width: 100%;
   }
 
-  label.margin-toggle:not(.sidenote-number) {
-    display: inline;
-    padding: 0.3em 0.6em;
-    border-radius: 3px;
-    background-color: #185e52;
-    color: var(--color-tertiary);
-    font-size: 1.1rem;
-    cursor: pointer;
-  }
-
-  .sidenote,
-  .marginnote {
-    display: none;
-  }
-
-  .margin-toggle:checked + .sidenote,
-  .margin-toggle:checked + .marginnote {
-    display: block;
-    float: none;
-    left: auto;
-    clear: both;
-    width: 90%;
-    margin: 2rem 5%;
-    vertical-align: baseline;
-    position: relative;
-  }
-
   label {
     cursor: pointer;
   }
@@ -1168,5 +928,3 @@ pre code {
     width: 660px;
   }
 }
-
-

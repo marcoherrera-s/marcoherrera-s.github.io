@@ -83,7 +83,7 @@ Pero, aunque no podemos medir directamente ambos valores simultáneamente, no es
 
 El circuito del algoritmo es el siguiente:
 
-![algoritmo](/Cuantica/deutsch.png)
+![algoritmo](/assets/cuantica/deutsch.png)
 
 Por lo que vemos que empezamos en el siguiente estado:
 $$

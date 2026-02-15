@@ -296,7 +296,7 @@ $$
 t' = c \oplus t
 $$
 
-![jet2](/Cuantica/cnot.png)
+![jet2](/assets/cuantica/cnot.png)
 
 ---
 
