@@ -67,7 +67,7 @@ plot(sol,
 )
 ```
 
-![tray](/assets/dinamica/tray.png)
+![tray](/assets/dinamica/tray.webp)
 
 Podemos observar la trayectoria para el péndulo simple con posición inicial $0.5$ y velocidad inicial $0.5$.
 
@@ -122,13 +122,13 @@ plot!(
 
 ```
 
-![tray2](/assets/dinamica/tray2.png)
+![tray2](/assets/dinamica/tray2.webp)
 
 Lo que estamos viendo es cómo se va llenando el espacio fase de trayectorias.
 
 Si googleamos el espacio de fase de un péndulo, podemos ver resultados parecidos a lo que acabamos de obtener:
 
-![web](/assets/dinamica/web.png)
+![web](/assets/dinamica/web.webp)
 
 ---
 
@@ -145,7 +145,7 @@ $$
 una solución claramente es la solución trivial, $ x = 0 $. Pero...
 
 
-![meme](/assets/dinamica/canvas.png)
+![meme](/assets/dinamica/canvas.webp)
 
 Resolvamos analíticamente:
 
@@ -215,7 +215,7 @@ En español, nos dice que todo jala bien siempre y cuando nuestra función sea c
 Para que no nos vayamos tan lejos, observemos la función:
 
 
-![plot](/assets/dinamica/plot.png)
+![plot](/assets/dinamica/plot.webp)
 
 Es claro que en 0 no es Lipschitz continua, pues de hecho $f'(0)$ es infinito. 
 

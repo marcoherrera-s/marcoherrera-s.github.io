@@ -29,10 +29,10 @@ $$
 donde $\mathbf{x}$ ahora es una cadena de $n$-bits.
 
 Ahora, donde antes teníamos que:
-![algoritmo](/assets/cuantica/deutsch.png)
+![algoritmo](/assets/cuantica/deutsch.webp)
 
 Ahora tendremos:
-![dj](/assets/cuantica/dj.png)
+![dj](/assets/cuantica/dj.webp)
 
 Por lo tanto, empezamos en el estado
 $$

@@ -159,7 +159,7 @@ dpi=300
 ```
 Donde obtenemos:
 
-![Oscilador](/assets/Oscilador.png)
+![Oscilador](/assets/Oscilador.webp)
 
 Lo que observamos no es nada que no sabíamos con anterioridad, que la solución del oscilador armónico es $x(t) = A \cos(\omega t + \phi)$ o de la misma forma, $x(t) = A \cos(\omega t) + B \sin(\omega t)$, donde $\omega = \sqrt{\frac{k}{m}}$.
 
@@ -203,7 +203,7 @@ label = false,
 dpi=300
 )
 ```
-![Energia](/assets/energia.png)
+![Energia](/assets/energia.webp)
 
 
 Como podemos ver, aunque tal vez poco, la energía no se está conservando, de hecho, está aumentando, esto no tendría que pasar con el oscilador armónico simple. Ahí está, la culminación de miles de años de ingenio humano se ve reflejado en que la computadora no puede lograr conservar la energía de un simple oscilador. Fin. 
@@ -222,7 +222,7 @@ dpi=300
 )
 ```
 
-![Pos](/assets/posnaive.png)
+![Pos](/assets/posnaive.webp)
 
 Esto definitivamente no se ve como la gráfica que habíamos obtenido anteriormente, pero si anteriormente hicimos _graficar(solucion)_ y ahora hicimos _graficar(tiempo de la solucion, posicion de la solucion)_, y los resultados se ven bastante diferentes, ¿qué está pasando entonces?
 
@@ -275,12 +275,12 @@ label = false,
 dpi=300
 )
 ```
-![Post](/assets/postolera.png)
+![Post](/assets/postolera.webp)
 
 Como podemos ver, mejoró demasiado, pero ahora veamos qué tal con la energía, repetimos nuestros pasos para calcular la energía, graficamos y obtenemos:
 
 
-![Ener](/assets/energiatol.png)
+![Ener](/assets/energiatol.webp)
 
 
 Bueno, parece que mejoró un poco, al menos pareciera que la energía ya no está aumentando tanto, aún existen pequeños problemas, así que aquí entra otra cuestión importante a la hora de resolver problemas de esta manera y con el manejo de las soluciones que obtenemos usando esta paquetería. 
@@ -313,7 +313,7 @@ Bueno, en primer lugar hay que aclarar lo de los resultados, por qué es que nos
 Sin embargo, el solucionador incluye una función de [interpolación](https://en.wikipedia.org/wiki/Interpolation) que aproxima la solución para cualquier tiempo dado. Rápidamente podemos recordar a la interpolación como un método para construir nuevos puntos de datos dentro de un conjunto discreto de puntos conocidos. 
 
 
-![inter](/assets/interpolacion.png)
+![inter](/assets/interpolacion.webp)
 
 
 Ahora, para dejar en claro que el solucinador en realiad nos regresa una solución continua podríamos evaluar la solución en algunos puntos en específico. 
@@ -390,7 +390,7 @@ u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, 
 
 Ahora hacemos los mismos pasos para graficar la energía, y ahora observamos:
 
-![es](/assets/energiasimple.png)
+![es](/assets/energiasimple.webp)
 
 Se ve mejor, porque en esencia ya no observamos esa especie de _drift_ que se observaba en los casos anteriores, y lo que vemos ahora es que la energía está oscilando entre su valor real. 
 
@@ -481,7 +481,7 @@ u: 10-element Vector{RecursiveArrayTools.ArrayPartition{Float64, Tuple{Float64, 
 Graficamos nuestros resultados análogamente a los casos anteriores y obtenemos:
 
 
-![am](/assets/amortiguado.png)
+![am](/assets/amortiguado.webp)
 
 Como se esperaba, un movimiento oscilatorio que se ve opacado por el decaimiento exponencial que lo acompaña. 
 
@@ -524,6 +524,6 @@ sol_am_forzado[1:10]
 
 Finalmente, graficamos y obtenemos:
 
-![fz](/assets/forzado.png)
+![fz](/assets/forzado.webp)
 
 Y como podemos ver, aunque sige habiendo amortiguamiento, la fuerza externa sobresale más. Además, si hemos sido atentos, podemos darnos cuenta que la frecuencia natural del oscilador es la misma que la de la fuerza aplicada, ambos son 1.0. Por lo tanto, como estamos viendo en la gráfica, hay resonancia. 

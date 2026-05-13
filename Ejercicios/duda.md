@@ -87,7 +87,7 @@ ingenuo = plot(sol_CR_ingenuo)
 <!-- \show{./ex58} -->
 
 
-![ingenuo](/assets/ingenuo.png)
+![ingenuo](/assets/ingenuo.webp)
 
 
 Nuestra gráfica no tiene ningun sentido. 
@@ -183,16 +183,16 @@ plot!(sol_m_aprox, idxs = (0, 2), linestyle=:dash, label="Aproximación", ylabel
 ```
 Y obtenemos:
 
-![poscr](/assets/pospunto.png)
+![poscr](/assets/pospunto.webp)
 
 De la misma forma podemos graficar los demás resultados. El índice 0 es el tiempo, el 1 la velocidad del punto, el 2 es la posición del punto como se hizo para graficar el resultado anterior, el índice 3 es la velocidad del ángulo, y el índice 4 es el valor del ángulo, entonces tendríamos:
 
 
-![velpu](/assets/velpunto.png)
+![velpu](/assets/velpunto.webp)
 
-![velangu](/assets/velangulo.png)
+![velangu](/assets/velangulo.webp)
 
-![valan](/assets/anguba.png)
+![valan](/assets/anguba.webp)
 
 Y como podemos observar, obtenemos movimientos oscilatorios, y también, como era de esperarse, las solución numérica y la aproximada se parecen demasiado recién comienza el sistema. 
 

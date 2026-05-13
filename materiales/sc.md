@@ -23,12 +23,12 @@
      f) Hexagonal
      g) Romboédrico (o trigonal)
 
-![sistemas](/assets/materiales/image.png)
+![sistemas](/assets/materiales/image.webp)
 
 2. Celdas unitarias y redes de Bravais:
    - Hay 14 tipos de celdas unitarias, conocidas como las 14 redes de Bravais.
    - Estas representan los 14 grupos de simetría puntual posibles en estructuras cristalinas.
-![bravais](/assets/materiales/image-1.png)
+![bravais](/assets/materiales/image-1.webp)
 
    - La idea detrás del de que haya un número finito de redes de Bravais es que, en cualquier dimensión dada, solo hay un número limitado de formas distintas de organizar puntos en el espacio que se repiten periódicamente. [Link](https://math.stackexchange.com/questions/500505/proof-of-the-finite-number-of-bravais-lattices)
 

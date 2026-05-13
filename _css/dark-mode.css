@@ -79,21 +79,18 @@
 
 /* Ajustes específicos del menu para modo oscuro */
 .dark-theme #hamburger-button {
-  background-color: rgba(18, 21, 31, 0.9);
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  box-shadow: 0 2px 8px rgba(138, 180, 248, 0.2);
+  color: var(--color-tertiary);
 }
 
 .dark-theme #hamburger-button:hover {
-  background-color: var(--color-primary);
-  color: var(--background-color);
-  box-shadow: 0 4px 12px rgba(138, 180, 248, 0.4);
+  background: transparent;
+  color: var(--base-color);
+  box-shadow: none;
 }
 
 .dark-theme #menu {
-  background: linear-gradient(135deg, var(--background-color) 0%, var(--highlight-background) 100%);
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+  background: var(--background-color);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
   border-right: 1px solid var(--border-color);
 }
 
@@ -117,31 +114,14 @@
 }
 
 /* Newsletter dark mode */
-.dark-theme .newsletter-form {
-  background-color: var(--highlight-background);
-  border-color: var(--border-color);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-}
-
 .dark-theme .newsletter-form input[type="email"] {
-  background-color: var(--block-background);
   border-color: var(--border-color);
   color: var(--base-color);
 }
 
 .dark-theme .newsletter-form input[type="email"]:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(138, 164, 209, 0.2);
 }
-
-.dark-theme .newsletter-form input[type="email"]::placeholder {
-  color: var(--color-tertiary);
-}
-
-.dark-theme .newsletter-form input[type="submit"] {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--background-color);
 }
 
 .dark-theme .newsletter-form input[type="submit"]:hover {
