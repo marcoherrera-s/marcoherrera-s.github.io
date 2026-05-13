@@ -8,7 +8,7 @@ Pensemos en una partícula $E$ que pertenece al cuerpo $\mathcal{B'}$ en el cual
 
 Entonces, 
 
-![d2](/assets/ejercicios/d2.png)
+![d2](/assets/ejercicios/d2.webp)
 
 $$
 \mathbf{e} = \mathbf{D} + \mathbf{e'}
@@ -88,7 +88,7 @@ Ahora podemos ver cómo se transforma, por ejemplo, la velocidad entre marcos de
 Entonces, supongamos una partícula $P$ que tiene un vector posición $\mathbf{r}$ relativo a $\mathcal{F}$  y vector posición $\mathbf{r'}$ relativo a $\mathcal{F'}$. Entonces de la misma forma tenemos que
 
 
-![d3](/assets/ejercicios/d3.png)
+![d3](/assets/ejercicios/d3.webp)
 
 $$
 \mathbf{r} = \mathbf{D} + \mathbf{r'}

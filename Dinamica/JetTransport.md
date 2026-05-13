@@ -123,7 +123,7 @@ Si ahora ploteamos el espacio-fase de nuestro sistema:
 scatter(solution[:,1], solution[:,2], color=:black, alpha = 0.7, aspect_ratio=:equal)
 ```
 
-![sca1](/assets/jet_transport/nominal.png)
+![sca1](/assets/jet_transport/nominal.webp)
 
 Y bueno, este resultado es bien conocido, aunque el oscilador armónico es muy importante, es cierto que muchas veces ya nos resulta aburrido. 
 Pero continuando con lo que nos importa, lo que ahora nos interesa es hacer un Transporte de Jet. Como dijimos, ahora no nos importa resolver para una única condición inicial, nos interesa parametrizar una vecindad de condiciones iniciales alrededor de alguna condición inicial dada usando un polinomio, entonces:
@@ -167,7 +167,7 @@ Finalmente lo que haría falta sería evaluar cada polinomio en $\mathcal{V}_{x_
 
 Hay muchas formas de parametrizar nuestra vecindad, recordemos que lo que queremos hacer es ver qué pasa cerca de la condición inicial que ya dimos. Podríamos pensar en una "cajita" de condiciones iniciales cercanas nuestra primer condición inicial. Y entonces, lo emocionante sería ver cómo es que esta "cajita" evoluciona con el tiempo. Así, en lugar de ver cómo evoluciona el sistema dada una única condición inicial, ahora tenemos una herramienta más rica. 
 
-![cajita](/assets/jet_transport/ee.png)
+![cajita](/assets/jet_transport/ee.webp)
 
 
 ```
@@ -273,7 +273,7 @@ begin
 end
 ```
 
-![jet1](/assets/jet_transport/jet.png)
+![jet1](/assets/jet_transport/jet.webp)
 
 
 
@@ -343,7 +343,7 @@ Veamos la solución
 scatter(solution1[:,1], solution1[:,2], color=:black, alpha = 0.7, aspect_ratio=:equal, dpi=300)
 ```
 
-![nom2](/assets/jet_transport/artificial.png)
+![nom2](/assets/jet_transport/artificial.webp)
 
 
 Entonces continuamos haciendo Jet Transport como ya vimos:
@@ -424,7 +424,7 @@ plot(xjet_plot2, vjet_plot2, legend=false, color=:red)
 scatter!(solution1[:,1], solution1[:,2], color=:black, alpha = 0.7)
 ```
 
-![jet2](/assets/jet_transport/jet2.png)
+![jet2](/assets/jet_transport/jet2.webp)
 
 Como podemos observar, ahora sí hay claras deformaciones de nuestra "cajita". 
 Hay demasiadas cosas interesantes que se pueden explorar y que pueden salir de este método, en este breve caso lo que lo hace particularmente valioso es que nos permite analizar el comportamiento de una vecindad completa de condiciones iniciales en un solo proceso computacional.

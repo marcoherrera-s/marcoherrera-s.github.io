@@ -51,17 +51,17 @@ Podemos hacer un análisis, gráfico de la siguiente forma:
 
 Tenemos que $ \dot{x} = \sin{x} = f(x) $ graficando, nos encontraríamos únicamente con un seno
 
-![seno](/assets/dinamica/1.png)
+![seno](/assets/dinamica/1.webp)
 
 Ahora, ubicamos los puntos fijos, como sabemos estos son donde $ \dot{x} = \sin{x} = 0 $
 
-![fijos](/assets/dinamica/2.png)
+![fijos](/assets/dinamica/2.webp)
 
 
 Podemos pensar en que, cuando la velocidad, es decir, el eje $y$ de nuestra gráfica, es positiva, entonces una especie de flujo imaginario, fluye hacia la derecha, controlando la dirección de la dinámica en esos puntos. Y de la misma forma, si la velocidad es negativa, entonces se fluye hacia la izquierda.
 
 
-![direccion](/assets/dinamica/3.png)
+![direccion](/assets/dinamica/3.webp)
 
 
 
@@ -76,9 +76,9 @@ Por lo tanto, eso es lo que pasa, un atractor es un punto fijo estable, un repul
 Hace un rato nos preguntamos: ¿Qué haríamos si nos interesara saber qué es lo que pasa con nuestra solución cuando la condición inicial es $x_0 = \pi / 4 $ para $ t > 0 $ ?
 
 
-![ej](/assets/dinamica/4.png)
+![ej](/assets/dinamica/4.webp)
 
 Si hacemos un análisis gráfico, podemos ver que si partimos de $ \pi / 4 $ el flujo nos llevaría de forma rápida hasta $ \pi / 2 $, llegando a este punto, seguiríamos moviéndonos en la misma dirección, pues la velocidad sigue siendo positiva, pero iríamos cada vez más lento, dirigiéndonos a $ \pi $ de forma asintótica. 
 
-![ej1](/assets/dinamica/6.png)
+![ej1](/assets/dinamica/6.webp)
 

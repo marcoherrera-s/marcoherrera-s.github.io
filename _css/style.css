@@ -370,37 +370,35 @@ pre code {
   /* Adjust padding if fixed button interferes */
 }
 
-/* Hamburger Button - Modern & Clean */
+/* Hamburger Button - Minimal */
 #hamburger-button {
   position: fixed;
-  top: 20px;
-  left: 10px;
+  top: 18px;
+  left: 14px;
   z-index: 1002;
   background: transparent;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  border: none;
+  color: var(--color-tertiary);
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  transition: color 0.2s;
 }
 
 #hamburger-button:hover {
-  background-color: var(--color-primary);
-  color: white;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 150, 136, 0.3);
+  background-color: transparent;
+  color: var(--base-color);
+  transform: none;
+  box-shadow: none;
 }
 
 #hamburger-button:active {
-  transform: scale(0.95);
+  transform: none;
 }
 
 /* Menu Backdrop Overlay */
@@ -410,11 +408,11 @@ pre code {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
   z-index: 999;
 }
 
@@ -430,11 +428,11 @@ pre code {
   left: 0;
   height: 100vh;
   width: 280px;
-  background: linear-gradient(135deg, var(--background-color) 0%, var(--highlight-background) 100%);
-  padding-top: 80px;
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  background: var(--background-color);
+  padding-top: 56px;
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.06);
   transform: translateX(-100%);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s ease;
   z-index: 1000;
   overflow-y: auto;
   border-right: 1px solid var(--border-color);
@@ -444,73 +442,42 @@ pre code {
   transform: translateX(0);
 }
 
-/* Custom scrollbar for menu */
-#menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#menu::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-#menu::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 3px;
-}
-
-#menu::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);
-}
+#menu::-webkit-scrollbar { display: none; }
 
 #menu ul {
   list-style: none;
-  padding: 0 12px;
+  padding: 0 20px;
   margin: 0;
 }
 
 #menu ul li {
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 #menu ul li a {
-  display: flex;
-  align-items: center;
-  padding: 14px 16px;
+  display: block;
+  padding: 10px 0;
   text-decoration: none;
   color: var(--base-color);
-  border-radius: 8px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-style: italic;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  position: static;
+  overflow: visible;
 }
 
-#menu ul li a::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: var(--color-primary);
-  transform: scaleY(0);
-  transition: transform 0.2s ease;
-}
+#menu ul li a::before { display: none; }
 
 #menu ul li a:hover {
-  background-color: rgba(0, 150, 136, 0.08);
-  padding-left: 20px;
+  background: none;
+  padding-left: 0;
   color: var(--color-primary);
+  border-bottom-color: var(--border-color);
 }
 
-#menu ul li a:hover::before {
-  transform: scaleY(1);
-}
-
-#menu ul li a:active {
-  transform: scale(0.98);
-}
+#menu ul li a:active { transform: none; }
 
 /* --- Toggle Switch --- */
 
@@ -707,75 +674,83 @@ pre code {
 
 .newsletter-form {
   max-width: 420px;
-  margin: 4rem auto 2rem auto;
-  padding: clamp(17px, 5%, 35px) clamp(17px, 7%, 45px);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background-color: var(--background-color);
-  box-shadow: 0 4px 18px rgba(47, 79, 127, 0.12);
+  margin: 3rem 0 2rem;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .newsletter-form h5 {
-  margin: 0 0 16px 0;
+  margin: 0 0 0.6rem;
   font-family: var(--base-font);
-  font-weight: 600;
-  color: var(--color-primary);
-  font-size: 1.4rem;
-  letter-spacing: 0.03em;
-  text-shadow: var(--text-shadow-strong);
+  font-weight: normal;
+  font-style: italic;
+  color: var(--color-tertiary);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-shadow: none;
   text-transform: lowercase;
 }
 
 .newsletter-form input[type="email"] {
   width: 100%;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-  background-color: var(--output-background);
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0;
+  background: transparent;
   outline: none;
   color: var(--base-color);
   font-family: var(--base-font);
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding: 0 12px;
-  transition: border-color 0.2s ease-in-out;
+  font-size: 1rem;
+  padding: 0 0 4px;
+  transition: border-color 0.2s;
   box-sizing: border-box;
 }
 
 .newsletter-form input[type="email"]:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(47, 79, 127, 0.15);
+  box-shadow: none;
 }
 
 .newsletter-form input[type="email"]::placeholder {
   color: var(--color-tertiary);
-  opacity: 0.7;
+  opacity: 0.6;
   font-style: italic;
 }
 
 .newsletter-form input[type="submit"] {
-  margin-top: 10px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--color-primary);
-  border-radius: 4px;
-  background-color: var(--color-primary);
-  color: var(--background-color);
+  margin-top: 0.4rem;
+  width: fit-content;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: var(--color-primary);
   font-family: var(--base-font);
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 0.04em;
+  font-weight: normal;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
   text-transform: lowercase;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.newsletter-form input[type="submit"]::after {
+  content: " →";
 }
 
 .newsletter-form input[type="submit"]:hover {
-  background-color: var(--color-secondary);
-  border-color: var(--color-secondary);
-  box-shadow: 0 2px 8px rgba(192, 138, 58, 0.3);
+  color: var(--color-secondary);
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 /* ==================================================================
@@ -915,4 +890,98 @@ pre code {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ==================================================================
+   HERO EDITORIAL + LORENZ + NOW
+================================================================== */
+
+.hero-editorial {
+  position: relative;
+  margin: 2rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-family: var(--base-font);
+  font-size: clamp(2.4rem, 8vw, 4.5rem);
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--base-color);
+}
+
+.hero-sub {
+  font-family: var(--base-font);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-tertiary);
+  margin-top: 0.3rem;
+  letter-spacing: 0.08em;
+}
+
+#lorenz-canvas {
+  display: block;
+  width: 100%;
+  height: 180px;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.now-section {
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--color-secondary);
+  background: var(--highlight-background);
+}
+
+.now-title {
+  font-family: var(--base-font);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: var(--color-primary);
+  margin: 0 0 0.6rem;
+}
+
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.now-footer {
+  font-size: 0.78rem;
+  color: var(--color-tertiary);
+  margin: 0;
+}
+
+/* ==================================================================
+   DROP CAP estilo Elzevir
+================================================================== */
+
+@font-face {
+  font-family: "Elzevier";
+  src: url("../assets/elzevier/ELZEVIER_R.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.franklin-content > p:first-of-type::first-letter {
+  font-family: "Elzevier", Georgia, serif;
+  font-weight: normal;
+  font-size: 4.2em;
+  line-height: 0.75;
+  float: left;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--color-primary);
+}
+
+body.index .franklin-content > p:first-of-type::first-letter {
+  all: unset;
 }

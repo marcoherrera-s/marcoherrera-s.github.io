@@ -43,7 +43,7 @@ La forma en la que funciona es la siguiente:
 
 El siguiente paso es hacer una espiral de números, este paso tiene su truquito y podría resultar medio complicado, conseguir acomodar los números en cualquier matriz de nxn en forma de espiral puede resultar un poco laborioso.
 
-![espiral](/assets/espiral.png)
+![espiral](/assets/espiral.webp)
 
 Entonces, lo que haremos será:
 
@@ -121,7 +121,7 @@ Después iteramos sobre cada columna y cada fila, es decir, sobre cada número y
 Ulam(1001)
 ```
 
-![espabu](/assets/primos1001.png)
+![espabu](/assets/primos1001.webp)
 
 
 
@@ -169,7 +169,7 @@ Es la misma función, únicamente agregamos la condición de que si es primo y a
 Ulam_n(1001)
 ```
 
-![espachi](/assets/primoss1001.png)
+![espachi](/assets/primoss1001.webp)
 
 
 
@@ -181,7 +181,7 @@ Resulta que a día de hoy aún no puedo explicar muy bien lo que está pasando, 
 
 Una vez, una amiga mía me preguntó que cuál era mi fondo de pantalla, a punto de enseñarle me dijo que me detuviera, que ella iba a adivinar, empezó diciendo una lista de las cosas que me gustan tales que creía que eso podría ser mi fondo de pantalla, fue un fallo total. Mi fondo de pantalla era un fondo random, algo que literalmente no hubiera recordado cuándo puse, ni por qué, ni dónde lo encontré, algo similar a ese fondo de pantalla del campo verde y el cielo azul que estuvo como predeterminado mucho tiempo en las computadoras.
 
-![fon](/assets/fondo.jpg)
+![fon](/assets/fondo.webp)
 
 En el momento en que obtuve mi imagen, de los números primos y mi número favorito, no dudé en ponerla de fondo de pantalla. 
 

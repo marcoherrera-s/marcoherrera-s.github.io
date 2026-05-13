@@ -77,7 +77,7 @@ La moraleja de todo esto es que la pendiente si $f'(x^*)$ en el punto fijo deter
 
 Pues podemos observar que una pendiente es negativa en los puntos fijos estables, y positiva en los inestables. 
 
-![in](/assets/dinamica/7.png)
+![in](/assets/dinamica/7.webp)
 
 Parece que ahora tenemos simplemente una herramienta un poco más formal, mas analítica, de saber si un punto fijo es estable o inestable. Esto ya lo podíamos saber usando el análisis gráfico del que se había hablado antes, por lo que la verdadera novedad que nos trae este análisis es que ahora podemos saber qué tan estable es un punto estable, o viceversa, qué tan inestable es un punto inestable. Esto los sabemos con la magnitud de $f'(x^*)$.
 
