@@ -1,4 +1,9 @@
-<script src="/libs/katex/katex.min.js"></script>
-<script src="/libs/katex/contrib/auto-render.min.js"></script>
-<script>renderMathInElement(document.body)</script>
-
+<script src="/libs/katex/katex.min.js" defer></script>
+<script src="/libs/katex/contrib/auto-render.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.renderMathInElement) {
+      renderMathInElement(document.body);
+    }
+  });
+</script>

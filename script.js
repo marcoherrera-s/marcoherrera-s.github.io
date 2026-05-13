@@ -1,85 +1,77 @@
+// =============================================================
+// Menu hamburguesa + carrusel tipo Instagram
+// =============================================================
+
 document.addEventListener('DOMContentLoaded', () => {
+  initHamburgerMenu();
+  initCarousels();
+});
+
+// -------------------------------------------------------------
+// Menú lateral
+// -------------------------------------------------------------
+function initHamburgerMenu() {
   const hamburgerButton = document.getElementById('hamburger-button');
   const menu = document.getElementById('menu');
-  
+  if (!hamburgerButton || !menu) return;
+
   // Crear el backdrop si no existe
   let backdrop = document.getElementById('menu-backdrop');
-  if (!backdrop && menu) {
+  if (!backdrop) {
     backdrop = document.createElement('div');
     backdrop.id = 'menu-backdrop';
     document.body.appendChild(backdrop);
   }
 
-  if (hamburgerButton && menu && backdrop) {
-    // Función para abrir el menú
-    const openMenu = () => {
-      menu.classList.add('visible');
-      backdrop.classList.add('visible');
-      hamburgerButton.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden'; // Prevenir scroll del body
-    };
+  const openMenu = () => {
+    menu.classList.add('visible');
+    backdrop.classList.add('visible');
+    hamburgerButton.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
 
-    // Función para cerrar el menú
-    const closeMenu = () => {
-      menu.classList.remove('visible');
-      backdrop.classList.remove('visible');
-      hamburgerButton.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = ''; // Restaurar scroll
-    };
+  const closeMenu = () => {
+    menu.classList.remove('visible');
+    backdrop.classList.remove('visible');
+    hamburgerButton.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
 
-    // Toggle del menú al hacer clic en el botón
-    hamburgerButton.addEventListener('click', () => {
-      if (menu.classList.contains('visible')) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
+  hamburgerButton.addEventListener('click', () => {
+    if (menu.classList.contains('visible')) closeMenu(); else openMenu();
+  });
+
+  backdrop.addEventListener('click', closeMenu);
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (menu.classList.contains('visible')) closeMenu();
     });
+  });
 
-    // Cerrar el menú al hacer clic en el backdrop
-    backdrop.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('visible')) closeMenu();
+  });
+}
 
-    // Cerrar el menú al hacer clic en un enlace
-    menu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (menu.classList.contains('visible')) {
-          closeMenu();
-        }
-      });
-    });
-
-    // Cerrar con la tecla Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && menu.classList.contains('visible')) {
-        closeMenu();
-      }
-    });
-  } else {
-    console.error("No se encontró el botón de hamburguesa o el elemento del menú.");
-  }
-});
-
-// Sistema de indicadores de carrusel tipo Instagram
-document.addEventListener('DOMContentLoaded', () => {
+// -------------------------------------------------------------
+// Carrusel con indicadores tipo Instagram
+// -------------------------------------------------------------
+function initCarousels() {
   const carousels = document.querySelectorAll('ula');
-  
+
   carousels.forEach((carousel) => {
     const items = carousel.querySelectorAll('lia');
-    
-    // Solo agregar indicadores si hay más de una imagen
     if (items.length <= 1) return;
-    
-    // Crear contenedor de indicadores
+
     const indicatorsContainer = document.createElement('div');
     indicatorsContainer.className = 'carousel-indicators';
-    
-    // Crear indicador para cada imagen
+
     items.forEach((item, index) => {
       const indicator = document.createElement('div');
       indicator.className = 'carousel-indicator';
       if (index === 0) indicator.classList.add('active');
-      
-      // Click en indicador para navegar
+
       indicator.addEventListener('click', () => {
         items[index].scrollIntoView({
           behavior: 'smooth',
@@ -87,39 +79,34 @@ document.addEventListener('DOMContentLoaded', () => {
           inline: 'center'
         });
       });
-      
+
       indicatorsContainer.appendChild(indicator);
     });
-    
-    // Insertar indicadores después del carrusel
+
     carousel.parentNode.insertBefore(indicatorsContainer, carousel.nextSibling);
-    
-    // Actualizar indicador activo en scroll
+
+    const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+
     const updateActiveIndicator = () => {
-      const scrollLeft = carousel.scrollLeft;
-      const itemWidth = items[0].offsetWidth;
-      const activeIndex = Math.round(scrollLeft / itemWidth);
-      
-      const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+      const itemWidth = items[0].offsetWidth || 1;
+      const activeIndex = Math.round(carousel.scrollLeft / itemWidth);
       indicators.forEach((indicator, index) => {
-        if (index === activeIndex) {
-          indicator.classList.add('active');
-        } else {
-          indicator.classList.remove('active');
-        }
+        indicator.classList.toggle('active', index === activeIndex);
       });
     };
-    
-    // Escuchar scroll con throttle para mejor performance
-    let scrollTimeout;
+
+    // requestAnimationFrame para evitar trabajo redundante en cada scroll event
+    let ticking = false;
     carousel.addEventListener('scroll', () => {
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateActiveIndicator();
+          ticking = false;
+        });
+        ticking = true;
       }
-      scrollTimeout = setTimeout(updateActiveIndicator, 50);
-    });
-    
-    // Actualizar en resize por si cambia el tamaño
-    window.addEventListener('resize', updateActiveIndicator);
+    }, { passive: true });
+
+    window.addEventListener('resize', updateActiveIndicator, { passive: true });
   });
-});
+}
