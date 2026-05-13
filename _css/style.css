@@ -22,35 +22,26 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), 
-       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), 
-       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), 
-       url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), 
-       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), 
-       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), 
-       url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), 
-       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), 
-       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), 
-       url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ==================================================================
@@ -891,5 +882,37 @@ pre code {
 @media (min-width: 1000px) {
   .franklin-content {
     width: 660px;
+  }
+}
+
+/* ==================================================================
+   11. ACCESSIBILITY HELPERS
+================================================================== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Respeta a quien prefiere menos animaciones */
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-text span,
+  .cursor {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

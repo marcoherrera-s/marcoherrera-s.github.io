@@ -1,7 +1,25 @@
-* {
+/* ==================================================================
+   CARRUSEL
+   El reset global * { ... } se eliminó: rompía el box model del resto
+   del sitio (todo el sitio quedaba en box-sizing: content-box).
+   Si el carrusel necesita un reset, se aplica solo a sus elementos.
+================================================================== */
+
+.carousel-wrapper,
+.carousel-wrapper *,
+ula,
+ula *,
+lia,
+lia * {
+  box-sizing: border-box;
+}
+
+ula,
+ula li,
+ula ul,
+lia {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
 }
 
 /* Contenedor wrapper para carrusel + indicadores */
@@ -17,17 +35,15 @@ ula {
   list-style: none;
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 0;
-  
+
   /* Smooth scrolling estilo Instagram */
   -webkit-overflow-scrolling: touch;
-  
+
   /* Indicadores de scroll (puntitos) */
   position: relative;
 }
@@ -46,11 +62,10 @@ lia {
   flex-shrink: 0;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  
+
   /* Una imagen a la vez - 100% del contenedor */
   width: 100%;
-  padding: 0;
-  
+
   /* Transición suave */
   transition: opacity 0.3s ease;
 }
@@ -118,12 +133,25 @@ lia a:hover {
   .carousel-indicator {
     background: rgba(50, 72, 194, 0.418);
   }
-  
+
   .carousel-indicator.active {
     background: rgba(100, 180, 255, 0.9);
   }
-  
+
   .carousel-indicator:hover {
     background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  ula {
+    scroll-behavior: auto;
+  }
+  lia,
+  lia img,
+  lia a,
+  .carousel-indicator {
+    transition: none;
   }
 }
