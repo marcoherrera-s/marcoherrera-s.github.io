@@ -1,29 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Script CRÍTICO: debe ejecutarse ANTES que todo para prevenir flash -->
     <script>
         (function() {
-            const theme = localStorage.getItem('theme');
-            if (theme === 'dark') {
-                document.documentElement.classList.add('dark-theme');
-            }
+            try {
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark-theme');
+                }
+            } catch (e) { /* localStorage bloqueado: ignorar */ }
         })();
     </script>
-    
+
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f5f3ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#050814" media="(prefers-color-scheme: dark)">
     <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY" />
 
-    <!-- Título de la página -->
+    <!-- Título y descripción -->
     {{isdef title}}
         <title>{{fill title}}</title>
     {{end}}
+    {{isdef website_descr}}
+        <meta name="description" content="{{fill website_descr}}">
+    {{end}}
 
-    <!-- Fuentes de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- Canonical y RSS -->
+    {{isdef website_url}}
+        <link rel="canonical" href="{{fill website_url}}">
+    {{end}}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+    <!-- Open Graph / Twitter -->
+    {{isdef title}}<meta property="og:title" content="{{fill title}}">{{end}}
+    {{isdef website_descr}}<meta property="og:description" content="{{fill website_descr}}">{{end}}
+    {{isdef website_url}}<meta property="og:url" content="{{fill website_url}}">{{end}}
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/klimt.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    {{isdef title}}<meta name="twitter:title" content="{{fill title}}">{{end}}
+    {{isdef website_descr}}<meta name="twitter:description" content="{{fill website_descr}}">{{end}}
+    <meta name="twitter:image" content="/assets/klimt.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+
     <!-- Estilos CSS -->
     {{insert style.html}}
     <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css">
@@ -35,19 +61,17 @@
         {{insert head_highlight.html}}
     {{end}}
 
-    <!-- Script para Modo Oscuro -->
+    <!-- Scripts del sitio -->
     <script src="/dark-mode.js" defer></script>
-
-    <!-- Mueve tu script.js al head y usa defer -->
     <script src="/script.js" defer></script>
 
 </head>
 <body>
     <!-- Switch para Modo Oscuro -->
     <div class="toggle-switch">
-        <label class="switch-label">
-            <input type="checkbox" class="checkbox" id="dark-mode-toggle">
-            <span class="slider"></span>
+        <label class="switch-label" for="dark-mode-toggle">
+            <input type="checkbox" class="checkbox" id="dark-mode-toggle" aria-label="Cambiar entre modo claro y oscuro">
+            <span class="slider" aria-hidden="true"></span>
         </label>
     </div>
 

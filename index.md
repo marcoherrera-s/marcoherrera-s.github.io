@@ -4,7 +4,12 @@
 
 
 
-![ini](/assets/klimt.jpg)
+~~~
+<picture>
+  <source srcset="/assets/klimt.webp" type="image/webp">
+  <img src="/assets/klimt.jpg" alt="Detalle de Klimt" width="1200" height="800" loading="eager" decoding="async">
+</picture>
+~~~
 
 
 
