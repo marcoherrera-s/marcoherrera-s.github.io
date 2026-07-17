@@ -1,1 +1,0 @@
-cuerpo_rigido (generic function with 1 method)
