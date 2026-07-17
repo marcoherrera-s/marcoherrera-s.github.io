@@ -424,18 +424,20 @@ pre code {
 /* Sidebar Menu */
 #menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 280px;
+  top: 70px;
+  left: 20px;
+  height: auto;
+  max-height: calc(100vh - 140px);
+  width: 260px;
   background: var(--background-color);
-  padding-top: 56px;
-  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.06);
+  padding: 24px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transform: translateX(-100%);
   transition: transform 0.25s ease;
   z-index: 1000;
   overflow-y: auto;
-  border-right: 1px solid var(--border-color);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
 }
 
 #menu.visible {
@@ -459,7 +461,7 @@ pre code {
   padding: 10px 0;
   text-decoration: none;
   color: var(--base-color);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: normal;
   font-style: italic;
   border-bottom: 1px solid transparent;
