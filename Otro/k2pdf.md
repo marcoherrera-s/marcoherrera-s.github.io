@@ -1,10 +1,12 @@
 +++
 title = "k2pdfopt"
 tags = ["syntax", "code"]
-
 +++
 
+
 # CÓMO USAR UNA KINDLE PARA LEER PDF's
+
+(deprecado, me parece que hay un problema con descargar el software desde la página oficial)
 
 a lo largo del tiempo, ha sido común que los libros, ya sean académicos o literarios, se compartan por medio del formato PDF. si nuestro propósito es usarlos en una computadora o tableta, no hay problema con ese formato. el problema empieza en otros dispositivos. se sabe que si te gustaría leer un libro en tu celular sin tener que estar leyendo un pdf en modo horizontal, con un tamaño de letra diminuto, probablemente la mejor opción para hacerlo sea buscar el libro en formato _.epub_.
 

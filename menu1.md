@@ -10,13 +10,7 @@ tags = ["syntax", "code"]
 
 # cosas que intento
 
-* [oscilador armónico](/Ejercicios/oscilador/)
-
-* [resolviendo cuerpo rígido sin talachita (o tal vez sí)](/Ejercicios/duda/)
-
 * [dinámica no lineal](/Dinamica/cover/)
-
-* [jet transport](/Dinamica/JetTransport/)
 
 * [cómputo cuántico](/Cuantica/cover/)
 
