@@ -85,7 +85,7 @@ Yo puse el código que literal solo es un archivo .py en el mismo lugar en donde
 
 Y si todo sale bien, deberíamos ver algo como esto:
 
-![alt text](/assets/otro/image-5.webp)
+![alt text](/assets/misc-assets/image-5.webp)
 
 Hay más detalles del código pero todo eso lo dejo en el [repositorio](https://github.com/marcoherrera-s/LoudnessSorter).
 

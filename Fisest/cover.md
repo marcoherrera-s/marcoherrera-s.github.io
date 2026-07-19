@@ -9,6 +9,6 @@ description = "Notas de física estadística: ensamble microcanónico, entropía
 
 
 
-1. ❉ [Introducción, un palabrerío, y el ensamble microcanónico](/fisest/microcanonico/) ❉
+1. ❉ [Introducción, un palabrerío, y el ensamble microcanónico](/Fisest/microcanonico/) ❉
 
-2. ❉ [Entropía y la segunda ley de la termodinámica](/fisest/segunda/) ❉
+2. ❉ [Entropía y la segunda ley de la termodinámica](/Fisest/segunda/) ❉
