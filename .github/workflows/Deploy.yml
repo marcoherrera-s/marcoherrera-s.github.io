@@ -75,41 +75,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
-          persist-credentials: false
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Set up Julia
-        uses: julia-actions/setup-julia@v2
-        with:
-          version: '1.10'
-
-      - name: Cache Julia deps
-        uses: julia-actions/cache@v2
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install npm dependencies
-        run: npm ci
-
-      - name: Build site
-        run: |
-          julia --project=. -e '
-            using Pkg
-            Pkg.instantiate()
-            using Franklin
-            Franklin.optimize()
-          '
+          name: site-${{ github.sha }}
+          path: __site
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

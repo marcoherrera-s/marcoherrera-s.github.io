@@ -1,7 +1,7 @@
 __site/
 .DS_Store
 node_modules/
-**/Manifest.toml
+Manifest.toml
 
 # Editor / OS
 .idea/
