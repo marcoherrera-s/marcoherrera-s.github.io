@@ -16,6 +16,6 @@ tags = ["física", "índice"]
 
 * [el problema de tres cuerpos](/Ejercicios/cover3c/)
 
-* [física estadística](/fisest/cover/)
+* [física estadística](/Fisest/cover/)
 
 * [mecánica hamiltoniana](/Hamilton/cover/)
