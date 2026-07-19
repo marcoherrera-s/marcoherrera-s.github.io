@@ -1,5 +1,6 @@
 @def title = "Introducción PR3C"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["problema-tres-cuerpos", "física"]
+@def description = "Introducción al problema restringido de tres cuerpos: motivación, repaso de fuerzas centrales y conservación de energía mecánica."
 
 El objetivo de toda esta serie de entradas será estudiar el problema de tres cuerpos, pero antes, es mejor darnos cuenta que hay que tener claro qué es lo que está pasando en el problema de dos cuerpos. 
 

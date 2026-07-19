@@ -1,3 +1,9 @@
++++
+title = "La casa de los espíritus"
+author = "Isabel Allende"
+description = "Highlights de La casa de los espíritus, novela de Isabel Allende que sigue a la familia Trueba a lo largo de generaciones entre política, amor y realismo mágico."
++++
+
 # **La casa de los espíritus (Allende, Isabel)**
 
 ## Highlights

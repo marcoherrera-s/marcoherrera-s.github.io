@@ -1,3 +1,9 @@
++++
+title = "Morirás lejos"
+author = "José Emilio Pacheco"
+description = "Highlights de Morirás lejos, novela de José Emilio Pacheco sobre un viejo criminal nazi que evoca los campos de concentración y la persecución de fantasmas."
++++
+
 # **Morirás lejos (José Emilio Pacheco)**
 
 ## Highlights

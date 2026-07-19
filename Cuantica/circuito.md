@@ -1,5 +1,6 @@
 @def title = "Modelo de circuitos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["computación-cuántica", "física"]
+@def description = "Notas sobre el modelo de circuitos de computación: circuitos reversibles, universalidad clásica, compuerta Toffoli y representación matricial de estados probabilísticos."
 
 # El modelo de circuito de computación
 

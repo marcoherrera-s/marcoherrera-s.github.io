@@ -1,25 +1,41 @@
 <!doctype html>
 <html lang="es">
 <head>
+  <!-- Script CRÍTICO: anti-flash de dark mode -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+        } else if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark-theme');
+        }
+      } catch (e) { /* localStorage bloqueado: ignorar */ }
+    })();
+  </script>
+
   <meta name="google-site-verification" content="21AT8iolyuvHcdcAj2bmdauq6mqEd4a1fF4q-bsSUQY" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f3ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#050814" media="(prefers-color-scheme: dark)">
   {{insert style.html}}
   <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css">
   <title>Tag: {{fill fd_tag}}</title>
-  <script src="/dark-mode.js" defer></script>
-  <script src="/script.js" defer></script>
+  <script src="/assets/js/dark-mode.js" defer></script>
+  <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
   {{insert nav.html}}
   <div class="{{div_content}}">
     <h1>Tag: {{fill fd_tag}}</h1>
     {{taglist}}
-    {{insert page_foot.html}}
   </div>
   <!-- close what is opened in nav.html -->
-     </div> <!-- end of id=main -->
- </div> <!-- end of id=layout -->
+  </main> <!-- end of id=main -->
+  </div> <!-- end of id=layout -->
 </body>
 </html>

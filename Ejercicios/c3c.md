@@ -1,5 +1,6 @@
 @def title = "2. Problema de tres cuerpos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["problema-tres-cuerpos", "física"]
+@def description = "Cálculo de derivadas de los vectores base en marcos de referencia en movimiento para el problema restringido de tres cuerpos."
 
 
 Algo importante que debemos hacer ahora es encontrar las derivadas o tasas de cambio de los vectores base $\{ \mathbf{e}'_1, \mathbf{e}'_2, \mathbf{e}'_3 \}$, esos que se están moviendo con el marco de referencia $\mathcal{F}´$. Estos vectores son constantes en el marco de referencia inercial, pero desde el marco de referencia "real", no lo son, claramente se están moviendo, por lo que nos interesa obtener es la derivada "real". 

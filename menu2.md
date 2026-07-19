@@ -1,11 +1,12 @@
 +++
 title = "Miscelánea"
 hascode = true
-rss = "Cosas que intento y me parecen interesantes pero que no están tan relacionadas con física"
+rss = "Cosas que intento y me parecen interesantes pero que no están tan relacionadas con física."
 rss_title = "Miscelánea"
 rss_pubdate = Date(2019, 5, 1)
 
-tags = ["syntax", "code", "image"]
+description = "Índice de las entradas misceláneas del blog: espirales de primos, SQL, collages de palabras, PDFs en Kindle, metro CDMX, playlists, arte, blogs y páginas favoritas."
+tags = ["miscelánea", "índice"]
 +++
 
 # miscelánea

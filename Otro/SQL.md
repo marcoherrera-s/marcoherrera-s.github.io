@@ -1,3 +1,8 @@
++++
+title = "¿Por qué aprender SQL?"
+description = "Notas de aprendizaje sobre SQL y MariaDB desde una perspectiva de usuario de Arch Linux: SELECT, JOIN, relaciones y conceptos básicos."
++++
+
 
 # ¿Por qué aprender SQL?
 
@@ -380,7 +385,7 @@ ON users.company_id = companies.company_id;
 # Obtiene los datos de las empresas que tienen usuarios
 SELECT * FROM companies
 JOIN users
-ON users.company_id = companies.company_id;
+ON users.company_id = users.company_id;
 ```
 
 ```
@@ -458,7 +463,7 @@ ON users.user_id = dni.user_id;
 
 
 ```
-# Obtiene el nombre de todos los usuarios junto a su dni (lo tenga o no)
+# Obtiene el nombre de todos los dni junto a su dni (lo tenga o no)
 SELECT name, dni_number FROM dni
 RIGHT JOIN users
 ON users.user_id = dni.user_id;
@@ -526,4 +531,4 @@ Al final del tutorial se vieron algunos concetos avanzados más, que considero q
    - Una transacción en una base de datos es una secuencia de operaciones que se trata como una única unidad lógica de trabajo. Si todas las operaciones en la transacción se completan con éxito, la transacción se confirma y todos los cambios se hacen permanentes. Si alguna operación falla, la transacción se puede revertir, y el estado de la base de datos vuelve al punto antes de que comenzara la transacción.
 
 5. **Connectors (Conectores)**:
-   - Los conectores permiten a las aplicaciones interactuar con una base de datos mediante la ejecución de comandos SQL. Proporcionan métodos para conectarse a la base de datos, ejecutar comandos y gestionar resultados. En pocas palabras, por ejemplo, ejecutar consultas desde Python. 
+   - Los conectores permiten a las aplicaciones interactuar con una base de datos mediante la ejecución de comandos SQL. Proporcionan métodos para conectarse a la base de datos, ejecutar comandos y gestionar resultados. En pocas palabras, por ejemplo, ejecutar consultas desde Python.

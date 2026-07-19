@@ -1,11 +1,12 @@
 @def title = "6. Problema de tres cuerpos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["problema-tres-cuerpos", "física"]
+@def description = "Aplicación de la técnica de Jet Transport al problema restringido de tres cuerpos para explorar vecindades de condiciones iniciales en Julia."
 
 # ❉ Jet Transport para el Problema de Tres Cuerpos ❉
 
 ## ¿Qué es el Jet Transport?
 
-Aunque ya se habló mas en detalle de la técnica [aquí](/Dinamica/JetTransport/). Rápidamente, **Jet Transport** es una técnica que extiende la solución de un sistema dinámico a una vecindad completa de condiciones iniciales en lugar de limitarse a una sola trayectoria. Al representar la solución como una serie de Taylor multivariable, podemos capturar cómo las trayectorias del sistema cambian en respuesta a pequeñas perturbaciones en las condiciones iniciales o parámetros, lo que permite estudiar la estabilidad y sensibilidad del sistema.
+Aunque ya se habló mas en detalle de la técnica en [problemas anteriores](/Ejercicios/cover3c/). Rápidamente, **Jet Transport** es una técnica que extiende la solución de un sistema dinámico a una vecindad completa de condiciones iniciales en lugar de limitarse a una sola trayectoria. Al representar la solución como una serie de Taylor multivariable, podemos capturar cómo las trayectorias del sistema cambian en respuesta a pequeñas perturbaciones en las condiciones iniciales o parámetros, lo que permite estudiar la estabilidad y sensibilidad del sistema.
 
 ## Implementación en Julia
 

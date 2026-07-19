@@ -5,7 +5,7 @@ ignore = ["node_modules/"]
 generate_rss = true
 website_title = "Marco Herrera"
 website_descr = "Blog de Marco"
-website_url = "https://marcoherrera-s.github.io/"
+website_url = "https://marcoh.space/"
 +++
 
 @def generate_sitemap = true

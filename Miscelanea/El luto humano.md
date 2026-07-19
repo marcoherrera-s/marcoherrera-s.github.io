@@ -1,3 +1,9 @@
++++
+title = "El luto humano"
+author = "José Revueltas"
+description = "Highlights de El luto humano, novela de José Revueltas sobre la Revolución mexicana y la lucha agraria en un poblado ficticio azotado por la violencia y el deseo."
++++
+
 # **El luto humano (Revueltas, José)**
 
 ## Highlights
@@ -30,7 +36,7 @@
 
 > Pero el problema ahí era Natividad, un líder. No se quería de manera alguna que continuara aquella huelga de cinco mil peones, escándalo de la República y hasta tal vez de la misma revolución. «Natividad, Natividad». Era aquel de ojos negros y mirada profunda, fuerte y activo. Adán se estremeció recordando el rostro precioso, noble, de Natividad. —¡Está bueno! —susurró tímidamente ante sus superiores.
 
-> Entonces bebe, o bebe y canta, en medio de los más contradictorios sentimientos, rabioso en ocasiones, o tristísimo. ¿Qué desea, qué le ocurre cuando vuelve los ojos a sus horizontes vacíos, a su viejo paisaje inmóvil y es capaz de permanecer así por años sin que tal vez un solo pensamiento cruce por su mente? Quizá añore una madre terrenal y primigenia y quiera escuchar su voz y su llamado.
+> Entonces bebe, o bebe y canta, en medio de los más contradictorios sentimientos, rabioso en ocasiones, o tristísimo. ¿Qué desea, qué le ocurre cuando vuelve los ojos a sus horizontes vacíos, a su viejo paisaje inmóvil y es capaz de permanecer así por años sin que tal vez un solo pensamiento cruce por su mente? Quizá añore a una madre terrenal y primigenia y quiera escuchar su voz y su llamado.
 
 > Zapata era un general del pueblo, completamente del pueblo. Ignoraba donde se encuentra Verdún. Durante la guerra del 14 creyó, según se cuenta, que los carrancistas, sus enemigos, estaban atacando Verdún. Zapata era del pueblo, del pueblo puro y eterno, en medio de una revolución salvaje y justa. Las gentes que no ignoraban lo que era Verdún, ignoraban, en cambio, todo lo demás. Lo ignoraban en absoluto. Y ahí las dejó la vida, de espaldas, vueltas contra todo aquello querido, tenebroso, alto, noble y siniestro que era la revolución.
 

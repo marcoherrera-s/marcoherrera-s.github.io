@@ -1,5 +1,6 @@
 @def title = "Ulam y mi cumpleaños"
-@def tags = ["syntax", "code"]
+@def tags = ["curiosidades"]
+@def description = "Notas personales sobre el número favorito del autor, los números primos y un fondo de pantalla inspirado en la espiral de Ulam y Stanislaw Ulam."
 
 
 # SOBRE MI NÚMERO FAVORITO, LOS NÚMEROS PRIMOS Y MI FONDO DE PANTALLA

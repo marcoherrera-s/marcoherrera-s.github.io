@@ -1,6 +1,7 @@
 +++
 title = "4. Dinámica no-lineal."
 hasmath = true
+description = "Existencia y unicidad de soluciones a ecuaciones diferenciales: teorema de Picard-Lindelöf, espacio fase, trayectorias y el ejemplo x^(1/3) donde falla la unicidad."
 +++
 
 # Existencia y unicidad
@@ -46,7 +47,7 @@ g, L = 1.0, 1.0 # Parámetros
 tspan = (0.0, 15.0) # Intervalo de tiempo
 ```
 
-Ahora definimos el problema como ya se ha visto [aquí.](/Ejercicios/oscilador/)
+Ahora definimos el problema como ya se ha visto [aquí.](/Ejercicios/cover3c/)
 
 ```
 # Definimos el problema

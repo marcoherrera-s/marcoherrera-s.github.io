@@ -1,5 +1,6 @@
 @def title = "blogs chidos"
-@def tags = ["syntax", "code"]
+@def tags = ["recomendaciones"]
+@def description = "Lista de blogs recomendados sobre inteligencia artificial, física teórica y matemáticas aplicadas que el autor sigue y considera interesantes."
 
 ---
 

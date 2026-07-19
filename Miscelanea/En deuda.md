@@ -1,3 +1,9 @@
++++
+title = "En deuda"
+author = "David Graeber"
+description = "Highlights de En deuda, ensayo histórico de David Graeber que recorre la historia de la deuda desde las primeras civilizaciones hasta la economía moderna."
++++
+
 # **En deuda: una historia alternativa de la economía (Graeber, David)**
 
 ## Highlights
@@ -14,7 +20,7 @@
 
 > Las discusiones acerca de quién debe realmente qué a quién han jugado un papel esencial en la formación de nuestro vocabulario básico de lo que está bien o mal.
 
-> Aquí llegamos al punto central de este libro: ¿qué significa exactamente decir que nuestro sentido de la moral y la justicia se reduce al lenguaje de un contrato económico?
+> Aquí llegamos al punto central de este libro: ¿qué significa exactamente decir que nuestro sentido de la moral y de la justicia se reduce al lenguaje de un contrato económico?
 
 > En realidad, ésta fue la forma de dinero original. Los sistemas de crédito, los pagos a cuenta, incluso la contabilidad de gastos, todos existieron mucho antes que el dinero. Son cosas tan viejas como la propia civilización.
 
@@ -64,9 +70,9 @@
 
 > Tiene mucho sentido si se parte de la premisa inicial de Nietzsche. El problema es que esa premisa es descabellada. Hay muchas razones, también, para creer que el propio Nietzsche sabía que esa premisa era descabellada: en realidad, de eso se trataba. Lo que Nietzsche estaba haciendo era partir de las asunciones estándares y aceptadas como «de sentido común» en su época (y, en gran medida, en la nuestra), de que somos máquinas racionales de calcular, de que el interés egoísta y comercial precede a la sociedad, de que la propia «sociedad» no es sino una manera de poner una protección temporal sobre el conflicto resultante. Es decir, comienza por las acepciones burguesas típicas y las lleva hasta un extremo en que es evidente que han de epatar a una audiencia burguesa.
 
-> Es más: aquellas disciplinas, dentro de las teorías sociales, que más se arrogan un estatus científico (la teoría de la elección racional, por ejemplo) parten de las mismas premisas acerca de la psicología humana que los economistas: que los humanos se han de tomar como actores egoístas que calculan cómo obtener el máximo beneficio posible de cada situación; el máximo provecho, placer o felicidad a cambio de la mínima inversión posible.
+> Es más: aquellas disciplinas, dentro de las teorías sociales, que más se arrogan un estatus científico (la teoría de la elección racional, por ejemplo) parten de las mismas premisas acerca de la psicología humana que los economistas: que los seres humanos se han de tomar como actores egoístas que calculan cómo obtener el máximo beneficio posible de cada situación; el máximo provecho, placer o felicidad a cambio de la mínima inversión posible.
 
-> Es posiblemente por esto, también, por lo que en los momentos inmediatamente posteriores a un gran desastre (una inundación, un gran apagón o un colapso económico) la gente tiende a comportarse de la misma manera, regresando a un improvisado comunismo. Aunque sea por poco tiempo, las jerarquías, mercados y similares se convierten en lujos que nadie se puede permitir. Cualquiera que haya experimentado un momento así puede dar fe de sus especiales cualidades, de la manera en que perfectos extraños se convierten en hermanos y de la manera en que la propia sociedad humana parece renacer. Esto es importante, porque demuestra que no estamos hablando sólo de cooperación.
+> Es posiblemente por esto, también, por lo que en los momentos inmediatamente posteriores a un gran desastre (una inundación, un gran apagón o un colapso económico) la gente tiende a comportarse de la misma manera, regresando a un improvisado comunismo. Aunque sea por poco tiempo, las jerarquías, mercados y similares se convierten en lujos que nadie se puede permitir. Cualquiera que haya experimentado un momento así puede dar fe de sus especiales cualidades, de la manera en que perfectos extraños se convierten en hermanos y de la manera en que la propia sociedad parece renacer. Esto es importante, porque demuestra que no estamos hablando sólo de cooperación.
 
 > Cuando la familia de un pretendiente fiyiano regala un diente de ballena para pedir la mano de una mujer, ¿se trata de un pago por adelantado en virtud de los servicios que la mujer proporcionará al cultivar los jardines de su marido? ¿O está comprando la fertilidad de su útero? ¿O se trata solamente de una formalidad, el equivalente al dólar que ha de cambiar de manos para sellar un acuerdo? Según Rospabé, no se trata de nada de todo esto. El diente de ballena, no obstante su valor, no es una forma de pago. Es el reconocimiento de que uno está pidiendo algo de un valor tan único que cualquier pago por ello sería impensable. El único pago adecuado por una mujer es otra mujer; entre tanto, lo único que uno puede hacer es reconocer la enorme deuda.
 

@@ -1,5 +1,6 @@
 @def title = "Funciones Generadoras"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["mecánica-hamiltoniana", "física"]
+@def description = "Funciones generadoras de transformaciones canónicas en mecánica hamiltoniana: cuatro tipos y su relación con el principio variacional."
 
 # funciones generadoras
 

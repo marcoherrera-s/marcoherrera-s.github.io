@@ -1,3 +1,8 @@
++++
+title = "Mecánica Hamiltoniana"
+description = "Apuntes de mecánica hamiltoniana: introducción, ecuaciones de Hamilton, transformaciones canónicas, funciones generadoras, corchetes de Poisson y series de Lie."
++++
+
 # Mecánica Hamiltoniana
 
 

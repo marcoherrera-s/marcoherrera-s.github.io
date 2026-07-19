@@ -726,6 +726,16 @@ pre code {
   font-style: italic;
 }
 
+/* Honeypot: oculto a usuarios, visible solo a bots */
+.newsletter-form .honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .newsletter-form input[type="submit"] {
   margin-top: 0.4rem;
   width: fit-content;
@@ -892,6 +902,41 @@ pre code {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Skip-to-content link (accesibilidad) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: var(--background-color);
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Page foot */
+.page-foot {
+  font-size: 0.8rem;
+  font-family: var(--base-font);
+  text-align: center;
+  color: var(--color-tertiary);
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border-color);
+}
+.page-foot a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+.page-foot a:hover {
+  text-decoration: underline;
 }
 
 /* ==================================================================

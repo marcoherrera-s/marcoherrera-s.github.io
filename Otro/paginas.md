@@ -1,5 +1,6 @@
 @def title = "páginas chidas"
-@def tags = ["syntax", "code"]
+@def tags = ["recomendaciones"]
+@def description = "Lista de páginas web útiles que el autor usa frecuentemente para mantenerse al día en ciencia, tecnología y visualización de notebooks."
 
 ---
 

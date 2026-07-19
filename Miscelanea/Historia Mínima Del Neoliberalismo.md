@@ -1,3 +1,9 @@
++++
+title = "Historia Mínima del Neoliberalismo"
+author = "Fernando Escalante Gonzalbo"
+description = "Highlights de Historia Mínima del Neoliberalismo, ensayo de Fernando Escalante Gonzalbo sobre el origen, la lógica y las consecuencias del programa neoliberal."
++++
+
 # **Historia Mínima Del Neoliberalismo (Gonzalbo, Fernando Escalante)**
 
 ## Highlights
@@ -96,7 +102,7 @@
 
 > Antes de seguir, dos pequeños problemas. Primero, por muchas precauciones que se quieran tomar, la expresión “equilibrio” tiene connotaciones positivas, y con esa intención se emplea con frecuencia. Técnicamente no hay motivo para esa valoración, porque es un hecho nada más: el precio de equilibrio del maíz podría ser inalcanzable para mucha gente, que padecería hambre, y no dejaría de ser un precio de equilibrio —que no es ni bueno ni malo.
 
-> Sólo afirman que ese punto de equilibrio puede existir, si se asume un conjunto de supuestos. Si todos los actores son racionales, las preferencias de todos son fijas, transitivas, completas, si hay competencia perfecta, y una única operación general en que todas las mercancías se venden simultáneamente, como en una gran subasta, en ese caso, entre el infinito número de puntos imaginables de un modelo multidimensional en que se cruzase el infinito número de curvas de oferta y demanda, podría existir uno en que coincidieran oferta y demanda agregadas —de modo que en ese arreglo de precios todos estarían conformes. Es decir, bajo semejantes supuestos puede existir el equilibrio. Pero es tan sólo una posibilidad matemática.
+> Sólo afirman que ese punto de equilibrio puede existir, si se asume un conjunto de supuestos. Si todos los actores son racionales, las preferencias de todos son fijas, transitivas, completas, si hay competencia perfecta, y una única operación general en que todas las mercancías se venden simultáneamente, como en una gran subasta, en ese caso, entre el infinito número de puntos imaginables de un modelo multidimensional en que se cruzase el infinito número de curvas de oferta y demanda, podría existir uno en que coincidieran oferta y demanda agregadas —de modo que en ese arreglo de precios todos estarían conformes. Es decir, bajo semejantes supuestos puede existir el equilibrio. Pero es tan sólo una posibilidad matemática.
 
 > Para entender el efecto del empleo de la expresión se puede hacer el siguiente ejercicio. Si se habla de obtener un resultado “mejor” para un individuo o una economía, siempre se podrá preguntar: mejor en qué términos, mejor para qué o para quién, mejor en qué sentido; y es claro que se trata de un juicio, una valoración, que no puede dejar de tener connotaciones morales.
 
@@ -132,7 +138,7 @@
 
 > la receta neoliberal es clara, obvia, transparente, que la gente decida, que los consumidores decidan, que nadie se meta en su vida. Es un programa simple, convincente, asequible para el sentido común de cualquiera.
 
-> En los años siguientes el Banco Mundial y el FMI participan en la renegociación de la deuda de la mayoría de los países del sur. En todos los casos, la ayuda estaba condicionada a la adopción de lo que se llamaron Programas de Ajuste Estructural, que básicamente imponían el programa neoliberal: disminución del gasto público, reducción del déficit, control de la inflación, privatización de activos públicos, apertura comercial. Todo eso había tenido un primer ensayo general, en Chile.
+> En los años siguientes el Banco Mundial y el FMI participan en la renegociación de la deuda de la mayoría de los países del sur. En todos los casos, la ayuda estaba condicionada a la adopción de lo que se llamaron Programas de Ajuste Estructural, que básicamente imponían el programa neoliberal: disminución del gasto público, reducción del déficit, control de la inflación, privatización de activos públicos, apertura comercial. Todo eso había tenido un primer ensayo general, en Chile.
 
 > de vista: evidentemente —dijo— las dictaduras entrañan riesgos. Pero una dictadura se puede autolimitar, y si se autolimita puede ser más liberal en sus políticas que una asamblea democrática que no tenga límites. La dictadura puede ser la única esperanza, puede ser la mejor solución a pesar de todo.
 
@@ -168,7 +174,7 @@
 
 > posmodernidad: la convicción de que los grandes proyectos, las grandes empresas no tienen sentido, que no hay fundamentos sólidos para nada, que no se puede confiar en nada que no sea mínimo, personal, inmediato, fragmentario —nada que vaya más allá de la vida cotidiana.
 
-> el gobierno la declaró ilegal e inmediatamente, en un solo día, despidió a 11 000 controladores, que fueron sustituidos por 6 000 supervisores, 2 000 trabajadores no afiliados a la PATCA (Proffessional Air Traffic Controllers Association) y 900 controladores del ejército. Para hacer más enfático el ejemplo, y que sirviera de escarmiento, el gobierno prohibió la posterior contratación de cualquiera de los despedidos —era una medida vengativa, absolutamente innecesaria, salvo como mensaje político. Fue un golpe definitivo para el sindicalismo estadounidense.
+> el gobierno la declaró ilegal e inmediatamente, en un solo día, despidió a 11 000 controladores, que fueron sustituidos por 6 000 supervisores, 2 000 trabajadores no afiliados a la PATCA (Proffessional Air Traffic Controllers Association) y 900 controladores del ejército. Para hacer más enfático el ejemplo, y que sirviera de escarmiento, el gobierno prohibió la posterior contratación de cualquiera de los despedidos —era una medida vengativa, absolutamente innecesaria, salvo como mensaje político. Fue un golpe definitivo para el sindicalismo estadounidense.
 
 > Aunque pueda parecer un poco rara, la tesis básica es sencilla de enunciar: si se reducen los impuestos a las empresas, y el impuesto al ingreso de las personas, y se favorece así que aumenten las ganancias de quienes tienen rentas más altas, a la larga toda la sociedad se beneficiará de ello. La explicación teórica es como sigue. Si los ricos tienen más ingresos, mayores ganancias, y pueden acumular más dinero, podrán invertir más, y de ese modo crearán empleo, aumentará la producción, y finalmente todos saldrán ganando.
 
@@ -176,7 +182,7 @@
 
 > 1986, a mediados de su segundo periodo, la estructura de impuestos directos tenía ya sólo cuatro tramos, y la reducción del impuesto sobre la renta había sido de 6 por ciento en promedio. Y bien: bajaron los impuestos, pero no aumentaron los ingresos del Estado.
 
-> lo vimos, se supone que si los ricos se enriquecen más, tarde o temprano todos los demás se beneficiarán de ello. La tesis tiene un corolario que no es trivial. Si el aumento de la riqueza es deseable, entonces la desigualdad no sólo no es mala, sino que resulta positivamente deseable.
+> lo vimos, se supone que si los ricos se enriquecen más, tarde o temprano todos los demás se beneficiarán de ello. La tesis tiene un corolario que no es trivial. Si el aumento de la riqueza es deseable, entonces la desigualdad no sólo no es mala, sino que resulta positivamente deseable.
 
 > Los resultados no ofrecen mucho apoyo. En las décadas siguientes, en parte como consecuencia de los beneficios fiscales, creció el producto interno de los Estados Unidos, y aumentó mucho la riqueza del 10 por ciento más rico, y mucho más, de manera espectacular, la del 1 por ciento último de la pirámide. O sea, que los ricos se hicieron considerablemente más ricos. Los ingresos del siguiente 20 por ciento aumentaron también, aunque no tanto. Y los del 40 por ciento más pobre de la población no aumentaron en absoluto. En resumen, el crecimiento benefició a los más ricos, como se suponía que sucediera, pero no hubo ninguna clase de filtración ni goteo que beneficiase a la mayoría. A pesar de todo, la idea vuelve constantemente, la repiten políticos, periodistas, como si fuese un hecho demostrado.
 
@@ -184,7 +190,7 @@
 
 > El programa neoliberal se impuso en la periferia, en general, gracias al poder de persuasión del Banco Mundial y el Fondo Monetario Internacional. Un poder de persuasión que no era cuestión de retórica, supongo que se entiende.
 
-> Adelantemos un poco la historia, sólo para cerrar de momento este tema. Diez años después de que comenzaron a ejecutarse los planes de ajuste, que adoptaron prácticamente todos, para el conjunto del África subsahariana el ingreso per cápita había caído 2 por ciento, la deuda pública se había triplicado, el valor de exportaciones agrícolas clave como el café y el cacao había caído hasta 50 por ciento, y la inversión extranjera había llegado en un volumen insignificante, y sólo para extracción de petróleo y minería. A la vista de los resultados, el Banco Mundial propuso que se intensificara la liberalización económica.
+> Adelantemos un poco la historia, sólo para cerrar de momento este tema. Diez años después de que comenzaron a ejecutarse los planes de ajuste, que adoptaron prácticamente todos, para el conjunto del África subsahariana el ingreso per cápita había caído 2 por ciento, la deuda pública se había triplicado, el valor de exportaciones agrícolas clave como el café y el cacao había caído hasta 50 por ciento, y la inversión extranjera había llegado en un volumen insignificante, y sólo para extracción de petróleo y minería. A la vista de los resultados, el Banco Mundial propuso que se intensificara la liberalización económica.
 
 > pocas cosas más flagrantes que la colonización, que permite obtener bienes fuera del mercado, mano de obra servil o casi servil, mercados con una protección absoluta; pero además, ahí sí, sin necesidad de acrobacias retóricas, la economía está regida por la coerción —el extremo que era teóricamente inaceptable para todos. No fue así. Ninguno de ellos tuvo participación activa ni tomó partido a favor de la descolonización, ninguno dijo prácticamente nada sobre ello. Por eso es interesante detenerse en lo poco que sí se dijo sobre esos temas, en los años complicados del medio siglo.
 
@@ -218,7 +224,7 @@
 
 > En una película muy conocida, de 1987, Wall Street, hay un breve discurso que se ha hecho famoso. Es un párrafo de Michael Douglas, que explica a los accionistas de una compañía que la avaricia es buena: “la avaricia es buena, la avaricia está bien, la avaricia funciona, la avaricia captura la esencia del espíritu de la evolución”.
 
-> No sólo se supone que el egoísmo sea eficaz para hacer el bien, sino que se supone además que el altruismo es ineficaz, contraproducente incluso. Que no hay otro modo de contribuir al bienestar colectivo, sino que cada uno persiga su propio interés, y que hay motivos para sospechar de cualquiera que diga otra cosa.
+> No sólo se supone que el egoísmo sea eficaz para hacer el bien, sino que se supone además que el altruismo es ineficaz, contraproducente incluso. Que no hay otro modo de contribuir al bienestar colectivo, sino que cada uno persiga su propio interés, y que hay motivos para sospechar de cualquiera que diga otra cosa.
 
 > su explicación omite el colonialismo, la estructura del comercio internacional, el deterioro de los términos de intercambio, las relaciones de clase, y todos los demás factores estructurales que podrían explicar las diferencias de ingreso en cada país, y entre países.
 
@@ -276,7 +282,7 @@
 
 > Tampoco tiene un fundamento positivo la idea de que la búsqueda del interés individual, particularmente la búsqueda de la ganancia económica (the profit motive, según la expresión consagrada) ofrezca siempre los mejores resultados, ni siquiera que sirva como garantía del buen funcionamiento de una empresa o una institución cualquiera.
 
-> La valoración general, dogmática, en favor de lo privado, la idea de que en cualquier caso sea más eficiente, es uno de los rasgos característicos del orden neoliberal.
+> La valoración general, dogmática, en favor de lo privado, la idea de que en cualquier caso sea más eficiente, es uno de los rasgos característicos del orden neoliberal.
 
 > Es uno de sus prejuicios básicos. Entre otras cosas, porque la eficiencia es un concepto vacío, que puede significar muchas cosas.
 
@@ -288,7 +294,7 @@
 
 > A lo largo del siglo veinte, después de la crisis de 1929, y más aún después de la Segunda Guerra Mundial, el dominio público había ido aumentando en casi todo el mundo, para corregir lo que se suele llamar “fallas del mercado”, es decir: oferta insuficiente, o monopólica, precios excesivos, sin garantías. Y
 
-> En resumen, no había dinero suficiente para mantener en buen funcionamiento los servicios públicos —que por eso dejaron de funcionar bien (habría otras razones, basta con esa). Además aumentaba el déficit, y la deuda pública. Y por si fuera poco, menudearon las huelgas. El hartazgo de la gente coincidió con el primer auge de las ideas neoliberales, ya lo hemos visto, que encontraron un público especialmente receptivo, predispuesto a aceptar la idea de que las empresas públicas eran por definición ineficientes, costosas, una carga para el erario público.
+> En resumen, no había dinero suficiente para mantener en buen funcionamiento los servicios públicos —que por eso dejaron de funcionar bien (habría otras razones, basta con esa). Además aumentaba el déficit, y la deuda pública. Y por si fuera poco, menudearon las huelgas. El hartazgo de la gente coincidió con el primer auge de las ideas neoliberales, ya lo hemos visto, que encontraron un público especialmente receptivo, predispuesto a aceptar la idea de que las empresas públicas eran por definición ineficientes, costosas, una carga para el erario público.
 
 > Desde luego, a favor de la torre de marfil se podría argumentar en los términos de Simon Leys, y decir que la superior utilidad, la eficacia de la universidad depende precisamente de esa aparente inutilidad. Pero de momento no hace falta entrar en esa discusión, es harina de otro costal.
 
@@ -318,7 +324,7 @@
 
 > Lo que me interesa subrayar es que el factor con el que se trata de explicar el atraso es siempre un residuo, ajeno al modelo económico: cultura, capital social, etcétera. De hecho, hace falta señalar el residuo porque eso permite dejar a salvo el modelo económico, que funcionaría correctamente, y produciría la prosperidad general, si no fuese por la cultura, la falta de educación, de capital social o respeto de legalidad. Decía que en lo fundamental nada ha cambiado después de la crisis de 2008. Algo sí: el modelo neoliberal se ha consolidado, y ha encontrado en la crisis nuevos recursos para afirmarse.
 
-> No parece exagerado decir que vivimos si no una civilización neoliberal, sí un momento neoliberal, equiparable al momento liberal de la primera mitad del siglo XIX. Es decir, un orden social, un sistema institucional, pero también un conjunto de ideas, valores, y lo que se puede llamar un “imaginario social”: una manera de entender la vida cotidiana, los avatares del trabajo, las relaciones sociales, un modo de interpretar nuestras propias aspiraciones. Nos pensamos, hablo de las sociedades occidentales básicamente, nos pensamos como individuos con intereses, motivos y propósitos propios (el propósito de acumular dinero, sobre todo), en competencia con otros individuos,
+> No parece exagerado decir que vivimos si no una civilización neoliberal, sí un momento neoliberal, equiparable al momento liberal de la primera mitad del siglo XIX. Es decir, un orden social, un sistema institucional, pero también un conjunto de ideas, valores, y lo que se puede llamar un “imaginario social”: una manera de entender la vida cotidiana, los avatares del trabajo, las relaciones sociales, un modo de interpretar nuestras propias aspiraciones. Nos pensamos, hablo de las sociedades occidentales básicamente, nos pensamos como individuos con intereses, motivos y propósitos propios (el propósito de acumular dinero, sobre todo), en competencia con otros individuos,
 
 > Nuestro sentido común dice que cada quien tiene lo que se merece. Y que si no se les pone un alto, “ellos”, los que no se han esforzado lo suficiente, tratarán de aprovecharse de “nosotros”, y de lo que hemos conseguido con nuestro trabajo.
 

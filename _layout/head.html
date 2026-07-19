@@ -8,6 +8,9 @@
                 var theme = localStorage.getItem('theme');
                 if (theme === 'dark') {
                     document.documentElement.classList.add('dark-theme');
+                } else if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    // Primera visita con OS en dark: arrancar en dark por defecto
+                    document.documentElement.classList.add('dark-theme');
                 }
             } catch (e) { /* localStorage bloqueado: ignorar */ }
         })();
@@ -25,29 +28,44 @@
     {{isdef title}}
         <title>{{fill title}}</title>
     {{end}}
-    {{isdef website_descr}}
-        <meta name="description" content="{{fill website_descr}}">
+    {{isdef description}}
+        <meta name="description" content="{{fill description}}">
+    {{else}}
+        {{isdef website_descr}}
+            <meta name="description" content="{{fill website_descr}}">
+        {{end}}
     {{end}}
 
     <!-- Canonical y RSS -->
-    {{isdef website_url}}
-        <link rel="canonical" href="{{fill website_url}}">
+    {{isdef canonical_url}}
+        <link rel="canonical" href="{{fill canonical_url}}">
+    {{else}}
+        {{isdef website_url}}
+            <link rel="canonical" href="{{fill website_url}}">
+        {{end}}
     {{end}}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
     <!-- Open Graph / Twitter -->
     {{isdef title}}<meta property="og:title" content="{{fill title}}">{{end}}
-    {{isdef website_descr}}<meta property="og:description" content="{{fill website_descr}}">{{end}}
-    {{isdef website_url}}<meta property="og:url" content="{{fill website_url}}">{{end}}
+    {{isdef description}}
+        <meta property="og:description" content="{{fill description}}">
+        <meta name="twitter:description" content="{{fill description}}">
+    {{else}}
+        {{isdef website_descr}}
+            <meta property="og:description" content="{{fill website_descr}}">
+            <meta name="twitter:description" content="{{fill website_descr}}">
+        {{end}}
+    {{end}}
+    {{isdef canonical_url}}<meta property="og:url" content="{{fill canonical_url}}">{{end}}
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/klimt.webp">
     <meta name="twitter:card" content="summary_large_image">
     {{isdef title}}<meta name="twitter:title" content="{{fill title}}">{{end}}
-    {{isdef website_descr}}<meta name="twitter:description" content="{{fill website_descr}}">{{end}}
     <meta name="twitter:image" content="/assets/klimt.webp">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/favicon.webp">
+    <link rel="icon" type="image/webp" href="/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/assets/favicon.webp">
 
     <!-- Estilos CSS -->
@@ -67,6 +85,9 @@
 
 </head>
 <body>
+    <!-- Skip-to-content para lectores de pantalla y teclado -->
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
     <!-- Switch para Modo Oscuro -->
     <div class="toggle-switch">
         <label class="switch-label" for="dark-mode-toggle">
@@ -77,8 +98,3 @@
 
     <!-- Barra de Navegación -->
     {{insert nav.html}}
-
-
-
-</body>
-</html>

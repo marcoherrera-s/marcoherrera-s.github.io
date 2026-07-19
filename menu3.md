@@ -1,7 +1,7 @@
 +++
 title = "Subrayados"
-tags = ["syntax", "code"]
-
+description = "Selección de subrayados y fragmentos resaltados de libros que he leído. Una forma de compartir aquello que me conmovió, me identificó o simplemente me pareció genial."
+tags = ["subrayados", "lectura"]
 +++
 
 # MIS SUBRAYADOS

@@ -1,6 +1,7 @@
 +++
 title = "1. Dinámica no-lineal."
 hasmath = true
+description = "Introducción a la dinámica no lineal: distinción entre sistemas lineales y no lineales, representación con ecuaciones diferenciales y mapas iterados, y ejemplos como el péndulo simple y el oscilador armónico forzado."
 +++
 
 # Definiendo el patio de juegos

@@ -1,3 +1,9 @@
++++
+title = "Guns, Germs, and Steel"
+author = "Jared Diamond"
+description = "Highlights de Guns, Germs, and Steel de Jared Diamond, ensayo sobre cómo la geografía y la biogeografía modelaron el destino desigual de las sociedades humanas."
++++
+
 # **Guns, Germs, and Steel: The Fates of Human Societies (Diamond, Jared)**
 
 ## Highlights
