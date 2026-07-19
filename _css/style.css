@@ -49,6 +49,8 @@
 ================================================================== */
 
 :root {
+  /* Esquema nativo por defecto (lo sobreescribe .dark-theme) */
+  color-scheme: light;
   /* Fonts */
   --base-font: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   
@@ -102,6 +104,10 @@
 
 html {
   font-size: 14px;
+  /* El fondo temático va también en <html> para que el canvas del viewport
+     pinte con el color del tema desde el PRIMER frame (el script inline añade
+     .dark-theme antes del paint). Evita el flash blanco al abrir pestañas en dark. */
+  background-color: var(--background-color);
 }
 
 body {

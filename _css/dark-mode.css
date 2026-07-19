@@ -3,6 +3,9 @@
    ================================================================== */
 
    .dark-theme {
+    /* Esquema nativo (scrollbars, controles de formulario) en oscuro
+       para que no destellen en claro durante la carga. */
+    color-scheme: dark;
     /* Fondo: oscuridad sofisticada, no cybercafé de 2007 */
     --background-color: #050814;        /* Azul tinta casi negro */
     --highlight-background: #111827;    /* Paneles ligeramente elevados */
