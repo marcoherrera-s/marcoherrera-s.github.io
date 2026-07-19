@@ -1,5 +1,6 @@
 @def title = "4. Problema de tres cuerpos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["problema-tres-cuerpos", "física"]
+@def description = "Puntos de Lagrange como condiciones iniciales en el problema restringido de tres cuerpos y su relevancia para la estabilidad dinámica local."
 
 # Condiciones iniciales del problema de tres cuerpos
 

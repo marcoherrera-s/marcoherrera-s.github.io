@@ -1,5 +1,6 @@
 @def title = "Rayos X"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["física-de-materiales", "física"]
+@def description = "Difracción de rayos X: fenómeno ondulatorio, longitud de onda corta y aplicación al estudio de estructuras cristalinas."
 
 # Rayos X
 

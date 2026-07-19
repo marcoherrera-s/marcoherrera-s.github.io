@@ -1,5 +1,6 @@
 @def title = "7. Problema de tres cuerpos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["problema-tres-cuerpos", "física"]
+@def description = "Hamiltoniano del problema restringido de tres cuerpos en el sistema sinódico y análisis de curvas de nivel cero para localizar órbitas periódicas."
 
 # ❉ Hamiltoniano y Curvas de Nivel Cero ❉
 

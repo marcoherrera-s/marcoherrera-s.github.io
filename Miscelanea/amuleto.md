@@ -1,3 +1,9 @@
++++
+title = "Amuleto"
+author = "Roberto Bolaño"
+description = "Highlights de Amuleto, novela de Roberto Bolaño narrada por Auxilio Lacouture, una poeta mexicana testigo del golpe de Estado en Chile."
++++
+
 # **Amuleto (Bolaño, Roberto)**
 
 ## Highlights

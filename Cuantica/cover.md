@@ -1,3 +1,8 @@
++++
+title = "Cómputo cuántico"
+description = "Apuntes personales sobre cómputo cuántico: tesis de Church-Turing, circuitos, reversibilidad, álgebra lineal, decoherencia, Deutsch, Deutsch-Jozsa y teleportación."
++++
+
 # ya te dije que tu cuántica no te va a salvar de mi caguamazo
 
 me gusta mucho el título de esta entrada, es una frase que me dice mi roomie. 

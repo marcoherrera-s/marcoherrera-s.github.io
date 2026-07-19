@@ -1,5 +1,6 @@
 @def title = "Superdensa y Teleportación"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["computación-cuántica", "física"]
+@def description = "Protocolos de codificación superdensa y teleportación cuántica: estados de Bell, medición en base de Bell y corrección clásica para transferir un qubit."
 
 # Codificación superdensa y teleportación cuántica
 

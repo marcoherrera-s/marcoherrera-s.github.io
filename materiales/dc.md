@@ -1,5 +1,6 @@
 @def title = "Defectos cristalinos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["física-de-materiales", "física"]
+@def description = "Clasificación de defectos cristalinos en sólidos: puntuales, lineales, de superficie y volumétricos, y su impacto en las propiedades del material."
 
 # Defectos cristalinos
 

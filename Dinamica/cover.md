@@ -1,3 +1,8 @@
++++
+title = "Dinámica no lineal"
+description = "Notas sobre dinámica no lineal: sistemas dinámicos, campos vectoriales, estabilidad, bifurcaciones y existencia/unicidad de soluciones."
++++
+
 # Aquí se comienza
 
 Este es un espacio sobre mi camino aprendiendo dinámica no lineal. Como todo lo que está en este blog, no pretendo enseñar algo; lo que pretendo es compartir la forma en la que aprendo y un poco de mi pensamiendo mientras lo hago. Puede haber muchos errores por esto mismo, por lo que siempre valdría la pena consultar dos veces cualquier sandez que escriba aquí.

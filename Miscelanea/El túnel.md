@@ -1,3 +1,9 @@
++++
+title = "El túnel"
+author = "Ernesto Sábato"
+description = "Highlights de El túnel, novela existencial de Ernesto Sábato narrada por el pintor Juan Pablo Castel, quien analiza obsesivamente el crimen que cometió."
++++
+
 # **El túnel (Sábato, Ernesto)**
 
 ## Highlights

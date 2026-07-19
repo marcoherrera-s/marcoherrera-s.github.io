@@ -1,3 +1,9 @@
++++
+title = "Cuentos completos"
+author = "Jorge Luis Borges"
+description = "Highlights de Cuentos completos de Jorge Luis Borges, colección que reúne relatos como El Aleph, El Zahir, La biblioteca de Babel y Ficciones."
++++
+
 # **Cuentos completos (Borges, Jorge Luis)**
 
 ## Highlights
@@ -38,7 +44,7 @@
 
 > Por lo demás, el problema central es irresoluble: la enumeración, siquiera parcial, de un conjunto infinito. En ese instante gigantesco, he visto millones de actos deleitables o atroces; ninguno me asombró como el hecho de que todos ocuparan el mismo punto, sin superposición y sin trasparencia. Lo que vieron mis ojos fue simultáneo: lo que transcribiré, sucesivo, porque el lenguaje lo es. Algo, sin embargo, recogeré.
 
-> En la calle, en las escaleras de Constitución, en el subterráneo, me parecieron familiares todas las caras. Temí que no quedara una sola cosa capaz de sorprenderme, temí que no me abandonara jamás la impresión de volver. Felizmente, al cabo de unas noches de insomnio, me trabajó otra vez el olvido.
+> En la calle, en las escaleras de Constitución, en el subterráneo, me parecieron familiares todas las caras. Temí que no quedara una sola cosa capaz de sorprenderme, temí que no me abandonara jamás la impresión de volver. Felizmente, al cabo de unas noches de insomnio me trabajó otra vez el olvido.
 
 > ¿Existe ese Aleph en lo íntimo de una piedra? ¿Lo he visto cuando vi todas las cosas y lo he olvidado? Nuestra mente es porosa para el olvido; yo mismo estoy falseando y perdiendo, bajo la trágica erosión de los años, los rasgos de Beatriz.
 

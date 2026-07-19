@@ -1,3 +1,9 @@
++++
+title = "Cien años de soledad"
+author = "Gabriel García Márquez"
+description = "Highlights de Cien años de soledad, novela de Gabriel García Márquez sobre la historia de la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo."
++++
+
 # **Cien años de soledad (Edición conmemorativa) (Gabriel García Márquez)**
 
 ## Highlights
@@ -60,7 +66,7 @@
 
 > Era un noviazgo crepuscular. El italiano llegaba al atardecer, con una gardenia en el ojal, y le traducía a Amaranta sonetos de Petrarca.
 
-> Melquíades fue el único que en realidad se ocupó de él, que le hacía escuchar sus textos incomprensibles y le daba instrucciones sobre el arte de la daguerrotipia. Nadie se imaginaba cuánto lloró su muerte en secreto, y con qué desesperación trató de revivirlo en el estudio inútil de sus papeles.
+> Melquíades fue el único que en realidad se ocupó de él, que le hacía escuchar sus textos incomprensibles y le daba instrucciones sobre el arte de la daguerrotipia. Nadie se imaginó cuánto lloró su muerte en secreto, y con qué desesperación trató de revivirlo en el estudio inútil de sus papeles.
 
 > Pilar Ternera, su madre, que le había hecho hervir la sangre en el cuarto de daguerrotipia, fue para él una obsesión tan irresistible como lo fue primero para José Arcadio y luego para Aureliano. A pesar de que había perdido sus encantos y el esplendor de su risa, él la buscaba y la encontraba en el rastro de su olor de humo.
 
@@ -350,7 +356,7 @@
 
 > Entonces ella le dijo que se asomara al dormitorio, y Aureliano Segundo vio la mula. Estaba con el pellejo pegado a los huesos, como la dueña, pero tan viva y resuelta como ella. Petra Cotes la había alimentado con su rabia, y cuando no tuvo más hierbas, ni maíz, ni raíces, la albergó en su propio dormitorio y le dio a comer las sábanas de percal, los tapices persas, los sobrecamas de peluche, las cortinas de terciopelo y el palio bordado con hilos de oro y borlones de seda de la cama episcopal.
 
-> Úrsula trataba de ir siempre más lejos. «Que abran puertas y ventanas», gritaba. «Que hagan carne y pescado, que compren las tortugas más grandes, que vengan los forasteros a tender sus petates en los rincones y a orinarse en los rosales, que se sienten a la mesa a comer cuantas veces quieran, y que eructen y despotriquen y lo embarren todo con sus botas, y que hagan con nosotros lo que les dé la gana, porque esa es la única manera de espantar la ruina». Pero era una ilusión vana. Estaba ya demasiado vieja y viviendo de sobra para repetir el milagro de los animalitos de caramelo, y ninguno de sus descendientes había heredado su fortaleza. La casa continuó cerrada por orden de Fernanda.
+> Úrsula trataba de ir siempre más lejos. «Que abran puertas y ventanas», gritó. «Que hagan carne y pescado, que compren las tortugas más grandes, que vengan los forasteros a tender sus petates en los rincones y a orinarse en los rosales, que se sienten a la mesa a comer cuantas veces quieran, y que eructen y despotriquen y lo embarren todo con sus botas, y que hagan con nosotros lo que les dé la gana, porque esa es la única manera de espantar la ruina». Pero era una ilusión vana. Estaba ya demasiado vieja y viviendo de sobra para repetir el milagro de los animalitos de caramelo, y ninguno de sus descendientes había heredado su fortaleza. La casa continuó cerrada por orden de Fernanda.
 
 > hasta el punto de que en sus últimos meses era una ciruela pasa perdida dentro del camisón, y el brazo siempre alzado terminó por parecer la pata de una marimonda
 

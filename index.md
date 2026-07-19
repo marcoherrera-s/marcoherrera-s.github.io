@@ -1,16 +1,6 @@
 @def title = " ҉彡marco彡 ҉"
-@def tags = ["syntax", "code"]
-
-~~~
-<script>document.body.classList.add('index');</script>
-~~~
-
-
-
-
-
-
-
+@def description = "Blog personal de Marco Herrera: física (mecánica hamiltoniana, cuántica, dinámica no lineal, materiales, tres cuerpos, física estadística), miscelánea y subrayados de libros."
+@def tags = ["blog", "física", "miscelánea"]
 
 ~~~
 <header class="hero-editorial">
@@ -18,70 +8,7 @@
   <canvas id="lorenz-canvas" aria-hidden="true"></canvas>
 </header>
 
-<script>
-(function() {
-  const canvas = document.getElementById('lorenz-canvas');
-  const ctx = canvas.getContext('2d');
-  const W = canvas.width = canvas.offsetWidth || 600;
-  const H = canvas.height = 180;
-
-  const σ = 10, ρ = 28, β = 8/3, dt = 0.005;
-  let x = 0.1, y = 0, z = 0;
-  const pts = [];
-  const MAX = 1800;
-
-  const XMIN = -22, XMAX = 22, ZMIN = 2, ZMAX = 48;
-  const pad = 12;
-  const scaleX = (W - pad*2) / (XMAX - XMIN);
-  const scaleZ = (H - pad*2) / (ZMAX - ZMIN);
-
-  const toCanvas = ([px, pz]) => [
-    pad + (px - XMIN) * scaleX,
-    H - pad - (pz - ZMIN) * scaleZ
-  ];
-
-  for (let i = 0; i < 2000; i++) {
-    const dx = σ*(y-x), dy = x*(ρ-z)-y, dz = x*y-β*z;
-    x += dx*dt; y += dy*dt; z += dz*dt;
-  }
-
-  function step() {
-    for (let i = 0; i < 4; i++) {
-      const dx = σ*(y-x), dy = x*(ρ-z)-y, dz = x*y-β*z;
-      x += dx*dt; y += dy*dt; z += dz*dt;
-      pts.push([x, z]);
-      if (pts.length > MAX) pts.shift();
-    }
-
-    ctx.clearRect(0, 0, W, H);
-    if (pts.length < 2) { requestAnimationFrame(step); return; }
-
-    const isDark = document.documentElement.classList.contains('dark-theme');
-    const baseColor = isDark ? '192,138,58' : '47,79,127';
-
-    for (let i = 1; i < pts.length; i++) {
-      const alpha = (i / pts.length) * 0.6;
-      const [x1, y1] = toCanvas(pts[i-1]);
-      const [x2, y2] = toCanvas(pts[i]);
-      ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = `rgba(${baseColor},${alpha})`;
-      ctx.lineWidth = 0.8;
-      ctx.stroke();
-    }
-
-    const [cx, cy] = toCanvas(pts[pts.length - 1]);
-    ctx.beginPath();
-    ctx.arc(cx, cy, 2, 0, Math.PI*2);
-    ctx.fillStyle = `rgba(${baseColor},0.9)`;
-    ctx.fill();
-
-    requestAnimationFrame(step);
-  }
-  step();
-})();
-</script>
+<script src="/assets/js/lorenz.js" defer></script>
 ~~~
 
 **_sobre mí_**: 
@@ -135,6 +62,8 @@ _**odio con mi ser**_: los comerciales y ads :(
 >
   <h5>suscríbete</h5>
   <input type="email" name="email" id="bd-email" placeholder="tu correo" required />
+  <!-- Honeypot anti-spam: oculto a usuarios reales -->
+  <input type="text" name="name" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot" />
   <input type="submit" value="enviar" />
 </form>
 ~~~

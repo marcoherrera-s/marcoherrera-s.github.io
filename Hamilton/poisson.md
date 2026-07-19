@@ -1,5 +1,6 @@
 @def title = "Corchetes de Poisson"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["mecánica-hamiltoniana", "física"]
+@def description = "Corchetes de Poisson en mecánica hamiltoniana: observables, derivada temporal a lo largo de trayectorias y álgebra fundamental con corchetes canónicos."
 
 # corchetes de poisson
 

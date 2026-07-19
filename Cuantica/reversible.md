@@ -1,5 +1,6 @@
 @def title = "Cómputo reversible"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["computación-cuántica", "física"]
+@def description = "Cómputo reversible en computación cuántica: biyectividad de operaciones, conversión de compuertas irreversibles con bits ancilla y universalidad de la compuerta Toffoli."
 
 # Cómputo Reversible
 

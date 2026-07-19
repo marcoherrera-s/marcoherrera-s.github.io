@@ -1,5 +1,6 @@
 @def title = "Sólidos cristalinos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["física-de-materiales", "física"]
+@def description = "Estructura de sólidos cristalinos: celda unitaria, redes de Bravais y conceptos básicos para distinguir cristales de sólidos amorfos."
 
 # La estructura de sólidos cristalinos
 

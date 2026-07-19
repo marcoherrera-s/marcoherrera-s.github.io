@@ -1,3 +1,8 @@
++++
+title = "Arte"
+description = "Lista curada de artistas y sitios web de arte generativo, fotografía experimental y código creativo que el autor sigue y recomienda."
++++
+
 # arte que me gusta
 
 - [William Mapan](https://arte.bio/william-mapan)

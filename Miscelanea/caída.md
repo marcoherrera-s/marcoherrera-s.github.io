@@ -1,3 +1,9 @@
++++
+title = "La caída"
+author = "Albert Camus"
+description = "Highlights de La caída, novela de Albert Camus en forma de monólogo de Jean-Baptiste Clamence, un abogado parisino exiliado en Amsterdam."
++++
+
 # **La caída (Albert Camus)**
 
 ## Highlights
@@ -18,7 +24,7 @@
 
 > Estoy seguro de que usted habría admirado la exactitud de mi tono, el equilibrio de mi emoción, la persuasión y el calor, la indignación de mis defensas
 
-> Me mostraba a la vez bailarín infatigable y erudito discreto; conseguía amar al mismo tiempo, lo cual en modo alguno es fácil, a las mujeres y la justicia; practicaba deportes y cultivaba las bellas artes. Vaya, aquí me detengo para que no piense usted que me complazco en mí mismo.
+> Me mostraba a la vez bailarín infatigable y erudito discreto; conseguía amar al mismo tiempo, lo cual en modo alguno es fácil, a las mujeres y a la justicia; practicaba deportes y cultivaba las bellas artes. Vaya, aquí me detengo para que no piense usted que me complazco en mí mismo.
 
 > Pero le ruego que me imagine usted en la flor de la edad, de salud perfecta, generosamente dotado, hábil en los ejercicios del cuerpo, así como en los de la inteligencia, ni pobre ni rico; que dormía bien y que estaba profundamente contento de mí mismo, sin mostrarlo más que por una sociabilidad feliz.
 

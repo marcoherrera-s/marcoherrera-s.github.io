@@ -122,7 +122,6 @@
 .dark-theme .newsletter-form input[type="email"]:focus {
   border-color: var(--color-primary);
 }
-}
 
 .dark-theme .newsletter-form input[type="submit"]:hover {
   background-color: var(--color-secondary);

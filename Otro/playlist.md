@@ -1,5 +1,6 @@
 @def title = "playlist"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["cultura"]
+@def description = "Reflexión personal sobre cómo organizar playlists usando métricas de audio como RMS y análisis de tono en lugar del orden manual."
 
 
 # CÓMO HACER UNA PLAYLIST (LA FORMA CORRECTA)

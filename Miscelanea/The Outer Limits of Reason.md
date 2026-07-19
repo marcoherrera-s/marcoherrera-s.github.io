@@ -1,3 +1,9 @@
++++
+title = "The Outer Limits of Reason"
+author = "Noson S. Yanofsky"
+description = "Highlights de The Outer Limits of Reason de Noson S. Yanofsky sobre los límites de la ciencia, las matemáticas y la lógica: paradojas, incompletitud, indeterminación y más."
++++
+
 # **The Outer Limits of Reason: What Science, Mathematics, and Logic Cannot Tell Us (Yanofsky, Noson S.)**
 
 ## Highlights
@@ -26,7 +32,7 @@
 
 > From this important position, the axioms of Zermelo-Fraenkel set theory can be seen as the axioms of all of mathematics and hence the axioms of exact reasoning itself.
 
-> The bad news is that one of the consequences of Gödel’s famous incompleteness theorems (which we will meet, in detail, in sections 9.4 and 9.5) is that the consistency of Zermelo-Fraenkel set theory is not provable within standard mathematics.
+> The bad news is that one of the consequences of Gödel’s famous incompleteness theorems (which we will meet, in detail, in sections 9.4 and 9.5) is that the consistency of Zermelo-Fraenkel set theory is not provable within standard mathematics.
 
 > And so we cannot be absolutely certain that Zermelo- Fraenkel set theory and all of the modern mathematics that it entails is consistent.8
 

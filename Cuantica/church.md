@@ -1,5 +1,6 @@
 @def title = "Church-Turing"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["computación-cuántica", "física"]
+@def description = "Notas sobre la tesis de Church-Turing, su extensión a máquinas de Turing probabilísticas y la necesidad de la tesis cuántica fuerte para modelar la física cuántica."
 
 # Church-Turing
 

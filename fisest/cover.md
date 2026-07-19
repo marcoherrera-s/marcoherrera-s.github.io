@@ -1,3 +1,8 @@
++++
+title = "Física estadística"
+description = "Notas de física estadística: ensamble microcanónico, entropía y segunda ley de la termodinámica."
++++
+
 # improgrez
 
 

@@ -1,3 +1,9 @@
++++
+title = "Muerte en el bosque"
+author = "Amparo Dávila"
+description = "Highlights de Muerte en el bosque, libro de cuentos de Amparo Dávila sobre lo femenino, lo doméstico y la presencia de lo extraño y lo ominoso."
++++
+
 # **Muerte en el bosque (Dávila, Amparo)**
 
 ## Highlights

@@ -1,5 +1,6 @@
 @def title = "Fundamentos"
-@def tags = ["syntax", "code", "math"]
+@def tags = ["física-estadística", "física"]
+@def description = "Fundamentos del ensamble microcanónico en mecánica estadística: sistema aislado con energía fija y conexión entre descripción microscópica y macroscópica."
 
 # fundamentos de la mecánica estadística
 

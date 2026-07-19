@@ -1,48 +1,120 @@
 name: Build and Deploy
+
 on:
   push:
     branches:
       - main
       - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Set up Julia
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+
+      - name: Cache Julia deps
+        uses: julia-actions/cache@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build site
+        run: |
+          julia --project=. -e '
+            using Pkg
+            Pkg.instantiate()
+            using Franklin
+            Franklin.optimize()
+          '
+
+      - name: Validate HTML output
+        run: |
+          python -m pip install --quiet html5lib
+          python .github/scripts/check_html.py __site
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ github.sha }}
+          path: __site
+        if: github.event_name != 'pull_request'
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-    - name: Install python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.12'
-    - name: Install Julia
-      uses: julia-actions/setup-julia@v2
-      with:
-        version: '1.10'
-    - name: Setup Julia registry
-      run: |
-        julia -e '
-          using Pkg
-          Pkg.Registry.add(RegistrySpec(url="https://github.com/JuliaRegistries/General.git"))
-        '
-      env:
-        JULIA_PKG_SERVER: ""
-    - name: Build site
-      run: julia -e '
-            using Pkg;
-            Pkg.activate(".");
-            Pkg.instantiate();
-            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
-            using Franklin;
-            optimize()'
-      env:
-        JULIA_PKG_SERVER: ""
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        folder: __site
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Julia
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+
+      - name: Cache Julia deps
+        uses: julia-actions/cache@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build site
+        run: |
+          julia --project=. -e '
+            using Pkg
+            Pkg.instantiate()
+            using Franklin
+            Franklin.optimize()
+          '
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: __site

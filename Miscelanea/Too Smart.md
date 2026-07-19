@@ -1,3 +1,9 @@
++++
+title = "Too Smart"
+author = "Jathan Sadowski"
+description = "Highlights de Too Smart de Jathan Sadowski sobre el capitalismo digital, la extracción masiva de datos y la construcción de la «sociedad inteligente» como proyecto político."
++++
+
 # **Too Smart: How Digital Capitalism Is Extracting Data, Controlling Our Lives, and Taking Over the World (Sadowski, Jathan)**
 
 ## Highlights
@@ -6,7 +12,7 @@
 
 > “Amazon Choice: Toss away the grocery list. We already know what you want!”
 
-> At a public talk in early 2017, Andrew Ng, an artificial intelligence researcher who has held top positions at Google, Baidu, and Coursera, was explicit about the primacy of data collection: “At large companies, sometimes we launch products not for the revenue, but for the data. We actually do that quite often . . . and we monetize the data through a different product
+> At a public talk in early 2017, Andrew Ng, an artificial intelligence researcher who has held top positions at Google, Baidu, and Coursera, was explicit about the primacy of data collection: “At large companies, sometimes we launch products not for the revenue, but for the data. We actually do that quite often . . . and we monetize the data through a different product
 
 > This insatiable hunger for data arises from the fact that data is now a form of capital, just like money and machinery.
 

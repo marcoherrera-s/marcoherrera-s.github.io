@@ -1,3 +1,9 @@
++++
+title = "Poesía no eres tú"
+author = "Rosario Castellanos"
+description = "Highlights de Poesía no eres tú, obra poética reunida de Rosario Castellanos escrita entre 1948 y 1971: amor, soledad, fe y compromiso."
++++
+
 # **Poesía no eres tú: Obra poética (1984-1971) (Castellanos, Rosario)**
 
 ## Highlights
@@ -32,7 +38,8 @@
 
 > Ya no tengo más fuego que el de esta ciega lámpara
 > que camina tanteando, pegada a la pared
-> y tiembla a la amenaza del aire más ligero. Si muriera esta noche sería sólo como abrir la mano, como cuando los niños la abren ante su madre para mostrarla limpia, limpia de tan vacía. Nada me llevo. Tuve sólo un hueco
+> y tiembla a la amenaza del aire más ligero. Si muriera esta noche sería sólo como abrir la mano, como cuando los niños la abren ante su madre
+> para mostrarla limpia, limpia de tan vacía. Nada me llevo. Tuve sólo un hueco
 > que no se colmó nunca. Tuve arena
 > resbalando en mis dedos. Tuve un gesto
 > crispado y tenso. Todo lo he perdido. Todo se queda aquí: la tierra, las pezuñas
@@ -47,7 +54,8 @@
 
 > Yo no voy a morir de enfermedad
 > ni de vejez, de angustia o de cansancio. Voy a morir de amor, voy a entregarme
-> al más hondo regazo. Yo no tendré vergüenza de estas manos vacías
+> al más hondo regazo. Yo no tendré vergüenza
+> de estas manos vacías
 > ni de esta celda hermética que se llama Rosario. En los labios del viento he de llamarme
 > árbol de muchos pájaros.
 

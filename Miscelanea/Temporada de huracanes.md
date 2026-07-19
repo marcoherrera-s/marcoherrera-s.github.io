@@ -1,3 +1,9 @@
++++
+title = "Temporada de huracanes"
+author = "Fernanda Melchor"
+description = "Highlights de Temporada de huracanes, novela de Fernanda Melchor sobre la violencia, la pobreza y los fantasmas que persiguen un pueblo del Golfo de México."
++++
+
 # **Temporada de huracanes (Melchor, Fernanda)**
 
 ## Highlights
@@ -16,4 +22,4 @@
 
 > Porque la verdad era que al principio sí le había gustado; la verdad era que al principio ella incluso había llegado a pensar que Pepe era guapo,
 
-> por creer que los hombres van a ayudarte pero a la mera hora es una la que tiene que partirse la madre para sacárselos de adentro, y partirse la madre para cuidarlos, y partirse la madre para mantenerlos, mientras el cabrón de tu marido se va de pedo y se aparece cuando se le hincha la gana. ¿O en serio crees que ese pinche Luismi va a cambiar si tienes a tu chamaco? ¡N’ombre, si yo lo conozco! Ya
+> por creer que los hombres van a ayudarte pero a la mera hora es una la que tiene que partirse la madre para sacárselos de adentro, y partirse la madre para cuidarlos, y partirse la madre para mantenerlos, mientras el cabrón de tu marido se va de pedo y se aparece cuando se le hincha la gana. ¿O en serio crees que ese pinche Luismi va a cambiar si tienes a tu chamaco? ¡N'ombre, si yo lo conozco! Ya

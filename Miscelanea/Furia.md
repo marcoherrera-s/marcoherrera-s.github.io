@@ -1,3 +1,9 @@
++++
+title = "Furia"
+author = "Clyo Mendoza"
+description = "Highlights de Furia, novela de Clyo Mendoza sobre dos parejas marcadas por la violencia, la brujería de pueblo y un pasado que regresa."
++++
+
 # **Furia (Mendoza, Clyo)**
 
 ## Highlights
@@ -6,7 +12,7 @@
 
 > Rapidísimo salió una muchacha de la casa con jardín y en lugar de regañarme, me miró piadosamente y me quitó las espinas del cuerpo mientras yo me comía un mango, unas tunas y bebía mucha agua.
 
-> Antes de que María entrara en el supermercado para comprar lo necesario, se despidió como si nunca fuese a volver, le besó la frente y salió del coche. Estás loca, dijo él, aunque ya no lo oía; pasaba frente al guardia y la puerta automática de vidrio se abría sólo para ella, frente a sus ojos.
+> Antes de que María entrase en el supermercado para comprar lo necesario, se despidió como si nunca fuese a volver, le besó la frente y salió del coche. Estás loca, dijo él, aunque ya no lo oía; pasaba frente al guardia y la puerta automática de vidrio se abría sólo para ella, frente a sus ojos.
 
 > Finalmente recordó unos ojos, o más que nada la sensación de mirar esos ojos, ¿cómo explicarle eso al guardia?
 

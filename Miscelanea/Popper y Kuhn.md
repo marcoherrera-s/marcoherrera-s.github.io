@@ -1,3 +1,9 @@
++++
+title = "Popper y Kuhn"
+author = "C. Ulises Moulines"
+description = "Highlights de Popper y Kuhn: dos gigantes de la filosofía de la ciencia del siglo XX, de C. Ulises Moulines, sobre falsacionismo, paradigmas y la estructura de las revoluciones científicas."
++++
+
 # **Popper y Kuhn: dos gigantes de la filosofía de la ciencia del siglo XX (Moulines, C. Ulises)**
 
 ## Highlights
@@ -8,7 +14,7 @@
 
 > El verdadero conocimiento científico consiste en el que nos proporcionan las hipótesis generales y las teorías científicas, y estas no se agotan en una serie de proposiciones particulares.
 
-> el razonamiento inductivo no es un tipo de razonamiento racionalmente justificable; y todos los intentos posteriores a Hume por fundamentar de alguna manera algún tipo de método inductivo (intentos que se prosiguieron hasta bien entrado el siglo XX) están inexorablemente condenados al fracaso.
+> el razonamiento inductivo no es un tipo de razonamiento racionalmente justificable; y todos los intentos posteriores a Hume por fundamentar de alguna manera algún tipo de método inductivo (intentos que se prosiguieron hasta bien entrado el siglo XX) están inexorablemente condenados al fracaso.
 
 > El gran científico, a diferencia del gran artista, nunca se contenta con su propia creación…
 
