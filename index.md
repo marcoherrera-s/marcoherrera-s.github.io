@@ -1,5 +1,5 @@
 @def title = " ҉彡marco彡 ҉"
-@def description = "Blog personal de Marco Herrera: física (mecánica hamiltoniana, cuántica, dinámica no lineal, materiales, tres cuerpos, física estadística), miscelánea y subrayados de libros."
+@def description = "Blog personal de Marco Herrera: física (mecánica hamiltoniana, cuántica, dinámica no lineal, tres cuerpos, física estadística), miscelánea y subrayados de libros."
 @def tags = ["blog", "física", "miscelánea"]
 
 ~~~
