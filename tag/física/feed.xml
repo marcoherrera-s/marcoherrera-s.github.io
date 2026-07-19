@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:georss="http://www.georss.org/georss">
+
+  <channel>
+    <title>
+      <![CDATA[  Marco Herrera  ]]>
+    </title>
+    <link> https://marcoh.space/ </link>
+    <description>
+      <![CDATA[  Blog de Marco  ]]>
+    </description>
+    <atom:link
+      href="https://marcoh.space/feed.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+
+<item>
+  <title>
+    <![CDATA[  Física  ]]>
+  </title>
+  <link> https://marcoh.space/menu1/index.html </link>
+  <guid> https://marcoh.space/menu1/index.html </guid>
+  <description>
+    <![CDATA[  Notas de cursos y temas de física: dinámica no lineal, cómputo cuántico, problema restringido de tres cuerpos, física estadística, materiales y mecánica hamiltoniana.  ]]>
+  </description>  
+    
+  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Marco Herrera</atom:name>
+  </atom:author>
+        
+</item>
+</channel></rss>

@@ -11,12 +11,12 @@
     <title>
       <![CDATA[  Marco Herrera  ]]>
     </title>
-    <link> https://marcoherrera-s.github.io/ </link>
+    <link> https://marcoh.space/ </link>
     <description>
       <![CDATA[  Blog de Marco  ]]>
     </description>
     <atom:link
-      href="https://marcoherrera-s.github.io/feed.xml"
+      href="https://marcoh.space/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
@@ -25,10 +25,10 @@
   <title>
     <![CDATA[  Miscelánea  ]]>
   </title>
-  <link> https://marcoherrera-s.github.io/menu2/index.html </link>
-  <guid> https://marcoherrera-s.github.io/menu2/index.html </guid>
+  <link> https://marcoh.space/menu2/index.html </link>
+  <guid> https://marcoh.space/menu2/index.html </guid>
   <description>
-    <![CDATA[  Cosas que intento y me parecen interesantes pero que no están tan relacionadas con física  ]]>
+    <![CDATA[  Cosas que intento y me parecen interesantes pero que no están tan relacionadas con física.  ]]>
   </description>  
     
   <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>  

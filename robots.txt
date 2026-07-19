@@ -1,4 +1,4 @@
-Sitemap: https://marcoherrera-s.github.io/sitemap.xml
+Sitemap: https://marcoh.space/sitemap.xml
 
 User-agent: *
 Disallow:
