@@ -8,3 +8,8 @@ node_modules/
 .vscode/
 *.swp
 Thumbs.db
+
+# Claude Code (local)
+.claude/settings.local.json
+.claude/**/*.tmp*
+.claude/worktrees/
