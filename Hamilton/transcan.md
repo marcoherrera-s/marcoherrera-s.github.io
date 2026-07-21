@@ -1,6 +1,5 @@
 @def title = "Transformaciones Canónicas"
 @def tags = ["mecánica-hamiltoniana", "física"]
-@def description = "Transformaciones canónicas en mecánica hamiltoniana: propiedades que preservan los corchetes fundamentales y la estructura simpléctica."
 
 # transformaciones canónicas
 

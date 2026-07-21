@@ -1,6 +1,5 @@
 +++
 title = "¿Por qué aprender SQL?"
-description = "Notas de aprendizaje sobre SQL y MariaDB desde una perspectiva de usuario de Arch Linux: SELECT, JOIN, relaciones y conceptos básicos."
 +++
 
 

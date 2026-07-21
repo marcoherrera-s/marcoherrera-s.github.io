@@ -1,7 +1,6 @@
 +++
 title = "Las malas"
 author = "Camila Sosa Villada"
-description = "Highlights de Las malas, novela autobiográfica de Camila Sosa Villada sobre su vida como travesti en Córdoba y la experiencia del cuerpo, el deseo y la marginalidad."
 +++
 
 # **Las malas (Villada, Camila Sosa)**

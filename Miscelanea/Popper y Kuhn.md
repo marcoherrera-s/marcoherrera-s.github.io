@@ -1,7 +1,6 @@
 +++
 title = "Popper y Kuhn"
 author = "C. Ulises Moulines"
-description = "Highlights de Popper y Kuhn: dos gigantes de la filosofía de la ciencia del siglo XX, de C. Ulises Moulines, sobre falsacionismo, paradigmas y la estructura de las revoluciones científicas."
 +++
 
 # **Popper y Kuhn: dos gigantes de la filosofía de la ciencia del siglo XX (Moulines, C. Ulises)**

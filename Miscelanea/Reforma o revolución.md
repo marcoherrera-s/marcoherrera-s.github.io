@@ -1,7 +1,6 @@
 +++
 title = "Reforma o revolución"
 author = "Rosa Luxemburg"
-description = "Highlights de Reforma o revolución, ensayo político de Rosa Luxemburg sobre el revisionismo Bernstein y la relación entre reforma social y revolución proletaria."
 +++
 
 # **Reforma o revolución (Luxemburg, Rosa)**

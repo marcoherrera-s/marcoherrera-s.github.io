@@ -1,6 +1,5 @@
 @def title = "1. Problema de dos cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Planteamiento del problema de dos cuerpos bajo una fuerza central newtoniana a partir de la segunda ley de Newton."
 
 # Planteando el problema de dos cuerpos
 

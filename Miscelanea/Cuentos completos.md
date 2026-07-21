@@ -1,7 +1,6 @@
 +++
 title = "Cuentos completos"
 author = "Jorge Luis Borges"
-description = "Highlights de Cuentos completos de Jorge Luis Borges, colección que reúne relatos como El Aleph, El Zahir, La biblioteca de Babel y Ficciones."
 +++
 
 # **Cuentos completos (Borges, Jorge Luis)**

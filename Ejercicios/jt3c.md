@@ -1,6 +1,5 @@
 @def title = "6. Problema de tres cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Aplicación de la técnica de Jet Transport al problema restringido de tres cuerpos para explorar vecindades de condiciones iniciales en Julia."
 
 # ❉ Jet Transport para el Problema de Tres Cuerpos ❉
 

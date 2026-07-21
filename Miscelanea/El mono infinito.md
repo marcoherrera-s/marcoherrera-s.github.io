@@ -1,7 +1,6 @@
 +++
 title = "El mono infinito"
 author = "Martha Riva Palacio Obón"
-description = "Highlights de El mono infinito, novela de Martha Riva Palacio Obón sobre inteligencia artificial, vínculo afectivo y un futuro post-humano narrado en segunda persona."
 +++
 
 # **El mono infinito (Spanish Edition) (Martha Riva Palacio Obón)**

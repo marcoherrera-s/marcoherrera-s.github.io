@@ -1,7 +1,6 @@
 +++
 title = "The Outer Limits of Reason"
 author = "Noson S. Yanofsky"
-description = "Highlights de The Outer Limits of Reason de Noson S. Yanofsky sobre los límites de la ciencia, las matemáticas y la lógica: paradojas, incompletitud, indeterminación y más."
 +++
 
 # **The Outer Limits of Reason: What Science, Mathematics, and Logic Cannot Tell Us (Yanofsky, Noson S.)**

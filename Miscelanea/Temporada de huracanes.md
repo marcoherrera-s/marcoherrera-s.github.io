@@ -1,7 +1,6 @@
 +++
 title = "Temporada de huracanes"
 author = "Fernanda Melchor"
-description = "Highlights de Temporada de huracanes, novela de Fernanda Melchor sobre la violencia, la pobreza y los fantasmas que persiguen un pueblo del Golfo de México."
 +++
 
 # **Temporada de huracanes (Melchor, Fernanda)**

@@ -1,6 +1,5 @@
 @def title = "Deutsch–Jozsa"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Algoritmo de Deutsch-Jozsa: generalización a n bits para distinguir entre una función constante o balanceada con una sola evaluación cuántica."
 
 # Deutsch–Jozsa
 

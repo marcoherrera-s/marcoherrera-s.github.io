@@ -1,6 +1,5 @@
 @def title = "3. Problema de tres cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Revisión de los fundamentos del problema restringido de tres cuerpos y contexto histórico previo al análisis numérico con Julia."
 
 # Resolviendo el problema de tres cuerpos
 

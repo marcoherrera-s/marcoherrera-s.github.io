@@ -1,7 +1,6 @@
 +++
 title = "Poesía no eres tú"
 author = "Rosario Castellanos"
-description = "Highlights de Poesía no eres tú, obra poética reunida de Rosario Castellanos escrita entre 1948 y 1971: amor, soledad, fe y compromiso."
 +++
 
 # **Poesía no eres tú: Obra poética (1984-1971) (Castellanos, Rosario)**

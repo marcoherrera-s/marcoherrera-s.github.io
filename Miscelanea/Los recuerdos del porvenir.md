@@ -1,7 +1,6 @@
 +++
 title = "Los recuerdos del porvenir"
 author = "Elena Garro"
-description = "Highlights de Los recuerdos del porvenir, novela de Elena Garro sobre un pueblo mexicano detenido en el tiempo donde la memoria y la violencia se confunden."
 +++
 
 # **Los recuerdos del porvenir (Garro, Elena)**

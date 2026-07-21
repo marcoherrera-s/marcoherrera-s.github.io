@@ -1,7 +1,6 @@
 +++
 title = "El aleph"
 author = "Jorge Luis Borges"
-description = "Highlights de El aleph, libro de cuentos de Jorge Luis Borges que incluye relatos como El Aleph, El Zahir y La escritura del dios."
 +++
 
 # **El aleph (Borges, Jorge Luis)**

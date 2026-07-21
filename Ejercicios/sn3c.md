@@ -1,6 +1,5 @@
 @def title = "5. Problema de tres cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Solución numérica del problema restringido de tres cuerpos cerca de un punto de Lagrange usando TaylorIntegration.jl en Julia."
 
 # ❉ Solución Numérica al Problema de Tres Cuerpos ❉
 

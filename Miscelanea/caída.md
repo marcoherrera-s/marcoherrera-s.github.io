@@ -1,7 +1,6 @@
 +++
 title = "La caída"
 author = "Albert Camus"
-description = "Highlights de La caída, novela de Albert Camus en forma de monólogo de Jean-Baptiste Clamence, un abogado parisino exiliado en Amsterdam."
 +++
 
 # **La caída (Albert Camus)**

@@ -1,6 +1,5 @@
 +++
 title = "¿Por qué un blog?"
-description = "Reflexión personal del autor sobre las razones detrás de crear un blog con Franklin.jl en lugar de un canal de YouTube para compartir lo que aprende."
 +++
 
 # ¿Por qué un blog?

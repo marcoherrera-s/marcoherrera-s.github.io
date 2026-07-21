@@ -1,7 +1,6 @@
 +++
 title = "El vampiro de la colonia Roma"
 author = "Luis Zapata"
-description = "Highlights de El vampiro de la colonia Roma, novela de Luis Zapata escrita en jerga sobre Adonis García, un joven mexicano que sobrevive como vampiro en la Ciudad de México."
 +++
 
 # **El vampiro de la colonia Roma / The vampire of the Roma neighborhood: Las aventuras, desventuras y suenos de Adonis Garcia / The Adventures, Misadventures and Dreams of Adonis Garcia (Zapata, Luis)**

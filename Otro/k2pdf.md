@@ -1,7 +1,6 @@
 +++
 title = "k2pdfopt"
 tags = ["tutorial"]
-description = "Notas deprecadas sobre cómo usar k2pdfopt para convertir PDFs en un formato legible en un Kindle."
 +++
 
 

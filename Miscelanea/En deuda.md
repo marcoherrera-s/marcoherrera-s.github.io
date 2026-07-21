@@ -1,7 +1,6 @@
 +++
 title = "En deuda"
 author = "David Graeber"
-description = "Highlights de En deuda, ensayo histórico de David Graeber que recorre la historia de la deuda desde las primeras civilizaciones hasta la economía moderna."
 +++
 
 # **En deuda: una historia alternativa de la economía (Graeber, David)**

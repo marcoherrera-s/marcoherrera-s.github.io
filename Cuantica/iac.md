@@ -1,6 +1,5 @@
 @def title = "Introducción a los algoritmos cuánticos"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Introducción al algoritmo de Deutsch: ejemplo prototipo donde el paralelismo cuántico y la interferencia permiten decidir con una sola consulta si una función binaria es constante o balanceada."
 
 # Algoritmos cuánticos. Deutsch.
 

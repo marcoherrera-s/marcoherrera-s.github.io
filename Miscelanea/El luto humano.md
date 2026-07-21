@@ -1,7 +1,6 @@
 +++
 title = "El luto humano"
 author = "José Revueltas"
-description = "Highlights de El luto humano, novela de José Revueltas sobre la Revolución mexicana y la lucha agraria en un poblado ficticio azotado por la violencia y el deseo."
 +++
 
 # **El luto humano (Revueltas, José)**

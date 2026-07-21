@@ -1,6 +1,5 @@
 @def title = "Series de Lie"
 @def tags = ["mecánica-hamiltoniana", "física"]
-@def description = "Series de Lie en mecánica hamiltoniana: el hamiltoniano como generador infinitesimal de la evolución temporal y exponenciales de corchetes de Poisson."
 
 # series de lie
 
