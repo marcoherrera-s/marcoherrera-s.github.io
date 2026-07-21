@@ -1,7 +1,6 @@
 +++
 title = "3. Dinámica no-lineal."
 hasmath = true
-description = "Análisis de estabilidad lineal de puntos fijos: linearización con Taylor, derivada f'(x*) como criterio, escala de tiempo característica y ejemplo de la ecuación logística."
 +++
 
 # Análisis de estabilidad

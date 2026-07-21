@@ -1,6 +1,5 @@
 @def title = "Segunda Ley"
 @def tags = ["física-estadística", "física"]
-@def description = "Entropía y segunda ley de la termodinámica en mecánica estadística clásica: definición, probabilidades y crecimiento entrópico."
 
 # ~~~<div class="typewriter-text" data-text="Entropía y la segunda ley de la termodinámica"></div>~~~
 

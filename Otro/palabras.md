@@ -1,5 +1,4 @@
 @def title = "Palabras"
-@def description = "Highlights compartidos en Pinterest sobre el libro Cien años de soledad y otras palabras subrayadas por el autor."
 
 
 

@@ -1,6 +1,5 @@
 @def title = "Cuántica I"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Repaso de mecánica cuántica orientada a la computación: qubits, superposiciones, esfera de Bloch, matrices de Pauli, postulados, sistemas compuestos y entrelazamiento."
 
 # Un poquito de cuántica nomás para recordar
 

@@ -1,7 +1,6 @@
 +++
 title = "Furia"
 author = "Clyo Mendoza"
-description = "Highlights de Furia, novela de Clyo Mendoza sobre dos parejas marcadas por la violencia, la brujería de pueblo y un pasado que regresa."
 +++
 
 # **Furia (Mendoza, Clyo)**

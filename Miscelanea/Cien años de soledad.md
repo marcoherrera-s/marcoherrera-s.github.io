@@ -1,7 +1,6 @@
 +++
 title = "Cien años de soledad"
 author = "Gabriel García Márquez"
-description = "Highlights de Cien años de soledad, novela de Gabriel García Márquez sobre la historia de la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo."
 +++
 
 # **Cien años de soledad (Edición conmemorativa) (Gabriel García Márquez)**

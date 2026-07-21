@@ -1,6 +1,5 @@
 @def title = "Introducción"
 @def tags = ["mecánica-hamiltoniana", "física"]
-@def description = "Introducción a la mecánica hamiltoniana: la transformada de Legendre como motivación y el cambio de variables (q, p) en lugar de (q, q')."
 
 # introducción a la mecánica hamiltoniana
 

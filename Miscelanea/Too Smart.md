@@ -1,7 +1,6 @@
 +++
 title = "Too Smart"
 author = "Jathan Sadowski"
-description = "Highlights de Too Smart de Jathan Sadowski sobre el capitalismo digital, la extracción masiva de datos y la construcción de la «sociedad inteligente» como proyecto político."
 +++
 
 # **Too Smart: How Digital Capitalism Is Extracting Data, Controlling Our Lives, and Taking Over the World (Sadowski, Jathan)**

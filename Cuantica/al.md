@@ -1,6 +1,5 @@
 @def title = "Álgebra lineal"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Conceptos de álgebra lineal útiles para computación cuántica: teorema espectral, funciones de operadores, productos tensoriales y descomposición de Schmidt."
 
 # Un poquito de álgebra lineal
 

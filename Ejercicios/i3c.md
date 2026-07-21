@@ -1,6 +1,5 @@
 @def title = "1. Problema de tres cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Introducción al problema de tres cuerpos: tercer cuerpo de prueba con masa despreciable y reducción a órbita Kepleriana del problema de dos cuerpos."
 
 # Introduciendo el problema de tres cuerpos
 

@@ -1,6 +1,5 @@
 @def title = "2. Problema de dos cuerpos"
 @def tags = ["problema-tres-cuerpos", "física"]
-@def description = "Resolución analítica del problema de dos cuerpos a partir de las ecuaciones de movimiento radiales en coordenadas polares."
 
 # Resolviendo el problema de dos cuerpos
 

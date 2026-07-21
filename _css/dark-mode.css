@@ -50,7 +50,17 @@
     --block-background: #0b1120;        /* Panels / cards en dark */
     --output-background: #020617;       /* Fondo de salida aún más oscuro */
   }
-  
+
+  /* Divisores: degradado azul y dorado, acorde con la paleta oscura */
+  .dark-theme hr {
+    background: linear-gradient(
+      90deg,
+      rgba(138, 164, 209, 0.2) 0%,
+      rgba(107, 139, 142, 0.5) 50%,
+      rgba(200, 155, 79, 0.2) 100%
+    );
+  }
+
 /* Ajustes específicos para el modo oscuro */
 .dark-theme body {
   /* text-shadow: 0 0 2px rgba(144, 190, 109, 0.8); */

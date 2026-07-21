@@ -1,7 +1,6 @@
 +++
 title = "El problema de los tres cuerpos"
 author = "Liu Cixin"
-description = "Highlights de El problema de los tres cuerpos, novela de ciencia ficción de Liu Cixin sobre el contacto de la humanidad con una civilización extraterrestre y el despertar cósmico."
 +++
 
 # **El problema de los tres cuerpos (Liu Cixin)**

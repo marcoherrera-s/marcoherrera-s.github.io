@@ -1,6 +1,5 @@
 @def title = "Cuántica II"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Medición cuántica, operadores de densidad, estados mezclados, traza parcial y operaciones cuánticas generales como superoperadores con ejemplo de desfase."
 
 
 # Midiendo 

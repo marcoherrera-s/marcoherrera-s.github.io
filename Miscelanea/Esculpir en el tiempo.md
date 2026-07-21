@@ -1,7 +1,6 @@
 +++
 title = "Esculpir en el tiempo"
 author = "Andrei Tarkovski"
-description = "Highlights de Esculpir en el tiempo, libro de Andrei Tarkovski sobre su poética cinematográfica: el tiempo como materia prima del cine y el arte como forma de conocimiento espiritual."
 +++
 
 # **Esculpir en el tiempo (Andrei Tarkovski)**

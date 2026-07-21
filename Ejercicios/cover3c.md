@@ -1,6 +1,5 @@
 +++
 title = "El problema restringido de tres cuerpos"
-description = "Serie de notas y simulaciones numéricas del problema restringido de tres cuerpos: planteamiento, condiciones iniciales, Jet Transport y curvas de nivel cero."
 +++
 
 # el problema restringido de tres cuerpos

@@ -1,7 +1,6 @@
 +++
 title = "2. Dinámica no-lineal."
 hasmath = true
-description = "Interpretación geométrica de ecuaciones diferenciales como campos vectoriales: puntos fijos estables e inestables, atractor y repulsor, y análisis de flujo."
 +++
 
 # Ecuaciones diferenciales como campos vectoriales

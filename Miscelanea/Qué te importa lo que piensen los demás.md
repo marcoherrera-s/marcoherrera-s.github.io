@@ -1,7 +1,6 @@
 +++
 title = "¿Qué te importa lo que piensen los demás?"
 author = "Richard P. Feynman"
-description = "Highlights de ¿Qué te importa lo que piensen los demás?, memorias de Richard Feynman relatadas a Ralph Leighton: anécdotas personales, ciencia y filosofía de vida."
 +++
 
 # **¿Qué te importa lo que piensen los demás?: Nuevas aventuras de un curioso personaje como le fueron referidas a Ralph Leighton (Feynman, Richard Phillips)**

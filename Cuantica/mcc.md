@@ -1,6 +1,5 @@
 @def title = "Modelo cuántico de computación"
 @def tags = ["computación-cuántica", "física"]
-@def description = "Modelo cuántico de computación: preparación de estado, transformaciones unitarias y medición, con compuertas Pauli, rotaciones, CNOT y conjuntos universales como {Hadamard, T, CNOT}."
 
 # Modelo cuántico de computación
 

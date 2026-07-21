@@ -1,7 +1,6 @@
 +++
 title = "5. Dinámica no-lineal."
 hasmath = true
-description = "Bifurcación silla-nodo como mecanismo básico de creación y destrucción de puntos fijos en sistemas dinámicos no lineales."
 +++
 
 

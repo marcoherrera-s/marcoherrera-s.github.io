@@ -1,6 +1,5 @@
 +++
 title = "Dinámica no lineal"
-description = "Notas sobre dinámica no lineal: sistemas dinámicos, campos vectoriales, estabilidad, bifurcaciones y existencia/unicidad de soluciones."
 +++
 
 # Aquí se comienza

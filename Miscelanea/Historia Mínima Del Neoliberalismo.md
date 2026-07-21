@@ -1,7 +1,6 @@
 +++
 title = "Historia Mínima del Neoliberalismo"
 author = "Fernando Escalante Gonzalbo"
-description = "Highlights de Historia Mínima del Neoliberalismo, ensayo de Fernando Escalante Gonzalbo sobre el origen, la lógica y las consecuencias del programa neoliberal."
 +++
 
 # **Historia Mínima Del Neoliberalismo (Gonzalbo, Fernando Escalante)**

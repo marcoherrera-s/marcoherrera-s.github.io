@@ -1,6 +1,5 @@
 @def title = "Ecuaciones de Hamilton"
 @def tags = ["mecánica-hamiltoniana", "física"]
-@def description = "Derivación de las ecuaciones de Hamilton a partir del lagrangiano y el hamiltoniano como transformada de Legendre."
 
 # ecuaciones de hamilton
 
