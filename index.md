@@ -49,7 +49,7 @@ _**odio con mi ser**_: los comerciales y ads :(
 
 
 - [¿por qué un blog?](/Otro/pblog/)
-- [sobre mi memoria](/Otro/memoria/)
+<!-- - [sobre mi memoria](/Otro/memoria/) -->
 
 
 
