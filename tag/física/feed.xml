@@ -11,12 +11,12 @@
     <title>
       <![CDATA[  Marco Herrera  ]]>
     </title>
-    <link> https://marcoh.space/ </link>
+    <link> https://marcoherrera-s.github.io/ </link>
     <description>
       <![CDATA[  Blog de Marco  ]]>
     </description>
     <atom:link
-      href="https://marcoh.space/feed.xml"
+      href="https://marcoherrera-s.github.io/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
@@ -25,8 +25,8 @@
   <title>
     <![CDATA[  Física  ]]>
   </title>
-  <link> https://marcoh.space/menu1/index.html </link>
-  <guid> https://marcoh.space/menu1/index.html </guid>
+  <link> https://marcoherrera-s.github.io/menu1/index.html </link>
+  <guid> https://marcoherrera-s.github.io/menu1/index.html </guid>
   <description>
     <![CDATA[  Notas de cursos y temas de física: dinámica no lineal, cómputo cuántico, problema restringido de tres cuerpos, física estadística y mecánica hamiltoniana.  ]]>
   </description>  
