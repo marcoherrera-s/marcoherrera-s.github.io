@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff");
+  src: url("../assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff");
+  src: url("../assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff");
+  src: url("../assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -946,7 +946,7 @@ pre code {
 }
 
 /* ==================================================================
-   HERO EDITORIAL + LORENZ + NOW
+   HERO EDITORIAL + TOROS + NOW
 ================================================================== */
 
 .hero-editorial {
@@ -973,7 +973,7 @@ pre code {
   letter-spacing: 0.08em;
 }
 
-#lorenz-canvas {
+#toros-canvas {
   display: block;
   width: 100%;
   height: 180px;
@@ -1018,7 +1018,7 @@ pre code {
 
 @font-face {
   font-family: "Elzevier";
-  src: url("../assets/elzevier/ELZEVIER_R.TTF") format("truetype");
+  src: url("../assets/elzevier/ELZEVIER_R.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

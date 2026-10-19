@@ -5,10 +5,10 @@
 ~~~
 <header class="hero-editorial">
   <div class="hero-name">marco herrera</div>
-  <canvas id="lorenz-canvas" aria-hidden="true"></canvas>
+  <canvas id="toros-canvas" aria-hidden="true"></canvas>
 </header>
 
-<script src="/assets/js/lorenz.js" defer></script>
+<script src="/assets/js/toros.js" defer></script>
 ~~~
 
 **_sobre mí_**: 

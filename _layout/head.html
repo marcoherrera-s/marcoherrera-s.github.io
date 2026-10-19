@@ -37,13 +37,7 @@
     {{end}}
 
     <!-- Canonical y RSS -->
-    {{isdef canonical_url}}
-        <link rel="canonical" href="{{fill canonical_url}}">
-    {{else}}
-        {{isdef website_url}}
-            <link rel="canonical" href="{{fill website_url}}">
-        {{end}}
-    {{end}}
+    <link rel="canonical" href="{{canonical}}">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
     <!-- Open Graph / Twitter -->
@@ -57,7 +51,7 @@
             <meta name="twitter:description" content="{{fill website_descr}}">
         {{end}}
     {{end}}
-    {{isdef canonical_url}}<meta property="og:url" content="{{fill canonical_url}}">{{end}}
+    <meta property="og:url" content="{{canonical}}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/assets/klimt.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -69,6 +63,7 @@
     <link rel="apple-touch-icon" href="/assets/favicon.webp">
 
     <!-- Estilos CSS -->
+    <link rel="preload" href="/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2" as="font" type="font/woff2" crossorigin>
     {{insert style.html}}
     <link id="dark-mode-style" rel="stylesheet" href="/css/dark-mode.css">
 

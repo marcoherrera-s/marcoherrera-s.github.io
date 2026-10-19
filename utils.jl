@@ -70,3 +70,22 @@ function hfun_librosgrid()
     html *= "</div>"
     return html
 end
+
+# ------------------------------------------------------------------
+# URL canónica
+# ------------------------------------------------------------------
+
+"""
+    hfun_canonical()
+
+Devuelve la URL canónica de la página actual. Usa `canonical_url` si la
+página la define; si no, la construye a partir de `fd_full_url` quitando
+el `index.html` final (p. ej. `https://…/Hamilton/poisson/`).
+Uso en plantillas: `{{canonical}}`
+"""
+function hfun_canonical()
+    custom = locvar(:canonical_url)
+    custom isa AbstractString && !isempty(custom) && return _escape_html(custom)
+    url = replace(locvar(:fd_full_url)::String, r"index\.html$" => "")
+    return _escape_html(url)
+end

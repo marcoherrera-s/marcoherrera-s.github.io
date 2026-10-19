@@ -1,7 +1,7 @@
 +++
 author = "Marco Herrera"
 mintoclevel = 2
-ignore = ["node_modules/"]
+ignore = ["node_modules/", "CLAUDE.md", "CLAUDE.local.md"]
 generate_rss = true
 website_title = "Marco Herrera"
 website_descr = "Blog de Marco"
